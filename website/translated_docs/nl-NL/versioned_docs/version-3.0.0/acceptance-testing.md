@@ -27,13 +27,13 @@ Binnen het AT-proces zijn er drie belangrijke punten
 
 **Testen** Zodra het setup-proces van de test is voltooid is het tijd om te testen. Elk AT script zal gebruikers-flow stappen moeten voltooien, veel gebruikers-flow stappen zullen testvarianten hebben die misschien ook moeten worden getest. Succes van kritieke testvarianten worden weergegeven in de _Touch Points_ van het script, deze testvarianten moeten worden voltooid om als succesvol te kunnen worden beschouwd.
 
-**Issue Reporting** All AT scripts will have an _Intended Outcome_ section, if you've completed each step of the AT script and you're not seeing the intended outcome then the acceptance test is considered a failure. If this is the case follow the steps for reporting an issue in the [Contributing Guide](https://docs.reactioncommerce.com/reaction-docs/trunk/contributing-to-reaction#step-2-find-or-open-an-issue)
+**Issue Rapportage** Alle AT scripts zullen een _Bedoeld Resultaat_ sectie hebben, als je elke stap van het AT script hebt voltooid en je de beoogde resultaten niet ziet, dan wordt de acceptatietest als een mislukking beschouwd. Als dit het geval is, volg dan de stappen voor het melden van een probleem in de bijdrage gids
 
-## Test Scripts
-Table of contents for all Reaction Commerce AT scripts.
+## Scripts testen
+Inhoudsopgave voor alle DemandJS Commerce AT scripts.
 
-**Order Scripts**
-- [Order Creation](order-creation.md)
+**BestellIing scripts**
+- [Bestelling aanmaken](order-creation.md)
 
 
 <!--
@@ -42,10 +42,10 @@ Table of contents for all Reaction Commerce AT scripts.
  - [Order Refunding](scripts/order-refunding.md)
 -->
 
-## Resources
-**Testing**
-- [reaction-devtools](https://github.com/reactioncommerce/reaction-devtools)
-- [Acceptance Test Script Templates](script-template)
+## Bronnen
+**Testen**
+- [demandJS-devtools](https://github.com/reactioncommerce/reaction-devtools)
+- [Acceptatie-test scriptsjablonen](script-template)
 
-**Reporting**
-- [Contributing Guide](contributing-to-reaction)
+**Rapportage**
+- [Handleiding](contributing-to-reaction)
