@@ -6,7 +6,7 @@ sidebar_label: App Events
 original_id: appevent-hooks
 ---
 
-The `Hooks.Events` API and `MethodHooks` from previous versions of Reaction have been removed in favor of `appEvents`. `appEvents`, like hooks, allow you to attach callbacks to particular events throughout the app lifecycle.
+De `Hooks.Events` API en `MethodHooks` van vorige versies van DemandJS zijn verwijderd ten gunste van `appEvents`. Met `appEvents`, zoals hooks kun je callbacks toevoegen aan bepaalde events in de app lifecycle.
 
 ## Emit an app event
 
