@@ -4,7 +4,7 @@ base_path: './'
 preserve_hierarchy: true
 
 files:
-  - source: '/docs/**/*.md'
+  - source: '/website/**/*.md'
     translation: '/website/translated_docs/%locale%/**/%original_file_name%'
     languages_mapping: &anchor
       locale:
