@@ -87,7 +87,7 @@ class MyComponent extends Component {
 
 ### Do
 
-Bind with the class fields syntax to bind callbacks for events. Requires [ESNext class fields](https://github.com/tc39/proposal-class-fields) which is enabled by default in Reaction.
+Bind with the class fields syntax to bind callbacks for events. Requires [ESNext class fields](https://github.com/tc39/proposal-class-fields) which is enabled by default in Demand.
 
 ```js
 class MyComponent extends Component {

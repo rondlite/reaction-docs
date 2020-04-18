@@ -1,6 +1,6 @@
 ---
-original_id: deploying-reaction-with-mup
-id: version-v1.1.0-deploying-reaction-with-mup
+original_id: deploying-demand-with-mup
+id: version-v1.1.0-deploying-demand-with-mup
 title: Mup
 ---
     

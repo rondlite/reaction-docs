@@ -10,9 +10,9 @@ version: 2
 # typing. See http://yaml.org/type/merge.html for details.
 defaults: &defaults
   environment:
-    - DOCKER_REPOSITORY: "reactioncommerce/reaction-docs"
-    - DOCKER_NAMESPACE: "reactioncommerce"
-    - DOCKER_NAME: "reaction-docs"
+    - DOCKER_REPOSITORY: "demandcluster/demand-cs"
+    - DOCKER_NAMESPACE: "demandcluster"
+    - DOCKER_NAME: "demand-cs"
 
   docker:
     - image: circleci/node:8-stretch
@@ -75,7 +75,7 @@ jobs:
           command: |
             docker run \
               --env-file docker-cache/.env \
-              --name reactionapp_web_1 \
+              --name demandapp_web_1 \
               "$DOCKER_REPOSITORY:$CIRCLE_SHA1" \
               yarn run lint
 
@@ -106,7 +106,7 @@ jobs:
           command: |
             docker run \
               --env-file docker-cache/.env \
-              --name reactionapp_web_1 \
+              --name demandapp_web_1 \
               "$DOCKER_REPOSITORY:$CIRCLE_SHA1" \
               yarn run test
 
@@ -130,10 +130,10 @@ jobs:
             docker run \
               --env-file docker-cache/.env \
               -e "SNYK_TOKEN=$SNYK_TOKEN" \
-              --name reactionapp_web_1 \
+              --name demandapp_web_1 \
               -w /usr/local/src \
               "$DOCKER_REPOSITORY:$CIRCLE_SHA1" \
-              sh -c "cp reaction-app/package.json ./ && snyk test"
+              sh -c "cp demand-p/package.json ./ && snyk test"
 
   deploy:
     <<: *defaults
@@ -155,10 +155,10 @@ jobs:
       - run:
           name: Copy built files
           command: docker create "$DOCKER_REPOSITORY:$CIRCLE_SHA1" \
-            | xargs -t -I % docker cp %:/usr/local/src/reaction-app/website .
+            | xargs -t -I % docker cp %:/usr/local/src/demand-p/website .
       - run:
           name: Copy redirect file to deploy folder
-          command: cp _redirects website/build/reaction
+          command: cp _redirects website/build/demand
       - run:
           name: "Deploy to Netlify"
           command: |
@@ -169,7 +169,7 @@ jobs:
             fi
 
             ./netlifyctl deploy \
-              --publish-directory website/build/reaction \
+              --publish-directory website/build/demand \
               --site-id $SITE_ID \
               --access-token $NETLIFY_ACCESS_TOKEN
 
@@ -179,17 +179,17 @@ workflows:
     jobs:
       - dockerfile-lint
       - docker-build:
-          context: reaction-build-read
+          context: demand-ild-read
       - lint:
-          context: reaction-validation
+          context: demand-lidation
           requires:
             - docker-build
       - test:
-          context: reaction-validation
+          context: demand-lidation
           requires:
             - docker-build
       - snyk-security:
-          context: reaction-validation
+          context: demand-lidation
           requires:
             - docker-build
       - deploy:

@@ -78,7 +78,7 @@
     lodash "^4.2.0"
     to-fast-properties "^2.0.0"
 
-"@reactioncommerce/eslint-config@1.7.0":
+"@demandcluster/eslint-config@1.7.0":
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/@reactioncommerce/eslint-config/-/eslint-config-1.7.0.tgz#2d7523651a9d787d8504ee84545f6a6babf5998d"
 

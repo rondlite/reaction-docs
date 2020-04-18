@@ -49,7 +49,7 @@
 - add release process
 - add vulnerabilities
 - add sortableTable
-- add deploying to reaction platform
+- add deploying to demand platform
 
 - remove deploying to managed
 
@@ -87,7 +87,7 @@
 - 158 total: 3 files added, 1 file removed
 - add database-migrations.md
 - add jsdoc-style-guide.md
-- add reaction-cli.md
+- add demand-cli.md
 - remove csvDownload.md
 
 ## v1.8.0
@@ -102,7 +102,7 @@
 - add error-handling-guide.md
 - remove upload.md
 - remove register-component.md
-- reaction-importer.md renamed to import.md
+- demand-importer.md renamed to import.md
 
 ## v1.11.0
 

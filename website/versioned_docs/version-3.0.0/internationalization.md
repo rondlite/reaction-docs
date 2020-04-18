@@ -4,9 +4,9 @@ title: Internationalization
 original_id: internationalization
 ---
 
-Reaction clients should use [i18next](http://i18next.com/) for internationalization and UI translations.
+Demand clients should use [i18next](http://i18next.com/) for internationalization and UI translations.
 
-The Reaction API server (specifically the `i18n` service) gathers translations from all registered plugins and serves them for clients at the standard `/locales/resources.json` route on the API server. Because any plugin can add a translation namespace, the service also adds a `/locales/namespaces.json` route, which returns the namespaces array. The i18next client library needs this list for initialization.
+The Demand API server (specifically the `i18n` service) gathers translations from all registered plugins and serves them for clients at the standard `/locales/resources.json` route on the API server. Because any plugin can add a translation namespace, the service also adds a `/locales/namespaces.json` route, which returns the namespaces array. The i18next client library needs this list for initialization.
 
 ## Register translations from an API plugin
 
@@ -17,9 +17,9 @@ registerPlugin({
   i18n: {
     translations: [{
       i18n: "en",
-      ns: "reaction-inventory",
+      ns: "demand-inventory",
       translation: {
-        "reaction-inventory": {
+        "demand-inventory": {
           inventorySettings: {
             cardTitle: "Inventory"
           }
@@ -36,7 +36,7 @@ In each `translations` array item:
 - The `i18n` key is set to the language code.
 - Beneath the namespace level, you can add any levels you want with any keys. When referencing translations in code, you will reference the object path of the translation text you want. In the example above, `inventorySettings.cardTitle` would resolve to the work "Inventory" if the current language is English.
 
-## Supporting Multiple Languages in a Reaction Client
+## Supporting Multiple Languages in a Demand Client
 
 In browser code, initialize multi-language support like this, using latest `i18next` NPM packages:
 
@@ -65,7 +65,7 @@ const configuredI18next = i18next
  * @return {undefined}
  */
 async function initializeI18n(fallbackLng) {
-  // Reaction does not have a predefined list of namespaces. Any API plugin can
+  // Demand does not have a predefined list of namespaces. Any API plugin can
   // add any namespaces. So we must first get the list of namespaces from the API.
   const namespaceResponse = await fetch(`${apiUrl}/locales/namespaces.json`);
   const allTranslationNamespaces = await namespaceResponse.json();
@@ -90,7 +90,7 @@ async function initializeI18n(fallbackLng) {
       order: ["querystring", "navigator"]
     },
     ns: allTranslationNamespaces,
-    defaultNS: "core", // reaction "core" is the default namespace
+    defaultNS: "core", // demand "core" is the default namespace
     fallbackNS: allTranslationNamespaces,
     fallbackLng
   });

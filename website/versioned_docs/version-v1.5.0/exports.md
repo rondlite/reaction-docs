@@ -4,7 +4,7 @@ title: Exports
 original_id: exports
 ---
     
-[Meteor allows you to import](https://guide.meteor.com/structure.html#intro-to-import-export) CSS, HTML and JavaScript in Reaction. 
+[Meteor allows you to import](https://guide.meteor.com/structure.html#intro-to-import-export) CSS, HTML and JavaScript in Demand. 
 
 ## import
 
@@ -33,20 +33,20 @@ export default Lists;                               // default export
 export default new Collection('lists');             // default export
 ```
 
-### Reaction
+### Demand
 
 ```js
-// import Logger functions and Reaction global object.
-import { Logger, Reaction } from "/server/api";
+// import Logger functions and Demand global object.
+import { Logger, Demand } from "/server/api";
 ```
 
-The convenience wrapper `Reaction`, exports a number of helpers from Reaction Core, that can be used without an independent import:
+The convenience wrapper `Demand`, exports a number of helpers from Demand Core, that can be used without an independent import:
 
 ```js
 /**
- * Reaction methods (server)
+ * Demand methods (server)
  */
-const Reaction = Object.assign(
+const Demand = Object.assign(
   Core,
   AssignRoles,
   { Collections },
@@ -60,26 +60,26 @@ const Reaction = Object.assign(
   UI,
   Utils
 );
-export default Reaction;
+export default Demand;
 ```
 
 ```js
-// import Logger functions and Reaction global object.
-import { Reaction } from "/server/api";
+// import Logger functions and Demand global object.
+import { Demand } from "/server/api";
 ```
 
 The includes additional helpers:
 
--   Reaction
+-   Demand
 -   Router
 -   GeoCoder
 -   Hooks
 -   Logger
 -   MethodHooks
 
-A similar export is available from `client/api` for client Reaction functions.
+A similar export is available from `client/api` for client Demand functions.
 
 ```js
-// import Logger functions and Reaction global object.
-import { Reaction } from "/client/api";
+// import Logger functions and Demand global object.
+import { Demand } from "/client/api";
 ```

@@ -10,7 +10,7 @@
 #
 #       volumes:
 #         - web-yarn:/home/node/.cache/yarn
-#         - .:/usr/local/src/reaction-app
+#         - .:/usr/local/src/demand-app
 #         - ../rimraf:/usr/local/src/rimraf
 #         - ../eslint:/usr/local/src/eslint
 #
@@ -30,7 +30,7 @@ custom_modules="${LINKED_NPM_MODULES}"
 
 custom_modules_folder=/usr/local/src
 modules_folder=/usr/local/src/node_modules
-project_folder=/usr/local/src/reaction-app
+project_folder=/usr/local/src/demand-app
 
 for module in ${custom_modules}; do
   cd "${custom_modules_folder}/${module}" \

@@ -1,13 +1,13 @@
 // docker-compose run --rm web yarn run version v1.13.0
 
-// git clone --branch  v1.13 --single-branch --depth 1 git@github.com:reactioncommerce/reaction-docs.git
+// git clone --branch  v1.13 --single-branch --depth 1 git@github.com:demandcluster/demand-cs.git
 
 // node migrater.js
 
 var fs = require('fs');
 var path = require('path');
 
-var redoc = fs.readFileSync("reaction-docs/redoc.json");
+var redoc = fs.readFileSync("demand-cs/redoc.json");
 var redocParsed = JSON.parse(redoc);
 var tocData = redocParsed.tocData;
 console.log(tocData.length + " files found")
@@ -65,7 +65,7 @@ if (irregular.length == 0) {
 out.forEach(function (content, index) {
     // go to file
     path.join(process.cwd());
-    fileName = "reaction-docs/" + content.docPath;
+    fileName = "demand-cs/" + content.docPath;
     if (!fs.existsSync(fileName)) {
         console.log("File not found:" + fileName);
         return
@@ -96,7 +96,7 @@ title: ${content.label}
     ` + file
         // write changes to file at fileName
         fs.writeFileSync(fileName, file);
-        // move file from reaction-docs/<nested>/<nested> to public-docs/<alias>.md
+        // move file from demand-cs/<nested>/<nested> to public-docs/<alias>.md
         publicDocsPath = "public-docs/" + content.alias + ".md";
         fs.renameSync(fileName, publicDocsPath);
         console.log(index + " - Updated " + fileName + " to: " + publicDocsPath);
@@ -121,17 +121,17 @@ console.log("📝 Sidebars: Table of contents saved")
 
 // docker-compose stop && docker-compose up --build
 // open http://localhost:4242/docs/next/intro
-// open https://github.com/reactioncommerce/reaction-docs/blob/v1.3.0/redoc.json
-// open https://docs.demandcluster.com/reaction-docs/v1.3.0/intro
+// open https://github.com/demandcluster/demand-cs/blob/v1.3.0/redoc.json
+// open https://docs.demandcluster.com/demand-cs/v1.3.0/intro
 // Confirm: number of files in `public-docs` matches `out.length`
 // Confirm: newNav.length == oldNav.length
 
 // var oldNavTotal = []
 // Array.prototype.forEach.call($(".guide-nav-item"), item => {
-//     oldNavTotal.push(item.childNodes[0].pathname.replace("/reaction-docs/v1.7.0/",""))
+//     oldNavTotal.push(item.childNodes[0].pathname.replace("/demand-cs/v1.7.0/",""))
 // });
 // Array.prototype.forEach.call($(".guide-sub-nav-item"), item => {
-//     oldNavTotal.push(item.childNodes[0].pathname.replace("/reaction-docs/v1.7.0/",""))
+//     oldNavTotal.push(item.childNodes[0].pathname.replace("/demand-cs/v1.7.0/",""))
 // });
 // console.log(oldNavTotal.length);
 // oldNavTotal.sort()
@@ -154,4 +154,4 @@ console.log("📝 Sidebars: Table of contents saved")
 // };
 // oldNav.diff(newNav);
 
-// rm -rf reaction-docs/
+// rm -rf demand-cs/

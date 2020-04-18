@@ -24,7 +24,7 @@ See `lib/collections/schemas/revisions.js` for more details.
         "documentId" : "BCTMZ6HTxFSppJESk",
         "documentData" : {
             "_id" : "BCTMZ6HTxFSppJESk",
-            "title" : "Reaction Product",
+            "title" : "Demand Product",
             "shopId" : "J8Bhq3uTtdgwZx3rz",
             "ancestors" : [],
             "createdAt" : ISODate("2014-04-03T20:46:52.411Z"),
@@ -74,8 +74,8 @@ See `lib/collections/schemas/revisions.js` for more details.
                 "path" : [
                     "title"
                 ],
-                "lhs" : "Basic Reaction Product",
-                "rhs" : "Reaction Product"
+                "lhs" : "Basic Demand Product",
+                "rhs" : "Demand Product"
             },
             {
                 "kind" : "E",

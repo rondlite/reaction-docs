@@ -4,7 +4,7 @@ id: version-v1.1.0-components
 title: Components
 ---
     
-Reaction UI components using Blaze and React.
+Demand UI components using Blaze and React.
 
 ## Component StyleGuide
 

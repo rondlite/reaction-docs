@@ -9,9 +9,9 @@ Register and fetch a templates by name. This is server-only. Mostly suited for s
 ## Register a new email template
 
 ```js
-import { Reaction } from "/server/api";
+import { Demand } from "/server/api";
 
-Reaction.registerTemplate({
+Demand.registerTemplate({
   title: "My Template",
   name: "my-template"
   type: "template",

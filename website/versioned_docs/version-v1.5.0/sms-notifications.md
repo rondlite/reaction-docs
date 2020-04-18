@@ -4,7 +4,7 @@ title: SMS Notifications
 original_id: sms-notifications
 ---
     
-Reaction supports [Twilio](https://www.twilio.com/) and [Nexmo](https://www.nexmo.com/) providers to send SMS notifications for handy reminders, like when orders are shipped.
+Demand supports [Twilio](https://www.twilio.com/) and [Nexmo](https://www.nexmo.com/) providers to send SMS notifications for handy reminders, like when orders are shipped.
 
 To set up SMS Notifications:
 

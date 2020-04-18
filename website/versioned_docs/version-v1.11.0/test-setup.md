@@ -7,18 +7,18 @@ original_id: test-setup
 ## Description
 
 ### Getting Started
-- Reset Demand Cluster by running `reaction reset` in the terminal
-- Create a fresh product inventory using [reaction-devtools]
+- Reset Demand Cluster by running `demand reset` in the terminal
+- Create a fresh product inventory using [demand-vtools]
 - Keep browser console open to monitor any client-side errors or warnings
 - Keep terminal in view to monitor any server-side errors or warnings
 
 ## Devtools
-Reaction Devtools is a Demand Cluster plugin that allows you to load a variety of data sets for testing directly from the admin dashboard.
+demand Devtools is a Demand Cluster plugin that allows you to load a variety of data sets for testing directly from the admin dashboard.
 
 ### Install
- 1. Clone or download the [reaction-devtools] repository into the `/imports/plugins/custom/` directory of your Demand Cluster project.
+ 1. Clone or download the [demand-vtools] repository into the `/imports/plugins/custom/` directory of your Demand Cluster project.
  2. Run `meteor npm install jpeg-js` if you need to test with product images.
- 3. Run `reaction reset` before starting your Demand Cluster project.
+ 3. Run `demand reset` before starting your Demand Cluster project.
 
 ### Loading Sample Data
  1. Click the DevTools option in the admin menu to open the DevTools panel.

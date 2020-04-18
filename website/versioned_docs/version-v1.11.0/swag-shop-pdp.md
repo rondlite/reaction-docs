@@ -5,27 +5,27 @@ sidebar_label: Part 4: Category tiles and PDP
 original_id: swag-shop-pdp
 ---
 
-> ⚠️ Note: This tutorial has been deprecated as the release of Reaction 2.0. The latest tutorial can be found at [here](https://docs.demandcluster.com/docs/swag-shop-1).
+> ⚠️ Note: This tutorial has been deprecated as the release of demand 2.0. The latest tutorial can be found at [here](https://docs.demandcluster.com/docs/swag-shop-1).
 
 ## Building a Swag Shop: Category Tiles & Related Products
 
 In this part, we'll show you how we ...
 - Created visual category tiles for the Landing Page
 - Implemented the [Related]
-- Customized the default layout that comes with ReactionAvatar
+- Customized the default layout that comes with demandAvatar
 - Deployed our swag shop
 
 All code presented here can be found in our [Swag Shop repository] on GitHub.
 
 ## Adding category tiles to the Landing Page
-The purpose of [category tiles] is to provide users with another entry point for browsing tagged products. From a functional point of view, category tiles are identical to the default navbar tags that come with typical Reaction shops.
+The purpose of [category tiles] is to provide users with another entry point for browsing tagged products. From a functional point of view, category tiles are identical to the default navbar tags that come with typical demand shops.
 ![](https://user-images.githubusercontent.com/1733229/35669741-65975f86-0736-11e8-9269-47a0f3aa5c60.jpg)
 
 Tiles present all of the available categories in a visually appealing way. For this to work, the tags must be enhanced so they can hold information about the category image, along with its name:
 
-[/imports/plugins/custom/reaction-swag-shop/lib/collections/schemas/tags.js]
+[/imports/plugins/custom/demand-ag-shop/lib/collections/schemas/tags.js]
 ```js
-import Schemas from "@reactioncommerce/schemas";
+import Schemas from "@demandcluster/schemas";
 import { Tags } from "/lib/collections";
 
 const TagSchema = Schemas.Tag.extend({
@@ -60,9 +60,9 @@ To render the tiles on the landing page, change the `Products` component. First,
 
 ![](https://user-images.githubusercontent.com/1733229/35676726-32bfcb2c-074d-11e8-87c9-d41fa4971ce4.jpg)
 
-In mobile, this image is placed before the actual category images. The markup is structured in a way to support Reaction's mobile-first approach:
+In mobile, this image is placed before the actual category images. The markup is structured in a way to support demand's mobile-first approach:
 
-[/imports/plugins/custom/reaction-swag-shop/client/components/product-variant/customer/productGrid.js]
+[/imports/plugins/custom/demand-ag-shop/client/components/product-variant/customer/productGrid.js]
 ```js
 renderCategories() {
    return (
@@ -90,7 +90,7 @@ Two things to mention here. First, as defined by [Bootstrap CSS](https://getboot
 
 Second, we want to stack every second image vertically, so the category images are divided into chunks of two. This is done in `renderCategoryChunks`:
 
-[/imports/plugins/custom/reaction-swag-shop/client/components/product-variant/customer/productGrid.js]
+[/imports/plugins/custom/demand-ag-shop/client/components/product-variant/customer/productGrid.js]
 ```js
 renderCategoryChunks(tags) {
    const chunkSize = 2;
@@ -113,20 +113,20 @@ This snippet renders containers for each tile. It also ensures that the aforemen
 
 The category images itself are rendered in `renderCategory`:
 
-[/imports/plugins/custom/reaction-swag-shop/client/components/product-variant/customer/productGrid.js]
+[/imports/plugins/custom/demand-ag-shop/client/components/product-variant/customer/productGrid.js]
 ```js
 renderCategory(tag) {
   return (
     <div className={"cat-tile col-xs-12"} key={tag._id}>
       <a href={`/tag/${tag.slug}`}>
-        <img alt={tag.name} src={`/plugins/reaction-swag-shop/${tag.catTileImageUrl}`} />
+        <img alt={tag.name} src={`/plugins/demand-ag-shop/${tag.catTileImageUrl}`} />
         <span className={"category"}>{tag.name}</span>
       </a>
     </div>
   );
 }
 ```
-As you can see, the actual image URL is read from the property `catTileImageUrl`, which we've added before to the `Tag` schema. It's important to mention that all public assets need to exist in the plugin's _/import/plugins/custom/reaction-swag-shop/public_ folder, since the reaction-cli copies all files from there to its final destination in _/public/plugins/reaction-swag-shop_ during the build process. Meteor's HTTP server will then make them available via the URL pathname **/plugins/reaction-swag-shop/**.
+As you can see, the actual image URL is read from the property `catTileImageUrl`, which we've added before to the `Tag` schema. It's important to mention that all public assets need to exist in the plugin's _/import/plugins/custom/demand-ag-shop/public_ folder, since the dedemand-copies all files from there to its final destination in _/public/plugins/demademand-hop_ during the build process. Meteor's HTTP server will then make them available via the URL pathname **/plugins/demanddemand-p/**.
 
 This is how it looks:
 ![](https://user-images.githubusercontent.com/1733229/35683281-c1afebee-0763-11e8-91ca-e911a78dc6e7.jpg)
@@ -144,10 +144,10 @@ This is how it looks when we're all done:
 
 Next, let's extend the original `TagItem` component from _/imports/plugins/core/ui/client/components/tags/tagItem.js_ and override in the render() method.
 
-[/imports/plugins/custom/reaction-swag-shop/client/components/core/ui/tags/tagItem.js]
+[/imports/plugins/custom/demand-ag-shop/client/components/core/ui/tags/tagItem.js]
 ```js
 import React from "react";
-import { Components, replaceComponent, getRawComponent } from "@reactioncommerce/reaction-components";
+import { Components, replaceComponent, getRawComponent } from "@demandcluster/demand-mponents";
 import classnames from "classnames";
 import { Button, Handle } from "/imports/plugins/core/ui/client/components/index";
 import { Tags } from "/lib/collections/index";
@@ -217,7 +217,7 @@ export default TagItem;
 ```
 This will give us a nice popover that allows us to edit the `catTileImageUrl` field. To finish this up, let's add the changes made in the popover to MongoDB:
 
-[/imports/plugins/custom/reaction-swag-shop/client/components/core/ui/tags/tagItem.js]
+[/imports/plugins/custom/demand-ag-shop/client/components/core/ui/tags/tagItem.js]
 ```js
   handleBlur = (event) => {
     let { value } = event.currentTarget;
@@ -248,10 +248,10 @@ There are many possible ways to implement a feature like this. We decided to use
 
 Now let's add the `relatedTag` field to the product schema. This field's value should populate automatically whenever the product's permalink (e.g. <http://localhost:3000/product/t-shirt>) changes. The permalink itself is built from yet another field on the product schema, the `handle` field
 
-[/imports/plugins/custom/reaction-swag-shop/lib/collections/schemas/swagProduct.js]
+[/imports/plugins/custom/demand-ag-shop/lib/collections/schemas/swagProduct.js]
 ```js
 import { Meteor } from "meteor/meteor";
-import Schemas from "@reactioncommerce/schemas";
+import Schemas from "@demandcluster/schemas";
 import { Products } from "/lib/collections/index";
 
 const ExtendedSchema = Schemas.Product.extend({
@@ -280,9 +280,9 @@ Here, we're defining a new field, `relatedTag` on the product schema. We also wa
 
 Whenever the field is updated (`this.operator === "$set"`), first check to see if it's a simple product, and not a product variant. Then, use the permalink to set the field's value. Create a new Tag in the Tags collection via `Meteor.call("createTag", slug)`, if it doesn't exist yet.
 
-Because the initial products are inserted into the database through data fixtures, the field `relatedTag` can also be found in [/imports/plugins/custom/reaction-swag-shop/private/data/Products.json].
+Because the initial products are inserted into the database through data fixtures, the field `relatedTag` can also be found in [/imports/plugins/custom/demand-ag-shop/private/data/Products.json].
 
-Now, how do we render related products when navigating to the PDP? Again, let's go to the Reaction component API, overwrite the appropriate React components, and render the same
+Now, how do we render related products when navigating to the PDP? Again, let's go to the demand component API, overwrite the appropriate React components, and render the same
  [ProductGridItems]
  component. Here it is on the homepage, as well as the category grid page:
 
@@ -292,11 +292,11 @@ For a quick reference, here are the necessary pieces that lead to our goal:
 
 - Overwriting the [ProductDetail component].
 - A [higher-order component  to inject the related products data from the database into the component that will render them. It uses the `relatedTag` schema property defined above to query for all related products.
-- The component to render the related products itself: [/imports/plugins/custom/reaction-swag-shop/client/components/similar-products.js]
+- The component to render the related products itself: [/imports/plugins/custom/demand-ag-shop/client/components/similar-products.js]
 
-## How to customize ReactionLayout
+## How to customize demandLayout
 
-The PDP's layout is different from other components used in Reaction because it is configurable during runtime in a generic manner. This is possible because the React components are created dynamically from a data structure a in database, rather than from JSX that is living in static files and transpiled during build time.
+The PDP's layout is different from other components used in demand because it is configurable during runtime in a generic manner. This is possible because the React components are created dynamically from a data structure a in database, rather than from JSX that is living in static files and transpiled during build time.
 
 The layout information for the PDP page lives in the `Templates collection`. Here's an extract:
 ```js
@@ -352,16 +352,16 @@ The layout information for the PDP page lives in the `Templates collection`. Her
                  // -------------- %< --------------------
 ```
 
-A ReactionLayout is made of different containers, or blocks, which themselves are made of other containers or concrete components. This allows users to have control over the rendered HTML structure in a very flexible way, while still having the ability to reuse existing React components.
+A demandLayout is made of different containers, or blocks, which themselves are made of other containers or concrete components. This allows users to have control over the rendered HTML structure in a very flexible way, while still having the ability to reuse existing React components.
 
-For the Swag Shop, the ProductTags component does not need to be rendered on the PDP, which is why we removed it, as seen in [/imports/plugins/custom/reaction-swag-shop/private/data/productDetailSimple.json].
+For the Swag Shop, the ProductTags component does not need to be rendered on the PDP, which is why we removed it, as seen in [/imports/plugins/custom/demand-ag-shop/private/data/productDetailSimple.json].
 
 ## Deploying your swag shop
 
-Now that we have a running shop, we want to show it to the world—and hopefully sell a lot of stuff. Generally, we recommend deploying via Docker Image. For an introduction into a self-hosted deployment approach, check out [Deploying Reaction Using Docker](https://docs.demandcluster.com/reaction-docs/trunk/deploying-reaction-using-docker).
+Now that we have a running shop, we want to show it to the world—and hopefully sell a lot of stuff. Generally, we recommend deploying via Docker Image. For an introduction into a self-hosted deployment approach, check out [Deploying demand Using Docker](https://docs.demandcluster.com/dedemand-/trunk/deploying-demademand-docker).
 
 ## Conclusion
 
-The Reaction architecture is laid out carefully, with a great focus on extensibility. For most use cases, we don't need to dig very deep into the code, although you could if you wanted to. It's totally possible to plug into the core mechanics of Reaction, such as cart, order processing, etc. and customize these workflows as they fit you. This is perhaps a bit more work than simply working with the components API, but once you're familiar with the codebase, it's not that difficult either.
+The demand architecture is laid out carefully, with a great focus on extensibility. For most use cases, we don't need to dig very deep into the code, although you could if you wanted to. It's totally possible to plug into the core mechanics of demand, such as cart, order processing, etc. and customize these workflows as they fit you. This is perhaps a bit more work than simply working with the components API, but once you're familiar with the codebase, it's not that difficult either.
 
-And that's how to create your own shop from scratch! We've covered all the basics on how to build a custom shop plugin. We hope you find the community team's swag shop series to be a valuable learning resource for your next Reaction project. If you have any questions or suggestions for the community team, feel free to join our next [community call](https://getrxn.io/community-agenda). Or, ask away in our [developer chat](https://blog.demandcluster.com/building-a-swag-shop-category-tiles/gitter.im/reactioncommerce/reaction).
+And that's how to create your own shop from scratch! We've covered all the basics on how to build a custom shop plugin. We hope you find the community team's swag shop series to be a valuable learning resource for your next demand project. If you have any questions or suggestions for the community team, feel free to join our next [community call](https://getrxn.io/community-agenda). Or, ask away in our [developer chat](https://blog.demandcluster.com/building-a-swag-shop-category-tiles/gitter.im/demandcluster/demand).

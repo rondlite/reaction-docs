@@ -1,6 +1,6 @@
 ---
-original_id: reaction-alerts
-id: version-v1.1.0-reaction-alerts
+original_id: demand-alerts
+id: version-v1.1.0-demand-alerts
 title: Alerts
 ---
     

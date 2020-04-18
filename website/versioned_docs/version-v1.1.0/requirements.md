@@ -4,7 +4,7 @@ id: version-v1.1.0-requirements
 title: Requirements
 ---
     
-Reaction is built with [Meteor](https://meteor.com) and requires [Node.js](https://nodejs.org/) (v4 or higher). See the instructions for your operating system below.
+Demand is built with [Meteor](https://meteor.com) and requires [Node.js](https://nodejs.org/) (v4 or higher). See the instructions for your operating system below.
 
 - [macOS](#macos)
 - [Linux](#linux)

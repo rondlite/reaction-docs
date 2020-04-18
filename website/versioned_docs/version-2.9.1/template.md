@@ -4,7 +4,7 @@ title: Template
 original_id: template
 ---
     
-Reaction comes preloaded with email templates that are sent out with various user actions, such as Password Resets, Order Completion, and Shipping Notifications.
+Demand comes preloaded with email templates that are sent out with various user actions, such as Password Resets, Order Completion, and Shipping Notifications.
 
 These Templates are loaded into the `Templates` collection on startup. Details about this process are found in the [Developer Docs](register-email.md).
 
@@ -12,7 +12,7 @@ The Templates are then available to be customized inside your Dashboard.
 
 ![](/assets/operator-ui-template-list.png "Email Templates List")
 
-## Reaction's transactional emails
+## Demand's transactional emails
 
 - Accounts - Invite Shop Member - Existing User Account
 - Accounts - Invite Shop Member - New User Account

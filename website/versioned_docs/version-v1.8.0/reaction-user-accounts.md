@@ -1,10 +1,10 @@
 ---
-id: version-v1.8.0-reaction-user-accounts
+id: version-v1.8.0-demand-user-accounts
 title: Accounts
-original_id: reaction-user-accounts
+original_id: demand-user-accounts
 ---
     
-Reaction extends [Meteor Account](http://docs.meteor.com/api/accounts.html) functionality in `imports/plugins/core/accounts/` with Reaction specific UI and behavior.
+Demand extends [Meteor Account](http://docs.meteor.com/api/accounts.html) functionality in `imports/plugins/core/accounts/` with Demand specific UI and behavior.
 
 - _Accounts_ collection
 - dropdown accounts ui

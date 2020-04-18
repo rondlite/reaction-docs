@@ -4,7 +4,7 @@ title: Configuring Email Sending
 original_id: email-admin
 ---
 
-Reaction sends emails for a variety of reasons (user signup, password reset, order receipts, etc.), so you will need to configure an email provider to send emails.
+Demand sends emails for a variety of reasons (user signup, password reset, order receipts, etc.), so you will need to configure an email provider to send emails.
 
 You can use any of the [providers supported by Nodemailer](https://github.com/nodemailer/nodemailer-wellknown#supported-services), including [Mailgun](https://www.mailgun.com/), [Mandrill](https://www.mandrill.com/), or [Sendgrid](https://sendgrid.com/), or you can define your own custom SMTP settings.
 
@@ -17,7 +17,7 @@ Once logged in as a shop admin, under **Actions**, click the <i class="font-icon
 ### Using a provider preset
 
 1. Create an email provider account and get your SMTP credentials. In this example, we will use [Mailgun](https://www.mailgun.com/). See the [Mailgun documentation](https://documentation.mailgun.com/quickstart.html).
-2. Go to the Reaction dashboard and click the **envelope icon** to open your email settings.
+2. Go to the Demand dashboard and click the **envelope icon** to open your email settings.
 3. Under **Mail Provider**, click the **gear icon** to open the **Edit Settings** menu.
 4. Click the **Provider Name** dropdown menu and search for your email provider. In this example, choose Mailgun.
 5. Fill out your **User** and **Password** from your provider. Click **Save**.
@@ -39,11 +39,11 @@ export MAIL_URL="smtp://username:password@example-mail-host.com:465"
 
 ## Verifying your email settings
 
-Once you save your Mail Provider credentials, Reaction will immediately test your settings.
+Once you save your Mail Provider credentials, Demand will immediately test your settings.
 
 If the verification succeeds, the settings will save and the **Status** indicator change under **Mail Provider** will change from red to green.
 
-Reaction is now ready to send emails!
+Demand is now ready to send emails!
 
 ## Checking email logs
 

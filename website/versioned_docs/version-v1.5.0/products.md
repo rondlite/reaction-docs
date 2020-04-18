@@ -15,7 +15,7 @@ To create a product, login to your dashboard and follow these steps:
 1.  Click on the plus <i class="font-icon fa fa-plus"></i>, located on the top right.
 
 2.  You will be taken to an empty product page, like this:
-    ![](/assets/admin-product-details-page.png "Reaction's Product Page")
+    ![](/assets/admin-product-details-page.png "Demand Product Page")
 
 Edit your product title, subtitle, vendor name, and product description by clicking on each section and typing into the field. To upload a product photo, drop a file into the grey square on the left.
 
@@ -23,7 +23,7 @@ Edit your product title, subtitle, vendor name, and product description by click
 
 You may also add product tags by clicking on the plus <i class="font-icon fa fa-plus"></i>, located under the "Tags" section.
 
-![](/assets/admin-product-details-tag.png "Reaction's Product Page")
+![](/assets/admin-product-details-tag.png "Demand Product Page")
 
 4.  You can change the layout template, product title permalink, subtitle, vendor, description and origin country from the sidebar's top **Product Settings** option.
 5.  Click the **Publish** button on the top right to save Unpublished changes.
@@ -53,7 +53,7 @@ Every product comes filled with one variant. To create more:
 
 Variant options provide a second layer of customization on top of each variant. For instance, in addition to carrying shirts in multiple colors, you may also want to carry multiple size options for each color. Use this flexible structure to customize your products however you like. The sky's the limit!
 
-![](/assets/admin-product-variant-2.png "Reaction Product Variant Options")
+![](/assets/admin-product-variant-2.png "Demandroduct Variant Options")
 
 1.  Click on the <i class="font-icon fa fa-plus"></i> button to the right of the **Variant Options** section.
 2.  Customize the option name, label, price, and quantity, as well as add a set of images.
@@ -80,10 +80,10 @@ To get back to the product detail and tag editing panel:
 
 ## Discounting products
 
-Reaction supports discount codes and rates. Read more about discounting products in the [Dashboard's Payment section](payments-discounts.md).
+Demandupports discount codes and rates. Read more about discounting products in the [Dashboard's Payment section](payments-discounts.md).
 
 ## Removing a product
 
 To remove an entire product from your inventory, login to your product view and click on the **Archive** button <i class="rui font-icon fa fa-archive"></i>. Select yes to archive.
 
-![](/assets/admin-product-delete.png "Reaction remove product")
+![](/assets/admin-product-delete.png "Demandemove product")

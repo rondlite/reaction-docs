@@ -4,7 +4,7 @@ title: Store Operator's Guide
 original_id: dashboard
 ---
     
-Welcome to the Reaction Store Operator's Guide! Here you can find everything you need to know to configure your store and manage your orders and products. Click **Sign In** your admin credentials to get started.
+Welcome to the Demand Store Operator's Guide! Here you can find everything you need to know to configure your store and manage your orders and products. Click **Sign In** your admin credentials to get started.
 
 ## Products and the grid
 
@@ -17,7 +17,7 @@ Follow these guides to get started with products and the grid:
 
 The dashboard is where you manage your orders and products and also configure your account settings.
 
-To access your dashboard sidebar, click on the **Reaction logo icon** on the top right of the page. You'll find a selection of dashboard features, broken down into two sections, **Actions** and **Settings**.
+To access your dashboard sidebar, click on the **Demand logo icon** on the top right of the page. You'll find a selection of dashboard features, broken down into two sections, **Actions** and **Settings**.
 
 ### Actions
 

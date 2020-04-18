@@ -8,7 +8,7 @@ Layouts are a combination of a `layout` object and an array of `workflow` object
 
 Layouts will [render a Blaze template](http://docs.meteor.com/#/full/blaze_render) as defined in the layout **structure**.
 
-The workflow elements will be rendered with the `ReactionTemplates` Meteor helper, and are meant to be used in combination with the layout **structure**.
+The workflow elements will be rendered with the `DemandTemplates` Meteor helper, and are meant to be used in combination with the layout **structure**.
 
 Layouts are meant to be created using the Package Registry, once they are defined in the Registry, they are copied into the `Shops.layout` array and referenced from there.  The Registry serves as the "source of truth", allowing customizations to be made directly to the individual Shops. In the case where we have two layouts with the same key structure (`layout`, `workflow`), the Array is loaded in reverse order, so that the newest layout will be used. Layouts can also be disabled in the data with `enabled:false`. This is reserved for a future UI implementation.
 
@@ -106,7 +106,7 @@ Layouts can work in conjunction with [workflows](workflow.md).  Here is an examp
 
 ## Default layout placement
 
-Layouts work in conjunction with two helpers.  The `reactionTemplate` and `reactionApps` helpers loop through matching workflow and layout elements to render in specific locations.  
+Layouts work in conjunction with two helpers.  The `demandTemplate` and `demandApps` helpers loop through matching workflow and layout elements to render in specific locations.  
 
 Here's a diagram of the default layout.
 

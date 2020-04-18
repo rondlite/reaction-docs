@@ -14,13 +14,13 @@
       "version-v1.1.0-faqs"
     ],
     "Developer": [
-      "version-v1.1.0-getting-started-developing-with-reaction",
+      "version-v1.1.0-getting-started-developing-with-demand",
       "version-v1.1.0-requirements",
       "version-v1.1.0-installation",
       "version-v1.1.0-configuration",
       "version-v1.1.0-email-api",
       "version-v1.1.0-styleguide",
-      "version-v1.1.0-contributing-to-reaction"
+      "version-v1.1.0-contributing-to-demand"
     ],
     "Customization Guide": [
       "version-v1.1.0-tutorial",
@@ -64,27 +64,26 @@
       "version-v1.1.0-template-helpers"
     ],
     "Core": [
-      "version-v1.1.0-reaction-core",
       "version-v1.1.0-admin-views",
-      "version-v1.1.0-reaction-user-accounts",
-      "version-v1.1.0-reaction-alerts",
+      "version-v1.1.0-demand-user-accounts",
+      "version-v1.1.0-demand-alerts",
       "version-v1.1.0-analytics",
       "version-v1.1.0-i18n",
-      "version-v1.1.0-reaction-shops",
-      "version-v1.1.0-reaction-product-detail",
-      "version-v1.1.0-reaction-products",
-      "version-v1.1.0-reaction-tags",
-      "version-v1.1.0-reaction-cart",
-      "version-v1.1.0-reaction-shipping",
-      "version-v1.1.0-reaction-payments",
-      "version-v1.1.0-reaction-orders",
-      "version-v1.1.0-reaction-import",
-      "version-v1.1.0-reaction-inventory",
-      "version-v1.1.0-reaction-localization",
+      "version-v1.1.0-demand-shops",
+      "version-v1.1.0-demand-product-detail",
+      "version-v1.1.0-demand-products",
+      "version-v1.1.0-demand-tags",
+      "version-v1.1.0-demand-cart",
+      "version-v1.1.0-demand-shipping",
+      "version-v1.1.0-demand-payments",
+      "version-v1.1.0-demand-orders",
+      "version-v1.1.0-demand-import",
+      "version-v1.1.0-demand-inventory",
+      "version-v1.1.0-demand-localization",
       "version-v1.1.0-method-hooks",
       "version-v1.1.0-collection-hooks",
       "version-v1.1.0-event-hooks",
-      "version-v1.1.0-reaction-module-cheatsheet",
+      "version-v1.1.0-demand-module-cheatsheet",
       "version-v1.1.0-revision-api"
     ],
     "Components": [
@@ -127,7 +126,7 @@
       "version-v1.1.0-packages-search"
     ],
     "Testing": [
-      "version-v1.1.0-testing-reaction",
+      "version-v1.1.0-testing-demand",
       "version-v1.1.0-acceptance-testing",
       "version-v1.1.0-using-factories-for-testing",
       "version-v1.1.0-using-faker-for-testing",
@@ -135,10 +134,8 @@
     ],
     "Deploying": [
       "version-v1.1.0-deploying",
-      "version-v1.1.0-deploying-reaction-with-mup",
-      "version-v1.1.0-deploying-reaction-on-galaxy",
-      "version-v1.1.0-deploying-reaction-using-docker",
-      "version-v1.1.0-deploying-reaction-using-heroku"
+      "version-v1.1.0-deploying-demand-with-mup",
+      "version-v1.1.0-deploying-demand-on-galaxy"
     ],
     "Community Guidelines": [
       "version-v1.1.0-guidelines",

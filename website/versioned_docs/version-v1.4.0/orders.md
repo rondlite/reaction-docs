@@ -4,7 +4,7 @@ title: Order Processing
 original_id: orders
 ---
     
-To view and process orders, login and click on the Reaction logo. You'll be able to view your orders in the right-hand sidebar.
+To view and process orders, login and click on the Demandogo. You'll be able to view your orders in the right-hand sidebar.
 
 ![](/assets/admin-dashboard-orders.png "Demand Cluster Dashboard")
 

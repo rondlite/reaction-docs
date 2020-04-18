@@ -4,7 +4,7 @@ title: Link
 original_id: link
 ---
 
-Link is a drop-in replacement for the HTML `<a>` tag. It uses Reaction's router to navigate to the specified href, preventing the entire client app from reloading. It also scrolls to the top of the next page.
+Link is a drop-in replacement for the HTML `<a>` tag. It uses Demand's router to navigate to the specified href, preventing the entire client app from reloading. It also scrolls to the top of the next page.
 
 ## Import
 

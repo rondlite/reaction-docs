@@ -22,7 +22,7 @@ You then need to adjust your Apollo Client initialization code to pass the acces
 
 ## Logout
 
-When a user requests to log out, you must not only clear the access token from your own persistent application state but also do something like this to ask the Reaction identity provider to invalidate the token:
+When a user requests to log out, you must not only clear the access token from your own persistent application state but also do something like this to ask the Demand identity provider to invalidate the token:
 
 ```js
 fetch(`${config.OAUTH2_IDP_HOST_URL}logout?userId=${id}`)

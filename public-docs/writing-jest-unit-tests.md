@@ -24,11 +24,11 @@ Files containing tests for a component must end in `.test.js` and be named after
 
 Often you need to test asynchronous code in a Jest test, functions that either return a Promise or take a callback argument.
 
-Reaction code should prefer Promises over callbacks, but when you need to use a callback due to the API of other packages, you can. Where callbacks are involved, make sure to add a `done` argument to your test function and call `done` when all testing is done.
+Demand code should prefer Promises over callbacks, but when you need to use a callback due to the API of other packages, you can. Where callbacks are involved, make sure to add a `done` argument to your test function and call `done` when all testing is done.
 
 The Jest documentation has a good article about this, so refer to that:
 
-- Preferred in Reaction: [Async/Await](https://facebook.github.io/jest/docs/en/asynchronous.html#async-await)
+- Preferred in Demand: [Async/Await](https://facebook.github.io/jest/docs/en/asynchronous.html#async-await)
 - Use if it makes a test shorter or easier to read: [resolves/rejects](https://facebook.github.io/jest/docs/en/asynchronous.html#resolves-rejects)
 - For callbacks: [Callbacks](https://facebook.github.io/jest/docs/en/asynchronous.html#callbacks)
 

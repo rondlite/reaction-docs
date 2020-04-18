@@ -7,7 +7,7 @@ original_id: plugin-customizing-templates-4
 If you have been following along exactly with this tutorial you may have noticed what we have accomplished so far,
 we have broken the site. Why? Because the layout we specified cannot be found. So let's add it now.
 
-## [/client/](https://github.com/reactioncommerce/reaction-example-plugin/tree/master/client)
+## [/client/]demandcluster
 
 Create a new directory with the name `templates` within the `client/` directory. Then, create a directory with the name `layouts` within the `templates/` directory.
 
@@ -21,7 +21,7 @@ client/
     └─core.js
 ```
 
-## [/client/index.js](https://github.com/reactioncommerce/reaction-example-plugin/blob/master/client/index.js)
+## [/client/index.js]demandcluster
 
 To make this new `templates` directory of the project, we need to import it. Add a path to `./templates` to the `index.js` at the root of the `client` directory, where we imported the LESS files. 
 
@@ -31,7 +31,7 @@ In `client/index.js`, add:
 import "./templates";
 ```
 
-## [/client/templates/index.js](https://github.com/reactioncommerce/reaction-example-plugin/blob/master/client/templates/index.js)
+## [/client/templates/index.js]demandcluster
 
 Then we need to create another `index.js` at the root of the `templates` directory and import all of our templates there.
 
@@ -43,7 +43,7 @@ In `client/templates/index.js`, add:
 import "./layouts/core.js";
 ```
 
-## [/client/templates/layouts/core.js](https://github.com/reactioncommerce/reaction-example-plugin/blob/master/client/templates/layouts/core.js)
+## [/client/templates/layouts/core.js]demandcluster
 
 Now, we're ready to write a layout component.
 
@@ -72,12 +72,12 @@ class CoreLayoutBeesknees extends Component {
     });
 
     return (
-      <div className={pageClassName} id="reactionAppContainer">
+      <div className={pageClassName} id="demandAppContainer">
         { Template[layoutHeader] &&
-          <Blaze template={layoutHeader} className="reaction-navigation-header" />
+          <Blaze template={layoutHeader} className="demand-navigation-header" />
         }
 
-        <Blaze template="cartDrawer" className="reaction-cart-drawer" />
+        <Blaze template="cartDrawer" className="demand-cart-drawer" />
 
         { Template[template] &&
           <main>
@@ -92,7 +92,7 @@ class CoreLayoutBeesknees extends Component {
         }
 
         { Template[layoutFooter] &&
-          <Blaze template={layoutFooter} className="reaction-navigation-footer footer-default" />
+          <Blaze template={layoutFooter} className="demand-navigation-footer footer-default" />
         }
       </div>
     );
@@ -120,7 +120,7 @@ You just need to change the entry in the layout record to point to your template
 
 So let's go and create our template first and then we will point our new layout at it.
 
-## [/client/templates/products/](https://github.com/reactioncommerce/reaction-example-plugin/tree/master/client/templates/products)
+## [/client/templates/products/]demandcluster
 
 Create a directory under `client/templates` called `products`. From there, create a file called `productsLanding.html` and a file called `productsLanding.js`
 
@@ -136,7 +136,7 @@ import "./products/productsLanding.html";
 import "./products/productsLanding";
 ```
 
-## [/register.js](https://github.com/reactioncommerce/reaction-example-plugin/blob/master/register.js)
+## [/register.js]demandcluster
 
 Now we need to change the entry in our layout record in our `register.js` file. 
 
@@ -150,7 +150,7 @@ Change the `template:` value to `productsLanding`:
 
 ## `productsLanding` template
 
-Now, run `reaction reset` to render the site with the new `register.js` settings.
+Now, run `demand reset` to render the site with the new `register.js` settings.
 
 When the site is rendered now, it should be rendering the home page with the `productsLanding` template, rather than the default `products`.
 

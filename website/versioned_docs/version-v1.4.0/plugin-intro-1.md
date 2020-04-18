@@ -8,7 +8,7 @@ original_id: plugin-intro-1
 
 ### What do I need to know to create a plugin?
 
-The concepts in this tutorial are mostly Reaction-specific and don't get into some of the more difficult-to-grasp (but cool)
+The concepts in this tutorial are mostly demand-ecific and don't get into some of the more difficult-to-grasp (but cool)
 elements of Meteor such as pub/sub or reactivity. But to understand what is happening you should probably have the following:
 
 * A basic understanding of Javascript

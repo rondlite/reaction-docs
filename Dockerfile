@@ -1,10 +1,10 @@
 FROM node:8-alpine
 
-ARG NAME=reaction-docs
-ARG DESCRIPTION="Reaction Docs: Docusarus static documentation site generator"
-ARG URL=https://github.com/reactioncommerce/reaction-docs
-ARG DOC_URL=https://github.com/reactioncommerce/reaction-docs
-ARG VCS_URL=https://github.com/reactioncommerce/reaction-docs
+ARG NAME=demand-cs
+ARG DESCRIPTION="Demand Docs: Docusarus static documentation site generator"
+ARG URL=https://github.com/demandcluster/demand-cs
+ARG DOC_URL=https://github.com/demandcluster/demand-cs
+ARG VCS_URL=https://github.com/demandcluster/demand-cs
 ARG VCS_REF
 ARG VENDOR
 ARG BUILD_DATE
@@ -26,33 +26,33 @@ ARG GIT_REPOSITORY_URL
 ARG GIT_SHA1
 ARG LICENSE
 
-ENV APP_SOURCE_DIR=/usr/local/src/reaction-app \
+ENV APP_SOURCE_DIR=/usr/local/src/demand-p \
     PATH=$PATH:/usr/local/src/node_modules/.bin
 
-LABEL maintainer="Reaction Commerce <engineering@reactioncommerce.com>" \
-      com.reactioncommerce.build-date=$BUILD_DATE \
-      com.reactioncommerce.name=$NAME \
-      com.reactioncommerce.description=$DESCRIPTION \
-      com.reactioncommerce.url=$URL \
-      com.reactioncommerce.vcs-url=$VCS_URL \
-      com.reactioncommerce.vcs-ref=$VCS_REF \
-      com.reactioncommerce.vendor=$VENDOR \
-      com.reactioncommerce.docker.build.compare-url=$BUILD_COMPARE_URL \
-      com.reactioncommerce.docker.build.number=$BUILD_NUMBER \
-      com.reactioncommerce.docker.build.platform=$BUILD_PLATFORM \
-      com.reactioncommerce.docker.build.platform.project.username=$BUILD_PLATFORM_PROJECT_USERNAME \
-      com.reactioncommerce.docker.build.platform.project.reponame=$BUILD_PLATFORM_PROJECT_REPONAME \
-      com.reactioncommerce.docker.build.pull-requests=$BUILD_PULL_REQUESTS \
-      com.reactioncommerce.docker.build.triggered-by-tag=$BUILD_TRIGGERED_BY_TAG \
-      com.reactioncommerce.docker.build.url=$BUILD_URL \
-      com.reactioncommerce.docker.build.circle.workflow.id=$CIRCLE_WORKFLOW_ID \
-      com.reactioncommerce.docker.build.circle.workflow.job.id=$CIRCLE_WORKFLOW_JOB_ID \
-      com.reactioncommerce.docker.build.circle.workflow.upstream.job.ids=$CIRCLE_WORKFLOW_UPSTREAM_JOB_IDS \
-      com.reactioncommerce.docker.build.circle.workflow.url=https://circleci.com/workflow-run/$CIRCLE_WORKFLOW_ID \
-      com.reactioncommerce.docker.build.circle.workspace.id=$CIRCLE_WORKSPACE_ID \
-      com.reactioncommerce.docker.git.repository.url=$GIT_REPOSITORY_URL \
-      com.reactioncommerce.docker.git.sha1=$GIT_SHA1 \
-      com.reactioncommerce.docker.license=$LICENSE
+LABEL maintainer="demand Commerce <engineering@demandcluster.com>" \
+      com.demandcluster.build-date=$BUILD_DATE \
+      com.demandcluster.name=$NAME \
+      com.demandcluster.description=$DESCRIPTION \
+      com.demandcluster.url=$URL \
+      com.demandcluster.vcs-url=$VCS_URL \
+      com.demandcluster.vcs-ref=$VCS_REF \
+      com.demandcluster.vendor=$VENDOR \
+      com.demandcluster.docker.build.compare-url=$BUILD_COMPARE_URL \
+      com.demandcluster.docker.build.number=$BUILD_NUMBER \
+      com.demandcluster.docker.build.platform=$BUILD_PLATFORM \
+      com.demandcluster.docker.build.platform.project.username=$BUILD_PLATFORM_PROJECT_USERNAME \
+      com.demandcluster.docker.build.platform.project.reponame=$BUILD_PLATFORM_PROJECT_REPONAME \
+      com.demandcluster.docker.build.pull-requests=$BUILD_PULL_REQUESTS \
+      com.demandcluster.docker.build.triggered-by-tag=$BUILD_TRIGGERED_BY_TAG \
+      com.demandcluster.docker.build.url=$BUILD_URL \
+      com.demandcluster.docker.build.circle.workflow.id=$CIRCLE_WORKFLOW_ID \
+      com.demandcluster.docker.build.circle.workflow.job.id=$CIRCLE_WORKFLOW_JOB_ID \
+      com.demandcluster.docker.build.circle.workflow.upstream.job.ids=$CIRCLE_WORKFLOW_UPSTREAM_JOB_IDS \
+      com.demandcluster.docker.build.circle.workflow.url=https://circleci.com/workflow-run/$CIRCLE_WORKFLOW_ID \
+      com.demandcluster.docker.build.circle.workspace.id=$CIRCLE_WORKSPACE_ID \
+      com.demandcluster.docker.git.repository.url=$GIT_REPOSITORY_URL \
+      com.demandcluster.docker.git.sha1=$GIT_SHA1 \
+      com.demandcluster.docker.license=$LICENSE
 
 WORKDIR $APP_SOURCE_DIR/..
 COPY package.json yarn.lock $APP_SOURCE_DIR/../

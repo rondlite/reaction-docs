@@ -26,7 +26,7 @@ When choosing a name for the query, there are a few rules to follow:
 1. Import the GraphQL file into `index.js` and default export it in an array:
 
     ```js
-    import importAsString from "@reactioncommerce/api-utils/importAsString.js";
+    import importAsString from "@demandcluster/api-utils/importAsString.js";
 
     const schema = importAsString("./schema.graphql");
 
@@ -62,7 +62,7 @@ When choosing a name for the query, there are a few rules to follow:
 2. In `queries`, create a file for the query, e.g. `widgets.js` for the `widgets` query. The file should look something like this:
 
 ```js
-import Logger from "@reactioncommerce/logger";
+import Logger from "@demandcluster/logger";
 
 /**
  * @method widgets
@@ -174,7 +174,7 @@ export default {
 If you are returning multiple documents (see step #3) you'll need to add an additional export here, `getConnectionTypeResolvers`, in order to be able to query `edges->node`:
 
 ```js
-import { getConnectionTypeResolvers } from "@reactioncommerce/reaction-graphql-utils";
+import { getConnectionTypeResolvers } from "@demandcluster/demand-aphql-utils";
 import Query from "./Query"
 
 export default {

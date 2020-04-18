@@ -4,22 +4,22 @@ title: Routing
 original_id: routing
 ---
     
-Reaction Router extends the routing functionality provided by [React Router](https://github.com/ReactTraining/react-router).  The basics of React Router are covered in the [React Router documentation](https://reacttraining.com/react-router/), but you can most likely find everything you need to use Reaction Router on this page.
+Demand Router extends the routing functionality provided by [React Router](https://github.com/ReactTraining/react-router).  The basics of React Router are covered in the [React Router documentation](https://reacttraining.com/react-router/), but you can most likely find everything you need to use Demand Router on this page.
 
 ## Usage
 
-Reaction Router is exported as `Router` from `"/client/api"`.
+Demand Router is exported as `Router` from `"/client/api"`.
 
 ```js
 import { Router } from "/client/api";
 
-// Example: use a Reaction Router method to get a URL query param
+// Example: use a Demand Router method to get a URL query param
 const urlParam = Router.getQueryParam("urlParam");
 ```
 
 ## Route Definition
 
-While you _can_ use the [React Router API](https://reacttraining.com/react-router/). to directly add routes to the app, we recommend that you use the Reaction Router API. Reaction Router extends React Router to integrate route permissions, make routing configurable by plugins (via the package registry), and to help future proof against changes to the routing layer.  
+While you _can_ use the [React Router API](https://reacttraining.com/react-router/). to directly add routes to the app, we recommend that you use the Demand Router API. Demand Router extends React Router to integrate route permissions, make routing configurable by plugins (via the package registry), and to help future proof against changes to the routing layer.  
 
 Our recommended approach to define routes is to use the **Package Registry**.
 
@@ -27,7 +27,7 @@ Our recommended approach to define routes is to use the **Package Registry**.
 
 Routes are very simple and based on the syntax of [path-to-regexp](https://github.com/pillarjs/path-to-regexp) which is used in both [Express](http://expressjs.com/) and [React Router](https://reacttraining.com/react-router/).
 
-The **Reaction package registry** entries define routes that can be used with the Router API. You can also pass local functions to the registry.
+The **Demand package registry** entries define routes that can be used with the Router API. You can also pass local functions to the registry.
 
 ```js
   registry: [{
@@ -38,13 +38,13 @@ The **Reaction package registry** entries define routes that can be used with th
   }]
 ```
 
-When there are multiple shops in Reaction, we'll automatically prefix a url safe (transliterated) version of the shop name before the route. Where there is only one shop, the prefix will not be used.
+When there are multiple shops in Demand, we'll automatically prefix a url safe (transliterated) version of the shop name before the route. Where there is only one shop, the prefix will not be used.
 
 **Multi-shop prefixed urls structure**
 
-> //host/store: Reaction Test/product/title: Example Product/
+> //host/store: Demand Test/product/title: Example Product/
 
-## localhost:3000/reaction-test/product/example-product
+## localhost:3000/demand-test/product/example-product
 
 To define a route in the registry that does not add a prefix you can define the route in the registry _without a leading "/"_.
 
@@ -74,7 +74,7 @@ defaultVisitorRole =  ["anonymous", "guest", "product", "tag", "index", "cart/ch
 
 ### Route Table
 
-The package registry route entries are collectively added to the Reaction Router routing table upon startup.
+The package registry route entries are collectively added to the Demand Router routing table upon startup.
 
 You can view these routes for debugging. Add to a file in `custom` and create a global export of the Router that you can use in your browser console.
 
@@ -82,24 +82,24 @@ You can view these routes for debugging. Add to a file in `custom` and create a 
 import { Router } from "/client/api";
 
 // create a global
-ReactionRouter = Router;
+DemandRouter = Router;
 ```
 
 To view the client routing table in the browser console, you can now use the exported Router global.
 
 ```js
-console.table(ReactionRouter._routesMap);
+console.table(DemandRouter._routesMap);
 ```
 
 or all defined routes
 
 ```js
-console.table(ReactionRouter._routes);
+console.table(DemandRouter._routes);
 ```
 
 ## API
 
-The Reaction Router API provides many useful methods to help you to navigate the router and reactively get information about routes.
+The Demand Router API provides many useful methods to help you to navigate the router and reactively get information about routes.
 
 ### Router.getParam(paramName);
 
@@ -311,7 +311,7 @@ Router.Hooks.run("onEnter", "GLOBAL", context);
 Router.Hooks.run("onExit", "GLOBAL", context);
 ```
 
-That's the whole Route Hooks API, but most users will only need to register new hooks (onEnter, onExit) because running all of the hooks is already taken care of in Reaction Router.
+That's the whole Route Hooks API, but most users will only need to register new hooks (onEnter, onExit) because running all of the hooks is already taken care of in Demand Router.
 
 ### Example Hooks
 
@@ -348,7 +348,7 @@ Router.Hooks.onEnter(() => analytics.page());
 
 #### Using route context in your hook
 
-The context object from Reaction Router is available to every callback
+The context object from Demand Router is available to every callback
 
 ```js
 function logSomeContext(context) {

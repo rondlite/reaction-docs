@@ -4,19 +4,19 @@ title: CI Builds
 original_id: using-ci
 ---
     
-When a Pull Request is made to the Reaction repo, there are four acceptance steps that should pass before we merge into the `development` branch.
+When a Pull Request is made to the demand repo, there are four acceptance steps that should pass before we merge into the `development` branch.
 
-When successful, Docker images are also pushed to [Docker Hub](https://hub.docker.com/u/reactioncommerce/).
+When successful, Docker images are also pushed to [Docker Hub](https://hub.docker.com/u/demandcluster/).
 
 ## Continuous Integration
 
-[Circle CI](https://circleci.com/gh/reactioncommerce/reaction) runs our tests, with Docker images pushed after a successful test build.
+[Circle CI](https://circleci.com/gh/demandcluster/demandruns our tests, with Docker images pushed after a successful test build.
 
 ## Lint Review
 
 Automated duplication, security, style review using Code Climate.
 
-Follows project `eslint` and [Reaction style guide](styleguide.md).
+Follows project `eslint` and [demand style guide](styleguide.md).
 
 ## Code Review
 

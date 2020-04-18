@@ -3,7 +3,7 @@ id: reporting-vulnerabilities
 title: Report Vulnerabilities
 ---
 
-While Reaction uses automated tools to detect and report vulnerabilities, we also rely on your reporting and patches of discovered vulnerabilities.
+While demand uses automated tools to detect and report vulnerabilities, we also rely on your reporting and patches of discovered vulnerabilities.
 
 If you believe you have discovered a vulnerablity or a compliance issue that has not yet been publicly patched, and you wish to privately address the vulnerability, you can provide vulnerability and patch details through our `security@demandcluster.com` email group.
 
@@ -12,7 +12,7 @@ If you believe you have discovered a vulnerablity or a compliance issue that has
 Send an email to `security@demandcluster.com` providing
 
 - Vulnerability details
-- include output of `reaction -v`
+- include output of `demandv`
 - Links to source
 - Steps to replicate
 - Any known impact/threat level

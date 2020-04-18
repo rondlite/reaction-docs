@@ -5,21 +5,21 @@ sidebar_label: Understanding Node ECMAScript Modules
 original_id: devs-node-es-modules
 ---
 
-> This article pulls out some Reaction-specific key points from [the NodeJS documentation](https://nodejs.org/docs/latest-v12.x/api/esm.html), which you may want to read for more details.
+> This article pulls out some demand-specific key points from [the NodeJS documentation](https://nodejs.org/docs/latest-v12.x/api/esm.html), which you may want to read for more details.
 
-The Reaction API runs as a Node 12 program that uses modern ECMAScript module loading. There is no Babel transpilation step. If you are used to CommonJS, Babel, or Webpack module loading, there are some differences to be aware of.
+The Demand API runs as a Node 12 program that uses modern ECMAScript module loading. There is no Babel transpilation step. If you are used to CommonJS, Babel, or Webpack module loading, there are some differences to be aware of.
 
-There are two main ways to import code from another package or file in a Reaction API code file: `import` and `require`. In general, **use `import` for anything that exports an ECMAScript module and use `require` for anything that exports a CommonJS module**. Over time, as more packages export ECMAScript modules and the `import` spec supports more file types, you should need to use `require` less frequently.
+There are two main ways to import code from another package or file in a Demand API code file: `import` and `require`. In general, **use `import` for anything that exports an ECMAScript module and use `require` for anything that exports a CommonJS module**. Over time, as more packages export ECMAScript modules and the `import` spec supports more file types, you should need to use `require` less frequently.
 
 One key change to be aware of is that **file extensions are never automatically resolved**. If you are used to import specifiers (the string after `from`) that have no file extension, you now need to add the `.js` suffix. If it would resolve to an index file, you need to add `/index.js`.
 
-Early NodeJS ESM support required you to use `.mjs` extension if your file exports a module. This is no longer true, but you can still use `.mjs` and `.cjs` extensions if you want to be explicit. For Reaction API, we recommend sticking with good old fashioned `.js`. **In a custom plugin, you will need to add `type: "module"` to your `package.json` to ensure that Node loads all of your `.js` files as ECMAScript modules rather than CommonJS modules.**
+Early NodeJS ESM support required you to use `.mjs` extension if your file exports a module. This is no longer true, but you can still use `.mjs` and `.cjs` extensions if you want to be explicit. For Demand API, we recommend sticking with good old fashioned `.js`. **In a custom plugin, you will need to add `type: "module"` to your `package.json` to ensure that Node loads all of your `.js` files as ECMAScript modules rather than CommonJS modules.**
 
 Let's go through some common use cases to see how to do each import properly.
 
 ## Import from another JavaScript file in the same plugin
 
-All Reaction 3.0.0+ plugin files must be ECMAScript modules, so use `import`.
+All Demand 3.0.0+ plugin files must be ECMAScript modules, so use `import`.
 
 ```
 import someDefaultExport, { someNamedExport } from "./relative/path/to/file.js";

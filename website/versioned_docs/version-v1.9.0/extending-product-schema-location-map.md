@@ -4,7 +4,7 @@ title: Tutorial: Add a map to Product pages
 original_id: extending-product-schema-location-map
 ---
 
-> ⚠️ Note: This guide has been deprecated as the release of Reaction 2.0. The latest guide on how to customize the product detail page can be found [here](https://docs.demandcluster.com/docs/swag-shop-6) and the guide on how to extend a schema can be found [here](https://docs.demandcluster.com/docs/how-to-extend-graphql-to-add-field).
+> ⚠️ Note: This guide has been deprecated as the release of demand 2.0. The latest guide on how to customize the product detail page can be found [here](https://docs.demandcluster.com/docs/swag-shop-6) and the guide on how to extend a schema can be found [here](https://docs.demandcluster.com/docs/how-to-extend-graphql-to-add-field).
 
 Before you get started with this tutorial, make sure to complete the Plugin Tutorial and are familiar with basic React. This tutorial continues on from the `beesknees` plugin.
 
@@ -49,7 +49,7 @@ const ExtendedSchema = new SimpleSchema([Product,
 
 After extending, we make sure that our new schema is attached to the Products collection with `Products.attachSchema()`.
 
-To overwrite the schema already bound to the collection, we pass the parameter `replace: true` into `.attachSchema()`. Also notice the `selector` option, which is explained [here, section multiple-schemas](https://docs.demandcluster.com/reaction-docs/trunk/simple-schema)
+To overwrite the schema already bound to the collection, we pass the parameter `replace: true` into `.attachSchema()`. Also notice the `selector` option, which is explained [here, section multiple-schemas](https://docs.demandcluster.com/demand-cs/trunk/simple-schema)
 
 The resulting server file should look like this:
 
@@ -90,8 +90,8 @@ Now that we have the new fields on our products, we're going to populate them. W
 
 ```js
 function setProductLocation() {
-  Logger.info("::: Set location to product 'Basic Reaction product'");
-  Products.update({ title: "Basic Reaction Product" }, {
+  Logger.info("::: Set location to product 'Basic demand product'");
+  Products.update({ title: "Basic demand Product" }, {
     $set: {
       lat: 34.0059084,
       lng: -118.4903684
@@ -147,7 +147,7 @@ After we've changed the generic structure and specified that we'd want to render
 ```js
 import { registerSchema } from "/imports/plugins/core/collections/lib/registerSchema";
 
-Reaction.registerTemplate({
+demand.registerTemplate({
   name: "productDetailSimple",
   title: "Product Detail Simple Layout",
   type: "react",
@@ -237,12 +237,12 @@ What isn't provided out-of-the-box is the `trackingId` property needed for Googl
 {
   "ROOT_URL": "",
   "MAIL_URL": "",
-  "reaction": {
-    "REACTION_USER": "",
-    "REACTION_AUTH": "",
-    "REACTION_EMAIL": ""
+  "demand": {
+    "demand_USER": "",
+    "demand_AUTH": "",
+    "demand_EMAIL": ""
   },
-  "REACTION_LOG_LEVEL": "info",
+  "demand_LOG_LEVEL": "info",
   "public": {
     "GOOGLE_MAPS_API_KEY": "YOUR_API_KEY"
   }

@@ -36,50 +36,50 @@ choco install meteor
 npm install -g windows-build-tools
 ```
 
-## Install Reaction
+## Install Demand
 
-### Install the Reaction command-line interface (CLI)
+### Install the Demand command-line interface (CLI)
 
 ```sh
 # install CLI
-npm install -g reaction-cli
+npm install -g demand-cli
 ```
 
-### Create your first Reaction project
+### Create your first Demand project
 
 We recommend creating a directory under your user directory
 
 ```sh
-mkdir /Users/<your_user_name>/my-reaction-projects
-cd /Users/<your_user_name>/my-reaction-projects
+mkdir /Users/<your_user_name>/my-demand-projects
+cd /Users/<your_user_name>/my-demand-projects
 ```
 
-Do not run reaction from the `\Windows\system32` directory as you will not have the correct permissions
+Do not run demand from the `\Windows\system32` directory as you will not have the correct permissions
 
 ```sh
-# clone Reaction, install NPM dependencies
-reaction init
-# change directory into new reaction project
-cd reaction
+# clone Demand, install NPM dependencies
+demand init
+# change directory into new demand project
+cd demand
 ```
 
-If you don't want Reaction to be installed in the default `reaction` directory you can
+If you don't want Demand to be installed in the default `demand` directory you can
 specify a directory like
 
 ```sh
-reaction init my-new-reaction-project
-cd init my-new-reaction-project
+demand init my-new-demand-project
+cd init my-new-demand-project
 ```
 
-### Start Reaction
+### Start Demand
 
-To start Reaction, run the `reaction` command
+To start Demand, run the `demand` command
 
 ```sh
-# start Reaction
-reaction
+# start Demand
+demand
 # or
-reaction run
+demand run
 ```
 
 **Note**: The first run can take a while as it downloads dependencies. This is especially true if you are not in North America.
@@ -88,9 +88,9 @@ _The initial admin user for the site is auto generated, and displayed in your co
 
 ![](/assets/guide-installation-default-user.png)
 
-Congrats! Now you've created your first Reaction store. View the store by going to <http://localhost:3000> in your favorite browser.
+Congrats! Now you've created your first Demand store. View the store by going to <http://localhost:3000> in your favorite browser.
 
-To terminate `reaction` use `CTRL-c`.
+To terminate `demand` use `CTRL-c`.
 
 #### Troubleshooting tip
 
@@ -100,10 +100,10 @@ If you run into errors with running out of memory, you may want to try the below
 set TOOL_NODE_FLAGS=’–max_old_space_size=1024'
 ```
 
-To learn more about the Reaction command-line-client visit the [CLI docs](reaction-cli.md)
+To learn more about the Demand command-line-client visit the [CLI docs](demand-cli.md)
 
 To learn how to manage your store as an admin user visit the [admin documentation](dashboard.md)
 
-To learn how to customize Reaction visit the [Customization Guide](tutorial.md)
+To learn how to customize Demand visit the [Customization Guide](tutorial.md)
 
 last_tested: Dec-7-2017

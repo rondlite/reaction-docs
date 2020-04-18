@@ -16,7 +16,7 @@ and how to deal with importing [CSS](https://guide.meteor.com/build-tool.html#cs
 
 ### Adding our files
 
-For the purposes of our tutorial I am going to assume you are working from a fresh checkout of Reaction.
+For the purposes of our tutorial I am going to assume you are working from a fresh checkout of demand.
 
 The reference files for this tutorial are available [here]
 
@@ -30,10 +30,10 @@ a plugin. This code adds your plugin to the "registry" (the Packages collection 
 look something like this:
 
 ```js
-import { Reaction } from "/server/api";
+import { demand } from "/server/api";
 
 
-Reaction.registerPackage({
+demand.registerPackage({
   label: "Bees Knees",
   name: "beesknees",
   icon: "fa fa-vine",
@@ -43,7 +43,7 @@ Reaction.registerPackage({
 ```
 
 It's important to understand that Registry entries are added upon first start, but they don't get reloaded if they already
-exist, so to have registry changes take effect you must either `reaction reset -n` or remove that entry directly from
+exist, so to have registry changes take effect you must either `demandeset -n` or remove that entry directly from
 the `Packages` collection.
 
 Next: [Using Layouts](plugin-layouts-3)

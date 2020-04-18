@@ -42,20 +42,20 @@ Ok, still a blank site because we have nothing in our layout. Let's add back in 
       <!-- end template region -->
     {{/if}}
 
-    <footer class="reaction-navigation-footer footer-default">{{> Template.dynamic template=layoutFooter}}</footer>
+    <footer class="demand-navigation-footer footer-default">{{> Template.dynamic template=layoutFooter}}</footer>
   </main>
 ```
 
 _If you want to restore the entire original layout including the header then add this section above the main section_
 
 ```html
-<nav class="reaction-navigation-header">
+<nav class="demand-navigation-header">
   <!-- begin layoutHeader -->
   {{> Template.dynamic template=layoutHeader}}
   <!-- end layoutHeader -->
 </nav>
 
-<nav class="reaction-cart-drawer">
+<nav class="demand-cart-drawer">
   {{>cartDrawer}}
 </nav>
 ```
@@ -95,7 +95,7 @@ import "./products/productsLanding";
 ```
 
 Now we need to change the entry in our layout record in our `register.js` file. Just change the entry that says
-"template" to be "productsLanding" (no need for the .html) Again this will require a `reaction reset` to take effect.
+"template" to be "productsLanding" (no need for the .html) Again this will require a `demand reset` to take effect.
 
 When the site is rendered now, it should be rendering the home page with the `productsLanding` template, rather than the default `products`.
 

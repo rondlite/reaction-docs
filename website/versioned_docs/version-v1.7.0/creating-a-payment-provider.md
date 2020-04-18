@@ -9,22 +9,22 @@ original_id: creating-a-payment-provider
 Payment Providers are companies that provide a gateway between ecommerce software customer payment. In the U.S. that largely means credit cards
 but it can also mean something like a PayPal account or in other parts
 of the world it could mean cards linked to Kiosks or even BitCoin.
-Reaction doesn't really care what you do here, you could even not
+Demand doesn't really care what you do here, you could even not
 collect money at all it just puts that step as part of the workflow and
 then records the results.
 
-Included with the default version of Reaction is the Example
+Included with the default version of Demand is the Example
 Payment provider. This plugin has two purposes. First to allow you to
 put through orders in your local dev system without signing up for a
 payment provider, secondly to provide a template for creating plugins
 for new Payment Providers.
 
 Note that while charging and capturing should work as expected, refunds are not
-recorded since Reaction expects refunds to be recorded by the Payment Gateway.
+recorded since Demand expects refunds to be recorded by the Payment Gateway.
 
 ## Introduction
 
-Payment Providers are implemented as "plugins". Reaction
+Payment Providers are implemented as "plugins". Demand
 plugins are just Meteor modules with some additional configuration.
 
 ## Getting Started
@@ -157,7 +157,7 @@ implement this fairly easily.
 
 ## Your package Registry
 
-Payment packages, like all Reaction packages must tell Reaction what they are providing to Reaction through the
+Payment packages, like all Demand packages must tell Demand what they are providing to Demand through the
 `provides` keyword. Most payment methods will "provide" three things: A dashboard widget, dashboard settings, and a
 checkout form (all covered above). Typically you can just change the names in `register.js` to reflect your package
 name and you should be fine. Also you need to define any "Global" objects that the payment method should provide.
@@ -174,7 +174,7 @@ files.
 Writing tests for code that is just a wrapper around third-party code is problematic. You don't want to test your
 providers code, but you want meaningful tests.
 
-The solution that we at Reaction have come up with is to create a wrapper around the third-party code. While
+The solution that we at Demand have come up with is to create a wrapper around the third-party code. While
 this adds a little more complexity it allows you to seamlessly stub/mock out this library so that you aren't testing
 code that you have no control over and it prevents your test code from making calls out to a third party service every
 time you run your test. These tests won't take the place of actually testing your code from end to end (i.e. trying

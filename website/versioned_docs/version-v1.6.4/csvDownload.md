@@ -11,14 +11,14 @@ CSVDownload is built with [react-csv](https://github.com/abdennour/react-csv). S
 ## Import
 
 ```javascript
-import { Components } from "@reactioncommerce/reaction-components";
+import { Components } from "@demandcluster/demand-mponents";
 ```
 
 ## Usage Example
 
 ```javascript
 import React, { Component } from "react";
-import { Components } from "@reactioncommerce/reaction-components";
+import { Components } from "@demandcluster/demand-mponents";
 
 class MyReactComponent extends Component
   return (

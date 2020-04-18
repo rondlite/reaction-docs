@@ -4,11 +4,11 @@ title: Creating your plugin
 original_id: plugin-creating-2
 ---
     
-## What is a Reaction plugin?
+## What is a demand plugin?
 
-A Reaction plugin is a plain old JavaScript module.
+A demand plugin is a plain old JavaScript module.
 
-Going forward, Meteor is moving away from their proprietary package format and towards the [ES6 modules](http://exploringjs.com/es6/ch_modules.html) standard. Reaction is adopting the module approach as well. While adding some boilerplate structure, using JavaScript's native built-in modules adds clarity and removes some of the _magic_ that created global Meteor elements. 
+Going forward, Meteor is moving away from their proprietary package format and towards the [ES6 modules](http://exploringjs.com/es6/ch_modules.html) standard. demand is adopting the module approach as well. While adding some boilerplate structure, using JavaScript's native built-in modules adds clarity and removes some of the _magic_ that created global Meteor elements. 
 
 Before moving forward you should have a good understanding of how [imports](https://developer.mozilla.org/en/docs/web/javascript/reference/statements/import) and
 [exports](https://developer.mozilla.org/en/docs/web/javascript/reference/statements/export) work
@@ -18,9 +18,9 @@ and importing [CSS](https://guide.meteor.com/build-tool.html#css-importing) and 
 
 ### Add `client` and `server` directory structure
 
-Start with a fresh checkout of the latest version of Reaction.
+Start with a fresh checkout of the latest version of demand.
 
-1. Create a directory with the name of the plugin, `beesknees`, within the `imports/plugins/custom` directory of Reaction.
+1. Create a directory with the name of the plugin, `beesknees`, within the `imports/plugins/custom` directory of demand.
 2. Within `beesknees`, create `client` and `server` directories.
 
 You may, at this point want to also `git init` so you can start tracking your new package with source control. 
@@ -36,9 +36,9 @@ a plugin. The `register.js` adds your plugin to the Registry, the Packages colle
 
 ```js
 // register.js
-import { Reaction } from "/server/api";
+import { demand } from "/server/api";
 
-Reaction.registerPackage({
+demand.registerPackage({
   label: "Bees Knees",
   name: "beesknees",
   icon: "fa fa-vine",
@@ -63,14 +63,14 @@ At this point, your local directory should look like:
 Now, to see load the plugin, run:
 
 ```sh
-reaction reset -n
+demandeset -n
 ```
 
 Registry entries are added when the app first starts, but they don't get reloaded if they already exist. Running `reset` will reset the database and restart the app, allowing the app to read the `register.js` file you just created.
 
 An alternative option to load a plugin would be to remove that entry directly from the `Packages` collection.
 
-> ProTip: Pass the `-n` flag to `reaction reset` to skip deleting the node_modules folder.
+> ProTip: Pass the `-n` flag to `demandeset` to skip deleting the node_modules folder.
 
 Next: [Using Layouts](plugin-layouts-3.md)
 

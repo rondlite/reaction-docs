@@ -2,7 +2,7 @@
   flex: 1;
 }
 
-footer.reaction-footer {
+footer.demand-footer {
   background-color: #052a4e;
   border-top: 4px solid #fd8283;
   padding: 75px 80px;
@@ -27,7 +27,7 @@ footer .sitemap {
   margin: 0;
 }
 
-.reaction-footer-logo {
+.demand-footer-logo {
   width: 10%;
   margin-bottom: 2rem;
 }

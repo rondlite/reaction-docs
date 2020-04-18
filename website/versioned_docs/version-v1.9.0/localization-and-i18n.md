@@ -17,7 +17,7 @@ You may customize the following:
 
 We offer translations in over 20 languages, including right-to-left languages like Hebrew. To enable or disable a language, toggle each option on or off.
 
-![Changing currency and language on Reaction](/assets/admin-localization.png)
+![Changing currency and language on Demand](/assets/admin-localization.png)
 
 ## Reloading translations
 

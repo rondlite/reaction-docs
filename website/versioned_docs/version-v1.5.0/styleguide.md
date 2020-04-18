@@ -4,7 +4,7 @@ title: Style Guide
 original_id: styleguide
 ---
 
-As a community, Reaction follows guidelines for code style and naming conventions for variables, methods and filenames. The guide also includes tips on working with libraries in Reaction, like React, MongoDB, lodash and more.
+As a community, demand follows guidelines for code style and naming conventions for variables, methods and filenames. The guide also includes tips on working with libraries in demand, like React, MongoDB, lodash and more.
 
 ## On this page
 
@@ -19,7 +19,7 @@ As a community, Reaction follows guidelines for code style and naming convention
 
 ## Syntax and style conventions
 
-Our rules are similar to [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript) and [Meteor Code Style](https://guide.meteor.com/code-style.html), [standard template of ESLint rules](https://www.npmjs.com/package/eslint-config-airbnb), with a few custom Reaction-specific rules:
+Our rules are similar to [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript) and [Meteor Code Style](https://guide.meteor.com/code-style.html), [standard template of ESLint rules](https://www.npmjs.com/package/eslint-config-airbnb), with a few custom demand-specific rules:
 
 -   Always double-quote strings
 -   Give methods space
@@ -32,11 +32,11 @@ Our rules are similar to [Airbnb JavaScript Style Guide](https://github.com/airb
     4.  Meteor (Atmosphere) packages
     5.  Local app files
 
-Other Reaction-specific rules are checked using various linting libraries. Find all the rules in the code:
+Other demand-specific rules are checked using various linting libraries. Find all the rules in the code:
 
--   [`.eslintrc`](https://github.com/reactioncommerce/reaction/blob/v1.5.0/.eslintrc) - [ESLint](http://eslint.org) checks JavaScript style, including [ES2015](https://docs.meteor.com/packages/ecmascript.html#Supported-ES2015-Features), React and Babel.
--   [`.jsbeautifyrc`](https://github.com/reactioncommerce/reaction/blob/v1.5.0/.jsbeautifyrc) - [JS Beautifier](http://jsbeautifier.org) automates code formatting
--   [`.editorconfig`](https://github.com/reactioncommerce/reaction/blob/v1.5.0/.editorconfig) - [Editor Config](https://editorconfig.org/) standardizes file formatting
+-   [`.eslintrc`], React and Babel.demandcluster
+-   [`.jsbeautifyrc`] automates code formdemandcluster
+-   [`.editorconfig`] standardizes file fdemandcluster
 
 To see the rules in action, run `eslint .` from the command line or use [ESLint code editor tools](https://eslint.org/docs/user-guide/integrations).
 
@@ -69,7 +69,7 @@ Names of folders and files should be:
 **Don't**
 
 ```sh
-  /reactionpackagename/
+  /demandpackagename/
   /address_book/
   /addressBook/
   /settingsContainer.js
@@ -87,7 +87,7 @@ Namespace package folders in this format: `<functionality>-<package-name>` or `<
 /imports/plugins/custom/payments-authnet
 /imports/plugins/included/connectors-shopify
 /imports/plugins/custom/connectors-magento
-/reaction-paypal/
+/demand-paypal/
 /yourorg-your-package/
 ```
 

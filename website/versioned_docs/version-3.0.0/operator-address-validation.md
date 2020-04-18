@@ -4,11 +4,11 @@ title: Address Validation
 original_id: operator-address-validation
 ---
 
-Reaction has a pluggable address validation system. Core Reaction services will store any address as long as all of the necessary data seems to be present. It is the job of clients, such as the storefront checkout and address book forms, to further validate addresses before saving them. Validation typically consists of asking a third-party service whether it thinks the entered address exists and is formatted correctly, and then prompting the user to either correct any mistakes or proceed with the possibly invalid address.
+Demand has a pluggable address validation system. Core Demand services will store any address as long as all of the necessary data seems to be present. It is the job of clients, such as the storefront checkout and address book forms, to further validate addresses before saving them. Validation typically consists of asking a third-party service whether it thinks the entered address exists and is formatted correctly, and then prompting the user to either correct any mistakes or proceed with the possibly invalid address.
 
 Address validation or verification services are useful tools but are not perfect, so we recommend that you always allow users to submit any complete address, even if it can't be verified. Address validation services may not know about brand new addresses, for example.
 
-Reaction includes only a test address validation service, which is for testing and demo purposes. You should create your own plugin that provides address validation or install an open source community plugin.
+Demand includes only a test address validation service, which is for testing and demo purposes. You should create your own plugin that provides address validation or install an open source community plugin.
 
 > If you will be collecting tax or dynamically calculating shipping rates, then it's important to install and enable an address validation service to improve the accuracy of these calculations.
 

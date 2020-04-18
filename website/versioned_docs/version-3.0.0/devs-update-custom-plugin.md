@@ -1,13 +1,13 @@
 ---
 id: version-3.0.0-devs-update-custom-plugin
-title: Updating a 2.x API plugin to work with Reaction API 3.x
+title: Updating a 2.x API plugin to work with DemandPI 3.x
 sidebar_label: Updating an API plugin for 3.x
 original_id: devs-update-custom-plugin
 ---
 
-The Reaction API plugin system has changed a lot in the API 3.0.0 release. Primarily this is because the API now runs as a NodeJS program instead of a Meteor app, and because the Babel build step has been removed in favor of using Node's built in support for ECMAScript modules. But many other breaking changes were made in 3.0.0 as well. For a summary of changes in 3.0.0, refer to [Upgrading](./upgrading) and the [API Changelog](https://github.com/reactioncommerce/reaction/blob/trunk/CHANGELOG.md).
+The DemandPI plugin system has changed a lot in the API 3.0.0 release. Primarily this is because the API now runs as a NodeJS program instead of a Meteor app, and because the Babel build step has been removed in favor of using Node's built in support for ECMAScript modules. But many other breaking changes were made in 3.0.0 as well. For a summary of changes in 3.0.0, refer to [Upgrading].
 
-If you have custom plugins as part of your Reaction 2.x system, you'll need to go through them one by one and update them according to the following recommendations.
+If you have custom plugins as part of your Demand.x system, you'll need to go through them one by one and update them according to the following recommendations.
 
 ## Plugins Should Be NPM Packages
 
@@ -16,9 +16,9 @@ Every plugin should be an NPM package that is an ES module targeting Node 12.
   - Must have `"type": "module"` in the `package.json`
   - Should have `"engines": { "node": ">=12.14.1" }` in the `package.json`
   - Use `import/export` in your files rather than `require`, and publish without running the files through Babel.
-  - For a good example, see [https://github.com/reactioncommerce/api-utils/blob/trunk/package.json](https://github.com/reactioncommerce/api-utils/blob/trunk/package.json)
-  - The package entry point must `export default` a function that accepts one argument, `api`, which is a `ReactionAPI` instance. In most cases, the only thing this function will do is call `api.registerPlugin`, passing in your plugin options.
-  - If you depend on other Reaction API plugins also being installed, list them as NPM dependencies in your `package.json` if they are published as NPM packages.
+  - For a good example, see [https://github.com/demandcluster/api-utils/blob/trunk/package.json]
+  - The package entry point must `export default` a function that accepts one argument, `api`, which is a `DemandI` instance. In most cases, the only thing this function will do is call `api.registerPlugin`, passing in your plugin options.
+  - If you depend on other DemandPI plugins also being installed, list them as NPM dependencies in your `package.json` if they are published as NPM packages.
 
 > By "NPM package" we mean [anything that NPM can install](https://docs.npmjs.com/cli/install.html#description). For example, you may want to install your custom plugin packages from private GitHub repos rather than publishing them to the NPM public registry or paying for private NPM. You can even specify a folder within your project as long as it has a `package.json` file.
 
@@ -49,9 +49,9 @@ For full details, refer to [Understanding Node ECMAScript Modules](./devs-node-e
 
 ## API and UI Plugins are Separate
 
-The Reaction Admin user interface is in a separate project now; it is no longer part of the API codebase. This means that UI components must be loaded and registered differently, in the Reaction Admin project. While you could still technically distribute the components in the same NPM package as the API plugin code, in most cases it's simpler and less confusing to create two different packages.
+The Demanddmin user interface is in a separate project now; it is no longer part of the API codebase. This means that UI components must be loaded and registered differently, in the deDemandin project. While you could still technically distribute the components in the same NPM package as the API plugin code, in most cases it's simpler and less confusing to create two different packages.
 
-There are two main functions to register your React component to appear in the Reaction Admin UI: `registerOperatorRoute` and `registerBlock`
+There are two main functions to register your React component to appear in the Demanddmin UI: `registerOperatorRoute` and `registerBlock`
 
 ### registerOperatorRoute
 
@@ -85,4 +85,4 @@ Manually registering plugins gives you greater control over which plugins load a
 
 API functions pass around a `context` object that is used to access the database, call other functions, check authentication, and perform authorization. Starting in 3.0.0, `context.shop` and `context.shopId` are no longer available.
 
-Search your custom plugin code for `context.shop`. In these places, you will need to get a shop ID another way. The best ways are to either take it off the related entity you are dealing with, or ask the caller to pass it in (for example, add it to your GraphQL query or mutation params). In a pinch, you can do `await context.collections.Shops.findOne({ shopType: "primary" })`, but this will not work as well as Reaction's support for multi-shop configuration grows stronger.
+Search your custom plugin code for `context.shop`. In these places, you will need to get a shop ID another way. The best ways are to either take it off the related entity you are dealing with, or ask the caller to pass it in (for example, add it to your GraphQL query or mutation params). In a pinch, you can do `await context.collections.Shops.findOne({ shopType: "primary" })`, but this will not work as well as Demand support for multi-shop configuration grows stronger.

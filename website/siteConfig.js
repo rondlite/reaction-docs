@@ -18,7 +18,7 @@ const siteConfig = {
   //   baseUrl: "/test-site/",
 
   // Used for publishing and more
-  projectName: "reaction",
+  projectName: "demand",
   organizationName: "DemandCluster",
   // For top-level user or org sites, the organization is still the same.
   // e.g., for the https://JoelMarcey.github.io site, it would be set like...
@@ -57,7 +57,7 @@ const siteConfig = {
 
   // This copyright info is used in /core/Footer.js and blog rss/atom feeds.
   copyright:
-    `Made in the sunshine in Santa Monica, California by Demand Cluster, Inc. © ${
+    `Demand Cluster, Inc. © ${
       new Date().getFullYear()}`,
 
   // Use Prism as an additional syntax highlighter for languages not supported by highlight.js
@@ -75,7 +75,7 @@ const siteConfig = {
   // TODO: Get testing Algolia key
   algolia: {
     apiKey: "e129a9a3e6a0851b34513ed15e78192b",
-    indexName: "reactioncommerce"
+    indexName: "demandcluster"
   },
 
   // Add custom scripts here that would be placed in <script> tags

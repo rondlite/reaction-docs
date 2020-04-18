@@ -36,5 +36,5 @@ challenges with testing: [Testing Tutorial](testing-tutorial.md)
 
 ## Getting Help
 
-- [Gitter Live Chat](https://gitter.im/reactioncommerce/reaction)
+- [Gitter Live Chat](https://gitter.im/demandcluster/demand
 - [Forums](http://forums.demandcluster.com)

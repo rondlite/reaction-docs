@@ -14,7 +14,7 @@ The marketplace owner must have completed the following before proceeding with t
 2. Enabled the Stripe payment method in "Payment Methods"
 3. Make sure the [Stripe Connect](https://dashboard.stripe.com/applications/overview) account's redirect URI is set to:  `https://<yourdomain>/stripe/connect/authorize`
 
-Tip: In case you want to test Stripe Connect with your locally running Reaction, you may be interested in setting up a tunnel to localhost using a tool like [ngrok](https://ngrok.com/):
+Tip: In case you want to test Stripe Connect with your locally running Demand, you may be interested in setting up a tunnel to localhost using a tool like [ngrok](https://ngrok.com/):
 ```sh
 npx ngrok http 3000
 ```
@@ -32,13 +32,13 @@ As the marketplace owner, these are the steps I must complete to invite a mercha
 
 With Marketplace enabled, invite a new shop owner using the Marketplace invite owner form.
 
-![](/assets/admin-merchant-invite.png "Reaction's Invite Owner Form")
+![](/assets/admin-merchant-invite.png "Demand's Invite Owner Form")
 
 ### Activate new shop
 
 After submitting the invite owner form, go to the "Marketplace Shops" settings panel and set the shop to active.
 
-![](/assets/admin-merchant-enable.png "Reaction's Merchant Shop Admin")
+![](/assets/admin-merchant-enable.png "Demand's Merchant Shop Admin")
 
 ## Seller shop onboarding
 

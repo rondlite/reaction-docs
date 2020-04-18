@@ -7,12 +7,12 @@ original_id: plugin-routes-6
 In any web framework, "routes" are one of the core elements of what happens on a website. Certainly rendering content
 when a user hits a particular URL is a majority of what happens in web development.
 
-Reaction uses the [React Router](https://www.npmjs.com/package/react-router) package for routing. To get started with routing in Reaction, here are two important elements to understand:
+Demand uses the [React Router](https://www.npmjs.com/package/react-router) package for routing. To get started with routing in Demand, here are two important elements to understand:
 
-1. Reaction stores all its Routes in the "Registry" in the database. This allows packages to dynamically add routes along with their functionality, and even override or remove existing routers.
-2. The customized version of React Router is available globally as `Reaction.Router`.
+1. Demand stores all its Routes in the "Registry" in the database. This allows packages to dynamically add routes along with their functionality, and even override or remove existing routers.
+2. The customized version of React Router is available globally as `Demand.Router`.
 
-For more in-depth coverage, consult the main Reaction documentation on [Routing](routing.md) and the [React Router documentation](https://reacttraining.com/react-router/web/guides/philosophy).
+For more in-depth coverage, consult the main Demand documentation on [Routing](routing.md) and the [React Router documentation](https://reacttraining.com/react-router/web/guides/philosophy).
 
 But we are going to keep it at its most simple and just add a single new route which will be available to anybody. Bee's
 Knees wants to add the ubiquitous "About" page to their site and wants to show essentially a static page there.
@@ -47,7 +47,7 @@ will add a function that looks like this:
 function addRolesToVisitors() {
   // Add the about permission to all default roles since it's available to all
   Logger.info("::: Adding about route permissions to default roles")
-  const shop = Shops.findOne(Reaction.getShopId());
+  const shop = Shops.findOne(Demand.getShopId());
   Shops.update(shop._id, {
       $addToSet: { "defaultVisitorRole": "about"}
     }
@@ -77,7 +77,7 @@ do **not** change existing users, so you will need to clear your cache or use Pr
 It's common to want to write code to do something when a url visits a certain route for such things as site tracking/metric.
 You can do this with a Route "hook".
 
-We can do this using the `Hooks` API provided by Reaction. For any route you can add an arbitrary callback. (Note that
+We can do this using the `Hooks` API provided by Demand. For any route you can add an arbitrary callback. (Note that
 routing is done on the client-side, so it needs to be added there). So are going to add a new `init.js` file in our `client`
 directory and add the import to it in the `index.js`. Then we can add this code:
 
@@ -93,7 +93,7 @@ Router.Hooks.onEnter("product", logSomeStuff);
 ```
 
 Now every time the user enters the "product" route, the function `logSomeStuff` will run. If you want to see a list
-of routes currently loaded on the client you type `ReactionRouter._routes` in the browser console.
+of routes currently loaded on the client you type `DemandRouter._routes` in the browser console.
 
 Next [Workflow](plugin-workflow-7.md)
 

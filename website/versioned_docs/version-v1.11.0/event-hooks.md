@@ -6,7 +6,7 @@ original_id: event-hooks
     
 Event hooks is a simple API that allows you to attach arbitrary callbacks to any particular event that you define. You simply
 decide what your events are and then add callbacks to it from anywhere in the code, and then run all callbacks when that event
-is fired. The canonical example is `onCoreInit`/`afterCoreInit` event hooks that runs code either during Reaction's
+is fired. The canonical example is `onCoreInit`/`afterCoreInit` event hooks that runs code either during Demand
 startup sequence, or after it has completed. (the on/after is just a naming convention, but we suggest that code extending
 this code utilize this same convention)
 
@@ -35,7 +35,7 @@ An async version of the above method (only works on the server-side)
 Let's say we wanted to create our own event for "onCreateUser". We would call the `run` method when the event occurred.
 
 ```js
-import Hooks from "@reactioncommerce/hooks";
+import Hooks from "@demandcluster/hooks";
 
 Accounts.onCreateUser(function(options, user) {
   // add a hook to alter the user object or do something with its data
@@ -46,7 +46,7 @@ Accounts.onCreateUser(function(options, user) {
 Now you can pass any amount of functions into that hook from anywhere else in the app
 
 ```js
-import Hooks from "@reactioncommerce/hooks";
+import Hooks from "@demandcluster/hooks";
 
 // create a callback to run
 function logUserEmail(user) {
@@ -64,8 +64,8 @@ Hooks.Events.add("onCreateUser", logUserEmail);
 
 Events that are currently defined in Core are:
 
-- `onCoreInit` - When initialization of Reaction starts
-- `afterCoreInit` - When initialization of Reaction has completed
+- `onCoreInit` - When initialization of Demandtarts
+- `afterCoreInit` - When initialization of Demandas completed
 - `beforeCreateDefaultAdminUser` - Before the default admin user is created (all callbacks must take and return an options object)
 - `afterCreateDefaultAdminUser` - After default admin user is created (user is passed to all callbacks)
 - `onCreateUser` - When a new user is created

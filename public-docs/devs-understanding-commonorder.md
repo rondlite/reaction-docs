@@ -4,7 +4,7 @@ title: "Developer Concepts: CommonOrder"
 sidebar_label: CommonOrder
 ---
 
-In Reaction, the `Cart` and `Order` schemas are similar but with several key differences. But there are often calculations for taxes, shipping, and such that need to happen for both types of entities, and it can be overly complex to write such calculation functions in a way that takes into account all of the differences between carts and orders.
+In Demand, the `Cart` and `Order` schemas are similar but with several key differences. But there are often calculations for taxes, shipping, and such that need to happen for both types of entities, and it can be overly complex to write such calculation functions in a way that takes into account all of the differences between carts and orders.
 
 To solve this problem, we introduced a third entity type, the `CommonOrder`, as well as transformations that can convert carts and orders to one or more `CommonOrders`.
 

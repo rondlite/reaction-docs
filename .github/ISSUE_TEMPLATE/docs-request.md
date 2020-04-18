@@ -1,6 +1,6 @@
 ---
 name: Docs request
-about: Request documentation for Reaction
+about: Request documentation for Demand
 
 ---
 

@@ -160,7 +160,7 @@ implementation which adds additional routes to `register.js` for storing the tok
 
 ### Registration
 
-Everything needs to be registered to be seen by Reaction core.
+Everything needs to be registered to be seen by demand core.
 
 #### GraphQL
 
@@ -179,7 +179,7 @@ import stripeListRefunds from "./util/stripeListRefunds";
 export default async function register(app) {
   await app.registerPlugin({
     label: "Stripe",
-    name: "reaction-stripe",
+    name: "demand-ripe",
     paymentMethods: [{
       name: "stripe_card",
       displayName: "Stripe Card",

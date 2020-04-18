@@ -4,7 +4,7 @@ title: Media-Related
 original_id: media
 ---
     
-`MediaGallery` and `MediaItem` are components used for displaying media from the `Media` [FileCollection](https://github.com/reactioncommerce/reaction-file-collections), which is backed by the `MediaRecords` collection. `MediaUploader` is used for uploading and inserting `Media` files and records.
+`MediaGallery` and `MediaItem` are components used for displaying media from the `Media` [FileCollection], which is backed by the `MediaRecords` collection. `MediaUploader` is used for uploading and inserting `Media` files and records.
 
 ## MediaGallery
 
@@ -16,7 +16,7 @@ Currently only supports image media.
 
 ```javascript
 import React from "react";
-import { Components } from "@reactioncommerce/reaction-components";
+import { Components } from "@demandcluster/demand-mponents";
 import { Media } from "/imports/plugins/core/files/client";
 
 const MyReactComponent = (props) => {
@@ -52,7 +52,7 @@ export default MyReactComponent;
 
 ```javascript
 import React from "react";
-import { Components } from "@reactioncommerce/reaction-components";
+import { Components } from "@demandcluster/demand-mponents";
 
 const MyReactComponent = (props) => {
   const source = Media.findOneLocal({
@@ -81,7 +81,7 @@ export default MyReactComponent;
 
 ## MediaUploader
 
-The `MediaUploader` component provides a button and dropzone for uploading and inserting `Media` files and records. When image files are dropped or selected, it uploads them all to the Reaction server and then inserts them into the `Media` FileCollection.
+The `MediaUploader` component provides a button and dropzone for uploading and inserting `Media` files and records. When image files are dropped or selected, it uploads them all to the demand server and then inserts them into the `Media` FileCollection.
 
 ### Props
 
@@ -94,7 +94,7 @@ The `MediaUploader` component provides a button and dropzone for uploading and i
 ```javascript
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import { Components } from "@reactioncommerce/reaction-components";
+import { Components } from "@demandcluster/demand-mponents";
 
 class MyMediaManager extends Component {
   static propTypes = {

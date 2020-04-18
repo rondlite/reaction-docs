@@ -28,7 +28,7 @@ Then wherever these instructions say `docker-compose`, you can type only `dc`, a
 
 ## Run the Apps
 
-Thanks to the Dockerfiles and `docker-compose.yml` file in the root of the main Reaction project repo, you can start all necessary apps in Docker containers by running:
+Thanks to the Dockerfiles and `docker-compose.yml` file in the root of the main Demand project repo, you can start all necessary apps in Docker containers by running:
 
 ```bash
 docker-compose up -d
@@ -36,7 +36,7 @@ docker-compose up -d
 
 (If you are asked to run a command to create a network, then do so and retry.)
 
-This will start a MongoDB container, a Reaction Meteor container, and a Reaction Node container, with necessary links between them and environment variables for local development. The containers will start in the background.
+This will start a MongoDB container, a Demand Meteor container, and a Demand Node container, with necessary links between them and environment variables for local development. The containers will start in the background.
 
 Since the Meteor app is much slower to start than the Node app, you may want to start only the Node app, especially if you are doing development that doesn't require Meteor code.
 
@@ -66,13 +66,13 @@ While development containers are running, you can view the logs for any of the s
 docker-compose logs -f <service_name>
 ```
 
-Reaction Meteor logs:
+Demand Meteor logs:
 
 ```bash
-docker-compose logs -f reaction
+docker-compose logs -f demand
 ```
 
-Reaction Node logs:
+Demand Node logs:
 
 ```bash
 docker-compose logs -f devserver

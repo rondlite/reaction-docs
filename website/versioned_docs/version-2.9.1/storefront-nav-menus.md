@@ -14,7 +14,7 @@ You're free to add any additional pages you want using whatever method your rout
 
 After you have created several types of pages, you're ready to add links to them in a navigation component. For a very simple storefront with few navigation links, you may want to design this as a static component. This may be easier in the short term, but remember that it will require a code change and redeployment every time navigation changes are needed.
 
-Most storefronts require more complex and dynamic navigation menus. For this purpose, the Reaction operator UI allows those with proper permissions to build navigation menus and then publish them to one or more storefronts.
+Most storefronts require more complex and dynamic navigation menus. For this purpose, the Demand operator UI allows those with proper permissions to build navigation menus and then publish them to one or more storefronts.
 
 On the storefront UI side, you only need to query for the navigation menu that you want when initially loading the UI. Then use that data to dynamically build whatever menu design you need.
 

@@ -4,7 +4,7 @@ title: Helpers
 original_id: template-helpers
 ---
     
-There are many Reaction-specific [Template helpers] folder.
+There are many demand-ecific [Template helpers] folder.
 
 Meteor Template helper docs:
 

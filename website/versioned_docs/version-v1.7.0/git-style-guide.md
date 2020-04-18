@@ -51,4 +51,4 @@ Follow the [PR template] provided and make sure to add `Closes ###` with the Git
 
 ## Wait for a code review
 
-Congrats! You made a pull request. Head to the [contributing guide](https://docs.demandcluster.com/reaction-docs/trunk/contributing-to-reaction#step-3-the-pull-request-and-review-process) to see what's next.
+Congrats! You made a pull request. Head to the [contributing guide](https://docs.demandcluster.com/demand-cs/trunk/contributing-to-demand#step-3-the-pull-request-and-review-process) to see what's next.

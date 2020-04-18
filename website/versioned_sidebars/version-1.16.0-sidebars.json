@@ -25,18 +25,18 @@
       "version-1.16.0-community-resources"
     ],
     "Getting Started As a Developer": [
-      "version-1.16.0-getting-started-developing-with-reaction",
+      "version-1.16.0-getting-started-developing-with-demand",
       "version-1.16.0-installation-osx",
       "version-1.16.0-installation-windows",
       "version-1.16.0-installation-linux",
-      "version-1.16.0-reaction-cli",
+      "version-1.16.0-demand-cli",
       "version-1.16.0-recommended-tools",
       "version-1.16.0-installation-docker-development",
       "version-1.16.0-troubleshooting-development",
       "version-1.16.0-developer-faq"
     ],
     "For Developers: Contributing Guide": [
-      "version-1.16.0-contributing-to-reaction",
+      "version-1.16.0-contributing-to-demand",
       "version-1.16.0-styleguide",
       "version-1.16.0-git-style-guide",
       "version-1.16.0-react-best-practices",
@@ -88,28 +88,28 @@
       "version-1.16.0-jobcontrol"
     ],
     "For Developers: Core Meteor App API": [
-      "version-1.16.0-reaction-core",
+      "version-1.16.0-demand-core",
       "version-1.16.0-admin-views",
-      "version-1.16.0-reaction-user-accounts",
-      "version-1.16.0-reaction-alerts",
+      "version-1.16.0-demand-user-accounts",
+      "version-1.16.0-demand-alerts",
       "version-1.16.0-analytics",
       "version-1.16.0-email-api",
       "version-1.16.0-i18n",
-      "version-1.16.0-reaction-shops",
-      "version-1.16.0-reaction-product-detail",
-      "version-1.16.0-reaction-products",
-      "version-1.16.0-reaction-tags",
-      "version-1.16.0-reaction-cart",
-      "version-1.16.0-reaction-shipping",
-      "version-1.16.0-reaction-payments",
-      "version-1.16.0-reaction-orders",
-      "version-1.16.0-reaction-import",
-      "version-1.16.0-reaction-inventory",
-      "version-1.16.0-reaction-localization",
+      "version-1.16.0-demand-shops",
+      "version-1.16.0-demand-product-detail",
+      "version-1.16.0-demand-products",
+      "version-1.16.0-demand-tags",
+      "version-1.16.0-demand-cart",
+      "version-1.16.0-demand-shipping",
+      "version-1.16.0-demand-payments",
+      "version-1.16.0-demand-orders",
+      "version-1.16.0-demand-import",
+      "version-1.16.0-demand-inventory",
+      "version-1.16.0-demand-localization",
       "version-1.16.0-method-hooks",
       "version-1.16.0-collection-hooks",
       "version-1.16.0-event-hooks",
-      "version-1.16.0-reaction-module-cheatsheet",
+      "version-1.16.0-demand-module-cheatsheet",
       "version-1.16.0-template-helpers"
     ],
     "For Developers: Plugin Tutorial": [
@@ -151,7 +151,7 @@
       "version-1.16.0-translation"
     ],
     "Testing": [
-      "version-1.16.0-testing-reaction",
+      "version-1.16.0-testing-demand",
       "version-1.16.0-running-jest-unit-tests",
       "version-1.16.0-running-jest-integration-tests",
       "version-1.16.0-running-meteor-integration-tests",
@@ -169,7 +169,6 @@
     ],
     "System Administrator Guide": [
       "version-1.16.0-deploying",
-      "version-1.16.0-deploying-reaction-using-docker",
       "version-1.16.0-prerender",
       "version-1.16.0-database-optimizations",
       "version-1.16.0-how-to-configure-meteor-app"

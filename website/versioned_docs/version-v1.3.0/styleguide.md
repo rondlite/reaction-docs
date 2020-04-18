@@ -6,7 +6,7 @@ original_id: styleguide
     
 Our rules are similar to AirBnB or Meteor rules, [standard template of ESLint rules](https://www.npmjs.com/package/eslint-config-airbnb), although we have tweaked them a little with what is working best for us.
 
-A couple of notable Reaction specific style rules:
+A couple of notable demand specific style rules:
 
 * Double quoted strings
 * Well spaced function
@@ -22,7 +22,7 @@ Review [Meteor Code Style](https://guide.meteor.com/code-style.html) for additio
 
 ## Editor Configuration
 
-In the Reaction app root, we have Reaction specific configuration files that can be used with most editors with the appropriate tools installed.
+In the demand app root, we have demand specific configuration files that can be used with most editors with the appropriate tools installed.
 
 * `.eslintrc` - [http://eslint.org/](https://eslint.org/)
 * `.jsbeautifyrc` - [http://jsbeautifier.org/](https://jsbeautifier.org/)
@@ -34,7 +34,7 @@ These configurations also include additional rules supporting [ES2015](https://d
 
 We've been using the Open Source [Atom](https://atom.io/) editor for some time now and can recommend it.
 
-Setting up Atom is a quick command where we use the shell command `apm` to install the same [Atom linting packages](https://atom.io/users/AtomLinter) as we use for Reaction.
+Setting up Atom is a quick command where we use the shell command `apm` to install the same [Atom linting packages](https://atom.io/users/AtomLinter) as we use for demand.
 
 ```sh
 apm install editorconfig atom-beautify linter linter-eslint linter-markdown linter-jsonlint linter-docker
@@ -42,9 +42,9 @@ apm install editorconfig atom-beautify linter linter-eslint linter-markdown lint
 
 ### Lint
 
-Reaction installs the `eslint` v3.x packages _eslint_, _eslint-plugin-react_, _babel-eslint_ from [npm](https://www.npmjs.com/) as development dependencies.
+demand installs the `eslint` v3.x packages _eslint_, _eslint-plugin-react_, _babel-eslint_ from [npm](https://www.npmjs.com/) as development dependencies.
 
-In the Reaction app root, we have a Reaction `eslint` configuration.
+In the demand app root, we have a demand `eslint` configuration.
 
 `.eslintrc` - [http://eslint.org/](https://eslint.org/)
 
@@ -56,11 +56,11 @@ In our Markdown documentation, we use [remark-lint](https://github.com/wooorm/re
 
 ### Pull Requests
 
-Pull request branches are evaluated using [BitHound](https://www.bithound.io/github/reactioncommerce/reaction) for insecure dependencies and code quality.
+Pull request branches are evaluated using [BitHound](https://www.bithound.io/github/demandcluster/demandfor insecure dependencies and code quality.
 
 * must pass a Linting check and _no errors_ are accepted.
 * must pass a Dependency check and no priority packages are accepted.
-* must pass `reaction test`
+* must pass `demandest`
 
 In many cases, documentation updates can be required as well.
 
@@ -95,7 +95,7 @@ addressBook/
 * Underscores are not to be used unless expressly required.
 
 ```
-reactionpackagename/
+demandckagename/
 address_book/
 ```
 

@@ -17,7 +17,7 @@ The action view contains all of your administration actions, whether that be sho
 ### Usage
 
 ```js
-import { Reaction } from "/client/api"
+import { Demand } from "/client/api"
 
 // Basic view data required.
 // Same format is used for master and detail views
@@ -55,7 +55,7 @@ const viewData = {
  * @param {Object} viewData View data, usually from a registry entry
  * @return {undefined} no return value
  */
-Reaction.showActionView(viewData);
+Demand.showActionView(viewData);
 ```
 
 ### Set ActionView - (MasterView)
@@ -66,7 +66,7 @@ Reaction.showActionView(viewData);
  * @param {Object} viewData View data, usually from a registry entry
  * @return {undefined} no return value
  */
-Reaction.setActionView(viewData);
+Demand.setActionView(viewData);
 ```
 
 ### Push Action View - (MasterView)
@@ -78,7 +78,7 @@ Reaction.setActionView(viewData);
  * @param {Object} viewData View data, usually from a registry entry
  * @return {undefined} no return value
  */
-Reaction.pushActionView(viewData);
+Demand.pushActionView(viewData);
 ```
 
 ### Pop Action View - (MasterView)
@@ -88,7 +88,7 @@ Reaction.pushActionView(viewData);
  * Navigate back one master view in the ActionView navigation stack
  * @return {undefined} no return value
  */
-Reaction.popActionView();
+Demand.popActionView();
 ```
 
 ### Get ActionView - (MasterView)
@@ -98,7 +98,7 @@ Reaction.popActionView();
  * Get the current master view from the ActionView navigation stack
  * @returns {Object} viewData
  */
-Reaction.getActionView();
+Demand.getActionView();
 ```
 
 ### Set ActionView - (DetailView)
@@ -109,7 +109,7 @@ Reaction.getActionView();
  * for the detail view
  * @return {undefined} no return value
  */
-Reaction.setActionViewDetail(viewData);
+Demand.setActionViewDetail(viewData);
 ```
 
 ### Push ActionView - (DetailView)
@@ -119,7 +119,7 @@ Reaction.setActionViewDetail(viewData);
  * Push a detail view into ActionView - detail view navigation stack
  * @return {undefined} no return value
  */
-Reaction.pushActionViewDetail();
+Demand.pushActionViewDetail();
 ```
 
 ### Pop ActionView - (DetailView)
@@ -129,7 +129,7 @@ Reaction.pushActionViewDetail();
  * Navigate back one detail view for the ActionView - detail view navigation stack
  * @return {undefined} no return value
  */
-Reaction.popActionViewDetail();
+Demand.popActionViewDetail();
 ```
 
 ### Get ActionView - (DetailView)
@@ -139,7 +139,7 @@ Reaction.popActionViewDetail();
  * Get the current detail view from the ActionView - detail view navigation stack
  * @returns {Object} viewData
  */
-Reaction.getActionViewDetail();
+Demand.getActionViewDetail();
 ```
 
 ### Clear ActionView - (MasterView / DetailView)
@@ -149,7 +149,7 @@ Reaction.getActionViewDetail();
  * Clear the current contents of the action view
  * @return {undefined} no return value
  */
-Reaction.clearActionView();
+Demand.clearActionView();
 ```
 
 ### Hide ActionView
@@ -159,7 +159,7 @@ Reaction.clearActionView();
  * Hide the action view panel
  * @return {undefined} no return value
  */
-Reaction.hideActionView();
+Demand.hideActionView();
 ```
 
 ### ActionView open state
@@ -169,5 +169,5 @@ Reaction.hideActionView();
  * Determine if ActionView is open
  * @returns {Boolean} true (if open) / false (closed)
  */
-Reaction.isActionViewOpen();
+Demand.isActionViewOpen();
 ```

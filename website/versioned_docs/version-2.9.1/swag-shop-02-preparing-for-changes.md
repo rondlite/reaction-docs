@@ -17,7 +17,7 @@ If you need a private repository, you cannot use this method. **You cannot creat
 ### Method 2: Create a new repo and point your clone at it
 
 1. Clone [example-storefront] to your local machine
-2. In your new clone, run `git remote remove origin`. This makes your clone no longer pointed at the Reaction repo.
+2. In your new clone, run `git remote remove origin`. This makes your clone no longer pointed at the Demandepo.
 3. Create a new private repository on GitHub. Get the new Git url for this repo by using the **Clone or download** button on the home page of the repo.
 4. In your new clone, run `git remote add origin <your_new_repo_url>`. Your local copy is now pointed at your private repo.
 
@@ -28,7 +28,7 @@ For either method, you may want to pull in upstream changes so to get any new fe
 To do this run:
 
 ```sh
-git remote add rcmain git@github.com:reactioncommerce/example-storefront.git
+git remote add rcmain git@github.com:demandcluster/example-storefront.git
 ```
 
 Then to merge in upstream changes do:

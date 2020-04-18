@@ -1,6 +1,6 @@
 ---
-original_id: reaction-inventory
-id: version-v1.1.0-reaction-inventory
+original_id: demand-inventory
+id: version-v1.1.0-demand-inventory
 title: Inventory
 ---
     
@@ -20,15 +20,15 @@ Accepts a status and currentStatus. Used to reset status on inventory item. Defa
 
 ### inventory/clearReserve
 
-Resets `reserved` Reaction.Schemas.CartItem objects to `new`.
+Resets `reserved` Demand.Schemas.CartItem objects to `new`.
 
 ### inventory/addReserve
 
-Set `reserved` status Reaction.Schemas.CartItem object.
+Set `reserved` status Demand.Schemas.CartItem object.
 
 ### inventory/backorder
 
-Set `backorder` status  for a Reaction.Schemas.CartItem object.
+Set `backorder` status  for a Demand.Schemas.CartItem object.
 
 ### inventory/lowStock
 
@@ -36,11 +36,11 @@ WIP - will be used to send email notifications on low inventory levels.
 
 ### inventory/register
 
-Check a `Reaction.Schemas.Product` object and update `Inventory` collection with inventory documents.
+Check a `Demand.Schemas.Product` object and update `Inventory` collection with inventory documents.
 
 ### inventory/adjust
 
-Adjusts existing `Reaction.Schemas.Product` documents when changes are made we get the inventoryQuantity for each product variant,and compare the qty to the qty in the inventory records we will add inventoryItems as needed to have the same amount as the inventoryQuantity but when deleting, we'll refuse to delete anything not **workflow.status="new"**.
+Adjusts existing `Demand.Schemas.Product` documents when changes are made we get the inventoryQuantity for each product variant,and compare the qty to the qty in the inventory records we will add inventoryItems as needed to have the same amount as the inventoryQuantity but when deleting, we'll refuse to delete anything not **workflow.status="new"**.
 
 ### inventory/remove
 

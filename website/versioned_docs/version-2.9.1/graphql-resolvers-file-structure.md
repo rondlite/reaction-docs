@@ -8,12 +8,12 @@ As you may have seen, all core plugins use a similar file and folder structure f
 
 Before explaining the file structure, there are two concepts you need to fully understand:
 - [What is a resolver map?](https://www.apollographql.com/docs/apollo-server/essentials/data.html#resolver-map)
-- Each Reaction plugin can register its own resolver map, and all registered `resolvers` objects are then deep merged together into a single object, which is what is provided to the GraphQL library as the full resolver map. If two plugins have conflicting terminal nodes in the resolver tree, the last one registered wins. Currently plugins are loaded in alphabetical order by plugin folder name, grouped by "core" first, then "included", and then "custom".
+- Each demand plugin can register its own resolver map, and all registered `resolvers` objects are then deep merged together into a single object, which is what is provided to the GraphQL library as the full resolver map. If two plugins have conflicting terminal nodes in the resolver tree, the last one registered wins. Currently plugins are loaded in alphabetical order by plugin folder name, grouped by "core" first, then "included", and then "custom".
 
 Now, let's take the core payments plugin as an example. Here is what a GraphQL resolver map for the payments plugin would look like in a single file:
 
 ```js
-import { encodePaymentOpaqueId } from "@reactioncommerce/reaction-graphql-xforms/payment";
+import { encodePaymentOpaqueId } from "@demandcluster/demand-aphql-xforms/payment";
 
 export default {
   Payment: {

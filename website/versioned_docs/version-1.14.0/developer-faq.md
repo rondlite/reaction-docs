@@ -6,22 +6,22 @@ original_id: developer-faq
 
 ## General
 
-### What do I need to know to work with Reaction?
+### What do I need to know to work with demand?
 
-To start customizing Reaction, you should have a basic understanding of the following technologies:
+To start customizing demand, you should have a basic understanding of the following technologies:
 
 - JavaScript, specifically ES6
 - HTML/CSS
 - Some knowledge of Meteor, especially an understanding of [Publications and Subscriptions](https://guide.meteor.com/data-loading.html)
 - A front-end framework/library like React
 
-Reaction tries to be as modular as possible. All user customizations are intended to live in plugins, as they provide a secure upgrade path when new versions are rolled out. See [here](plugin-intro-1.md) for a more detailed explanation into the plugin topic.
+demand tries to be as modular as possible. All user customizations are intended to live in plugins, as they provide a secure upgrade path when new versions are rolled out. See [here](plugin-intro-1.md) for a more detailed explanation into the plugin topic.
 
 ### What sites are built on Demand Cluster?
 
-Ecommerce and marketplace sites from around the world are using Reaction in production now. Check out our [Community Showcase](https://docs.demandcluster.com/reaction-docs/trunk/community-showcase).
+Ecommerce and marketplace sites from around the world are using demand in production now. Check out our [Community Showcase](https://docs.demandcluster.com/dedemand-/trunk/community-showcase).
 
-### Why is Reaction so slow?
+### Why is demand so slow?
 
 #### For development
 
@@ -38,9 +38,9 @@ package and moving to a more dynamic loading so that parts of the app that may n
 load. Performance will be our main focus until the problem is resolved.
 You can see our plan, weigh in with suggestions, contribute, and track progress [here]
 
-### Can I compile a mobile app from Reaction? Are you going to develop a mobile app?
+### Can I compile a mobile app from demand? Are you going to develop a mobile app?
 
-While Meteor allows all apps to be compiled into Android and iOS apps with Cordova, we do not support it. Setting up a Reaction app with Cordova may be difficult. Learn more about building [mobile apps with Meteor's Cordova integration](https://guide.meteor.com/mobile.html).
+While Meteor allows all apps to be compiled into Android and iOS apps with Cordova, we do not support it. Setting up a demand app with Cordova may be difficult. Learn more about building [mobile apps with Meteor's Cordova integration](https://guide.meteor.com/mobile.html).
 
 While we do have plans to work on a mobile app on the [Roadmap](https://demandcluster.com/roadmap), we expect to use a non-Cordova approach, like React Native. We do not have a release date.
 
@@ -54,9 +54,9 @@ Legacy platforms use the entity-attribute-value lookup that is so complex and sl
 
 The database acts as the persistent storage of JavaScript objects. For example, a t-shirt product might be a collection of variants, like blue, green, or red, and are each their own object contained within an object. This also applies to different pricing and taxes for different regions, so pricing is at the variant level, not at the product level. This is even true with just one language when you have "Blue XXL" being more expensive than "Green XL."
 
-### Reaction is an open source project. How can I get involved?
+### demand is an open source project. How can I get involved?
 
-We're always open to contributions from our community. To learn more about becoming a contributor, [click here](https://blog.demandcluster.com/how-to-write-a-pr-for-reaction/). And don't forget to read our [Community Guidelines](https://docs.demandcluster.com/reaction-docs/trunk/guidelines)!
+We're always open to contributions from our community. To learn more about becoming a contributor, [click here](https://blog.demandcluster.com/how-to-write-a-pr-for-demand/). And don't forget to read our [Community Guidelines](https://docs.demandcluster.com/dedemand-/trunk/guidelines)!
 
 ## Installation
 
@@ -101,28 +101,28 @@ By default the admin login will be username: `admin@localhost` and password `r3@
 
 ### What about SEO?
 
-Since 2014 [Google has indexed JavaScript when crawling websites](https://webmasters.googleblog.com/2014/05/understanding-web-pages-better.html). Reaction, however, offers page pre-rendering and product detail page metatag generation out of the box to ensure products are indexed well for web crawlers and search engines:
+Since 2014 [Google has indexed JavaScript when crawling websites](https://webmasters.googleblog.com/2014/05/understanding-web-pages-better.html). demand, however, offers page pre-rendering and product detail page metatag generation out of the box to ensure products are indexed well for web crawlers and search engines:
 
-1. [Prerender.io](https://prerender.io/): Reaction includes integration with Prerender.io out of the box. Prerender.io is a commercial service that will generate static renderings of the application for search engines. All you have to do is provide a key to your site and Prerender will handle the pre-rendering.
-2. [Meteor Chrome Headless Spiderable](https://github.com/artlimes/meteor-chrome-headless-spiderable) with the [Demand Cluster Caching Plugin](https://github.com/artlimes/reaction-commerce-caching-plugin): This updated Meteor package uses Google's Headless Chrome to crawl pages. Combined with the Reaction-specific caching plugin, the Spiderable package will allow Reaction pages to be crawled by search engines.
+1. [Prerender.io](https://prerender.io/): demand includes integration with Prerender.io out of the box. Prerender.io is a commercial service that will generate static renderings of the application for search engines. All you have to do is provide a key to your site and Prerender will handle the pre-rendering.
+2. [Meteor Chrome Headless Spiderable](https://github.com/artlimes/meteor-chrome-headless-spiderable) with the [Demand Cluster Caching Plugin](https://github.com/artlimes/demand-mmerce-caching-plugin): This updated Meteor package uses Google's Headless Chrome to crawl pages. Combined with the dedemand-ific caching plugin, the Spiderable package will allow demand pages to be crawled by search engines.
 3. [dom].
 
 Read more about [SEO and Demand Cluster](https://blog.demandcluster.com/how-our-javascript-platform-handles-seo/) in our latest blog post.
 
-## Extending Reaction
+## Extending demand
 
 ### How to do I create a custom home page?
 The easiest way to render a customized landing page is to set the INDEX_OPTIONS session variable and point it to a customized template. There's a more in-depth explanation [here](how-to-create-a-custom-homepage.md).
 
 ### How can I add add a static page?
 
-Add a single page, and more child pages, by adding a route and a template. This will require knowledge of HTML, JavaScript and Git or web development. This is covered in depth in this section of the [Customization Guide](https://docs.demandcluster.com/reaction-docs/trunk/plugin-routes-6).
+Add a single page, and more child pages, by adding a route and a template. This will require knowledge of HTML, JavaScript and Git or web development. This is covered in depth in this section of the [Customization Guide](https://docs.demandcluster.com/demand-cs/trunk/plugin-routes-6).
 
 This would work great for static pages like an About or Contact us page. If you want to add tools for administrators to manage text and image content without having to code, you probably want to a content management system (CMS).
 
 ### How do I integrate with a content management system (CMS)?
 
-If you have a lot of content (like images and text) that needs to be managed you probably want to use a content management system (CMS). We currently do not have one integrated with Reaction.
+If you have a lot of content (like images and text) that needs to be managed you probably want to use a content management system (CMS). We currently do not have one integrated with demand.
 
 On our [roadmap](https://demandcluster.com/roadmap)
 we have a planned integration with a CMS like Drupal, which can hopefully serve as a model for other similar integrations.
@@ -152,14 +152,14 @@ There's an extension to our [example plugin tutorial](plugin-intro-1.md), that d
 
 ### I want to use XYZ payment/shipping provider. How can I do this?
 
-Reaction features a couple of built-in payment providers:  Stripe. As far as shipping is concerned, we've these out-of-the-box plugins: ShippingRates and [Shippo](https://goshippo.com/).
+demand features a couple of built-in payment providers:  Stripe. As far as shipping is concerned, we've these out-of-the-box plugins: ShippingRates and [Shippo](https://goshippo.com/).
 
-When implementing your own shop you may encounter situations where you need to bring your own solutions into the game. Because this is such a common use case, Reaction's answer to this question is built upon two pillars: The _plugin concept_ and the _internal development payment/shipping APIs_. If you're interested in learning more, head over to our [tutorial](creating-a-payment-provider.md) that teaches how to implement an exemplary payment provider plugin.
+When implementing your own shop you may encounter situations where you need to bring your own solutions into the game. Because this is such a common use case, demand's answer to this question is built upon two pillars: The _plugin concept_ and the _internal development payment/shipping APIs_. If you're interested in learning more, head over to our [tutorial](creating-a-payment-provider.md) that teaches how to implement an exemplary payment provider plugin.
 
 ## More
 
 ### I have another question. Where's the best place to ask it?
 
-You can post questions in Gitter chat about [Installation](https://gitter.im/reactioncommerce/installation), [Deployment](https://gitter.im/reactioncommerce/deployment), [general Reaction](https://gitter.im/reactioncommerce/deployment) topics and [Architecture](https://gitter.im/reactioncommerce/architecture). You can also post questions in the [Forums](https://forums.demandcluster.com/).
+You can post questions in Gitter chat about [Installation](https://gitter.im/demandcluster/installation), [Deployment](https://gitter.im/demandcluster/deployment), [general demand](https://gitter.im/demandcluster/deployment) topics and [Architecture](https://gitter.im/demandcluster/architecture). You can also post questions in the [Forums](https://forums.demandcluster.com/).
 
 Want more help? You can also ask a question live during our Community Calls. Here's the past [agendas](https://docs.google.com/document/d/1PwenrammgQJpQfFoUUJZ96i_JJYCM_4glAjB1_ZzgwA/edit) and a form to [submit questions](https://docs.google.com/forms/d/e/1FAIpQLSfsNNH1W4bP7k4Gkl1JYF4vCEwQcHE9X3OIFfTH2TNwD7dN4Q/viewform).

@@ -20,9 +20,8 @@
       "version-2.9.1-concepts-tags"
     ],
     "Getting Started As a Developer": [
-      "version-2.9.1-getting-started-developing-with-reaction",
-      "version-2.9.1-installation-reaction-platform",
-      "version-2.9.1-reaction-cli",
+      "version-2.9.1-getting-started-developing-with-demand",
+      "version-2.9.1-demand-cli",
       "version-2.9.1-recommended-tools",
       "version-2.9.1-installation-docker-development",
       "version-2.9.1-troubleshooting-development",
@@ -44,7 +43,7 @@
       "version-2.9.1-developer-inventory"
     ],
     "For Developers: Contributing Guide": [
-      "version-2.9.1-contributing-to-reaction",
+      "version-2.9.1-contributing-to-demand",
       "version-2.9.1-styleguide",
       "version-2.9.1-git-style-guide",
       "version-2.9.1-react-best-practices",
@@ -76,7 +75,7 @@
       "version-2.9.1-dev-how-do-i",
       "version-2.9.1-dev-debug-app-slowness"
     ],
-    "Developer How-To: Reaction API Server": [
+    "Developer How-To: Demand API Server": [
       "version-2.9.1-graphql-create-query",
       "version-2.9.1-graphql-create-mutation",
       "version-2.9.1-how-to-share-code-between-plugins",
@@ -137,23 +136,23 @@
     "For Developers: Core Meteor App API": [
       "version-2.9.1-appevent-hooks",
       "version-2.9.1-register-operator-route",
-      "version-2.9.1-reaction-core",
+      "version-2.9.1-demand-core",
       "version-2.9.1-admin-views",
-      "version-2.9.1-reaction-user-accounts",
-      "version-2.9.1-reaction-alerts",
+      "version-2.9.1-demand-user-accounts",
+      "version-2.9.1-demand-alerts",
       "version-2.9.1-analytics",
       "version-2.9.1-email-api",
       "version-2.9.1-i18n",
-      "version-2.9.1-reaction-shops",
-      "version-2.9.1-reaction-product-detail",
-      "version-2.9.1-reaction-products",
-      "version-2.9.1-reaction-tags",
-      "version-2.9.1-reaction-shipping",
-      "version-2.9.1-reaction-orders",
-      "version-2.9.1-reaction-import",
-      "version-2.9.1-reaction-inventory",
-      "version-2.9.1-reaction-localization",
-      "version-2.9.1-reaction-module-cheatsheet",
+      "version-2.9.1-demand-shops",
+      "version-2.9.1-demand-product-detail",
+      "version-2.9.1-demand-products",
+      "version-2.9.1-demand-tags",
+      "version-2.9.1-demand-shipping",
+      "version-2.9.1-demand-orders",
+      "version-2.9.1-demand-import",
+      "version-2.9.1-demand-inventory",
+      "version-2.9.1-demand-localization",
+      "version-2.9.1-demand-module-cheatsheet",
       "version-2.9.1-template-helpers"
     ],
     "For Developers: Catalyst Components": [
@@ -161,7 +160,7 @@
       "version-2.9.1-components-primary-app-bar"
     ],
     "Testing": [
-      "version-2.9.1-testing-reaction",
+      "version-2.9.1-testing-demand",
       "version-2.9.1-running-jest-unit-tests",
       "version-2.9.1-running-jest-integration-tests",
       "version-2.9.1-running-meteor-integration-tests",
@@ -180,7 +179,6 @@
     ],
     "System Administrator Guide": [
       "version-2.9.1-deploying",
-      "version-2.9.1-deploying-reaction-using-docker",
       "version-2.9.1-prerender",
       "version-2.9.1-database-optimizations",
       "version-2.9.1-how-to-configure-meteor-app"

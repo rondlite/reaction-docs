@@ -1,9 +1,7 @@
 {
   "docs": {
     "Introduction": [
-      "intro",
-      "upgrading",
-      "devs-update-custom-plugin"
+      "intro"
     ],
     "Concepts": [
       "concepts-intro",
@@ -21,7 +19,6 @@
       "concepts-tags"
     ],
     "Developer": [
-      "getting-started-developing-with-reaction",
       "recommended-tools",
       "installation-docker-development",
       "devs-node-es-modules",
@@ -36,7 +33,6 @@
       "developer-kafka-streams"
     ],
     "For Developers: Contributing Guide": [
-      "contributing-to-reaction",
       "styleguide",
       "git-style-guide",
       "react-best-practices",
@@ -71,8 +67,7 @@
       "how-to-extend-product",
       "how-to-manage-app-settings",
       "register-operator-route",
-      "dev-debug-app-slowness",
-      "testing-debugging-server-code"
+      "dev-debug-app-slowness"
     ],
     "Core API Server Plugins": [
       "core-plugins-intro",
@@ -113,7 +108,6 @@
       "components-primary-app-bar"
     ],
     "Testing": [
-      "testing-reaction",
       "running-jest-unit-tests",
       "running-jest-integration-tests",
       "writing-jest-unit-tests",

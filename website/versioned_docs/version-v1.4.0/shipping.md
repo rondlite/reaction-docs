@@ -4,7 +4,7 @@ title: Flat Rate Shipping
 original_id: shipping
 ---
     
-[![Tutorial: How To Configure Shipping in Reaction](/assets/guide-shipping-video-screenshot.png)](https://www.youtube.com/watch?v=fiR_kV1GBdg)
+[![Tutorial: How To Configure Shipping in Demand/assets/guide-shipping-video-screenshot.png)](https://www.youtube.com/watch?v=fiR_kV1GBdg)
 
 To manage your shipping rates, click on the Shipping section, located on the right-hand sidebar.
 

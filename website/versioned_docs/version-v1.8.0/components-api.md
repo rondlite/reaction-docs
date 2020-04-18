@@ -1,19 +1,19 @@
 ---
 id: version-v1.8.0-components-api
-title: Reaction Components API
+title: demand Components API
 original_id: components-api
 ---
     
-Most of the React components in the Reaction UI can be replaced or extended with the API outlined here. This allows anyone to create a custom plugin that can easily change the look of the UI and/or extend its functionality without having to edit core Reaction code.
+Most of the React components in the demand UI can be replaced or extended with the API outlined here. This allows anyone to create a custom plugin that can easily change the look of the UI and/or extend its functionality without having to edit core demand code.
 
 See [Full API docs](#api) below.
 
-## Using Reaction Components
+## Using demand Components
 
-A large percentage of the React components in the Reaction UI have been registered and can be imported into your own components like this:
+A large percentage of the React components in the demand UI have been registered and can be imported into your own components like this:
 
 ```js
-import { Components } from "@reactioncommerce/reaction-components";
+import { Components } from "@demandcluster/demand-mponents";
 
 const MyCustomNavbar = (props) => (
   <nav>
@@ -32,14 +32,14 @@ const MyCustomNavbar = (props) => (
 );
 ```
 
-The above example uses the logo, button, and main dropdown components included with Reaction to create a customized navbar that you can then add to the app via your plugin (more on that below).
+The above example uses the logo, button, and main dropdown components included with demand to create a customized navbar that you can then add to the app via your plugin (more on that below).
 
 ## Replacing Components
 
-Most Reaction components are available in the `Components` object that we imported above from `@reactioncommerce/reaction-components`. You can replace any of those registered components with the `replaceComponent` method. This will replace the UI component and it will inherit any higher order components (HOC) that might be wrapping the original component (more detail on HOC's below).
+Most demand components are available in the `Components` object that we imported above from `@demandcluster/dedemand-onents`. You can replace any of those registered components with the `replaceComponent` method. This will replace the UI component and it will inherit any higher order components (HOC) that might be wrapping the original component (more detail on HOC's below).
 
 ```js
-import { replaceComponent } from "@reactioncommerce/reaction-components";
+import { replaceComponent } from "@demandcluster/demand-mponents";
 
 const MyCustomNavbar = (props) => (
   <nav>custom navbar...</nav>
@@ -50,10 +50,10 @@ replaceComponent("NavBar", MyCustomNavbar);
 
 ## Registering Components
 
-You also may want to register your own custom components in your plugin so that other users may override them in the same way we did above. For example, if you're writing a theme for Reaction, but want users to be able to easily override certain parts. You can register your components with the same `registerComponent` method that Reaction uses internally to register all of the core components.
+You also may want to register your own custom components in your plugin so that other users may override them in the same way we did above. For example, if you're writing a theme for demand, but want users to be able to easily override certain parts. You can register your components with the same `registerComponent` method that demand uses internally to register all of the core components.
 
 ```js
-import { registerComponent } from "@reactioncommerce/reaction-components";
+import { registerComponent } from "@demandcluster/demand-mponents";
 
 const MyComponent = (props) => (
   <div>
@@ -66,16 +66,16 @@ registerComponent("MyComponent", MyComponent);
 
 ## Higher Order Components (HOC's)
 
-To understand how theming works in Reaction, it's important to understand what higher order components (HOC's) are and how they interact with UI (presentational) components. If this is the first time you're hearing about higher order components, we recommend you read some or all of the following items to get familiar with this pattern of writing React components.
+To understand how theming works in demand, it's important to understand what higher order components (HOC's) are and how they interact with UI (presentational) components. If this is the first time you're hearing about higher order components, we recommend you read some or all of the following items to get familiar with this pattern of writing React components.
 
 - Official React docs <https://facebook.github.io/react/docs/higher-order-components.html>
 - Higher Order Components in React <https://spin.atomicobject.com/2017/03/02/higher-order-components-in-react/>
 - A Gentle Introduction to React's Higher Order Components <https://www.robinwieruch.de/gentle-introduction-higher-order-components/>
-- Recompose (a handy library of HOC's that we use in Reaction) <https://github.com/acdlite/recompose/blob/master/docs/API.md>
+- Recompose (a handy library of HOC's that we use in demand) <https://github.com/acdlite/recompose/blob/master/docs/API.md>
 
 A higher order component's role is essentially to wrap a another component and pass it props that help it to render what you want in the UI. This could be a list of items from the database, the current user, info about the current route, etc.
 
-In Reaction, HOC's are added either at the point when components are registered or when you are replacing an existing component. The first argument of `registerComponent` or `replaceComponent` is the component's name, the second is the component itself, and the third optional argument can be either a single HOC or an array of them.
+In demand, HOC's are added either at the point when components are registered or when you are replacing an existing component. The first argument of `registerComponent` or `replaceComponent` is the component's name, the second is the component itself, and the third optional argument can be either a single HOC or an array of them.
 
 For example, this is how we pass the `currentUser` object to the `MainDropdown` component in the navbar:
 
@@ -139,7 +139,7 @@ For components that are defined as ES6 classes, you can optionally `extend` the 
 In order to retrieve the original UI component that you want to extend, we use the `getRawComponent` method:
 
 ```js
-import { getRawComponent } from "@reactioncommerce/reaction-components";
+import { getRawComponent } from "@demandcluster/demand-mponents";
 
 const MainDropdown = getRawComponent("MainDropdown");
 
@@ -160,7 +160,7 @@ In the example above, all of the original class methods and state handlers that 
 
 ## API
 
-Below is the full API for the Reaction components system. Each of these items can be imported from `@reactioncommerce/reaction-components`.
+Below is the full API for the demand components system. Each of these items can be imported from `@demandcluster/dedemand-onents`.
 
 ### [Components Objects](#components-objects)
 
@@ -195,7 +195,7 @@ Below is the full API for the Reaction components system. Each of these items ca
 This is the main `Components` object where all of the wrapped registered components finally end up. You use this to import and add a component to the UI.
 
 ```js
-import { Components } from "@reactioncommerce/reaction-components";
+import { Components } from "@demandcluster/demand-mponents";
 
 class MyCustomComponent extends React.Component {
   render() {
@@ -247,7 +247,7 @@ Again, this is just for reference, use the methods below to get/set whatever you
 ### registerComponent()
 
 ```js
-import { registerComponent } from "@reactioncommerce/reaction-components";
+import { registerComponent } from "@demandcluster/demand-mponents";
 
 const MyComponent = (props) => (
   <div>
@@ -261,7 +261,7 @@ registerComponent("MyComponent", MyComponent);
 or the same thing, but with a few HOC's
 
 ```js
-import { registerComponent, withCurrentUser, withIsAdmin } from "@reactioncommerce/reaction-components";
+import { registerComponent, withCurrentUser, withIsAdmin } from "@demandcluster/demand-mponents";
 
 const MyComponent = ({ currentUser, isAdmin }) => (
   <div>
@@ -284,7 +284,7 @@ registerComponent("MyComponent", MyComponent, [
 ### replaceComponent()
 
 ```js
-import { replaceComponent } from "@reactioncommerce/reaction-components";
+import { replaceComponent } from "@demandcluster/demand-mponents";
 
 const MyCustomComponent = (props) => (
   <div>
@@ -300,7 +300,7 @@ replaceComponent("MyComponent", MyCustomComponent);
 This is functionally equivalent to importing `Components` like we did above and using `<Components.SomeName>` to use a component. The obvious tradeoff is you can only get one component at a time.
 
 ```js
-import { getComponent } from "@reactioncommerce/reaction-components";
+import { getComponent } from "@demandcluster/demand-mponents";
 
 const Button = getComponent("Button");
 
@@ -318,7 +318,7 @@ const MyComponent = (props) => (
 This gets the plain UI/presentational component without any HOC's wrapping it. The use case for this is when the original component is an ES6 class and you want to extend it instead of replacing it. See [extending components](#extending-components) above.
 
 ```js
-import { getRawComponent } from "@reactioncommerce/reaction-components";
+import { getRawComponent } from "@demandcluster/demand-mponents";
 
 const NavBar = getRawComponent("NavBar");
 
@@ -340,7 +340,7 @@ It is generally recommended that you register any higher order components at the
 Considering that a HOC injects things on props, this method will not be likely be useful for most cases (since you have to update the UI component to use the new props). However, one valid use case for this is render highjacking. For example, you might add a HOC that decides whether to render the child component based on conditions outside of the component. In that case, the UI component doesn't need to do anything with props.
 
 ```js
-import { registerHOC } from "@reactioncommerce/reaction-components";
+import { registerHOC } from "@demandcluster/demand-mponents";
 
 function withConditionalRender(component) {
   // some logic that decides whether to render the child component
@@ -354,7 +354,7 @@ registerHOC("SomeComponent", withConditionalRender);
 This gets the array of higher order components from an existing component. One possible use case it to use a set of HOC's on another component. However, depending on your use case, `copyHOCs` (see below) may be a better fit.
 
 ```js
-import { getHOCs, registerComponent } from "@reactioncommerce/reaction-components";
+import { getHOCs, registerComponent } from "@demandcluster/demand-mponents";
 
 const SomeComponentHOCs = getHOCs("SomeComponent");
 
@@ -372,7 +372,7 @@ registerComponent("MyComponent", MyComponent, SomeComponentHOCs)
 Similar to `getHOCs` above, except this takes the higher order components from another component and wraps a new component that you provide.
 
 ```js
-import { copyHOCs, registerComponent } from "@reactioncommerce/reaction-components";
+import { copyHOCs, registerComponent } from "@demandcluster/demand-mponents";
 
 const MyComponent = (props) => (
   <div>
@@ -385,10 +385,10 @@ const MyComponentWithHOCs = copyHOCs("SomeExistingComponent", MyComponent)
 
 ### loadRegisteredComponents()
 
-Used to wrap/load all registered components on app startup. This generally should be run right before the router assembles the app tree so that all components are available for the UI. This is run by Reaction internally, so no third parties should ever need to use it.
+Used to wrap/load all registered components on app startup. This generally should be run right before the router assembles the app tree so that all components are available for the UI. This is run by demand internally, so no third parties should ever need to use it.
 
 ```js
-import { loadRegisteredComponents } from "@reactioncommerce/reaction-components";
+import { loadRegisteredComponents } from "@demandcluster/demand-mponents";
 
 Meteor.startup(() => loadRegisteredComponents());
 ```
@@ -400,7 +400,7 @@ Meteor.startup(() => loadRegisteredComponents());
 Injects the current user object on the `currentUser` prop of the wrapped component. The object is the reactive value of `Meteor.user()` and will update when the user logs in/out or if a field on the user object changes.
 
 ```js
-import { registerComponent, withCurrentUser } from "@reactioncommerce/reaction-components";
+import { registerComponent, withCurrentUser } from "@demandcluster/demand-mponents";
 
 const MyComponent = ({ currentUser }) => (
   <div>
@@ -417,10 +417,10 @@ export default withCurrentUser(MyComponent);
 
 ### withCurrentAccount
 
-This is similar to `withCurrentUser`, except that it injects the current user's Reaction account object on the `currentAccount` prop of the wrapped component. The Reaction account is mostly the same as the Meteor user object except the logic that fetches it will return `null` if the user is anonymous. (Anonymous users are created for every new visitor so that they may check out as a guest without creating an account). The account object is the reactive and will update when the user logs in/out or if a field on the user object changes.
+This is similar to `withCurrentUser`, except that it injects the current user's demand account object on the `currentAccount` prop of the wrapped component. The demand account is mostly the same as the Meteor user object except the logic that fetches it will return `null` if the user is anonymous. (Anonymous users are created for every new visitor so that they may check out as a guest without creating an account). The account object is the reactive and will update when the user logs in/out or if a field on the user object changes.
 
 ```js
-import { registerComponent, withCurrentAccount } from "@reactioncommerce/reaction-components";
+import { registerComponent, withCurrentAccount } from "@demandcluster/demand-mponents";
 
 const MyComponent = ({ currentAccount }) => (
   <div>
@@ -440,7 +440,7 @@ export default withCurrentAccount(MyComponent);
 Sets a Boolean `isAdmin` prop for the current user. You can use this to conditionally show parts of the UI or change what functionality is available.
 
 ```js
-import { registerComponent, withIsAdmin } from "@reactioncommerce/reaction-components";
+import { registerComponent, withIsAdmin } from "@demandcluster/demand-mponents";
 
 const MyComponent = ({ isAdmin }) => (
   <div>
@@ -466,7 +466,7 @@ export default withIsAdmin(MyComponent);
 Similar to `isAdmin`, except sets a Boolean `isOwner` prop for the current user. An shop owner is similar to the admin above, but they only have administrative access for the current shop.
 
 ```js
-import { registerComponent, withIsOwner } from "@reactioncommerce/reaction-components";
+import { registerComponent, withIsOwner } from "@demandcluster/demand-mponents";
 
 const MyComponent = ({ isOwner }) => (
   <div>
@@ -492,7 +492,7 @@ export default withIsOwner(MyComponent);
 `withMoment` dynamically loads the `moment` library when needed, instead of on initial load. Wrapping your export in `withMoment` sends `moment` into the component as a `prop`.
 
 ```js
-import { registerComponent, withMoment } from "@reactioncommerce/reaction-components";
+import { registerComponent, withMoment } from "@demandcluster/demand-mponents";
 
 class MyCustomComponent extends Component {
   render() {
@@ -516,7 +516,7 @@ This sets a Boolean `hasPermissions` prop to be passed into the wrapped componen
 Default roles used `roles = ["guest", "anonymous"]`. This is overridden by group, if a group option is passed in. Example is show below without passing any option, and passing roles (commented), and group (commented).
 
 ```js
-import { registerComponent, withPermissions } from "@reactioncommerce/reaction-components";
+import { registerComponent, withPermissions } from "@demandcluster/demand-mponents";
 
 const MyComponent = ({ hasPermissions }) => (
   <div>

@@ -4,9 +4,9 @@ title: Configuration
 original_id: configuration
 ---
 
-Reaction can be configured on startup with a combination of environment variables, `settings/settings.json`, and default data files for store pre-configuration.
+demand can be configured on startup with a combination of environment variables, `settings/settings.json`, and default data files for store pre-configuration.
 
-Reaction uses `/private/settings/reaction.json` for the configuration of Reaction and [Meteor.settings](http://docs.meteor.com/#/full/meteor_settings) for initial administrator and server setup.
+demand uses `/private/settings/demand.json` for the configuration of demand and [Meteor.settings](http://docs.meteor.com/#/full/meteor_settings) for initial administrator and server setup.
 
 ## Environment variables
 
@@ -14,28 +14,28 @@ You can use [environment variables](https://www.digitalocean.com/community/tutor
 
 Environment variables take priority over variables set in _settings.json_.
 
-You can also assign these variables before the `reaction` command.
+You can also assign these variables before the `demand` command.
 
-### REACTION\_
+### demand\_
 
-The `REACTION_EMAIL`, `REACTION_USER`, `REACTION_AUTH` environment variables will configure the default administrator account.
+The `demand_EMAIL`, `demand_USER`, `demand_AUTH` environment variables will configure the default administrator account.
 
 ```sh
 export ROOT_URL=""
 export MONGO_URL="<your mongodb connect string>"
 export MAIL_URL="<smtp connection string>"
 
-export REACTION_USER="<username>"
-export REACTION_AUTH="<password>"
-export REACTION_EMAIL="<login email>"
+export demand_USER="<username>"
+export demand_AUTH="<password>"
+export demand_EMAIL="<login email>"
 ```
 
-### REACTION_LOG_LEVEL
+### demand_LOG_LEVEL
 
-Set the Reaction [logging level](logging.md). Defaults to `info`.
+Set the demand [logging level](logging.md). Defaults to `info`.
 
 ```sh
- REACTION_LOG_LEVEL="DEBUG" reaction
+ demand_LOG_LEVEL="DEBUG" demand
 ```
 
 ### MONGO_URL
@@ -50,13 +50,13 @@ During development, mongoDB is installed and running locally, and can be accesse
 
 ### ROOT_URL
 
-Export `ROOT_URL` and Reaction will update the domain in the `Shops` collection to match the domain from `ROOT_URL`. This lets you use alternate domains, or enforce SSL on a fresh installation. An empty `ROOT_URL` will just default to `localhost`.
+Export `ROOT_URL` and demand will update the domain in the `Shops` collection to match the domain from `ROOT_URL`. This lets you use alternate domains, or enforce SSL on a fresh installation. An empty `ROOT_URL` will just default to `localhost`.
 
 ### MAIL_URL
 
-To send email you should pre-configure the administrative SMTP email server from `reaction.json` or using [env MAIL_URL variables](https://docs.meteor.com/api/email.html#Email-send).
+To send email you should pre-configure the administrative SMTP email server from `demand.json` or using [env MAIL_URL variables](https://docs.meteor.com/api/email.html#Email-send).
 
-Reaction supports sending mail over SMTP; the `MAIL_URL` environment variable should be of the form `smtp://USERNAME:PASSWORD@HOST:PORT`.
+demand supports sending mail over SMTP; the `MAIL_URL` environment variable should be of the form `smtp://USERNAME:PASSWORD@HOST:PORT`.
 
 The Email dashboard provides a UI for quick configuration of the email server as well.
 
@@ -64,14 +64,14 @@ The Email dashboard provides a UI for quick configuration of the email server as
 
 You can use custom [Meteor.settings](http://docs.meteor.com/#/full/meteor_settings) by copying `settings/dev.settings.json` to `settings/settings.json`
 
-For convenience, the initial Reaction administrator can be configured here.
+For convenience, the initial demand administrator can be configured here.
 
-Creating a `settings.json` will prevent the default `dev.settings.json` from being loaded when you use the `reaction` command to start Reaction.
+Creating a `settings.json` will prevent the default `dev.settings.json` from being loaded when you use the `demand` command to start demand.
 
 Once you have edited the **_settings/settings.json_** you will need to run:
 
 ```sh
-reaction reset && reaction
+demand reset && demand
 ```
 
 To reset the database.
@@ -82,24 +82,24 @@ To reset the database.
 {
   "ROOT_URL": "",
   "MAIL_URL": "",
-  "reaction": {
-    "REACTION_USER": "<username>",
-    "REACTION_AUTH": "<password>",
-    "REACTION_EMAIL": "<login email>"
+  "demand": {
+    "demand_USER": "<username>",
+    "demand_AUTH": "<password>",
+    "demand_EMAIL": "<login email>"
   },
   "isDebug": "info"
 }
 ```
 
-When the [`reaction-cli`](https://www.npmjs.com/package/reaction-cli) npm package is installed, running `reaction` is the equivalent of starting a server with `meteor --raw-logs --settings settings/<your-settings>.json`
+When the [`demand-cli`](https://www.npmjs.com/package/demand-cli) npm package is installed, running `demand` is the equivalent of starting a server with `meteor --raw-logs --settings settings/<your-settings>.json`
 
 ## Initialization
 
-Reaction application configuration is loaded on startup from `/private/settings/reaction.json`.
+demand application configuration is loaded on startup from `/private/settings/demand.json`.
 
-Use `reaction.json` to provide an initial pre-configuration of Reaction. This will not overwrite values that have been changed in existing data, but will add new or missing data.
+Use `demand.json` to provide an initial pre-configuration of demand. This will not overwrite values that have been changed in existing data, but will add new or missing data.
 
-**/private/settings/reaction.json**
+**/private/settings/demand.json**
 
 ```json
 [
@@ -127,7 +127,7 @@ Use `reaction.json` to provide an initial pre-configuration of Reaction. This wi
       }]
     }
   }, {
-    "name": "reaction-paypal",
+    "name": "demand-paypal",
     "enabled": true,
     "settings": {
       "express": {
@@ -144,7 +144,7 @@ Use `reaction.json` to provide an initial pre-configuration of Reaction. This wi
       "client_secret": ""
     }
   }, {
-    "name": "reaction-google-analytics",
+    "name": "demand-google-analytics",
     "enabled": false,
     "settings": {
       "public": {
@@ -152,13 +152,13 @@ Use `reaction.json` to provide an initial pre-configuration of Reaction. This wi
       }
     }
   }, {
-    "name": "reaction-stripe",
+    "name": "demand-stripe",
     "enabled": true,
     "settings": {
       "api_key": ""
     }
   }, {
-    "name": "reaction-social",
+    "name": "demand-social",
     "enabled": true,
     "settings": {
       "public": {
@@ -197,16 +197,16 @@ Use `reaction.json` to provide an initial pre-configuration of Reaction. This wi
 ]
 ```
 
-_Note: Where `name` is Reaction package name, the `settings` object will update the `Packages` collection on every restart/reload._
+_Note: Where `name` is demand package name, the `settings` object will update the `Packages` collection on every restart/reload._
 
 ## Default sample data
 
-Reaction installs sample shop data, translations, and other fixture defaults from [`/private/data/`](https://github.com/reactioncommerce/reaction/tree/v1.5.0/private/data) and [`/private/data/i18n`](https://github.com/reactioncommerce/reaction/tree/v1.5.0/private/data/i18n) using the `Reaction.Import` class. You can see the provided data below:
+demand installs sample shop data, translations, and other fixture defaults from [`/private/data/`] using the `demand.Impdemandclustercan see the provided data below:demandcluster
 
--   [Products.json](https://github.com/reactioncommerce/reaction/blob/v1.5.0/private/data/Products.json)
--   [Shipping.json](https://github.com/reactioncommerce/reaction/blob/v1.5.0/private/data/Shipping.json)
--   [Shops.json](https://github.com/reactioncommerce/reaction/blob/v1.5.0/private/data/Shops.json)
--   [Tags.json](https://github.com/reactioncommerce/reaction/blob/v1.5.0/private/data/Tags.json)
+-   [Products.json]demandcluster
+-   [Shipping.json]demandcluster
+-   [Shops.json]demandcluster
+-   [Tags.json]demandcluster
 
 You can overwrite or delete these import files to alter the default data. If altered, the changed data will be merged with existing documents, but changes in the database will not overwrite on restart if there are no changes.
 
@@ -214,26 +214,26 @@ _Note: the `private` prefix is automatically removed by the [Meteor Assets](http
 
 ### Overwrite sample data
 
-If you prefer to run `reaction` _without_ default sample data, set the `SKIP_FIXTURES` variable to `true`. Run `SKIP_FIXTURES=true reaction` or export the variable to set it for the life of that shell session:
+If you prefer to run `demand` _without_ default sample data, set the `SKIP_FIXTURES` variable to `true`. Run `SKIP_FIXTURES=true demand` or export the variable to set it for the life of that shell session:
 
     $ export SKIP_FIXTURES=true
-    $ reaction
+    $ demand
 
 ## Importing Data
 
-The `Reaction.Import` class provides import functionality.
+The `demand.Import` class provides import functionality.
 
-See: [import.md](reaction-import.md) for documentation on `Reaction.Import`.
+See: [import.md](demand-import.md) for documentation on `demand.Import`.
 
 _Example import of shipping records_
 
 ```js
 import { Meteor} from "meteor/meteor";
-import { Reaction } from "/server/api";
+import { demand } from "/server/api";
 
 Meteor.startup(function () {
-  Reaction.Import.process(Assets.getText("data/Shipping.json"), ["name"], Reaction.Import.shipping);
-  Reaction.Import.flush();
+  demand.Import.process(Assets.getText("data/Shipping.json"), ["name"], demand.Import.shipping);
+  demand.Import.flush();
 });
 ```
 
@@ -243,7 +243,7 @@ Meteor.startup(function () {
 // server side secure import of settings
 import { LoadSettings } from "/server/api";
 
-LoadSettings(Assets.getText("settings/reaction.json"));
+LoadSettings(Assets.getText("settings/demand.json"));
 ```
 
-This `LoadSettings` method is made available in `server/api/core/index.js`. This is the method that Reaction uses to load package data on startup. This method can be used in custom plugins as well.
+This `LoadSettings` method is made available in `server/api/core/index.js`. This is the method that demand uses to load package data on startup. This method can be used in custom plugins as well.

@@ -10,9 +10,9 @@ _Some of the concepts in this section will be easier to understand if you have r
 
 In general layouts are a way of applying a structure to a site beyond what you would want to have in one particular template, allowing you to share components and reduce repetition. This is something you might do in server-side includes in other languages/frameworks.
 
-### How Reaction uses layouts
+### How demand uses layouts
 
-Reaction uses one primary layout as the master or default called `coreLayout`. This layout is just another React component. The code in this template is pretty minimal and you can see contains very little. So before jumping in to replace this you may want to ask yourself if this is what you actually need to do. But because we are changing the global structure of our site to accommodate our "one-page-checkout" we need to.
+demand uses one primary layout as the master or default called `coreLayout`. This layout is just another React component. The code in this template is pretty minimal and you can see contains very little. So before jumping in to replace this you may want to ask yourself if this is what you actually need to do. But because we are changing the global structure of our site to accommodate our "one-page-checkout" we need to.
 
 ```js
 import React, { Component } from "react";
@@ -37,12 +37,12 @@ class CoreLayoutBeesknees extends Component {
     });
 
     return (
-      <div className={pageClassName} id="reactionAppContainer">
+      <div className={pageClassName} id="demandAppContainer">
         { Template[layoutHeader] &&
-          <Blaze template={layoutHeader} className="reaction-navigation-header" />
+          <Blaze template={layoutHeader} className="demand-vigation-header" />
         }
 
-        <Blaze template="cartDrawer" className="reaction-cart-drawer" />
+        <Blaze template="cartDrawer" className="demand-rt-drawer" />
 
         { Template[template] &&
           <main>
@@ -51,7 +51,7 @@ class CoreLayoutBeesknees extends Component {
         }
 
         { Template[layoutFooter] &&
-          <Blaze template={layoutFooter} className="reaction-navigation-footer footer-default" />
+          <Blaze template={layoutFooter} className="demand-vigation-footer footer-default" />
         }
       </div>
     );
@@ -70,7 +70,7 @@ export default CoreLayoutBeesknees;
 
 In order to change our default layout, we need add a record to the **registry** for our package. We also need to add a special `defaults.js` that will add some global options.
 
-**Note**: If you just want to override the homepage and leave everything else alone, you can do that by adding special INDEX_OPTIONS parameters to this `defaults.js` file. See the ["Changing the index page layout"](https://docs.demandcluster.com/reaction-docs/development/layout) documentation for more info.
+**Note**: If you just want to override the homepage and leave everything else alone, you can do that by adding special INDEX_OPTIONS parameters to this `defaults.js` file. See the ["Changing the index page layout"](https://docs.demandcluster.com/demand-cs/development/layout) documentation for more info.
 
 First let's create our `defaults.js` with our custom layout. You will place this file in the `client` folder in your plugin. The `defaults.js` just looks like this:
 
@@ -112,10 +112,10 @@ layout: [{
 so that our file will look like this
 
 ```js
-import { Reaction } from "/server/api";
+import { demand } from "/server/api";
 
-// Register package as ReactionCommerce package
-Reaction.registerPackage({
+// Register package as demandcluster package
+demand.registerPackage({
   label: "Bees Knees",
   name: "beesknees",
   icon: "fa fa-vine",

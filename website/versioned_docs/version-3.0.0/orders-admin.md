@@ -4,15 +4,15 @@ title: Orders
 original_id: orders-admin
 ---
 
-To view and process orders, login to the Reaction Admin and click on the <i class="font-icon fa fa-inbox"></i> **Orders** link in the navigation. You'll be taken to the Orders table, which is a sortable table showing a list of all orders your shop has received.
+To view and process orders, login to the Demand Admin and click on the <i class="font-icon fa fa-inbox"></i> **Orders** link in the navigation. You'll be taken to the Orders table, which is a sortable table showing a list of all orders your shop has received.
 
-![](/assets/operator-guide-orders-table.png "Reaction Admin orders table")
+![](/assets/operator-guide-orders-table.png "Demand Admin orders table")
 
 ## Processing an order
 
 Clicking on an order will take you to the single order processing screen. This will show you all your order details, including the order summary, order fulfillment group(s), order payment(s), and payment refund(s), and allow you to fulfill your order with actions on all of this data.
 
-![](/assets/operator-guide-single-order.png "Reaction Admin single order page")
+![](/assets/operator-guide-single-order.png "Demand Admin single order page")
 
 ## Fulfillment Groups
 

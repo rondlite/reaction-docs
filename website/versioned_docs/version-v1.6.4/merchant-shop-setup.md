@@ -21,13 +21,13 @@ As the marketplace owner, these are the steps I must complete to invite a mercha
 
 With Marketplace enabled, invite a new shop owner using the Marketplace invite owner form.
 
-![](/assets/admin-merchant-invite.png "Reaction's Invite Owner Form")
+![](/assets/admin-merchant-invite.png "Demand's Invite Owner Form")
 
 ### Activate new shop
 
 After submitting the invite owner form, go to the "Marketplace Shops" settings panel and set the shop to active.
 
-![](/assets/admin-merchant-enable.png "Reaction's Merchant Shop Admin")
+![](/assets/admin-merchant-enable.png "Demand's Merchant Shop Admin")
 
 ## Seller shop onboarding
 

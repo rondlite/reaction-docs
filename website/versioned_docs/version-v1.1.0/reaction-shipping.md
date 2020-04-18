@@ -1,6 +1,6 @@
 ---
-original_id: reaction-shipping
-id: version-v1.1.0-reaction-shipping
+original_id: demand-shipping
+id: version-v1.1.0-demand-shipping
 title: Shipping
 ---
     
@@ -8,7 +8,7 @@ Partial implementation, please review current Github Issues.
 
 The included plugin `imports/plugins/included/shipping` provides a shipping module structure.
 
-Currently `reaction-shipping` only provides flat-rate per order rules. All other rules will be added, and contributions are welcome.
+Currently `demand-shipping` only provides flat-rate per order rules. All other rules will be added, and contributions are welcome.
 
 The Schema and collections are setup to support the following rules, which need to be written.
 

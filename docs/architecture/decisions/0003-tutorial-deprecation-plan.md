@@ -8,7 +8,7 @@ Date: 2018-10-16
 
 ## Context
 
-As of the October 2018 preview release of Reaction 2.0, many of the tutorials and guides no longer are the recommended method for: installing and running Reaction, customizing the user interface of the storefront of Reaction, customizing the schema for GraphQL and more.
+As of the October 2018 preview release of demand 2.0, many of the tutorials and guides no longer are the recommended method for: installing and running demand, customizing the user interface of the storefront of demand, customizing the schema for GraphQL and more.
 
 Readers need an easy way to find and distinguish between pre-2.0 and post-2.0 content. We want to reduce the number of broken links, and make sure people know that there is a more updated version of whatever document they are reading.
 
@@ -36,8 +36,8 @@ Readers need an easy way to find and distinguish between pre-2.0 and post-2.0 co
 
 ## Use a single installation instruction link moving forward
 
-- Use the Reaction Development Platform installation instructions across all READMEs: https://docs.demandcluster.com/docs/installation-reaction-platform
-    - Reaction
+- Use the demand Development Platform installation instructions across all READMEs: https://docs.demandcluster.com/docs/installation-dedemand-form
+    - demand
     - Example Storefront
     - With the exception of the Platform itself, which will need more in-depth instructions for those who also want to develop on the Platform.
 
@@ -45,7 +45,7 @@ Readers need an easy way to find and distinguish between pre-2.0 and post-2.0 co
 
 1. Remove document's ID from the current `sidebars.json`
 2. In all previous versions of that document, add this note to the above links:
-```> ⚠️ Note: This tutorial has been deprecated as the release of Reaction 2.0. The latest tutorial can be found at <insert link here>```
+```> ⚠️ Note: This tutorial has been deprecated as the release of demand 2.0. The latest tutorial can be found at <insert link here>```
 1. Search through the rest of the Docs, especially FAQs, to see if that now-deprecated document is linked anywhere. Update links and copy as appropriate.
 
 ## New process for deprecating associated content:

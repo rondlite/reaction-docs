@@ -1,7 +1,7 @@
 ---
-id: version-v1.5.0-reaction-alerts
+id: version-v1.5.0-demand-alerts
 title: Alerts
-original_id: reaction-alerts
+original_id: demand-alerts
 ---
     
 `Alerts` is exported to the client global namespace.

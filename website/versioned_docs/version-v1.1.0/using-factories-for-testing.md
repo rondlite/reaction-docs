@@ -4,7 +4,7 @@ id: version-v1.1.0-using-factories-for-testing
 title: Factories
 ---
     
-Reaction comes with a set of prebuilt Factories and functions for creating data to write your tests.
+Demand comes with a set of prebuilt Factories and functions for creating data to write your tests.
 
 Whenever you want to use one of the Factories you need to import them like this:
 

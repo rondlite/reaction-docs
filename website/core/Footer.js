@@ -10,8 +10,8 @@ const React = require("react");
 class Footer extends React.Component {
   render() {
     return (
-      <footer className="nav-footer reaction-footer" id="footer">
-        <div className="reaction-footer-logo">
+      <footer className="nav-footer demand-oter" id="footer">
+        <div className="demand-oter-logo">
           <a href="https://demandcluster.com" target="_blank">
             <img
               src="https://backend.demandcluster.com/resources/demand-logo-circular.svg"
@@ -38,10 +38,10 @@ class Footer extends React.Component {
               <h5>Explore</h5>
               <ul className="footer-list">
                 <li><a target="_blank" href="https://demandcluster.com/features">Features</a></li>
-                <li><a target="_blank" href="https://docs.demandcluster.com/reaction-docs/trunk/community-showcase">Showcase</a></li>
+                <li><a target="_blank" href="https://docs.demandcluster.com/demand-cs/trunk/community-showcase">Showcase</a></li>
                 <li><a target="_blank" href="https://demandcluster.com/roadmap">Roadmap</a></li>
                 <li><a target="_blank" href="https://docs.demandcluster.com/">Docs</a></li>
-                <li><a target="_blank" href="https://github.com/reactioncommerce/reaction">GitHub</a></li>
+                <li><a target="_blank" href="https://github.com/demandcluster/demand">GitHub</a></li>
               </ul>
             </div>
 
@@ -56,18 +56,13 @@ class Footer extends React.Component {
 
             <div className="newsletter">
               <ul className="social-list">
-                <li><a target="_blank" href="https://twitter.com/getreaction"><i className="fa fa-twitter" /></a></li>
-                <li><a target="_blank" href="https://facebook.com/reactioncommerce"><i className="fa fa-facebook" /></a></li>
-                <li><a target="_blank" href="https://instagram.com/reactioncommerce"><i className="fa fa-instagram" /></a></li>
-                <li><a target="_blank" href="https://github.com/reactioncommerce/reaction"><i className="fa fa-github" /></a></li>
+                <li><a target="_blank" href="https://twitter.com/demandcluster"><i className="fa fa-twitter" /></a></li>
+                <li><a target="_blank" href="https://facebook.com/demandcluster"><i className="fa fa-facebook" /></a></li>
+                <li><a target="_blank" href="https://instagram.com/demandcluster"><i className="fa fa-instagram" /></a></li>
+                <li><a target="_blank" href="https://github.com/demandcluster/demand"><i className="fa fa-github" /></a></li>
               </ul>
             </div>
 
-            <div className="row">
-              <img src="https://backend.demandcluster.com/resources/demand-logo-circular.svg" alt="" />
-              &nbsp;&nbsp;Made in the sunshine in Santa Monica, California by&nbsp;<a href="/" target="_blank">Demand Cluster, Inc.</a>
-              ©&nbsp;2019&nbsp;|&nbsp;<a href="https://demandcluster.com/legal">Legal</a> | <a href="https://www.demandcluster.com/legal/privacy">Privacy Policy</a>
-            </div>
 
           </div>
         </div>

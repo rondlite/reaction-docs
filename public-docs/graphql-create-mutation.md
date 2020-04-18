@@ -18,7 +18,7 @@ See [Resolver Mutations and Queries vs. Plugin Mutations and Queries](graphql-de
 1. Import the GraphQL file into `index.js` and default export it in an array:
 
     ```js
-    import importAsString from "@reactioncommerce/api-utils/importAsString.js";
+    import importAsString from "@demandcluster/api-utils/importAsString.js";
 
     const schema = importAsString("./schema.graphql");
 
@@ -55,7 +55,7 @@ See [Resolver Mutations and Queries vs. Plugin Mutations and Queries](graphql-de
 2. In `mutations`, create a file for the mutation, e.g. `createSomething.js` for the `createSomething` mutation. The file should look something like this:
 
 ```js
-import Logger from "@reactioncommerce/logger";
+import Logger from "@demandcluster/logger";
 
 /**
  * @method createSomething

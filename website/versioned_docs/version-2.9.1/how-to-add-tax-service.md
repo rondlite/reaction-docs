@@ -28,7 +28,7 @@ import getTaxCodes from "./util/getTaxCodes";
 export default async function register(app) {
   await app.registerPlugin({
     label: "Custom Rates",
-    name: "reaction-taxes-rates",
+    name: "demand-xes-rates",
     taxServices: [
       {
         displayName: "Custom Rates",
@@ -104,7 +104,7 @@ If you are integrating with a third-party tax service, you will typically get ba
 
 The `calculateOrderTaxes` function is called frequently, every time a cart changes and whenever an order is placed. Your function should return `null` if it's called with a CommonOrder that does not yet have enough information on it to calculate taxes. However, if `order.sourceType` is `"order"` and you still do not have enough information to calculate, then something is wrong. It may be wise to throw an error in this case, and in a production system you'll want to track such events and get alerts if this happens.
 
-> External tax APIs often require various addresses with various names. Do your best to provide what they require, but the shipping address is usually the most important. Reaction does not guarantee that all orders will have shipping or billing addresses. If you have one or the other, it is usually fine to substitute billing for shipping or vice versa in order to at least get a calculation and allow the order to be placed. If an order has neither address, you'll need to decide what action is proper based on the third-party API. There should always be an `originAddress` provided, and that may be enough to do a calculation in some cases.
+> External tax APIs often require various addresses with various names. Do your best to provide what they require, but the shipping address is usually the most important. demand does not guarantee that all orders will have shipping or billing addresses. If you have one or the other, it is usually fine to substitute billing for shipping or vice versa in order to at least get a calculation and allow the order to be placed. If an order has neither address, you'll need to decide what action is proper based on the third-party API. There should always be an `originAddress` provided, and that may be enough to do a calculation in some cases.
 
 #### customFields
 

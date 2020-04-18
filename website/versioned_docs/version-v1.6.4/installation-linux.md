@@ -35,40 +35,40 @@ curl https://install.meteor.com/ | sh
 ```
 
 
-## Install Reaction
+## Install Demand
 
-### Install the Reaction command-line interface (CLI)
+### Install the Demand command-line interface (CLI)
 
 ```sh
 # install CLI
-npm install -g reaction-cli
+npm install -g demand-cli
 ```
 
-### Create your first Reaction project
+### Create your first Demand project
 
 ```sh
-# clone Reaction, install NPM dependencies
-reaction init
-# change directory into new Reaction project
-cd reaction
+# clone Demand, install NPM dependencies
+demand init
+# change directory into new Demand project
+cd demand
 ```
 
-If you don't want Reaction to be installed in the default `reaction` directory you can
+If you don't want Demand to be installed in the default `demand` directory you can
 specify a directory like
 ```sh
-reaction init my-new-reaction-project
+demand init my-new-demand-project
 ```
 
 
-### Start Reaction
+### Start Demand
 
-To start Reaction, run the `reaction` command
+To start Demand, run the `demand` command
 
 ```sh
-# start Reaction
-reaction
+# start Demand
+demand
 # or
-reaction run
+demand run
 ```
 
 **Note that the first run can take a while as it downloads dependencies. This is especially true if you are not in North America**
@@ -80,13 +80,13 @@ By default the username will be :`admin@localhost` and the password will be: `r3
 ![](/assets/guide-installation-default-user.png)
 
 
-Congrats! Now you've created your first Reaction store. View the store by going to http://localhost:3000 in your favorite browser.
+Congrats! Now you've created your first Demand store. View the store by going to http://localhost:3000 in your favorite browser.
 
-To terminate `reaction` use `CTRL-c`.
+To terminate `demand` use `CTRL-c`.
 
 To learn how to manage your store as an admin user visit the [admin documentation](dashboard.md)
 
-To learn how to customize Reaction visit the [Customization Guide](tutorial.md)
+To learn how to customize Demand visit the [Customization Guide](tutorial.md)
 
 last_tested: Dec-8-2017
 

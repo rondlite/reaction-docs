@@ -4,11 +4,11 @@ title: Components
 original_id: components
 ---
     
-Reaction UI components use Blaze and React.
+Demand UI components use Blaze and React.
 
-## Reaction Components API
+## Demand Components API
 
-Most of the React components can be replaced or extended using our API. Learn more about our [Reaction Components API](components-api.md).
+Most of the React components can be replaced or extended using our API. Learn more about our [Demand Components API](components-api.md).
 
 ## Component Style Guide
 

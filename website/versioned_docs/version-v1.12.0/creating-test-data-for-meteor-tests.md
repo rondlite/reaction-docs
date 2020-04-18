@@ -4,7 +4,7 @@ title: Creating Test Data for Meteor Tests
 original_id: creating-test-data-for-meteor-tests
 ---
     
-Reaction comes with a set of prebuilt factories and functions for creating data to write your Meteor integration tests.
+Demand comes with a set of prebuilt factories and functions for creating data to write your Meteor integration tests.
 
 Whenever you want to use one of the factories you need to import them like this:
 

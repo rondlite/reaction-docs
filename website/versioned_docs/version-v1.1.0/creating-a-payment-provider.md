@@ -10,7 +10,7 @@ Payment Providers are companies that provide a gateway between ecommerce
 software customer payment. In the U.S. that largely means credit cards
 but it can also mean something like a Paypal account or in other parts
 of the world it could mean cards linked to Kiosks or even BitCoin.
-Reaction doesn't really care what you do here, you could even not
+Demandoesn't really care what you do here, you could even not
 collect money at all it just puts that step as part of the workflow and
 then records the results.
 
@@ -21,7 +21,7 @@ payment provider, secondly to provide a template for creating plugins
 for new Payment Providers.
 
 Note that while charging and capturing should work as expected, refunds are not
-recorded since Reaction expects refunds to be recorded by the Payment Gateway.
+recorded since Demandxpects refunds to be recorded by the Payment Gateway.
 
 ## Introduction
 
@@ -163,7 +163,7 @@ implement this fairly easily.
 
 ## Your package Registry
 
-Payment packages, like all Reaction packages must tell Reaction what they are providing to Reaction through the
+Payment packages, like all Demandackages must tell deDemandt they are providing to demaDemandgh the
 `provides` keyword. Most payment methods will "provide" three things: A dashboard widget, dashboard settings, and a
 checkout form (all covered above). Typically you can just change the names in `register.js` to reflect your package
 name and you should be fine. Also you need to define any "Global" objects that the payment method should provide.

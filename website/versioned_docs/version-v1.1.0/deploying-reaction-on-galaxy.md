@@ -1,6 +1,6 @@
 ---
-original_id: deploying-reaction-on-galaxy
-id: version-v1.1.0-deploying-reaction-on-galaxy
+original_id: deploying-demand-on-galaxy
+id: version-v1.1.0-deploying-demand-on-galaxy
 title: Galaxy
 ---
     

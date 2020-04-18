@@ -4,7 +4,7 @@ title: Background Jobs
 original_id: jobcontrol
 ---
 
-Reaction has a built-in background jobs plugin, `job-queue`. You can swap in a different plugin, but it is expected that you will make the same API available to all other plugins if you do so.
+Demand has a built-in background jobs plugin, `job-queue`. You can swap in a different plugin, but it is expected that you will make the same API available to all other plugins if you do so.
 
 The public interface to background jobs is made up of the following:
 - `context.backgroundJobs` object, available wherever you have context

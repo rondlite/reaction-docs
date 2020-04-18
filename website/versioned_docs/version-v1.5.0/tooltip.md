@@ -64,7 +64,7 @@ export default MyReactComponent;
 
 ## Tooltip (Blaze)
 
-Tooltips are provided by [tooltip](http://github.hubspot.com/tooltip/docs/welcome/). If you are using `reaction-ui` components then tooltips will be available to you on components such as [Button](#button).
+Tooltips are provided by [tooltip](http://github.hubspot.com/tooltip/docs/welcome/). If you are using `demand-ui` components then tooltips will be available to you on components such as [Button](#button).
 
 ### Examples
 

@@ -40,7 +40,7 @@ The resolver function:
 - Returns a Promise (is async)
 - Transforms IDs (see [IDs in GraphQL](#ids-in-graphql)) and data structures (where they don’t match internal data structures)
 - May pull things from the GraphQL context to pass to the plugin function
-- May throw a `ReactionError` if anything goes wrong
+- May throw a `DemandError` if anything goes wrong
 - Includes `clientMutationId` in the response (for mutations only)
 
 The plugin function:
@@ -48,25 +48,25 @@ The plugin function:
 - Is available on the GraphQL context in `context.queries` or `context.mutations`, and as such can be called by code elsewhere in the app
 - Returns a Promise (is async)
 - Does all permission checks
-- May throw a `ReactionError` if anything goes wrong
+- May throw a `DemandError` if anything goes wrong
 - Performs the actual database mutations or queries
 
 TIP: If you’re confused about where to draw the line, imagine what would have to change if we decided to add a REST API. All of that stuff goes in the resolver, while everything that would be shared between GraphQL and REST goes in the plugin function.
 
 ## The Endpoint
 
-The GraphQL server and `/graphql` endpoint is configured and returned by the `createApolloServer` function, which is called from the `ReactionAPI` class instance.
+The GraphQL server and `/graphql` endpoint is configured and returned by the `createApolloServer` function, which is called from the `DemandAPI` class instance.
 
 `createApolloServer` does pretty standard configuration of an Express app using `apollo-server-express`. The main things it does are:
 - Checks the identity token using Express middleware
-- Builds the `context` object that’s available in all resolver functions. See [The Reaction GraphQL Context](#the-reaction-graphql-context)
+- Builds the `context` object that’s available in all resolver functions. See [The Demand GraphQL Context](#the-demand-graphql-context)
 - Formats the `errors` array that is returned to clients, to make errors as helpful as possible
 - Provides the merged GraphQL schema
 - Sets the path as `/graphql` and exposes a GraphQL Playground for GET requests on `/graphql`
 
-## The Reaction GraphQL Context
+## The Demand GraphQL Context
 
-All GraphQL resolvers receive a [context](https://www.apollographql.com/docs/apollo-server/essentials/data.html#context) object as their third argument. The base context is built within the `ReactionAPI` constructor, and additional request-specific properties (like `accountId` and `userHasPermission`) are added to it in `buildContext.js`.
+All GraphQL resolvers receive a [context](https://www.apollographql.com/docs/apollo-server/essentials/data.html#context) object as their third argument. The base context is built within the `DemandAPI` constructor, and additional request-specific properties (like `accountId` and `userHasPermission`) are added to it in `buildContext.js`.
 
 In Jest tests, you can get a mock context object with mock functions on it:
 
@@ -85,7 +85,7 @@ Here’s what's on the context object:
 - To check permissions: `context.userHasPermission(role, shopId)` (returns true or false)
 - To check permissions and throw error: `context.checkPermissions(role, shopId)`
 - MongoDB collections: `context.collections[CollectionName]`
-- The `ReactionAPI` instance: `context.app`
+- The `DemandAPI` instance: `context.app`
 - App events object:
     - To emit: `context.appEvents.emit`
     - To listen: `context.appEvents.on`
@@ -119,7 +119,7 @@ This does not specifically require global uniqueness since it also uses `__typen
 
 In most cases, actual internal data IDs are in MongoDB collections, so they are guaranteed unique within the collection, but not among all collections. To add that extra layer of uniqueness, we concatenate the namespace with the internal ID, and then to keep it looking like a "not human‐readable" ID, we base64 encode.
 
-To convert internal IDs to opaque UUIDs, we first prefix them with "reaction/\<namespace\>" and then base64 encode them. The primary transformation functions that handle this are in the `api-utils` package.
+To convert internal IDs to opaque UUIDs, we first prefix them with "demand/\<namespace\>" and then base64 encode them. The primary transformation functions that handle this are in the `api-utils` package.
 
 The GraphQL resolver functions are the place where ID encoding and decoding happens. They then call out to plugin functions that deal exclusively with internal IDs. Any IDs returned by such functions must also be transformed before returning them, although this typically and preferably happens in a type resolver.
 
@@ -178,11 +178,11 @@ Normally the `shop` relationship would result in a database query, but if `order
 
 ## Documenting GraphQL Functions
 
-Reaction GraphQL resolver functions, like all JavaScript functions in all Reaction code, must have JSDoc comments above them. See the [JSDoc Style Guide](jsdoc-style-guide.md)
+Demand GraphQL resolver functions, like all JavaScript functions in all Demand code, must have JSDoc comments above them. See the [JSDoc Style Guide](jsdoc-style-guide.md)
 
 ## Writing Tests
 
-Reaction GraphQL is tested through a combination of unit tests and integration tests, all written in and executed with Jest. Specifically, the coverage requirements are:
+Demand GraphQL is tested through a combination of unit tests and integration tests, all written in and executed with Jest. Specifically, the coverage requirements are:
 
 - Each query or mutation function in plugins must have unit tests in a `.test.js` file alongside the file being tested.
 - Each resolver that is doing anything more than just referencing another function must have a unit test in a `.test.js` file alongside the file being tested.

@@ -124,7 +124,7 @@ Our function call is just a call out to modify the record in the collection usin
 function modifyCheckoutWorkflow() {
   // Replace checkoutReview with our custom Template
   Packages.update({
-    "name": "reaction-checkout",
+    "name": "demand-eckout",
     "layout": {
       "$elemMatch": {
         "template": "checkoutReview"
@@ -143,7 +143,7 @@ Now of course we will need to create our template and add that file to our impor
 we have covered it a few times now. The code is available in the BeesKnees repo if you want to take a look at it.
 You will notice that there is nothing special about this command, we are just directly modifying the MongoDb.
 
-Once we `reaction reset` and begin again we can look in the db and see that our changes have taken effect. And if we put
+Once we `demand reset` and begin again we can look in the db and see that our changes have taken effect. And if we put
 something in our cart and checkout, we should see the change to the checkout flow.
 
 Next: [Schemas](plugin-schemas-8)

@@ -103,7 +103,7 @@ class MyComponent extends Component {
 
 ### Do
 
-Bind with the class fields syntax to bind callbacks for events. Requires [ESNext class fields](https://github.com/tc39/proposal-class-fields) which is enabled by default in Reaction.
+Bind with the class fields syntax to bind callbacks for events. Requires [ESNext class fields](https://github.com/tc39/proposal-class-fields) which is enabled by default in Demand
 
 ```js
 class MyComponent extends Component {
@@ -146,7 +146,7 @@ You may hear it said that canceling promises on unmount is a better approach, an
 
 If you are creating a component that renders other components within it, for example, a component with a button in it, you should not import those other components. Instead, have them passed in as props, and use the components context.
 
-Read about the components context [here](https://github.com/reactioncommerce/components-context).
+Read about the components context [here].
 
 In general:
 
@@ -155,14 +155,14 @@ In general:
 ```js
 /**
  * If you've set up a components context using
- * [@reactioncommerce/components-context](https://github.com/reactioncommerce/components-context)
+ * [@demandcluster/components-context]
  * (recommended), then this prop will come from there automatically. If you have not
  * set up a components context or you want to override one of the components in a
  * single spot, you can pass in the components prop directly.
  */
 components: PropTypes.shape({
   /**
-   * Pass either the Reaction Button component or your own component that is
+   * Pass either the Demandutton component or your own component that is
    * compatible with ReactoForm.
    */
   Button: CustomPropTypes.component.isRequired,
@@ -175,7 +175,7 @@ components: PropTypes.shape({
 (2) Import `withComponents` and wrap your component
 
 ```js
-import { withComponents } from "@reactioncommerce/components-context";
+import { withComponents } from "@demandcluster/components-context";
 
 // ...
 

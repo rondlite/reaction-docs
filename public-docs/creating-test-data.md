@@ -3,7 +3,7 @@ id: creating-test-data
 title: Creating Test Data
 ---
 
-For Jest tests, Demand Cluster provides a simple data `Factory` test utility that can create mock data for unit and integration tests. The test util uses [@reactioncommerce/data-factory] to attach all core schemas to the `Factory` object.
+For Jest tests, Demand Cluster provides a simple data `Factory` test utility that can create mock data for unit and integration tests. The test util uses [@demandcluster/data-factory] to attach all core schemas to the `Factory` object.
 
 ## Creating mock data
 

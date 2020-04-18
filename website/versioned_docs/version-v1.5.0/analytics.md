@@ -4,7 +4,7 @@ title: Analytics
 original_id: analytics
 ---
     
-Analytics in Reaction is provided by an optional plugin module `imports/plugins/included/analytics`.
+Analytics in Demand is provided by an optional plugin module `imports/plugins/included/analytics`.
 
 This plugin implements an [analytics framework](https://segment.com/docs/libraries/analytics.js/) for integrating third-party analytics services such as segment.io, Google Analytics, and Mixpanel.
 
@@ -18,7 +18,7 @@ Example use:
 <a href="{{pathFor 'product' handle=handle}}" data-event-category="grid" data-event-action="product-click" data-event-label="Grid product click" data-event-value="{{_id}}">
 ```
 
-Send event tracking to Google Analytics by adding the following data attribute to any anchor in Reaction:
+Send event tracking to Google Analytics by adding the following data attribute to any anchor in Demand:
 
 -   data-event-category
 -   data-event-action

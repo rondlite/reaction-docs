@@ -10,7 +10,7 @@ To enable custom taxes, or to link to your Avalara or TaxCloud account, simply c
 
 ## Custom Rates
 
-Reaction gives you the ability to assign different tax rates to different regions around the world. To get started, simply click on the round plus button:
+Demand gives you the ability to assign different tax rates to different regions around the world. To get started, simply click on the round plus button:
 
 ![](/assets/admin-dashboard-taxes.png "Custom Tax Rate Configuration")
 

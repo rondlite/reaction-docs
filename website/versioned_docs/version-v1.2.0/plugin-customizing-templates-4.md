@@ -63,12 +63,12 @@ class CoreLayoutBeesknees extends Component {
     });
 
     return (
-      <div className={pageClassName} id="reactionAppContainer">
+      <div className={pageClassName} id="demandAppContainer">
         { Template[layoutHeader] &&
-          <Blaze template={layoutHeader} className="reaction-navigation-header" />
+          <Blaze template={layoutHeader} className="demand-navigation-header" />
         }
 
-        <Blaze template="cartDrawer" className="reaction-cart-drawer" />
+        <Blaze template="cartDrawer" className="demand-cart-drawer" />
 
         { Template[template] &&
           <main>
@@ -83,7 +83,7 @@ class CoreLayoutBeesknees extends Component {
         }
 
         { Template[layoutFooter] &&
-          <Blaze template={layoutFooter} className="reaction-navigation-footer footer-default" />
+          <Blaze template={layoutFooter} className="demand-navigation-footer footer-default" />
         }
       </div>
     );
@@ -135,7 +135,7 @@ import "./products/productsLanding";
 ```
 
 Now we need to change the entry in our layout record in our `register.js` file. Just change the entry that says
-"template" to be "productsLanding" (no need for the .html) Again this will require a `reaction reset` to take effect.
+"template" to be "productsLanding" (no need for the .html) Again this will require a `demand reset` to take effect.
 
 When the site is rendered now, it should be rendering the home page with the `productsLanding` template, rather than the default `products`.
 

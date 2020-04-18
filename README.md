@@ -1,6 +1,6 @@
-# reaction-docs
+# demand-cs
 
-📝 `reaction-docs` is the new static documentation generator for all Demand Cluster projects.
+📝 `demand-cs` is the new static documentation generator for all Demand Cluster projects.
 
 ## Requirements
 
@@ -25,8 +25,8 @@
 ### Run the app locally
 
 ```
-git clone git@github.com:reactioncommerce/reaction-docs.git
-cd reaction-docs
+git clone git@github.com:demandcluster/demand-cs.git
+cd demand-cs
 bin/setup
 docker-compose up
 ```
@@ -35,7 +35,7 @@ Open `localhost:4242`
 
 ### Update existing documentation
 
-To update docs for the current released version of Reaction, edit existing Markdown files in `website/versioned_docs`.
+To update docs for the current released version of demand, edit existing Markdown files in `website/versioned_docs`.
 
 1. Find the Markdown file you want to edit in the latest version's folder, at `website/versioned_docs/version-CURRENTVERSION`. If the document you want to edit is not in that folder, check in previous versions' folders until you find the latest one.
 1. Edit the file and save.
@@ -43,7 +43,7 @@ To update docs for the current released version of Reaction, edit existing Markd
 
 ### Documenting unreleased features, changes
 
-To update docs of unreleased features, you will need to edit existing Markdown files in `public_docs`. For example, if you are documenting *upcoming* Reaction API changes to Cart that are merged into `develop`, but not yet in ``trunk` , you'd update the `public-docs/cart.md` file.
+To update docs of unreleased features, you will need to edit existing Markdown files in `public_docs`. For example, if you are documenting *upcoming* demand API changes to Cart that are merged into `develop`, but not yet in ``trunk` , you'd update the `public-docs/cart.md` file.
 
 1. Edit the file and save.
 1. Go to `localhost:4242/docs/next/<YOURMARKDOWNFILE_ID>` to see your changes locally.
@@ -68,7 +68,7 @@ title: document number 2
 - To add images, save the image in website/static/assets and reference it like this:
 
 ```md
-![](/assets/admin-dashboard.png "Reaction Dashboard")
+![](/assets/admin-dashboard.png "demand Dashboard")
 ```
 
 - To link to other articles, reference other articles by their filename:
@@ -178,11 +178,11 @@ docker-compose down && docker-compose up
 
 ### Merge to `staging` branch
 
-Merging to `staging` will trigger a CircleCI build to https://reaction-docs-staging.demandcluster.com/
+Merging to `staging` will trigger a CircleCI build to https://demand-cs-staging.demandcluster.com/
 
 ### Merge to `trunk`  branch
 
-Merging to `trunk`  will trigger a CircleCI build to http://reaction-docs-production.netlify.com
+Merging to `trunk`  will trigger a CircleCI build to http://demand-cs-production.netlify.com
 
 ## Algolia search configuration
 

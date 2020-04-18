@@ -6,10 +6,10 @@ original_id: seo-metadata
     
 Basic meta tag data is inserted by the `MetaData.init` method which uses the `dom` core package to manipulate `document.head`.
 
-Add additional meta objects using `Reaction.DOM.setMetaTag` as detailed below.
+Add additional meta objects using `Demand.DOM.setMetaTag` as detailed below.
 
 ```js
-Reaction.DOM.setMetaTag({
+Demand.DOM.setMetaTag({
   name: "keywords",
   content: shop.keywords.toString()
 });

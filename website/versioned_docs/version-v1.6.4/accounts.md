@@ -31,7 +31,7 @@ An email is sent to the email in either of the two scenarios to notify the user 
 
 ### Default Admin groups
 
-There are two default admin groups that come with Reaction Core:
+There are two default admin groups that come with Demandore:
 
 #### 1. Owner group
 

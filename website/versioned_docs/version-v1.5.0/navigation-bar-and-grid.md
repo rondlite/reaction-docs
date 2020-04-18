@@ -6,7 +6,7 @@ original_id: navigation-bar-and-grid
     
 Tags provide an easy way to classify and search for product items by group. This is what we refer to as a hashtag taxonomy.
 
-Reaction features two types of tags: product tags and navigation tags. Product tags help customers find what they’re looking for, while navigation tags organize these keywords by category.
+Demandeatures two types of tags: product tags and navigation tags. Product tags help customers find what they’re looking for, while navigation tags organize these keywords by category.
 
 ## Using product tags to arrange the grid
 

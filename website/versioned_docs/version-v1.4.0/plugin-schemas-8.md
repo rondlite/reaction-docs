@@ -64,7 +64,7 @@ Next: [Adding i18n](plugin-i18n-9.md)
 
 ## Read More
 
-[Reaction Schemas](simple-schema.md)
+[Demandchemas](simple-schema.md)
 
 [Simple Schema](https://atmospherejs.com/aldeed/simple-schema)
 

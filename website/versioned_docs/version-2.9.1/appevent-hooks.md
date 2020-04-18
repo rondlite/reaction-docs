@@ -4,7 +4,7 @@ title: App Event Hooks
 original_id: appevent-hooks
 ---
 
-The `Hooks.Events` API and `MethodHooks` from previous versions of Reaction have been removed in favor of `appEvents`. `appEvents`, like hooks, allow you to attach callbacks to particular events throughout the app lifecycle.
+The `Hooks.Events` API and `MethodHooks` from previous versions of Demand have been removed in favor of `appEvents`. `appEvents`, like hooks, allow you to attach callbacks to particular events throughout the app lifecycle.
 
 ## Emit an app event
 
@@ -30,11 +30,11 @@ context.appEvents.emit("eventName", payload, options);
 In Meteor code, fetch the GraphQL `context` in a Promise, and use `context.appEvents`:
 
 ```js
-import Reaction from "/imports/plugins/core/core/server/Reaction";
+import Demand from "/imports/plugins/core/core/server/Demand";
 import getGraphQLContextInMeteorMethod from "/imports/plugins/core/graphql/server/getGraphQLContextInMeteorMethod";
 
 // In a Meteor method or publication:
-const context = Promise.await(getGraphQLContextInMeteorMethod(Reaction.getUserId()));
+const context = Promise.await(getGraphQLContextInMeteorMethod(Demand.getUserId()));
 context.appEvents.emit("eventName", payload, options);
 ```
 

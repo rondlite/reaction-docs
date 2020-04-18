@@ -4,9 +4,9 @@ title: Requirements
 original_id: requirements
 ---
     
-Reaction is built using [Meteor](https://meteor.com) and requires [Node.js](https://nodejs.org/) (v4 or higher).
+Demand is built using [Meteor](https://meteor.com) and requires [Node.js](https://nodejs.org/) (v4 or higher).
 
-We recommend at least **2GB of memory** for Node and Reaction to run well.
+We recommend at least **2GB of memory** for Node and Demand to run well.
 
 ## Required
 
@@ -14,18 +14,18 @@ We recommend at least **2GB of memory** for Node and Reaction to run well.
 
 <https://nodejs.org>
 
-If you have node and npm already installed, install the [reaction-cli](https://www.npmjs.com/package/reaction-cli) from [npm](https://www.npmjs.com/).
+If you have node and npm already installed, install the [demand-cli](https://www.npmjs.com/package/demand-cli) from [npm](https://www.npmjs.com/).
 
 ```sh
 # install CLI
-npm install -g reaction-cli
+npm install -g demand-cli
 ```
 
-`reaction -h` provides a list of commands.
+`demand -h` provides a list of commands.
 
 ### Meteor
 
-`reaction-cli` will prompt you to install Meteor, if you have not already installed it.
+`demand-cli` will prompt you to install Meteor, if you have not already installed it.
 
 ```sh
 curl https://install.meteor.com/ | sh
@@ -43,7 +43,7 @@ The Meteor development environment requires significantly more available files t
 
 Without updating the available file limits you may see an error.
 
-    Error: ENFILE: too many open files, scandir '/Users/you/Documents/reaction/xxxx'
+    Error: ENFILE: too many open files, scandir '/Users/you/Documents/demand/xxxx'
         at Error (native)
         at Object.fs.readdirSync (fs.js:808:18)
         at Object.wrapper (/tools/fs/files.js:1586:35)

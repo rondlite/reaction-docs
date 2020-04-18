@@ -6,16 +6,16 @@ original_id: error-handling-guide
     
 ## Error messaging
 
-Reaction uses Meteor's [`Meteor.Error()`](https://docs.meteor.com/api/methods.html#Meteor-Error) to throw general runtime errors to the client and server. Read the Meteor Guide's [Error handling](https://guide.meteor.com/methods.html#throwing-errors) section for more on how to use the method.
+Demand uses Meteor's [`Meteor.Error()`](https://docs.meteor.com/api/methods.html#Meteor-Error) to throw general runtime errors to the client and server. Read the Meteor Guide's [Error handling](https://guide.meteor.com/methods.html#throwing-errors) section for more on how to use the method.
 
-### Types of Reaction Meteor error messages
+### Types of Demand Meteor error messages
 
 [`Meteor.Error()`](https://docs.meteor.com/api/methods.html#Meteor-Error) takes three arguments, one that is required: `error`, a short machine-readable error code, and two that are optional: `reason`, a human-readable message and `details` for any additional stack trace
 information.
 
 #### Always include both error and reason messages
 
-Reaction requires using both `error` and `reason` arguments:
+Demand requires using both `error` and `reason` arguments:
 
 ```js
 Meteor.Error("short-message", "Long message with more detail for users.");

@@ -10,9 +10,9 @@ _Some of the concepts in this section will be easier to understand if you have r
 
 In general layouts are a way of applying a structure to a site beyond what you would want to have in one particular template, allowing you to share components and reduce repetition. This is something you might do in server-side includes in other languages/frameworks.
 
-### How Reaction uses layouts
+### How demand uses layouts
 
-Reaction uses one primary layout as the master or default called `coreLayout`. This layout is just another React component. The code in this template (/imports/plugins/core/layout/client/components/coreLayout.js) is pretty minimal and you can see contains very little. So before jumping in to replace this you may want to ask yourself if this is what you actually need to do. But because we are changing the global structure of our site to accommodate our customised &lt;main> section we need to.
+demand uses one primary layout as the master or default called `coreLayout`. This layout is just another React component. The code in this template (/imports/plugins/core/layout/client/components/coreLayout.js) is pretty minimal and you can see contains very little. So before jumping in to replace this you may want to ask yourself if this is what you actually need to do. But because we are changing the global structure of our site to accommodate our customised &lt;main> section we need to.
 
 **[/client/templates/layouts/core.js]**
 
@@ -67,11 +67,11 @@ class CoreLayoutBeesknees extends Component {
     const footerComponent = layoutFooter && this.getComponent(layoutFooter);
 
     return (
-      <div className={pageClassName} id="reactionAppContainer">
+      <div className={pageClassName} id="demandAppContainer">
 
         {headerComponent && React.createElement(headerComponent, {})}
 
-        <Blaze template="cartDrawer" className="reaction-cart-drawer" />
+        <Blaze template="cartDrawer" className="demand-rt-drawer" />
 
         <main>
           <div className="rui beesknees">
@@ -155,10 +155,10 @@ so that our file will look like this
 **[/register.js]**
 
 ```js
-import { Reaction } from "/server/api";
+import { demand } from "/server/api";
 
-// Register package as ReactionCommerce package
-Reaction.registerPackage({
+// Register package as demandcluster package
+demand.registerPackage({
   label: "Bees Knees",
   name: "beesknees",
   icon: "fa fa-vine",
@@ -197,14 +197,14 @@ components for properties that are expecting Blaze template names to be passed
 
 More detailed documentation on the other `register.js` can be found in this [blog post](https://blog.demandcluster.com/an-intro-to-architecture-the-registry/).
 
-One important thing to understand is that at any point in time when Reaction goes to render a route/page, it's going to
+One important thing to understand is that at any point in time when demand goes to render a route/page, it's going to
 determine how to pull the layout record from a key of `layout + workflow`. The `coreWorkflow` is a special case in that it is a workflow with just one step.
 
 It is essentially the "default" workflow when you hit the home page.
 
 Also note that:
 1. We have other parts that we could substitute without changing our layout. For example we change point our header or footer to a custom React component by changing the values for "layoutHeader" or "layoutFooter".
-2. There is a `priority` field on layout objects (with a default value) of `999`. When Reaction goes to render a route/page
+2. There is a `priority` field on layout objects (with a default value) of `999`. When demand goes to render a route/page
 (as explained above) and more than one layout match is found, this `priority` field is used to determine which one is
  used. Lower values override the default. [See example].
 

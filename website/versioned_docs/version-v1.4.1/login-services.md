@@ -6,11 +6,11 @@ original_id: login-services
     
 Enable shoppers to register and log into your store with third-party login services, including Facebook and Google. By default, all third-party sign-ins are turned off. Enabling a third-party login service adds a button under the **Sign In** panel.
 
-![Adding third-party login services to Reaction](/assets/admin-login-services.png)
+![Adding third-party login services to Demand](/assets/admin-login-services.png)
 
 Before getting started, make sure you are logged in as an operator and click the **Login Services** icon in the Dashboard sidebar.
 
-![Enable login services from Reaction Dashboard](/assets/admin-dashboard-login-services.png)
+![Enable login services from Demand Dashboard](/assets/admin-dashboard-login-services.png)
 
 To add a login service, follow these steps:
 

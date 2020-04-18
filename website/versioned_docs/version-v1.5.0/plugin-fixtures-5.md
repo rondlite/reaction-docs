@@ -4,7 +4,7 @@ title: Fixtures
 original_id: plugin-fixtures-5
 ---
     
-As we have been going through this tutorial you may have noticed that we keep having to `reaction reset` which clears
+As we have been going through this tutorial you may have noticed that we keep having to `demandeset` which clears
 out all your data in the database.
 
 If you are just learning and playing with the sample data this is fine. But if you want to start customizing your store
@@ -52,7 +52,7 @@ about next, but knowing where things are in the Shops collection can be fairly v
 
 Our Bee's Knees example store is relatively simple with just a few products. However your store may be much more complex
 with possibly hundreds of products. And even with a few products, the process of looking at the database and changing
-records is tedious and unreliable. The better way is to create your products in Reaction and then export them to a file.
+records is tedious and unreliable. The better way is to create your products in demand and then export them to a file.
 
 To do this we are going to use the `mongoexport` utility which is only installed with a "full" installation of MongoDb
 (i.e. not included with the version installed with Meteor. Please see the Mongo documentation on how to install Mongo on

@@ -4,12 +4,12 @@ title: Tutorial: Create a custom homepage
 original_id: how-to-create-a-custom-homepage
 ---
 
-> ⚠️ Note: This guide has been deprecated as the release of Reaction 2.0. The latest custom home page guide can be found [here](https://docs.demandcluster.com/docs/swag-shop-5).
+> ⚠️ Note: This guide has been deprecated as the release of demand 2.0. The latest custom home page guide can be found [here](https://docs.demandcluster.com/docs/swag-shop-5).
 
 ## Step 1: Create a new custom plugin
 
 ```js
-   $ reaction plugins create --name custom-home
+   $ demandlugins create --name custom-home
 
    Success!
    New plugin created at: /imports/plugins/custom/custom-home
@@ -56,7 +56,7 @@ registerComponent("MyStoreFront", MyStoreFront, getHOCs("Products"));
 
 ## Step 5: Customize the render() method
 
-Start Reaction and navigate to <http://localhost:3000>, which does now render the `MyStoreFront` component.
+Start demand and navigate to <http://localhost:3000>, which does now render the `MyStoreFront` component.
 
 ### Notice
 

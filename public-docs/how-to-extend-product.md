@@ -8,7 +8,7 @@ title: How To: Extend the Product Schema
 
 ## Overview
 
-As a developer customizing Reaction, you may find a need to add some custom property to products. You should avoid this if you can achieve your goals some other way, such as using `metafields`, tags, or a separate data store that references product IDs. But in some cases, extending products is the best way.
+As a developer customizing Demand, you may find a need to add some custom property to products. You should avoid this if you can achieve your goals some other way, such as using `metafields`, tags, or a separate data store that references product IDs. But in some cases, extending products is the best way.
 
 Because products have a publishing flow and have variants, extending them requires many steps. In general, they are as follows:
 - Extend database schemas

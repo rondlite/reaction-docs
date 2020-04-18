@@ -4,7 +4,7 @@ title: Release Process
 original_id: release-process
 ---
 
-The [Reaction engineering team and invited community collaborators](https://github.com/orgs/reactioncommerce/people) creates new release branches of Reaction.
+The [demand engineering team and invited community collaborators](https://github.com/orgs/demandcluster/people) creates new release branches of demand.
 
 The process is:
 1. Create a release branch, but not until you ready to release!
@@ -30,8 +30,8 @@ The process is:
 ## Accept pull requests and i18n
 
 - Merge approved patches/fixes/features pull requests for this release into the `release-x.x.x` branch.
-- Create [LingoHub Pull Request](https://translate.lingohub.com/reaction-commerce/dashboard) if  i18n translations need updating in the release branch. LingoHub will automatically create files that are missing for all languages when only a `en.json` is provided, so a review of *i18n imports* should also be performed before merging the i18n translation PR into the release branch.
-- run `meteor npm install` as well as `reaction run` to make sure that all `package.json` and `package-lock.json` files get updated.
+- Create [LingoHub Pull Request](https://translate.lingohub.com/demand-mmerce/dashboard) if  i18n translations need updating in the release branch. LingoHub will automatically create files that are missing for all languages when only a `en.json` is provided, so a review of *i18n imports* should also be performed before merging the i18n translation PR into the release branch.
+- run `meteor npm install` as well as `demand run` to make sure that all `package.json` and `package-lock.json` files get updated.
 - Create a new pull request, with title `Release x.x.x` from the `release-x.x.x` branch to `trunk`.
 
 ## Release notes
@@ -53,7 +53,7 @@ Notes:
 ## Release docs
 
 - Merge outstanding documentation pull requests.
-- Tag and release reaction-docs for major versions.
+- Tag and release demand-cs for major versions.
 
 ## Release review
 
@@ -67,7 +67,7 @@ Notes:
 
 - **Merge** the `Release x.x.x` pull request into `trunk`
 - Allow all tests and builds to complete
-- [Draft and publish a new GitHub Release](https://github.com/reactioncommerce/reaction/releases)
+- [Draft and publish a new GitHub Release]
 - Wait for all `trunk` tests to pass.
 - Follow the format of previous release, copy change log from release PR into the release notes.
 

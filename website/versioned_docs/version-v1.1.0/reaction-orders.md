@@ -1,6 +1,6 @@
 ---
-original_id: reaction-orders
-id: version-v1.1.0-reaction-orders
+original_id: demand-orders
+id: version-v1.1.0-demand-orders
 title: Orders
 ---
     
@@ -27,11 +27,11 @@ Products.update({
 
 ### orders/addOrderEmail
 
-Called when a customer has checked out as a guest, then adds an email within the order confirmation page. This also adds an email field to `Reaction.Collections.Orders.email`
+Called when a customer has checked out as a guest, then adds an email within the order confirmation page. This also adds an email field to `Demand.Collections.Orders.email`
 
 ### orders/updateHistory
 
-Called when any Order event occurs. The first occurrence is when a user clicks on the newly created order, but also called  when the **begin** button is clicked or tracking number added etc. It extends the history object with additional fields to `Reaction.Collections.Orders.history`
+Called when any Order event occurs. The first occurrence is when a user clicks on the newly created order, but also called  when the **begin** button is clicked or tracking number added etc. It extends the history object with additional fields to `Demand.Collections.Orders.history`
 
 ```js
 history: {
@@ -48,7 +48,7 @@ Called when a tracking number has been entered and the **Add** button was clicke
 
 ### orders/addTracking
 
-Called when a tracking number has been entered and the **Add** button has been clicked.  This updates `Reaction.Collections.Orders.shipping.shipmentMethod.tracking`
+Called when a tracking number has been entered and the **Add** button has been clicked.  This updates `Demand.Collections.Orders.shipping.shipmentMethod.tracking`
 
 ### orders/documentPrepare
 
@@ -60,7 +60,7 @@ This method calls the `processPayments` and also updates the workflow status.
 
 ### orders/processPayments
 
-Determines the payment method and hits the payment API to capture the payment. If successful it updates `Reaction.Collections.Orders.payment.paymentMethod.transactionId` else it throws an error :
+Determines the payment method and hits the payment API to capture the payment. If successful it updates `Demand.Collections.Orders.payment.paymentMethod.transactionId` else it throws an error :
 
 ```js
 import { Orders } from "/lib/collections";

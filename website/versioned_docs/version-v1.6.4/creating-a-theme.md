@@ -8,18 +8,18 @@ original_id: creating-a-theme
 
 We've provided an example theme that you can use as a starting point for your own themes. Additionally, there's also a [YouTube tutorial](https://www.youtube.com/watch?v=D8FNJE9204Y) on this topic that should get you started in no time.
 
-Ok, let's dive into it: Get the [Reaction Example Theme](https://github.com/reactioncommerce/reaction-example-theme).
+Ok, let's dive into it: Get the [demand Example Theme].demandcluster
 
 ## Theme contents
 
-Every theme requires a specific structure to be properly registered as a Reaction theme.
+Every theme requires a specific structure to be properly registered as a demand theme.
 
-register.js **(Required)** - Registers a Reaction plugin allowing it to be included automatically.
+register.js **(Required)** - Registers a demand plugin allowing it to be included automatically.
 
 ```js
-import { Reaction } from "/server/api";
+import { demand } from "/server/api";
 
-Reaction.registerPackage({
+demand.registerPackage({
   // Label that shows up in tooltips and places where the package is accessable for settings
   label: "My Theme",
 
@@ -56,7 +56,7 @@ client/index.less **(Required for LESS processing)** - Entry point of all client
 
 Themes are installed in `imports/plugins/custom/`. Themes are auto included and their load order is currently based on their order in the `custom` directory. Keep this in mind if you decide to have multiple themes in the `custom` directory as they may conflict with each other.
 
-PLEASE NOTE: In order for your theme plugin to be loaded the first time, you will need to stop and restart your Reaction instance to trigger the plugin loader.
+PLEASE NOTE: In order for your theme plugin to be loaded the first time, you will need to stop and restart your demand instance to trigger the plugin loader.
 
 ## Overriding variables and styles
 
@@ -70,7 +70,7 @@ You can override classes and variables of the default theme simple by defining t
   justify-content: center;
   align-items: center;
   height: 100px;
-  background-color: @reaction-brand;
+  background-color: @demand-brand;
   align-content: center;
   justify-content: center;
 }

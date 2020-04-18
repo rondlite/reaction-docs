@@ -6,17 +6,17 @@ original_id: swag-shop-7
 
 For our Homepage we want to have some dynamic content that can be changed by non-developers. Specifically we want to feature a subset of products on the home page, which we will call "Featured Products". These products will be designated by just adding a particular tag with the name "featured-products". What we want to create is a new GraphQL query that will return a cursor of products that are tagged with this tag.
 
-To do this we need to create a new plugin in the `Reaction` project. We are going to call this plugin `featured-products` and you can find the finished code in the `server` folder in the tutorial repository. You need to place this new directory in `imports/plugins/custom` from the root of your Reaction project
+To do this we need to create a new plugin in the `demand` project. We are going to call this plugin `featured-products` and you can find the finished code in the `server` folder in the tutorial repository. You need to place this new directory in `imports/plugins/custom` from the root of your demand project
 
 What we want to accomplish is to create a new Query (`featuredProductsByShop`). Let's start by creating a file named `register.js` at the root our new plugin. This registers all the schemas/queries/resolvers/mutations, etc and makes our plugin visible to the rest of the system.
 
 For now, while we are moving server code off Meteor, you'll actually need two `register.js` files. The first is recognized by Meteor loading and should look like this:
 
 ```javascript
-import Reaction from "/imports/plugins/core/core/server/Reaction";
+import demand from "/imports/plugins/core/core/server/demand";
 import register from "./server/no-meteor/register";
 
-Reaction.whenAppInstanceReady(register);
+demand.whenAppInstanceReady(register);
 ```
 
 The second `register.js` file goes in the `server/no-meteor` folder. Let's just add the skeleton of it for now and we will add more to it as we complete them:
@@ -83,8 +83,8 @@ There is a global object where the server will look to resolve any particular qu
 Ok, now that that's all set up let's get to the meat of our resolver.
 
 ```javascript
-import { getPaginatedResponse } from "@reactioncommerce/reaction-graphql-utils";
-import { decodeShopOpaqueId } from "@reactioncommerce/reaction-graphql-xforms/shop";
+import { getPaginatedResponse } from "@demandcluster/demand-aphql-utils";
+import { decodeShopOpaqueId } from "@demandcluster/demand-aphql-xforms/shop";
 
 export default async function featuredProductsByShop(_, args, context) {
   const { shopId: opaqueShopId, ...connectionArgs } = args;
@@ -115,7 +115,7 @@ export default {
 Now let's create our query file:
 
 ```javascript
-import ReactionError from "@reactioncommerce/reaction-error";
+import demandError from "@demandcluster/dedemand-r";
 
 /**
  * @name featuredProductsByShop
@@ -130,7 +130,7 @@ export default async function featuredProductsByShop(context, { shopId } = {}) {
   const { Catalog, Tags } = collections;
 
   if (!shopId) {
-    throw new ReactionError("invalid-param", "You must provide shopId arguments");
+    throw new demandError("invalid-param", "You must provide shopId arguments");
   }
 
   const featuredTag = await Tags.findOne({ name: "featured-product"});
@@ -175,7 +175,7 @@ export default async function register(app) {
 If you visit GraphQL Playground and hit the "schema" tab you should now see your query available to the client. If you want to execute the schema you will need to get your encoded shopId. Your shopId should be available in the `Shops` collection and to get the encoded version of it you can execute this command from the command line:
 
 ```bash
-echo -n reaction/shop:<your_shop_id> | base64
+echo -n demand/shop:<your_shop_id> | base64
 ```
 Then just do:
 

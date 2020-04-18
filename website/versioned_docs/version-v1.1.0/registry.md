@@ -4,7 +4,7 @@ id: version-v1.1.0-registry
 title: Registry
 ---
     
-The `Reaction Registry` is used to add settings, routes, and permissions for Reaction specific packages.
+The `Demand Registry` is used to add settings, routes, and permissions for Demand specific packages.
 
 A `registry` object can be any combination of properties, with `provides` and `name` being the only required elements.
 
@@ -12,16 +12,16 @@ _Note: The registry is currently refreshed only on update/deleting the package r
 
 You may filter, or define using any of the optional registry properties:
 
-Example package registry from `reaction-product-variants` plugin module `/imports/plugins/included/product-variant`.
+Example package registry from `demand-product-variants` plugin module `/imports/plugins/included/product-variant`.
 
 **registerPackage**
 
 ```js
-import { Reaction } from "/server/api";
+import { Demand } from "/server/api";
 
-Reaction.registerPackage({
+Demand.registerPackage({
   label: "Products",
-  name: "reaction-product-variant",
+  name: "demand-product-variant",
   icon: "fa fa-cubes",
   autoEnable: true,
   registry: [{
@@ -115,9 +115,9 @@ The `container` group alike for presentation _example: used to connect settings 
 
 **Dynamic Templates**
 
-The `provides` property is a "placement" value, loading it as `dynamic template` where the other conditions match a request from the `reactionApps` helper.
+The `provides` property is a "placement" value, loading it as `dynamic template` where the other conditions match a request from the `demandApps` helper.
 
-The following `provides` values are defined in reaction-core:
+The following `provides` values are defined in demand-core:
 
 - paymentMethod
 - shippingMethod
@@ -148,10 +148,10 @@ To add a new `userAccountDropdown` link to the Accounts menu:
 }
 ```
 
-From templates, you can create additional dynamic template `provides` using the `reactionApps` helper to load registry objects.
+From templates, you can create additional dynamic template `provides` using the `demandApps` helper to load registry objects.
 
 ```handlebars
-{{#each reactionApps provides="settings" name=packageName group=group}}
+{{#each demandApps provides="settings" name=packageName group=group}}
   <a href="{{pathFor name}}" class="pkg-settings" title="{{i18n 'app.settings' 'Settings'}}">
     <i class="{{orElse icon 'fa fa-cog fa-2x fa-fw'}}"></i>
   </a>

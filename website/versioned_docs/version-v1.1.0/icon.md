@@ -4,7 +4,7 @@ id: version-v1.1.0-icon
 title: Icon
 ---
     
-The icon components give you a simple way to use the available icon sets in Reaction with one component.
+The icon components give you a simple way to use the available icon sets in Demand with one component.
 
 ## Import
 

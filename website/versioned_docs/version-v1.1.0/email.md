@@ -4,7 +4,7 @@ id: version-v1.1.0-email
 title: Email
 ---
 
-Reaction sends emails for a variety of reasons (user signup, password reset, order receipts, etc.), so you will need to configure an email provider to send emails. Because Reaction is built on top of [Node.js](https://nodejs.org), email sending is not natively supported directly from the server. Reaction needs to send email via a mail provider using the [SMTP](https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol) protocol. You can [read more about why](https://nodemailer.com/2-0-0-beta/setup-smtp/smtp-say-what/) from the documentation of the underlying email package we use called [Nodemailer](https://github.com/nodemailer/nodemailer). Some examples of SMTP providers are [Mailgun](https://www.mailgun.com/), [Mandrill](https://www.mandrill.com/), or [Sendgrid](https://sendgrid.com/). You can use any of the [providers supported by Nodemailer](https://github.com/nodemailer/nodemailer-wellknown#supported-services) or you can define your own custom SMTP settings (more info below).
+Demand sends emails for a variety of reasons (user signup, password reset, order receipts, etc.), so you will need to configure an email provider to send emails. Because Demand is built on top of [Node.js](https://nodejs.org), email sending is not natively supported directly from the server. Demand needs to send email via a mail provider using the [SMTP](https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol) protocol. You can [read more about why](https://nodemailer.com/2-0-0-beta/setup-smtp/smtp-say-what/) from the documentation of the underlying email package we use called [Nodemailer](https://github.com/nodemailer/nodemailer). Some examples of SMTP providers are [Mailgun](https://www.mailgun.com/), [Mandrill](https://www.mandrill.com/), or [Sendgrid](https://sendgrid.com/). You can use any of the [providers supported by Nodemailer](https://github.com/nodemailer/nodemailer-wellknown#supported-services) or you can define your own custom SMTP settings (more info below).
 
 ## Configuration
 
@@ -30,9 +30,9 @@ Click the gear icon to open the settings menu.
 
 For this example, we will be setting up [Mailgun](https://www.mailgun.com/), but feel free to use any provider that you prefer. If you would like to follow along, see the [Mailgun documentation](https://documentation.mailgun.com/quickstart.html) for how to set up your account and get your SMTP credentials.
 
-After you have done that, you can simply choose Mailgun from the services dropdown and then add your SMTP user and password. Once you have added your settings, click save. Reaction will immediately test your settings before saving them and will show an alert if your settings fail. If the verification succeeds, the settings will save and you should see the status indicator change to green and the configuration panel will show your new settings.
+After you have done that, you can simply choose Mailgun from the services dropdown and then add your SMTP user and password. Once you have added your settings, click save. Demand will immediately test your settings before saving them and will show an alert if your settings fail. If the verification succeeds, the settings will save and you should see the status indicator change to green and the configuration panel will show your new settings.
 
-Reaction is now ready to send emails!
+Demand is now ready to send emails!
 
 ### Custom Settings
 
@@ -42,7 +42,7 @@ To demonstrate this option, we'll use the same settings from earlier, but this t
 
 ### Advanced
 
-Reaction also allows you to override the settings outlined above with two other possible methods: [Meteor settings](http://docs.meteor.com/api/core.html#Meteor-settings) or [environment variables](https://en.wikipedia.org/wiki/Environment_variable). If you're not sure what either of these is, you should probably just stick to the dashboard configuration discussed above.
+Demand also allows you to override the settings outlined above with two other possible methods: [Meteor settings](http://docs.meteor.com/api/core.html#Meteor-settings) or [environment variables](https://en.wikipedia.org/wiki/Environment_variable). If you're not sure what either of these is, you should probably just stick to the dashboard configuration discussed above.
 
 #### Meteor Settings
 
@@ -64,6 +64,6 @@ Finally, you can override all of the above mail settings by setting the `MAIL_UR
 # set the environment
 export MAIL_URL="smtp://username:password@example-mail-host.com:465"
 
-# or add it before the Reaction command
-MAIL_URL="smtp://username:password@example-mail-host.com:465" reaction
+# or add it before the Demand command
+MAIL_URL="smtp://username:password@example-mail-host.com:465" demand
 ```

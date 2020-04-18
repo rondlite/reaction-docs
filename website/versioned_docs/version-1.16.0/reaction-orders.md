@@ -1,7 +1,7 @@
 ---
-id: version-1.16.0-reaction-orders
+id: version-1.16.0-demand-orders
 title: Orders
-original_id: reaction-orders
+original_id: demand-orders
 ---
     
 ## Order Methods
@@ -27,17 +27,17 @@ Products.update({
 
 ### orders/addOrderEmail
 
-Meteor method removed as of [release-2.0.0-rc.7](https://github.com/reactioncommerce/reaction/pull/4815/commits/1de05d5421fa1bafb8a1f543a9d57922cd5734b3)
+Meteor method removed as of [release-2.0.0-rc.7]demandcluster
 
 ### orders/updateHistory
 
-Called when any Order event occurs. The first occurrence is when a user clicks on the newly created order, but also called  when the **begin** button is clicked or tracking number added etc. It extends the history object with additional fields to `Reaction.Collections.Orders.history`
+Called when any Order event occurs. The first occurrence is when a user clicks on the newly created order, but also called  when the **begin** button is clicked or tracking number added etc. It extends the history object with additional fields to `demand.Collections.Orders.history`
 
 ```js
 history: {
   event: event,
   value: value,
-  userId: Reaction.getUserId(),
+  userId: demand.getUserId(),
   updatedAt: new Date()
 }
 ```
@@ -48,7 +48,7 @@ Called when a tracking number has been entered and the **Add** button was clicke
 
 ### orders/addTracking
 
-Called when a tracking number has been entered and the **Add** button has been clicked.  This updates `Reaction.Collections.Orders.shipping.shipmentMethod.tracking`
+Called when a tracking number has been entered and the **Add** button has been clicked.  This updates `demand.Collections.Orders.shipping.shipmentMethod.tracking`
 
 ### orders/documentPrepare
 
@@ -60,7 +60,7 @@ This method calls the `processPayments` and also updates the workflow status.
 
 ### orders/processPayments
 
-Determines the payment method and hits the payment API to capture the payment. If successful it updates `Reaction.Collections.Orders.payment.paymentMethod.transactionId` else it throws an error :
+Determines the payment method and hits the payment API to capture the payment. If successful it updates `demand.Collections.Orders.payment.paymentMethod.transactionId` else it throws an error :
 
 ```js
 import { Orders } from "/lib/collections";

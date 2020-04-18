@@ -4,7 +4,7 @@
       "version-v1.6.4-intro"
     ],
     "Developer": [
-      "version-v1.6.4-getting-started-developing-with-reaction",
+      "version-v1.6.4-getting-started-developing-with-demand",
       "version-v1.6.4-community-resources",
       "version-v1.6.4-installation",
       "version-v1.6.4-installation-osx",
@@ -15,7 +15,7 @@
       "version-v1.6.4-styleguide",
       "version-v1.6.4-git-style-guide",
       "version-v1.6.4-react-best-practices",
-      "version-v1.6.4-contributing-to-reaction",
+      "version-v1.6.4-contributing-to-demand",
       "version-v1.6.4-developer-faq",
       "version-v1.6.4-community-channels"
     ],
@@ -63,27 +63,26 @@
       "version-v1.6.4-jobcontrol"
     ],
     "Core": [
-      "version-v1.6.4-reaction-core",
       "version-v1.6.4-admin-views",
-      "version-v1.6.4-reaction-user-accounts",
-      "version-v1.6.4-reaction-alerts",
+      "version-v1.6.4-demand-user-accounts",
+      "version-v1.6.4-demand-alerts",
       "version-v1.6.4-analytics",
       "version-v1.6.4-i18n",
-      "version-v1.6.4-reaction-shops",
-      "version-v1.6.4-reaction-product-detail",
-      "version-v1.6.4-reaction-products",
-      "version-v1.6.4-reaction-tags",
-      "version-v1.6.4-reaction-cart",
-      "version-v1.6.4-reaction-shipping",
-      "version-v1.6.4-reaction-payments",
-      "version-v1.6.4-reaction-orders",
-      "version-v1.6.4-reaction-import",
-      "version-v1.6.4-reaction-inventory",
-      "version-v1.6.4-reaction-localization",
+      "version-v1.6.4-demand-shops",
+      "version-v1.6.4-demand-product-detail",
+      "version-v1.6.4-demand-products",
+      "version-v1.6.4-demand-tags",
+      "version-v1.6.4-demand-cart",
+      "version-v1.6.4-demand-shipping",
+      "version-v1.6.4-demand-payments",
+      "version-v1.6.4-demand-orders",
+      "version-v1.6.4-demand-import",
+      "version-v1.6.4-demand-inventory",
+      "version-v1.6.4-demand-localization",
       "version-v1.6.4-method-hooks",
       "version-v1.6.4-collection-hooks",
       "version-v1.6.4-event-hooks",
-      "version-v1.6.4-reaction-module-cheatsheet",
+      "version-v1.6.4-demand-module-cheatsheet",
       "version-v1.6.4-revision-api"
     ],
     "Components": [
@@ -130,7 +129,7 @@
       "version-v1.6.4-packages-search"
     ],
     "Testing": [
-      "version-v1.6.4-testing-reaction",
+      "version-v1.6.4-testing-demand",
       "version-v1.6.4-acceptance-testing",
       "version-v1.6.4-react-testing",
       "version-v1.6.4-using-factories-for-testing",
@@ -141,8 +140,7 @@
     ],
     "Deploying": [
       "version-v1.6.4-deploying",
-      "version-v1.6.4-prerender",
-      "version-v1.6.4-deploying-reaction-using-docker"
+      "version-v1.6.4-prerender"
     ],
     "Store Operator's Guide": [
       "version-v1.6.4-dashboard",

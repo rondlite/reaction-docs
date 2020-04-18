@@ -32,5 +32,5 @@ challenges with testing: [Testing Tutorial](testing-tutorial.md)
 
 ## Getting Help
 
--   [Gitter Live Chat](https://gitter.im/reactioncommerce/reaction?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+-   [Gitter Live Chat](https://gitter.im/demandcluster/demandtm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 -   [Forums](<>)

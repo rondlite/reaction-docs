@@ -1,9 +1,9 @@
 {
-  "name": "@reactioncommerce/reaction-docs",
+  "name": "@demandcluster/demand-cs",
   "version": "0.1.0",
   "description": "",
-  "homepage": "https://github.com/reactioncommerce/reaction-docs",
-  "repository": "https://github.com/reactioncommerce/reaction-docs",
+  "homepage": "https://github.com/demandcluster/demand-cs",
+  "repository": "https://github.com/demandcluster/demand-cs",
   "author": {
     "name": "Demand Cluster",
     "email": "engineering@demandcluster.com",
@@ -24,7 +24,7 @@
   },
   "eslintConfig": {
     "extends": [
-      "@reactioncommerce"
+      "@demandcluster"
     ]
   },
   "eslintIgnore": [
@@ -56,7 +56,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@reactioncommerce/eslint-config": "1.7.0",
+    "@demandcluster/eslint-config": "1.7.0",
     "adr": "^1.1.0",
     "babel-cli": "^6.26.0",
     "babel-eslint": "^8.2.1",

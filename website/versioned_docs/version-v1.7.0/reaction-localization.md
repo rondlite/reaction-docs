@@ -1,12 +1,12 @@
 ---
-id: version-v1.7.0-reaction-localization
+id: version-v1.7.0-demand-localization
 title: Localization
-original_id: reaction-localization
+original_id: demand-localization
 ---
     
 ## Currency Localization
 
-Currency formatting is determined by users locale currency. The currency formatting is stored in the `Shops.currencies` object, and the configuration data is available in the client as `Reaction.Locale`. There are 2 important objects here:
+Currency formatting is determined by users locale currency. The currency formatting is stored in the `Shops.currencies` object, and the configuration data is available in the client as `Demand.Locale`. There are 2 important objects here:
 
 - `currency` - contains data about user's currency;
 - `shopCurrency` - contains data about base shop currency.
@@ -19,11 +19,11 @@ We've created `formatPrice` and `currencySymbol` helpers for using in templates:
 
 We use the [accounting.js](https://openexchangerates.github.io/accounting.js/) library for formatting.
 
-Typical usage is `price = accounting.formatMoney price, Reaction.Locale.currency`
+Typical usage is `price = accounting.formatMoney price, Demand.Locale.currency`
 
 _Note:_ Changing base shop currency is not reactive. Refresh/restart to see changes.
 
-To add a currency you can add an entry in `reaction-sample-data/private/data/Shops.json`. For example:
+To add a currency you can add an entry in `demand-sample-data/private/data/Shops.json`. For example:
 
 ```json
 "currencies" [
@@ -100,4 +100,4 @@ If no address can be found, then the following address object is returned:
 }]
 ```
 
-For more information on how geocoding works in Reaction, check out the [meteor-geocoder package](https://github.com/aldeed/meteor-geocoder)
+For more information on how geocoding works in Demand, check out the [meteor-geocoder package](https://github.com/aldeed/meteor-geocoder)

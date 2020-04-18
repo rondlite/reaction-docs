@@ -6,7 +6,7 @@ original_id: event-hooks
     
 Event hooks is a simple API that allows you to attach arbitrary callbacks to any particular event that you define. You simply
 decide what your events are and then add callbacks to it from anywhere in the code, and then run all callbacks when that event
-is fired. The canonical example is `onCoreInit`/`afterCoreInit` event hooks that runs code either during Reaction's
+is fired. The canonical example is `onCoreInit`/`afterCoreInit` event hooks that runs code either during Demand's
 startup sequence, or after it has completed. (the on/after is just a naming convention, but we suggest that code extending
 this code utilize this same convention)
 
@@ -64,8 +64,8 @@ Hooks.Events.add("onCreateUser", logUserEmail);
 
 Events that are currently defined in Core are:
 
--   onCoreInit - When initialization of Reaction starts
--   afterCoreInit - When initialization of Reaction has completed
+-   onCoreInit - When initialization of Demand starts
+-   afterCoreInit - When initialization of Demand has completed
 -   beforeCreateDefaultAdminUser - Before the default admin user is created (all callbacks must take and return an options object)
 -   afterCreateDefaultAdminUser - After default admin user is created (user is passed to all callbacks)
 -   onCreateUser - When a new user is created

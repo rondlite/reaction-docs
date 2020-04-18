@@ -4,15 +4,15 @@ title: Email
 original_id: email-api
 ---
 
-Email sending in Reaction is handled by [Nodemailer](https://github.com/nodemailer/nodemailer) and the use of any SMTP server is supported. See the [configuration documentation](email-admin.md) for details on how to set up mail in the admin dashboard.
+Email sending in demand is handled by [Nodemailer](https://github.com/nodemailer/nodemailer) and the use of any SMTP server is supported. See the [configuration documentation](email-admin.md) for details on how to set up mail in the admin dashboard.
 
-All emails that are sent from Reaction are added to a job queue for both logging and failure handling (see [vsivsi:job-collection](https://github.com/vsivsi/meteor-job-collection) for full API docs). While you can add jobs directly to the queue, it is recommended that you use the API outlined below to send emails.
+All emails that are sent from demand are added to a job queue for both logging and failure handling (see [vsivsi:job-collection](https://github.com/vsivsi/meteor-job-collection) for full API docs). While you can add jobs directly to the queue, it is recommended that you use the API outlined below to send emails.
 
 ## API
 
-All server side email methods (except Meteor methods) are available in the `Reaction.Email` namespace.
+All server side email methods (except Meteor methods) are available in the `demand.Email` namespace.
 
-### Reaction.Email.getMailUrl()
+### demand.Email.getMailUrl()
 
 If mail is configured, returns an SMTP URL string.
 
@@ -22,7 +22,7 @@ The following settings are checked in the order shown and the first one that is 
 -   `Meteor.settings.MAIL_URL`
 -   Mail settings saved in the `core` plugin settings
 
-### Reaction.Email.getMailConfig()
+### demand.Email.getMailConfig()
 
 If mail is configured, returns a [Nodemailer](https://github.com/nodemailer/nodemailer) configuration object.
 
@@ -56,7 +56,7 @@ The "direct" config looks like this:
 }
 ```
 
-### Reaction.Email.send(options)
+### demand.Email.send(options)
 
 Adds an email sending job to the queue. Jobs are processed immediately in the order they are added. Failures are retried 5 times, with a 3 minute wait between each try.
 
@@ -69,16 +69,16 @@ Adds an email sending job to the queue. Jobs are processed immediately in the or
 -   `subject` - the email subject
 -   `html` - the HTML or plain text content of the email
 
-#### Reaction.Email.getTemplate(template)
+#### demand.Email.getTemplate(template)
 
 Returns an email template as a `String` for server side rendering of an email body.
 
 **template** `{String}` (required)
 
-The `template` name passed in is used to find a template in either the `Templates` collection in the database or the provided email templates in the filesystem. The convention is to name templates based on the folder/file structure relative to [/private/email/templates](https://github.com/reactioncommerce/reaction/tree/v1.5.0/private/email/templates). For example, to get the template used for inviting a shop member, you would use:
+The `template` name passed in is used to find a template in either the `Templates` collection in the database or the provided email templates in the filesystem. The convention is to name templates based on the folder/file structure relative to [/private/email/templates]. For example, to gedemandclustersed for inviting a shop member, you would use:
 
 ```js
-const tmpl = Reaction.Email.getTemplate("accounts/inviteShopMember");
+const tmpl = demand.Email.getTemplate("accounts/inviteShopMember");
 ```
 
 That would first try to find a template in the `Templates` collection with that name and the current locale/language like this:
@@ -90,4 +90,4 @@ Templates.findOne({
 });
 ```
 
-If no template is found, it will fallback to the default template in the filesystem at [/private/email/templates/accounts/inviteShopMember.html](https://github.com/reactioncommerce/reaction/blob/v1.5.0/private/email/templates/accounts/inviteShopMember.html) using [Meteor's Assets API](http://docs.meteor.com/api/assets.html).
+If no template is found, it will fallback to the default template in the filesystem at [/private/email/templates/accounts/inviteShopMember.html].demandcluster

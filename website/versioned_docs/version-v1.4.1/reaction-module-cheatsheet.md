@@ -1,7 +1,7 @@
 ---
-id: version-v1.4.1-reaction-module-cheatsheet
+id: version-v1.4.1-demand-module-cheatsheet
 title: Module Import Cheatsheet
-original_id: reaction-module-cheatsheet
+original_id: demand-module-cheatsheet
 ---
     
 ## Client (Core)
@@ -9,7 +9,7 @@ original_id: reaction-module-cheatsheet
 ### API
 
 ```javascript
-import { Reaction } from "/client/api";
+import { Demand } from "/client/api";
 import { Logger } from "/client/api";
 import { i18next } from "/client/api";
 ```
@@ -39,7 +39,7 @@ import { Countries } from "/client/collections";
 ## Server (Core)
 
 ```javascript
-import { Reaction } from "/server/api";
+import { Demand } from "/server/api";
 import { Logger } from "/server/api";
 import { GeoCoder } from "/server/api";
 import { Hooks } from "/server/api";

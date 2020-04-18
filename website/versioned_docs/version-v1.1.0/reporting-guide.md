@@ -22,7 +22,7 @@ In your report please include:
 
 ## What happens after you file a report?
 
-You will receive an email from the Reaction Code of Conduct Committee acknowledging receipt immediately. We promise to acknowledge receipt within 24 hours (and will aim for much quicker than that).
+You will receive an email from the Demandode of Conduct Committee acknowledging receipt immediately. We promise to acknowledge receipt within 24 hours (and will aim for much quicker than that).
 
 The working group will immediately meet to review the incident and determine:
 
@@ -39,7 +39,7 @@ Once the working group has a complete account of the events they will make a dec
 - A private reprimand from the working group to the individual(s) involved.
 - A public reprimand.
 - An imposed vacation (i.e. asking someone to "take a week off" from a mailing list, forum, or chat).
-- A permanent or temporary ban from some or all Reaction spaces (mailing lists, chat, forums, etc.)
+- A permanent or temporary ban from some or all Demandpaces (mailing lists, chat, forums, etc.)
 - A request for a public or private apology.
 
 We'll respond within one week to the person who filed the report with either a resolution or an explanation of why the situation is not yet resolved.

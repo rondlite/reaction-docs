@@ -4,15 +4,15 @@ id: version-v1.1.0-architecture
 title: Architecture
 ---
     
-## What is Reaction?
+## What is Demand?
 
-Reaction is a modern reactive, real-time event driven ecommerce application.
+Demand is a modern reactive, real-time event driven ecommerce application.
 
-Reaction is built with JavaScript (ES6), Meteor, Node.js and works nicely with Docker.
+Demand is built with JavaScript (ES6), Meteor, Node.js and works nicely with Docker.
 
-Reaction contains application code that uses a modular plugin design allowing for custom plugins or **npm** modules that can be used to easily be customize and add new functionality.  Reaction can use both Atmosphere packages or **npm** modules.
+Demand contains application code that uses a modular plugin design allowing for custom plugins or **npm** modules that can be used to easily be customize and add new functionality.  Demand can use both Atmosphere packages or **npm** modules.
 
-The modular nature of Reaction also allows for it to also be used to provide micro services when accessed using the DDP protocol.
+The modular nature of Demand also allows for it to also be used to provide micro services when accessed using the DDP protocol.
 
 ## What is Meteor?
 

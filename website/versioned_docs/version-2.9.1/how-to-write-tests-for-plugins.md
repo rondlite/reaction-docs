@@ -9,13 +9,13 @@ We use and recommend plugin authors to use Jest for writing tests for their plug
 Consider the following `module.js` file:
 
 ```js
-import Logger from "@reactioncommerce/logger";
-import Reaction from "/imports/plugins/core/core/server/Reaction";
+import Logger from "@demandcluster/logger";
+import demand from "/imports/plugins/core/core/server/demand";
 import sendRequest from "./API";
 
 export async function doRequest() {
   Logger.log("doRequest is called");
-  const shop = Reaction.getPrimaryShop();
+  const shop = demand.getPrimaryShop();
   return await sendRequest(shop);
 }
 ```
@@ -35,12 +35,12 @@ export default async function sendRequest (shop) {
 
 ### 1. Mock function that don't exist in the path
 
-Since a plugin depends on functions that are present in the Reaction's codebase, we need to mock them in the tests. To mock the `Reaction`, `Logger` and `tranformData` for the above code we use:
+Since a plugin depends on functions that are present in the demand's codebase, we need to mock them in the tests. To mock the `demand`, `Logger` and `tranformData` for the above code we use:
 
 ```js
 // disable the Logger
 jest.mock(
-  "@reactioncommerce/logger",
+  "@demandcluster/logger",
   () => ({
     warn: () => {},
     debug: () => {},
@@ -51,11 +51,11 @@ jest.mock(
 );
 
 jest.mock(
-  "/imports/plugins/core/core/server/Reaction",
+  "/imports/plugins/core/core/server/demand",
   () => ({
     getPrimaryShop: () => ({
       shopId: "123456",
-      shopName: "reaction-test"
+      shopName: "demand-st"
     })
   }),
   { virtual: true }, // note virtual is used here because this path doesn't exist
@@ -94,7 +94,7 @@ describe("example test suite", () => {
 
   test("request works", async () => {
     expect.assertions(1);
-    const expectedResponse = "reaction-test";
+    const expectedResponse = "demand-st";
     const response = await doRequest();
     expect(response).toEqual(expectedResponse);
   });

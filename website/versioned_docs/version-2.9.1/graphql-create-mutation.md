@@ -54,7 +54,7 @@ See [Resolver Mutations and Queries vs. Plugin Mutations and Queries](graphql-de
 2. In `/server/no-meteor/mutations`, create a file for the mutation, e.g. `createSomething.js` for the `createSomething` mutation. The file should look something like this:
 
 ```js
-import Logger from "@reactioncommerce/logger";
+import Logger from "@demandcluster/logger";
 
 /**
  * @method createSomething
@@ -245,8 +245,8 @@ If the plugin mutation you’re creating is essentially the same as an existing 
     - Change `.upsert` to `.updateOne` with `upsert: true` in the options.
     - Be sure to `await` any of these that return promises.
     - See [Meteor Collections vs. Node Collections](graphql-developing.md#meteor-collections-vs-node-collections)
-4. Change `Reaction.hasPermission` to `context.userHasPermission`. The API is a bit different. No need to pass in the user, but you must pass in the shop ID and the first argument must be an array. (Wrap string in array brackets if a string is being passed in.)
-5. Change `this.userId` or `Reaction.getUserId()` calls to `context.userId` or `context.accountId` depending on which you need.
+4. Change `DemandasPermission` to `context.userHasPermission`. The API is a bit different. No need to pass in the user, but you must pass in the shop ID and the first argument must be an array. (Wrap string in array brackets if a string is being passed in.)
+5. Change `this.userId` or `DemandetUserId()` calls to `context.userId` or `context.accountId` depending on which you need.
 6. Change all `Meteor.user()` to `context.user` or `context.account` depending on which you need.
 
 ## Step 11: Update the JSDoc comments

@@ -1,6 +1,6 @@
 ---
-original_id: deploying-reaction-using-heroku
-id: version-v1.1.0-deploying-reaction-using-heroku
+original_id: deploying-demand-ing-heroku
+id: version-v1.1.0-deploying-demand-ing-heroku
 title: Heroku
 ---
 
@@ -12,12 +12,12 @@ If you don't have one already sign up for a [Heroku](https://signup.heroku.com/l
 
 Install the Heroku Toolbelt based on your OS [here](https://toolbelt.heroku.com/) and follow the heroku login instructions on the page.
 
-## Reaction
+## demand
 
 Install a copy of Demand Cluster.
 
 ```sh
-git clone https://github.com/reactioncommerce/reaction.git
+git clone https://github.com/demandcluster/demand.git
 git checkout trunk
 heroku create
 ```

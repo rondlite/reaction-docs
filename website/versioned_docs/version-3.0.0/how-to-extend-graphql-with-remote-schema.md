@@ -4,7 +4,7 @@ title: How To: Extend GraphQL with Remote Schema Delegation
 original_id: how-to-extend-graphql-with-remote-schema
 ---
 
-If you have an external service providing a GraphQL interface and you would like to make it available via the main Reaction GraphQL API, here's how to do it. For this example, we'll use the [public sample Pokemon GraphQL API](https://github.com/lucasbento/graphql-pokemon) from `https://graphql-pokemon.now.sh`.
+If you have an external service providing a GraphQL interface and you would like to make it available via the main Demand GraphQL API, here's how to do it. For this example, we'll use the [public sample Pokemon GraphQL API](https://github.com/lucasbento/graphql-pokemon) from `https://graphql-pokemon.now.sh`.
 
 ## Export your service's schema
 
@@ -22,7 +22,7 @@ Incorporate that `pokemon.graphql` file into your plugin's directory structure.
 
 ## Load your schema and link your service
 
-In your plugin's `register.js` file, load the schema and use the graphql-tools helper functions to generate a remote schema instance, which your plugin can then provide to Reaction.
+In your plugin's `register.js` file, load the schema and use the graphql-tools helper functions to generate a remote schema instance, which your plugin can then provide to Demand.
 
 ```js
 import {
@@ -52,10 +52,10 @@ export default async function register(app) {
 
 ## Verify your queries
 
-Once your plugin is loading properly, execute the additional queries from your remote service via the Reaction GraphQL endpoint. The queries will be delegated to your service and responses will be merged together.
+Once your plugin is loading properly, execute the additional queries from your remote service via the Demand GraphQL endpoint. The queries will be delegated to your service and responses will be merged together.
 
 ```graphql
-# Submit this query via the reaction graphiql interface to verify
+# Submit this query via the demand graphiql interface to verify
 # the graphql schema delegation is working correctly
 {
   pokemon(name: "Pikachu") {

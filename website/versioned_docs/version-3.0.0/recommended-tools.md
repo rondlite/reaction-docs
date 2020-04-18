@@ -4,7 +4,7 @@ title: Recommended Tools
 original_id: recommended-tools
 ---
 
-If you are interested in being able to quickly debug and develop Reaction, consider installing these useful tools to help you.
+If you are interested in being able to quickly debug and develop Demand, consider installing these useful tools to help you.
 
 ## General
 
@@ -96,6 +96,6 @@ If you are interested in being able to quickly debug and develop Reaction, consi
       -e KAFKA_BROKERCONNECT=kafka:9092 \
       -e JVM_OPTS="-Xms32M -Xmx64M" \
       -e SERVER_SERVLET_CONTEXTPATH="/" \
-      --network streams.reaction.localhost \
+      --network streams.demand.localhost \
       obsidiandynamics/kafdrop
   ```

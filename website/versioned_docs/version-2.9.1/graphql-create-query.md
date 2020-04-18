@@ -60,7 +60,7 @@ When choosing a name for the query, there are a few rules to follow:
 2. In `/server/no-meteor/queries`, create a file for the query, e.g. `widgets.js` for the `widgets` query. The file should look something like this:
 
 ```js
-import Logger from "@reactioncommerce/logger";
+import Logger from "@demandcluster/logger";
 
 /**
  * @method widgets
@@ -172,7 +172,7 @@ export default {
 If you are returning multiple documents (see step #4) you'll need to add an additional export here, `getConnectionTypeResolvers`, in order to be able to query `edges->node`:
 
 ```js
-import { getConnectionTypeResolvers } from "@reactioncommerce/reaction-graphql-utils";
+import { getConnectionTypeResolvers } from "@demandcluster/demand-aphql-utils";
 import Query from "./Query"
 
 export default {

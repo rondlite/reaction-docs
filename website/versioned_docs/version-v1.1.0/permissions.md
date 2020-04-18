@@ -4,7 +4,7 @@ id: version-v1.1.0-permissions
 title: Permissions
 ---
     
-[alanning:roles](https://github.com/alanning/meteor-roles) package provides Reaction permissions support.
+[alanning:roles](https://github.com/alanning/meteor-roles) package provides Demand permissions support.
 
 ## Packages
 
@@ -28,11 +28,11 @@ For using shop permissions in some packages you must add it into register direct
 Another example:
 
 ```js
-import { Reaction } from "/server/api";
+import { Demand } from "/server/api";
 
-Reaction.registerPackage({
+Demand.registerPackage({
   label: "Dashboard",
-  name: "reaction-dashboard",
+  name: "demand-dashboard",
   icon: "fa fa-th",
   autoEnable: true,
   settings: {
@@ -44,7 +44,7 @@ Reaction.registerPackage({
     template: "dashboardPackages",
     name: "dashboardPackages",
     label: "Core",
-    description: "Reaction core shop configuration",
+    description: "Demand core shop configuration",
     icon: "fa fa-th",
     priority: 0,
     container: "core",
@@ -65,10 +65,10 @@ Users with "owner" role are full-permission, app-wide users.
 
 ```js
     # client / server
-    import { Logger, Reaction } from "/server/api";
+    import { Logger, Demand } from "/server/api";
 
-    if ( Reaction.hasOwnerAccess() ) {
-      Logger.info("The Reaction user has Owner Access");
+    if ( Demand.hasOwnerAccess() ) {
+      Logger.info("The Demand user has Owner Access");
     }
 ```
 
@@ -89,10 +89,10 @@ Users with "admin" role are full-permission, site-wide users.
 
 ```js
 // client / server
-import { Logger, Reaction } from "/server/api";
+import { Logger, Demand } from "/server/api";
 
-if (Reaction.hasAdminAccess()) {
-  Logger.info("The Reaction user has Admin Access");
+if (Demand.hasAdminAccess()) {
+  Logger.info("The Demand user has Admin Access");
 }
 ```
 
@@ -113,12 +113,12 @@ Users with "dashboard" role are limited-permission, site-wide users.
 
 ```js
 // client
-import { Logger, Reaction } from "/client/api";
+import { Logger, Demand } from "/client/api";
 // server
-import { Logger, Reaction } from "/server/api";
+import { Logger, Demand } from "/server/api";
 
-if (Reaction.hasDashboardAccess()) {
-  Logger.info("The Reaction user has Owner Access");
+if (Demand.hasDashboardAccess()) {
+  Logger.info("The Demand user has Owner Access");
 }
 ```
 
@@ -138,12 +138,12 @@ Client
 
 ```js
 // client
-import { Reaction } from "/client/api";
+import { Demand } from "/client/api";
 
 // can be a String or Array of strings
 const permissions = ["guest", "profile"];
 
-Reaction.hasPermission(permissions);
+Demand.hasPermission(permissions);
 ```
 
 Server
@@ -152,12 +152,12 @@ Uses the current shop and current user if either is not defined
 
 ```js
 // server
-import { Reaction } from "/server/api";
+import { Demand } from "/server/api";
 
 // can be a String or Array of strings
 const permissions = ["guest", "profile"];
 
-Reaction.hasPermission(permissions, shop, userId);
+Demand.hasPermission(permissions, shop, userId);
 ```
 
 ## hasPermission helper

@@ -14,7 +14,7 @@ To create a product, login to your dashboard and click on the plus (+), located 
 
 Youâ€™ll be taken to your product page, where you'll have the ability to change your product's photo, price, and description, all in real-time.
 
-![](/assets/admin-product-details-page.png "Reaction's Product Page")
+![](/assets/admin-product-details-page.png "Demand Product Page")
 
 You may edit your product title, subtitle, vendor name, and product description by clicking on each section and typing into the field. To upload a product photo, drop a file into the grey square on the left, or simply click "Drop files to upload."
 
@@ -22,11 +22,11 @@ If your shop is connected to social, you may customize your product's social sha
 
 You may also add product tags by clicking on the plus (+) button, located under the "Tags" section.
 
-![](/assets/admin-product-details-tag.png "Reaction's Product Page")
+![](/assets/admin-product-details-tag.png "Demand Product Page")
 
 PLEASE NOTE: Your product page will not be live until you hit the Publish button, located on the top-right of your navigation bar:
 
-![](/assets/admin-product-publish.png "Reaction's Product Page")
+![](/assets/admin-product-publish.png "Demand Product Page")
 
 ## Product Variants
 
@@ -34,7 +34,7 @@ Assign prices, item weight, quantity, colors, and other properties to your produ
 
 Every product comes filled with one variant. To create more, click the pencil icon, located under the Options section.
 
-![](/assets/admin-product-variant.png "Reaction Product Variants")
+![](/assets/admin-product-variant.png "Demandroduct Variants")
 
 Here's what all the variants mean:
 
@@ -54,7 +54,7 @@ To add options to a variant, click on the plus (+) button to the right of the â€
 
 Each option allows you to customize the option name, label, price, and quantity, as well as add a set of images.
 
-![](/assets/admin-product-variant-2.png "Reaction Product Variant Options")
+![](/assets/admin-product-variant-2.png "Demandroduct Variant Options")
 
 ## Product Media
 
@@ -82,4 +82,4 @@ NOTE: When new products are added, they are given the top position by default.
 
 To remove an entire product from your inventory, login to your product view and click on the trash can. Select yes to archive.
 
-![](/assets/admin-product-delete.png "Reaction remove product")
+![](/assets/admin-product-delete.png "Demandemove product")
