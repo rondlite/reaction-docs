@@ -7,9 +7,9 @@ original_id: graphql-intro
 
 ## Install
 
-To install Reaction for development, testing, or demonstration on your own computer, follow these [Reaction Development Platform instructions](https://github.com/reactioncommerce/reaction-development-platform/tree/v3.0.0#prerequisites).
+To install demand for development, testing, or demonstration on your own computer, follow these [demand Development Platform instructions].
 
-Make sure you are on Reaction 3.0.0 or above.
+Make sure you are on demand 3.0.0 or above.
 
 ## Your first query
 
@@ -83,7 +83,7 @@ Click the Play button to replay the `viewer` query again:
 {
   "data": {
     "viewer": {
-      "name": "Reaction User"
+      "name": "demand User"
     }
   }
 }
@@ -158,6 +158,6 @@ To confirm that the mutation changed the currency as expected, you can query the
 Once you've changed an entry successfully, check in your database or your running application to confirm the changes were made correctly.
 
 ## More on GraphQL
-- [Reaction Commerce: Running Jest Tests for GraphQL](https://docs.reactioncommerce.com/reaction-docs/trunk/running-jest-tests)
+- [Demand Cluster: Running Jest Tests for GraphQL](https://docs.demandcluster.com/demand-cs/trunk/running-jest-tests)
 - [GraphQL: Introduction to GraphQL](http://graphql.org/learn/)
 - [Apollo GraphQL: Bind GraphQL data](https://www.apollographql.com/client/)
