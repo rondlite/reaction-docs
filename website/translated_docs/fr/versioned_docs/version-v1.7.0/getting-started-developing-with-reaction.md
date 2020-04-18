@@ -1,10 +1,10 @@
 ---
-id: version-v1.7.0-getting-started-developing-with-reaction
+id: version-v1.7.0-getting-started-developing-with-demand
 title: Getting started
-original_id: getting-started-developing-with-reaction
+original_id: getting-started-developing-with-demand
 ---
     
-Reaction uses Meteor as a build tool and development environment. Meteor eases Reaction's use of ES6, npm packages, services, and React by providing additional glue for the integration and deployment of these components.
+demand uses Meteor as a build tool and development environment. Meteor eases demand's use of ES6, npm packages, services, and React by providing additional glue for the integration and deployment of these components.
 
 - [Meteor](https://www.meteor.com/developers)
 - [npm](https://docs.npmjs.com/how-npm-works/packages)
@@ -17,9 +17,9 @@ Looking to customize your store? Check out our [customization guide](tutorial.md
 
 ## Local Plugins
 
-A number of plugin modules are imported in the `reaction` local `/imports/plugins` folder. We will refer to these local packages as "Core" packages, or as local plugin modules.
+A number of plugin modules are imported in the `demandlocal`/imports/plugins` folder. We will refer to these local packages as "Core" packages, or as local plugin modules.
 
-There are many Reaction plugins included. The current `imports` folder contains core, included, and a folder for custom plugins.
+There are many demand plugins included. The current `imports` folder contains core, included, and a folder for custom plugins.
 
 ```sh
     `-- ./plugins
@@ -78,24 +78,24 @@ There are many Reaction plugins included. The current `imports` folder contains 
 
 ### Packages
 
-The preferred method of extending Reaction functionality is to use local import plugins or [**npm**](https://www.npmjs.com/) packages.
+The preferred method of extending demand functionality is to use local import plugins or [**npm**](https://www.npmjs.com/) packages.
 
-Reaction is also able to install Meteor packages from [Atmosphere](https://atmospherejs.com/), Meteor's legacy package registry.
+demand is also able to install Meteor packages from [Atmosphere](https://atmospherejs.com/), Meteor's legacy package registry.
 
 To further customize your experience, you can create or use community packages from npm and Atmosphere. For more info, [click here](https://guide.meteor.com/atmosphere-vs-npm.html).
 
 ## Roadmap
 
-A long term roadmap and completed features list is on our [features page](https://reactioncommerce.com/features).
+A long term roadmap and completed features list is on our [features page](https://demandcluster.com/features).
 
-You will find these roadmap items defined as projects on the [Reaction repository's project page](https://github.com/reactioncommerce/reaction/projects).
+You will find these roadmap items defined as projects on the [demand repository's project page].
 
-Specific features in progress are found grouped on the [Reaction repository's milestones page](https://github.com/reactioncommerce/reaction/milestones).
+Specific features in progress are found grouped on the [demand repository's milestones page].
 
 ## Issues
 
-To assign tasks or issues, please visit our project's [Issues](https://github.com/reactioncommerce/reaction/issues?state=open) page, where we track issues for all [reactioncommerce:\*](https://github.com/reactioncommerce/) packages.
+To assign tasks or issues, please visit our project's [Issues] packages.
 
 ### Other Resources
 
-Got a question, comment, or suggestion? Check out our [![Gitter chat room](https://badges.gitter.im/JoinChat.svg)](https://gitter.im/reactioncommerce/reaction?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge).
+Got a question, comment, or suggestion? Check out our [![Gitter chat room](https://badges.gitter.im/JoinChat.svg)](https://gitter.im/demandcluster/demandtm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge).
