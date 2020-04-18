@@ -8,7 +8,7 @@ Add social media sharing buttons to each product page by linking your store's so
 
 Before getting started, make sure you are logged in as an operator and click the <i class="font-icon fa fa-share-alt"></i> **Social Settings** icon in the Dashboard sidebar.
 
-![](/assets/admin-dashboard-social.png "Reaction Commerce Dashboard")
+![](/assets/admin-dashboard-social.png "Demand Cluster Dashboard")
 
 To add a social media integration, follow these steps:
 
