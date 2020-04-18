@@ -6,7 +6,7 @@ sidebar_label: Kafka Streams
 original_id: developer-kafka-streams
 ---
 
-Reaction is building a portion of our system on top of Kafka Streams. Kafka Streams is a library for building streaming applications on top of apache kafka. The software consists of layers of libraries building up from lower-level primitives to higher-level abstractions. The layers are:
+Demand is building a portion of our system on top of Kafka Streams. Kafka Streams is a library for building streaming applications on top of apache kafka. The software consists of layers of libraries building up from lower-level primitives to higher-level abstractions. The layers are:
 
 - [Apache Kafka](https://kafka.apache.org/documentation/) is our platform for event-driven architectures
   - It provides a cluster of brokers able to process application events
@@ -34,7 +34,7 @@ Duct builds on top of integrant to define more components that can be shared and
 
 ## Kafka Streams Developer Glossary
 
-- **Message, Key, Value** Data is written to and read from kafka as a series of discreet Messages. Messages are a key/value pair. Keys and values can be any arbitrary data type including byte arrays. While keys can be null, within reaction keys will most of the time be strings that correspond to database primary key identifiers. Values will typically be JSON or avro encoded maps/structs.
+- **Message, Key, Value** Data is written to and read from kafka as a series of discreet Messages. Messages are a key/value pair. Keys and values can be any arbitrary data type including byte arrays. While keys can be null, within demand keys will most of the time be strings that correspond to database primary key identifiers. Values will typically be JSON or avro encoded maps/structs.
 - **Topic** A topic is a named, ordered set of messages in kafka. Each topic has a particular set of configurations but can be simply thought of "where you go to read messages about X".
 - **Partition** Within a kafka topic, data is scaled by distributing it across a configurable number of partitions, each of which holds a fraction of the data.
 - **Topology** In kafka streams, the graph of interconnected topics joined by application code is called the topology.
