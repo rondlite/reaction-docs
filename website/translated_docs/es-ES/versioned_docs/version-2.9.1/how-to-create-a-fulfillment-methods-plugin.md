@@ -16,7 +16,7 @@ In general, to add a fulfillment method you must do the following:
 - Create a React component for operators to enter and edit fulfillment method details, unless they'll be managed in an external system
 - Register the function and the React components using your plugin's `registerPlugin` call
 
-Reaction ships with one such plugin, `shipping-rates`, which you can look at for inspiration. You will want to remove that plugin if adding your own, unless you're combining multiple fulfillment method sources
+Demand ships with one such plugin, `shipping-rates`, which you can look at for inspiration. You will want to remove that plugin if adding your own, unless you're combining multiple fulfillment method sources
 
 ## Create the Function
 
@@ -61,7 +61,7 @@ rate: 5.99
 
 ## Registration
 
-Everything needs to be registered to be seen by Reaction core.
+Everything needs to be registered to be seen by Demand core.
 
 ### Register the function
 
