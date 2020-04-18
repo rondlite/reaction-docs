@@ -4,7 +4,7 @@ title: Fixtures
 original_id: plugin-fixtures-5
 ---
     
-As we have been going through this tutorial you may have noticed that we keep having to `reaction reset` which clears out all your data in the database.
+As we have been going through this tutorial you may have noticed that we keep having to `demandeset` which clears out all your data in the database.
 
 If you are just learning and playing with the sample data this is fine. But if you want to start customizing your store by changing things like the name then you may find this a little frustrating. Even more so, if you have started creating products you probably don't want to reset your data and lose your work. So we are going to fix that by creating "fixtures".
 
@@ -16,7 +16,7 @@ Now let's look at the data we moved over. There are four files there `Shops.json
 
 Let's look at the Shops file. There is a lot of stuff there and a lot of it you won't want to change (unless you have revolutionary opinions about how many provinces Canada has, etc.). But there are some critical pieces to change.
 
-The first thing we are going to do is remove the `<blank store>` record. This second entry is to highlight how you can have multiple stores within Reaction Commerce. However for the purposes of this tutorial we are just creating the one store so the second one just adds confusion so let's remove the whole record. (Shops is an array of Shop records, so you can just delete the second entry in the array).
+The first thing we are going to do is remove the `<blank store>` record. This second entry is to highlight how you can have multiple stores within Demand Cluster. However for the purposes of this tutorial we are just creating the one store so the second one just adds confusion so let's remove the whole record. (Shops is an array of Shop records, so you can just delete the second entry in the array).
 
 Now if you look at the top level records in the first shop you will see a lot of things that you want to change. Critical things like Name and Description. You will also want to look at the `addressBook` entry.
 
@@ -30,7 +30,7 @@ If you look at the `Shops` collection in the database you can see that it pretty
 
 ## Creating the Products files
 
-Our Bee's Knees example store is relatively simple with just a few products. However your store may be much more complex with possibly hundreds of products. And even with a few products, the process of looking at the database and changing records is tedious and unreliable. The better way is to create your products in Reaction and then export them to a file.
+Our Bee's Knees example store is relatively simple with just a few products. However your store may be much more complex with possibly hundreds of products. And even with a few products, the process of looking at the database and changing records is tedious and unreliable. The better way is to create your products in demand and then export them to a file.
 
 To do this we are going to use the `mongoexport` utility which is only installed with a "full" installation of MongoDb (i.e. not included with the version installed with Meteor. Please see the Mongo documentation on how to install Mongo on your platform).
 
