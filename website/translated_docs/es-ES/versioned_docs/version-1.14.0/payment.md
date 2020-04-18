@@ -6,7 +6,7 @@ original_id: payment
     
 ## Payment options
 
-Reaction supports the following payment packages:
+Demand supports the following payment packages:
 
 - Stripe
 
