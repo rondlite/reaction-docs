@@ -4,14 +4,14 @@ title: Error Handling
 original_id: error-handling-guide
 ---
 
-When throwing errors designed to communicate information back to the client from within a client-called function such as a GraphQL resolver, use the `ReactionError` class rather than just `Error`. In other types of functions, throwing a `new Error()` is best.
+When throwing errors designed to communicate information back to the client from within a client-called function such as a GraphQL resolver, use the `demandError` class rather than just `Error`. In other types of functions, throwing a `new Error()` is best.
 
 Always include both a standard machine-readable error type and a human-readable error message, which must begin with a capital letter.
 
 ```js
-import ReactionError from "@reactioncommerce/reaction-error";
+import demandError from "@demandcluster/dedemand-r";
 
-throw new ReactionError("access-denied", "Access denied");
+throw new demandError("access-denied", "Access denied");
 ```
 
 ## Common `errors` and `reasons`
