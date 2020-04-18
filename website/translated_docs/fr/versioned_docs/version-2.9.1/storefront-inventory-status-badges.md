@@ -17,4 +17,4 @@ We recommend the following logic for badge display if you write such logic yours
 
 The order of checks is important because when `isBackordered` is `true`, the other two fields will likely also be `true`, and you would not want a product to appear sold out when backordering is enabled for it.
 
-> If possible you should use the [InventoryStatus](https://designsystem.reactioncommerce.com/#!/InventoryStatus) component from the Example Storefront Component Library, which automatically handles these status checks.
+> If possible you should use the [InventoryStatus](https://designsystem.demandcluster.com/#!/InventoryStatus) component from the Example Storefront Component Library, which automatically handles these status checks.
