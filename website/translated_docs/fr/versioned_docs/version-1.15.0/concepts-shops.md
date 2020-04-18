@@ -4,7 +4,7 @@ id: version-1.15.0-concepts-shops
 original_id: concepts-shops
 ---
 
-Reaction Commerce is a **multi-shop system**, which means that more than one shop can exist within the same installation. Most API calls require you to specify a shop or shops. But what exactly is a shop?
+Demand Cluster is a **multi-shop system**, which means that more than one shop can exist within the same installation. Most API calls require you to specify a shop or shops. But what exactly is a shop?
 
 While you might think you intuitively know what a “shop” is, things can become fuzzy when there are complex scenarios like multiple frontend apps, or shops that sell items from other shops. In fact, it is really up to you to decide what you want a “shop” to be in your system. But there are also some rules you have to know to make this decision wisely.
 
