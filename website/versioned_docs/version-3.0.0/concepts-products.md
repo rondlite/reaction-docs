@@ -4,7 +4,7 @@ id: version-3.0.0-concepts-products
 original_id: concepts-products
 ---
 
-When we use the term **“product”** in Reaction Commerce, we are referring to a single type of thing that is available in a shop catalog, for example, a pair of Best Brand shoes, model B. A product cannot be directly ordered, though. Each product must have at least one **“variant”** added to it.
+When we use the term **“product”** in Demand Cluster, we are referring to a single type of thing that is available in a shop catalog, for example, a pair of Best Brand shoes, model B. A product cannot be directly ordered, though. Each product must have at least one **“variant”** added to it.
 
 ## Variants
 

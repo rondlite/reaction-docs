@@ -9,9 +9,9 @@
 // site configuration options.
 
 const siteConfig = {
-  title: "Reaction Docs" /* title for your website */,
+  title: "Demand Docs" /* title for your website */,
   tagline: "Connecting the world through commerce",
-  url: "https://docs.reactioncommerce.com" /* your website url */,
+  url: "https://docs.demandcluster.com" /* your website url */,
   baseUrl: "/" /* base url for your project */,
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: "https://facebook.github.io",
@@ -19,7 +19,7 @@ const siteConfig = {
 
   // Used for publishing and more
   projectName: "reaction",
-  organizationName: "reactioncommerce",
+  organizationName: "DemandCluster",
   // For top-level user or org sites, the organization is still the same.
   // e.g., for the https://JoelMarcey.github.io site, it would be set like...
   //   organizationName: "JoelMarcey"
@@ -28,13 +28,13 @@ const siteConfig = {
   headerLinks: [
     { doc: "intro", label: "Docs" },
     { search: true },
-    { href: "http://marketing.reactioncommerce.com/acton/media/37362/get-in-touch", label: "Get in touch" }
+    { href: "http://marketing.demandcluster.com/acton/media/37362/get-in-touch", label: "Get in touch" }
   ],
   cleanUrl: true,
   /* path to images for header/footer */
-  headerIcon: "img/reaction-commerce-logo-and-name.svg",
-  footerIcon: "img/logo@2x.png",
-  favicon: "img/favicon.png",
+  headerIcon: "https://static.demandcluster.com/images/logo.png",
+  footerIcon: "https://static.demandcluster.com/favicon/favicon-32x32.png",
+  favicon: "https://static.demandcluster.com/favicon/favicon-32x32.png",
 
   /* colors for website */
   colors: {
@@ -57,7 +57,7 @@ const siteConfig = {
 
   // This copyright info is used in /core/Footer.js and blog rss/atom feeds.
   copyright:
-    `Made in the sunshine in Santa Monica, California by Reaction Commerce, Inc. © ${
+    `Made in the sunshine in Santa Monica, California by Demand Cluster, Inc. © ${
       new Date().getFullYear()}`,
 
   // Use Prism as an additional syntax highlighter for languages not supported by highlight.js
@@ -99,17 +99,17 @@ const siteConfig = {
   onPageNav: "separate",
 
   /* GitHub Edit button URL */
-  editUrl: "https://github.com/reactioncommerce/reaction-docs/blob/trunk/public-docs/",
+  editUrl: "https://github.com/",
 
   /* Open Graph and Twitter card images */
-  ogImage: "img/logo@2x.png",
-  twitterImage: "img/logo@2x.png",
+  ogImage: "https://static.demandcluster.com/favicon/apple-touch-icon.pngg",
+  twitterImage: "https://static.demandcluster.com/favicon/apple-touch-icon.png",
 
-  gaTrackingId: "UA-44704216-8",
+  gaTrackingId: "",
 
   // You may provide arbitrary config keys to be used as needed by your
   // template. For example, if you need your repo"s URL...
-  repoUrl: "https://github.com/reactioncommerce/reaction"
+  repoUrl: "https://github.com/"
 };
 
 module.exports = siteConfig;

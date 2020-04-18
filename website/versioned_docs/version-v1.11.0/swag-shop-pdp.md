@@ -5,25 +5,25 @@ sidebar_label: Part 4: Category tiles and PDP
 original_id: swag-shop-pdp
 ---
 
-> ⚠️ Note: This tutorial has been deprecated as the release of Reaction 2.0. The latest tutorial can be found at [here](https://docs.reactioncommerce.com/docs/swag-shop-1).
+> ⚠️ Note: This tutorial has been deprecated as the release of Reaction 2.0. The latest tutorial can be found at [here](https://docs.demandcluster.com/docs/swag-shop-1).
 
 ## Building a Swag Shop: Category Tiles & Related Products
 
 In this part, we'll show you how we ...
 - Created visual category tiles for the Landing Page
-- Implemented the [Related](https://github.com/reactioncommerce/reaction-swag-shop/issues/8) [Products](https://github.com/reactioncommerce/reaction-swag-shop/issues/18) feature on the Product Detail Page (PDP)
+- Implemented the [Related]
 - Customized the default layout that comes with ReactionAvatar
 - Deployed our swag shop
 
-All code presented here can be found in our [Swag Shop repository](https://github.com/reactioncommerce/reaction-swag-shop) on GitHub.
+All code presented here can be found in our [Swag Shop repository] on GitHub.
 
 ## Adding category tiles to the Landing Page
-The purpose of [category tiles](https://github.com/reactioncommerce/reaction-swag-shop/issues/12) is to provide users with another entry point for browsing tagged products. From a functional point of view, category tiles are identical to the default navbar tags that come with typical Reaction shops.
+The purpose of [category tiles] is to provide users with another entry point for browsing tagged products. From a functional point of view, category tiles are identical to the default navbar tags that come with typical Reaction shops.
 ![](https://user-images.githubusercontent.com/1733229/35669741-65975f86-0736-11e8-9269-47a0f3aa5c60.jpg)
 
 Tiles present all of the available categories in a visually appealing way. For this to work, the tags must be enhanced so they can hold information about the category image, along with its name:
 
-[/imports/plugins/custom/reaction-swag-shop/lib/collections/schemas/tags.js](https://github.com/reactioncommerce/reaction-swag-shop/blob/755a6025c25bcbd21e58c2afb72a15fa2c5ee390/lib/collections/schemas/tags.js)
+[/imports/plugins/custom/reaction-swag-shop/lib/collections/schemas/tags.js]
 ```js
 import Schemas from "@reactioncommerce/schemas";
 import { Tags } from "/lib/collections";
@@ -62,7 +62,7 @@ To render the tiles on the landing page, change the `Products` component. First,
 
 In mobile, this image is placed before the actual category images. The markup is structured in a way to support Reaction's mobile-first approach:
 
-[/imports/plugins/custom/reaction-swag-shop/client/components/product-variant/customer/productGrid.js](https://github.com/reactioncommerce/reaction-swag-shop/blob/755a6025c25bcbd21e58c2afb72a15fa2c5ee390/client/components/product-variant/customer/productGrid.js)
+[/imports/plugins/custom/reaction-swag-shop/client/components/product-variant/customer/productGrid.js]
 ```js
 renderCategories() {
    return (
@@ -90,7 +90,7 @@ Two things to mention here. First, as defined by [Bootstrap CSS](https://getboot
 
 Second, we want to stack every second image vertically, so the category images are divided into chunks of two. This is done in `renderCategoryChunks`:
 
-[/imports/plugins/custom/reaction-swag-shop/client/components/product-variant/customer/productGrid.js](https://github.com/reactioncommerce/reaction-swag-shop/blob/755a6025c25bcbd21e58c2afb72a15fa2c5ee390/client/components/product-variant/customer/productGrid.js)
+[/imports/plugins/custom/reaction-swag-shop/client/components/product-variant/customer/productGrid.js]
 ```js
 renderCategoryChunks(tags) {
    const chunkSize = 2;
@@ -113,7 +113,7 @@ This snippet renders containers for each tile. It also ensures that the aforemen
 
 The category images itself are rendered in `renderCategory`:
 
-[/imports/plugins/custom/reaction-swag-shop/client/components/product-variant/customer/productGrid.js](https://github.com/reactioncommerce/reaction-swag-shop/blob/755a6025c25bcbd21e58c2afb72a15fa2c5ee390/client/components/product-variant/customer/productGrid.js)
+[/imports/plugins/custom/reaction-swag-shop/client/components/product-variant/customer/productGrid.js]
 ```js
 renderCategory(tag) {
   return (
@@ -144,7 +144,7 @@ This is how it looks when we're all done:
 
 Next, let's extend the original `TagItem` component from _/imports/plugins/core/ui/client/components/tags/tagItem.js_ and override in the render() method.
 
-[/imports/plugins/custom/reaction-swag-shop/client/components/core/ui/tags/tagItem.js](https://github.com/reactioncommerce/reaction-swag-shop/blob/755a6025c25bcbd21e58c2afb72a15fa2c5ee390/client/components/core/ui/tags/tagItem.js)
+[/imports/plugins/custom/reaction-swag-shop/client/components/core/ui/tags/tagItem.js]
 ```js
 import React from "react";
 import { Components, replaceComponent, getRawComponent } from "@reactioncommerce/reaction-components";
@@ -217,7 +217,7 @@ export default TagItem;
 ```
 This will give us a nice popover that allows us to edit the `catTileImageUrl` field. To finish this up, let's add the changes made in the popover to MongoDB:
 
-[/imports/plugins/custom/reaction-swag-shop/client/components/core/ui/tags/tagItem.js](https://github.com/reactioncommerce/reaction-swag-shop/blob/755a6025c25bcbd21e58c2afb72a15fa2c5ee390/client/components/core/ui/tags/tagItem.js)
+[/imports/plugins/custom/reaction-swag-shop/client/components/core/ui/tags/tagItem.js]
 ```js
   handleBlur = (event) => {
     let { value } = event.currentTarget;
@@ -236,7 +236,7 @@ This will give us a nice popover that allows us to edit the `catTileImageUrl` fi
 One interesting thing to take note of: this update is happening client-side through Minimongo. Minimongo takes care of propagating the changes via DDP to the server, where it will eventually synchronize with MongoDB. This method will only work with certain collections, as it requires special permissions to be set server-side. It's not always easy to secure big, complex applications, which may account for some of its [controversy in the Meteor community](https://www.discovermeteor.com/blog/allow-deny-challenge-results/).
 
 ## Adding related products to the Product Detail Page
-The [Related Product feature](https://github.com/reactioncommerce/reaction-swag-shop/issues/8) can be found on the product pages of many shops. This feature shows similar products alongside the product that is currently viewed. This helps shoppers identify additional products to add to their carts:
+The [Related Product feature] can be found on the product pages of many shops. This feature shows similar products alongside the product that is currently viewed. This helps shoppers identify additional products to add to their carts:
 
 ![](https://user-images.githubusercontent.com/1733229/35738566-835dba5c-082f-11e8-88e8-735ddce2bd10.jpg)
 
@@ -248,7 +248,7 @@ There are many possible ways to implement a feature like this. We decided to use
 
 Now let's add the `relatedTag` field to the product schema. This field's value should populate automatically whenever the product's permalink (e.g. <http://localhost:3000/product/t-shirt>) changes. The permalink itself is built from yet another field on the product schema, the `handle` field
 
-[/imports/plugins/custom/reaction-swag-shop/lib/collections/schemas/swagProduct.js](https://github.com/reactioncommerce/reaction-swag-shop/blob/755a6025c25bcbd21e58c2afb72a15fa2c5ee390/lib/collections/schemas/swagProduct.js)
+[/imports/plugins/custom/reaction-swag-shop/lib/collections/schemas/swagProduct.js]
 ```js
 import { Meteor } from "meteor/meteor";
 import Schemas from "@reactioncommerce/schemas";
@@ -280,19 +280,19 @@ Here, we're defining a new field, `relatedTag` on the product schema. We also wa
 
 Whenever the field is updated (`this.operator === "$set"`), first check to see if it's a simple product, and not a product variant. Then, use the permalink to set the field's value. Create a new Tag in the Tags collection via `Meteor.call("createTag", slug)`, if it doesn't exist yet.
 
-Because the initial products are inserted into the database through data fixtures, the field `relatedTag` can also be found in [/imports/plugins/custom/reaction-swag-shop/private/data/Products.json](https://github.com/reactioncommerce/reaction-swag-shop/blob/755a6025c25bcbd21e58c2afb72a15fa2c5ee390/private/data/Products.json).
+Because the initial products are inserted into the database through data fixtures, the field `relatedTag` can also be found in [/imports/plugins/custom/reaction-swag-shop/private/data/Products.json].
 
 Now, how do we render related products when navigating to the PDP? Again, let's go to the Reaction component API, overwrite the appropriate React components, and render the same
- [ProductGridItems](https://github.com/reactioncommerce/reaction-swag-shop/blob/755a6025c25bcbd21e58c2afb72a15fa2c5ee390/client/components/product-variant/customer/productGridItem.js)
+ [ProductGridItems]
  component. Here it is on the homepage, as well as the category grid page:
 
 ![](https://user-images.githubusercontent.com/1733229/35793728-34afdb44-0a53-11e8-8cf2-dd5af3e9f538.jpg)
 
 For a quick reference, here are the necessary pieces that lead to our goal:
 
-- Overwriting the [ProductDetail component](https://github.com/reactioncommerce/reaction-swag-shop/blob/755a6025c25bcbd21e58c2afb72a15fa2c5ee390/client/components/product-detail-simple/productDetail.js) to render the containers for the [PDP filler image](https://github.com/reactioncommerce/reaction-swag-shop/issues/5) (called static image in the screenshot) and the [related products section](https://github.com/reactioncommerce/reaction-swag-shop/issues/8).
-- A [higher-order component (HOC)](https://github.com/reactioncommerce/reaction-swag-shop/blob/755a6025c25bcbd21e58c2afb72a15fa2c5ee390/client/containers/similar-products.js) to inject the related products data from the database into the component that will render them. It uses the `relatedTag` schema property defined above to query for all related products.
-- The component to render the related products itself: [/imports/plugins/custom/reaction-swag-shop/client/components/similar-products.js](https://github.com/reactioncommerce/reaction-swag-shop/blob/755a6025c25bcbd21e58c2afb72a15fa2c5ee390/client/components/similar-products.js)
+- Overwriting the [ProductDetail component].
+- A [higher-order component  to inject the related products data from the database into the component that will render them. It uses the `relatedTag` schema property defined above to query for all related products.
+- The component to render the related products itself: [/imports/plugins/custom/reaction-swag-shop/client/components/similar-products.js]
 
 ## How to customize ReactionLayout
 
@@ -354,14 +354,14 @@ The layout information for the PDP page lives in the `Templates collection`. Her
 
 A ReactionLayout is made of different containers, or blocks, which themselves are made of other containers or concrete components. This allows users to have control over the rendered HTML structure in a very flexible way, while still having the ability to reuse existing React components.
 
-For the Swag Shop, the ProductTags component does not need to be rendered on the PDP, which is why we removed it, as seen in [/imports/plugins/custom/reaction-swag-shop/private/data/productDetailSimple.json](https://github.com/reactioncommerce/reaction-swag-shop/blob/755a6025c25bcbd21e58c2afb72a15fa2c5ee390/private/data/productDetailSimple.json). Registration of the modified PDP layout can be found in [/imports/plugins/custom/reaction-swag-shop/server/register.js](https://github.com/reactioncommerce/reaction-swag-shop/blob/755a6025c25bcbd21e58c2afb72a15fa2c5ee390/server/register.js).
+For the Swag Shop, the ProductTags component does not need to be rendered on the PDP, which is why we removed it, as seen in [/imports/plugins/custom/reaction-swag-shop/private/data/productDetailSimple.json].
 
 ## Deploying your swag shop
 
-Now that we have a running shop, we want to show it to the world—and hopefully sell a lot of stuff. Generally, we recommend deploying via Docker Image. For an introduction into a self-hosted deployment approach, check out [Deploying Reaction Using Docker](https://docs.reactioncommerce.com/reaction-docs/trunk/deploying-reaction-using-docker).
+Now that we have a running shop, we want to show it to the world—and hopefully sell a lot of stuff. Generally, we recommend deploying via Docker Image. For an introduction into a self-hosted deployment approach, check out [Deploying Reaction Using Docker](https://docs.demandcluster.com/reaction-docs/trunk/deploying-reaction-using-docker).
 
 ## Conclusion
 
 The Reaction architecture is laid out carefully, with a great focus on extensibility. For most use cases, we don't need to dig very deep into the code, although you could if you wanted to. It's totally possible to plug into the core mechanics of Reaction, such as cart, order processing, etc. and customize these workflows as they fit you. This is perhaps a bit more work than simply working with the components API, but once you're familiar with the codebase, it's not that difficult either.
 
-And that's how to create your own shop from scratch! We've covered all the basics on how to build a custom shop plugin. We hope you find the community team's swag shop series to be a valuable learning resource for your next Reaction project. If you have any questions or suggestions for the community team, feel free to join our next [community call](https://getrxn.io/community-agenda). Or, ask away in our [developer chat](https://blog.reactioncommerce.com/building-a-swag-shop-category-tiles/gitter.im/reactioncommerce/reaction).
+And that's how to create your own shop from scratch! We've covered all the basics on how to build a custom shop plugin. We hope you find the community team's swag shop series to be a valuable learning resource for your next Reaction project. If you have any questions or suggestions for the community team, feel free to join our next [community call](https://getrxn.io/community-agenda). Or, ask away in our [developer chat](https://blog.demandcluster.com/building-a-swag-shop-category-tiles/gitter.im/reactioncommerce/reaction).

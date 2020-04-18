@@ -62,7 +62,7 @@ Now, you're ready to debug!
 
 1. Open Google Chrome and visit `chrome://inspect`.
 
-![DevTools setup](https://blog.reactioncommerce.com/content/images/2017/11/devtools-setup.png)
+![DevTools setup](https://blog.demandcluster.com/content/images/2017/11/devtools-setup.png)
 
 2. Click **Open dedicated DevTools for Node**.
 3. There are two main ways to set up breakpoints: in the DevTools or in the code.
@@ -76,7 +76,7 @@ Remember: Since you are currently debugging the Reaction server, you'll only hav
 
 In this example, the code stopped executing at a breakpoint in the Products publication, which gets called whenever a client connects to the product grid on the index route:
 
-![DevTools setup](https://blog.reactioncommerce.com/content/images/2017/11/devtools-variables.png)
+![DevTools setup](https://blog.demandcluster.com/content/images/2017/11/devtools-variables.png)
 
 5. At this breakpoint, you can access the Console by hitting <kbd>esc</kbd> and opening the _Drawer_.
 
@@ -94,7 +94,7 @@ Setting up [VS Code](https://code.visualstudio.com/) and connecting it to the No
 
 1. In the root of your project directory, add a `.vscode/launch.json` file.
 
-![DevTools setup](https://blog.reactioncommerce.com/content/images/2017/11/vscode-launch.png)
+![DevTools setup](https://blog.demandcluster.com/content/images/2017/11/vscode-launch.png)
 
 2. Set up your file:
 
@@ -127,7 +127,7 @@ This borrows heavily from a Meteor forum post on [Meteor 1.6 server debugging wi
 
 3. Open the debug panel and click the **Play** icon
 
-![DevTools setup](https://blog.reactioncommerce.com/content/images/2017/11/vscode-devtools.png)
+![DevTools setup](https://blog.demandcluster.com/content/images/2017/11/vscode-devtools.png)
 
 Now you can debug without even leaving your code editor.
 

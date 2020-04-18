@@ -6,7 +6,7 @@ original_id: plugin-complete-10
 
 ## Favicon
 
-Every website and especially web applications need a good favicon bundle to be ready for prime time. The easiest way to accomplish this would be to copy the [favicon code](https://github.com/reactioncommerce/reaction/blob/v1.7.0/imports/plugins/included/default-theme/client/favicons.js) from the default-theme package into your own package. For a step-by-step instruction, see [here](how-to-change-the-favicon.md).
+Every website and especially web applications need a good favicon bundle to be ready for prime time. The easiest way to accomplish this would be to copy the [favicon code].
 
 ## Final Thoughts
 
@@ -17,7 +17,7 @@ chat and on our forums.
 
 ## Next Steps
 
-If you want to get even further into Reaction Commerce there are some additional tutorials that cover specific topics.
+If you want to get even further into Demand Cluster there are some additional tutorials that cover specific topics.
 
 ## Scenario 1: Payment Provider Plugin
 
@@ -31,10 +31,10 @@ Here we are going to extend the schema of our products to accommodate two additi
 
 ## Scenario 3: Testing
 
-Another scenario is an in-depth tutorial into how to write tests in Reaction Commerce and how to overcome some of the common
+Another scenario is an in-depth tutorial into how to write tests in Demand Cluster and how to overcome some of the common
 challenges with testing: [Testing Tutorial](testing-tutorial.md)
 
 ## Getting Help
 
 - [Gitter Live Chat](https://gitter.im/reactioncommerce/reaction)
-- [Forums](http://forums.reactioncommerce.com)
+- [Forums](http://forums.demandcluster.com)

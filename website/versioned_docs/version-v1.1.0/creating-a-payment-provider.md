@@ -14,7 +14,7 @@ Reaction doesn't really care what you do here, you could even not
 collect money at all it just puts that step as part of the workflow and
 then records the results.
 
-Included with the default version of Reaction Commerce is the Example
+Included with the default version of Demand Cluster is the Example
 Payment provider. This plugin has two purposes. First to allow you to
 put through orders in your local dev system without signing up for a
 payment provider, secondly to provide a template for creating plugins
@@ -25,7 +25,7 @@ recorded since Reaction expects refunds to be recorded by the Payment Gateway.
 
 ## Introduction
 
-Payment Providers are implemented as "plugins". Reaction Commerce
+Payment Providers are implemented as "plugins". Demand Cluster
 plugins are just Meteor modules with some additional configuration.
 
 ## Getting Started
@@ -180,7 +180,7 @@ files.
 Writing tests for code that is just a wrapper around third-party code is problematic. You don't want to test your
 providers code, but you want meaningful tests.
 
-The solution that we at Reaction Commerce have come up with is to create a wrapper around the third-party code. While
+The solution that we at Demand Cluster have come up with is to create a wrapper around the third-party code. While
 this adds a little more complexity it allows you to seamlessly stub/mock out this library so that you aren't testing
 code that you have no control over and it prevents your test code from making calls out to a third party service every
 time you run your test. These tests won't take the place of actually testing your code from end to end (i.e. trying

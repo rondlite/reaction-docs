@@ -6,7 +6,7 @@ title: FAQs
 
 ## Is Reaction live and ready for production? Can I start selling now?
 
-It depends! We do have a few shops in production, but your individual requirements may vary. We're currently in our Beta release, so we're still rolling out features with each new release. For more info, check out our [Features page](https://reactioncommerce.com/features) roadmap, or our [project board](https://waffle.io/reactioncommerce/reaction).
+It depends! We do have a few shops in production, but your individual requirements may vary. We're currently in our Beta release, so we're still rolling out features with each new release. For more info, check out our [Features page](https://demandcluster.com/features) roadmap, or our [project board](https://waffle.io/reactioncommerce/reaction).
 
 ## How do I sign up for an account, login to my dashboard, and set up my domain?
 
@@ -14,7 +14,7 @@ Currently, Reaction is only available locally via GitHub. In early 2017, we'll b
 
 ## I already have a hosting solution. Can I host a Reaction shop anywhere I want?
 
-Yep! You can host a Reaction shop on any host or virtual machine container that supports Node.js, Meteor, and MongoDB. Our code is fully open source and available via [GitHub](https://github.com/reactioncommerce/reaction).
+Yep! You can host a Reaction shop on any host or virtual machine container that supports Node.js, Meteor, and MongoDB. Our code is fully open source and available via [GitHub].
 
 ## Do you support multiple languages?
 
@@ -38,7 +38,7 @@ We're always testing! During our Alpha release, we performed extensive tests, de
 
 ## Reaction is an open source project. How can I get involved?
 
-We're always open to contributions from our community. To learn more about becoming a contributor, [click here](http://blog.reactioncommerce.com/how-to-get-involved-with-reaction-commerce/). And don't forget to read our [Community Guidelines](https://docs.reactioncommerce.com/reaction-docs/trunk/guidelines)!
+We're always open to contributions from our community. To learn more about becoming a contributor, [click here](http://blog.demandcluster.com/how-to-get-involved-with-reaction-commerce/). And don't forget to read our [Community Guidelines](https://docs.demandcluster.com/reaction-docs/trunk/guidelines)!
 
 ## Reaction runs on JavaScript. Does this have a negative impact on SEO?
 

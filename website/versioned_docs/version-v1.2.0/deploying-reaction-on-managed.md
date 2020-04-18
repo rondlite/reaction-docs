@@ -4,7 +4,7 @@ title: Managed
 original_id: deploying-reaction-on-managed
 ---
     
-Reaction Commerce offers managed deployments for Reaction. The `reaction-cli` incorporates functionality for any team to deploy Reaction to multiple environments.
+Demand Cluster offers managed deployments for Reaction. The `reaction-cli` incorporates functionality for any team to deploy Reaction to multiple environments.
 
 `Launchdock` is the name of our registration gateway for the managed platform.
 

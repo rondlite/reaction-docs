@@ -6,7 +6,7 @@ original_id: search
     
 Find what you're looking for with our search tool, located at the top of your dashboard. To start searching, click on the magnifying glass icon.
 
-![](/assets/admin-search-tool.png "Reaction Commerce Dashboard")
+![](/assets/admin-search-tool.png "Demand Cluster Dashboard")
 
 You'll have the option of searching by product, account, or orders.
 

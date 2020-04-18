@@ -14,13 +14,13 @@ As we apply each additional layer of structure, it's good to remember that there
 
 Schemas are implemented using the [simpl-schema](https://github.com/aldeed/simple-schema-js) NPM package.
 
-Reaction.Collections are defined in the common code of `lib/collections`, where the SimpleSchemas defined in [`lib/collections/schemas`](https://github.com/reactioncommerce/reaction/tree/v1.8.0/lib/collections/schemas) are attached. View all schemas in the [API Docs](http://api.docs.reactioncommerce.com/schemas.html).
+Reaction.Collections are defined in the common code of `lib/collections`, where the SimpleSchemas defined in [`lib/collections/schemas`].
 
 Custom schemas can also be defined in individual packages, by creating a `lib/collections/schemas` folder inside your package.
 
 ## Registering
 
-All schemas should be registered using the [`registerSchema()`](http://api.docs.reactioncommerce.com/module-collections.html#~registerSchema) method that Reaction uses internally to register all of our core Schemas.
+All schemas should be registered using the [`registerSchema()`](http://api.docs.demandcluster.com/module-collections.html#~registerSchema) method that Reaction uses internally to register all of our core Schemas.
 
 ```js
 import SimpleSchema from "simpl-schema";
@@ -61,9 +61,9 @@ import { PackageConfig } from "/lib/collections/schemas/registry";
 
 ### Reaction Schemas
 
-View all schemas in the [API Docs](http://api.docs.reactioncommerce.com/schemas.html).
+View all schemas in the [API Docs](http://api.docs.demandcluster.com/schemas.html).
 
-| [Reaction.Schemas](https://github.com/reactioncommerce/reaction/tree/v1.11.0/lib/collections/schemas) | \*                |
+| [Reaction.Schemas] | \*                |
 | ---------------------------------------------------------------------------------------------------- | ----------------- |
 | Email                                                                                                | Address           |
 | Accounts                                                                                             | CartItem          |
@@ -89,7 +89,7 @@ View all schemas in the [API Docs](http://api.docs.reactioncommerce.com/schemas.
 
 ### Automatic Values
 
-Reaction provides `autoValue` helpers in [`/lib/collections/schemas/helpers.js`](https://github.com/reactioncommerce/reaction/blob/v1.8.0/lib/collections/schemas/helpers.js).
+Reaction provides `autoValue` helpers in [`/lib/collections/schemas/helpers.js`].
 
 ```js
 /**

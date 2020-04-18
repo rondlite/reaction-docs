@@ -17,18 +17,18 @@ To start customizing Reaction, you should have a basic understanding of the foll
 
 Reaction tries to be as modular as possible. All user customizations are intended to live in plugins, as they provide a secure upgrade path when new versions are rolled out. See [here](plugin-intro-1.md) for a more detailed explanation into the plugin topic.
 
-### What sites are built on Reaction Commerce?
+### What sites are built on Demand Cluster?
 
-Ecommerce and marketplace sites from around the world are using Reaction in production now. Check out our [Community Showcase](https://reactioncommerce.com/community-showcase).
+Ecommerce and marketplace sites from around the world are using Reaction in production now. Check out our [Community Showcase](https://demandcluster.com/community-showcase).
 
 ### Why is Reaction so slow?
 
 #### For development
 
-We are aware that Reaction Commerce can take a long time to reload when using the development server. This has to do with that
+We are aware that Demand Cluster can take a long time to reload when using the development server. This has to do with that
 large amount of files that are in the project. Hopefully this has been mitigated to some degree with the update to Meteor 1.6, however
 we know that faster is better when it comes to development so we will be focusing all of our efforts on improving performance. You
-can see our plan, weigh in with suggestions, contribute, and track progress [here](https://github.com/reactioncommerce/reaction/issues/3233)
+can see our plan, weigh in with suggestions, contribute, and track progress [here]
 
 #### To "first paint"
 
@@ -36,15 +36,15 @@ As mentioned above we are aware that because of the nature of Meteor apps and th
 it can take several seconds before the site is rendered to clients. We are working to reduce the bundle size by eliminating some
 package and moving to a more dynamic loading so that parts of the app that may not be needed till later are not sent to the client on first
 load. Performance will be our main focus until the problem is resolved.
-You can see our plan, weigh in with suggestions, contribute, and track progress [here](https://github.com/reactioncommerce/reaction/issues/3233)
+You can see our plan, weigh in with suggestions, contribute, and track progress [here]
 
 ### Can I compile a mobile app from Reaction? Are you going to develop a mobile app?
 
 While Meteor allows all apps to be compiled into Android and iOS apps with Cordova, we do not support it. Setting up a Reaction app with Cordova may be difficult. Learn more about building [mobile apps with Meteor's Cordova integration](https://guide.meteor.com/mobile.html).
 
-While we do have plans to work on a mobile app on the [Roadmap](https://reactioncommerce.com/roadmap), we expect to use a non-Cordova approach, like React Native. We do not have a release date.
+While we do have plans to work on a mobile app on the [Roadmap](https://demandcluster.com/roadmap), we expect to use a non-Cordova approach, like React Native. We do not have a release date.
 
-What's important to know, however, is that Reaction Commerce takes a "mobile first" design approach to ensure that both the consumer-facing and admin-facing sites are functional on most modern mobile devices.
+What's important to know, however, is that Demand Cluster takes a "mobile first" design approach to ensure that both the consumer-facing and admin-facing sites are functional on most modern mobile devices.
 
 ### Is MongoDB/NoSQL best suited for ecommerce?
 
@@ -56,7 +56,7 @@ The database acts as the persistent storage of JavaScript objects. For example, 
 
 ### Reaction is an open source project. How can I get involved?
 
-We're always open to contributions from our community. To learn more about becoming a contributor, [click here](https://blog.reactioncommerce.com/how-to-write-a-pr-for-reaction/). And don't forget to read our [Community Guidelines](https://docs.reactioncommerce.com/reaction-docs/trunk/guidelines)!
+We're always open to contributions from our community. To learn more about becoming a contributor, [click here](https://blog.demandcluster.com/how-to-write-a-pr-for-reaction/). And don't forget to read our [Community Guidelines](https://docs.demandcluster.com/reaction-docs/trunk/guidelines)!
 
 ## Installation
 
@@ -75,17 +75,17 @@ We compiled a curated list of community projects that can be found in the wild. 
 
 Here are some options for deployment. What the best options is depends on your budget and your expected level of traffic
 
-1. [Reaction Platform](https://reactioncommerce.com/hosting)
+1. [Reaction Platform](https://demandcluster.com/hosting)
 
-The [Reaction Platform](https://reactioncommerce.com/hosting) comes with virtual private clusters, containerized cloud hosting, multiple staging environments, SSL and domains, direct support channels, and one-step deployment.
+The [Reaction Platform](https://demandcluster.com/hosting) comes with virtual private clusters, containerized cloud hosting, multiple staging environments, SSL and domains, direct support channels, and one-step deployment.
 
-Reaction Commerce’s Platform enables clients to:
+Demand Cluster’s Platform enables clients to:
 
 - Innovate faster by leveraging modern container-based technology that provides continuous integration, delivery, and deployment.
 - More effectively and efficiently manage your site with seamless cutovers, dynamic scaling, and multiple “everything”
 - Have greater peace of mind from our high availability, virtual clusters, and 24x7x365 support.
 
-You can find out more and request a quote [here](https://reactioncommerce.com/#get-a-demo) or you can contact <mailto:sales@reactioncommerce.com>.
+You can find out more and request a quote [here](https://demandcluster.com/#get-a-demo) or you can contact <mailto:sales@demandcluster.com>.
 
 2. Galaxy
 
@@ -93,14 +93,14 @@ The Meteor Development Group offers a hosting service that is focused on hosting
 
 ### What about services like Heroku, or running on EC2?
 
-You can deploy Reaction Commerce to anywhere you could deploy a Docker container or a Node app. Because of the complexities involved
+You can deploy Demand Cluster to anywhere you could deploy a Docker container or a Node app. Because of the complexities involved
 we currently can't offer any support for getting these deployed.
 
 ## Admin
 
 ### Where is the admin panel?
 
-The login panel is visible on the right side, once you login as a user with admin credentials. For more on navigating admin, read our [Reaction Commerce Store Operator Guide](dashboard.md).
+The login panel is visible on the right side, once you login as a user with admin credentials. For more on navigating admin, read our [Demand Cluster Store Operator Guide](dashboard.md).
 
 ### What's the admin login?
 
@@ -116,13 +116,13 @@ Since 2014 [Google has indexed JavaScript when crawling websites](https://webmas
 2. [Spiderable](https://github.com/ongoworks/spiderable): A now-deprecated solution is our Atmosphere package called [Spiderable](https://atmospherejs.com/ongoworks/spiderable) that pre-renders Meteor applications for search engines.
 3. [meteor-dochead](https://github.com/kadirahq/meteor-dochead): Automatically add `<meta>` tags are for products using the [meteor-dochead](https://github.com/kadirahq/meteor-dochead) package which uses the title, description and `details` fields of the product to render SEO-friendly data. You may need to use a tool like [SEO Inspector](https://chrome.google.com/webstore/detail/seo-inspector/iejckekdjogeeilmllnabmgkbbmedeal?hl=en) to see this data.
 
-Read more about [SEO and Reaction Commerce](https://blog.reactioncommerce.com/how-our-javascript-platform-handles-seo/) in our latest blog post.
+Read more about [SEO and Demand Cluster](https://blog.demandcluster.com/how-our-javascript-platform-handles-seo/) in our latest blog post.
 
 ## Extending Reaction
 
 ### How can I add add a static page?
 
-Add a single page, and more child pages, by adding a route and a template. This will require knowledge of HTML, JavaScript and Git or web development. This is covered in depth in this section of the [Customization Guide](https://docs.reactioncommerce.com/reaction-docs/trunk/plugin-routes-6).
+Add a single page, and more child pages, by adding a route and a template. This will require knowledge of HTML, JavaScript and Git or web development. This is covered in depth in this section of the [Customization Guide](https://docs.demandcluster.com/reaction-docs/trunk/plugin-routes-6).
 
 This would work great for static pages like an About or Contact us page. If you want to add tools for administrators to manage text and image content without having to code, you probably want to a content management system (CMS).
 
@@ -130,7 +130,7 @@ This would work great for static pages like an About or Contact us page. If you 
 
 If you have a lot of content (like images and text) that needs to be managed you probably want to use a content management system (CMS). We currently do not have one integrated with Reaction.
 
-On our [roadmap](https://reactioncommerce.com/roadmap)
+On our [roadmap](https://demandcluster.com/roadmap)
 we have a planned integration with a CMS like Drupal, which can hopefully serve as a model for other similar integrations.
 
 ### How do I upload product images as part of my data fixtures?
@@ -150,7 +150,7 @@ Longer answer: By design you can't, because presentation and data should be sepa
 
 "Right, I got all your points, but I really need to have more control over how the content is rendered."
 
-If you're absolutely keen it, you could overwrite the React component responsible for rendering [product properties](https://github.com/reactioncommerce/reaction/blob/v1.7.0/imports/plugins/included/product-detail-simple/client/components/productField.js). You'll find an example on how to overwrite ReactionCommerce's built-in components [here](extending-product-schema-location-map.md).
+If you're absolutely keen it, you could overwrite the React component responsible for rendering [product properties].
 
 ### I want to make a change to the schema and use it in the product detail page (PDP)
 
@@ -166,6 +166,6 @@ When implementing your own shop you may encounter situations where you need to b
 
 ### I have another question. Where's the best place to ask it?
 
-You can post questions in Gitter chat about [Installation](https://gitter.im/reactioncommerce/installation), [Deployment](https://gitter.im/reactioncommerce/deployment), [general Reaction](https://gitter.im/reactioncommerce/deployment) topics and [Architecture](https://gitter.im/reactioncommerce/architecture). You can also post questions in the [Forums](https://forums.reactioncommerce.com/).
+You can post questions in Gitter chat about [Installation](https://gitter.im/reactioncommerce/installation), [Deployment](https://gitter.im/reactioncommerce/deployment), [general Reaction](https://gitter.im/reactioncommerce/deployment) topics and [Architecture](https://gitter.im/reactioncommerce/architecture). You can also post questions in the [Forums](https://forums.demandcluster.com/).
 
 Want more help? You can also ask a question live during our Community Calls. Here's the past [agendas](https://docs.google.com/document/d/1PwenrammgQJpQfFoUUJZ96i_JJYCM_4glAjB1_ZzgwA/edit) and a form to [submit questions](https://docs.google.com/forms/d/e/1FAIpQLSfsNNH1W4bP7k4Gkl1JYF4vCEwQcHE9X3OIFfTH2TNwD7dN4Q/viewform).

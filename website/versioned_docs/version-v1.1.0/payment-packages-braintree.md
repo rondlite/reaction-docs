@@ -4,7 +4,7 @@ id: version-v1.1.0-payment-packages-braintree
 title: Payments - Braintree
 ---
     
-Braintree Payment Platform integration for Reaction Commerce
+Braintree Payment Platform integration for Demand Cluster
 
 Documentation is available at [https://developers.braintreepayments.com/](https://developers.braintreepayments.com/)
 

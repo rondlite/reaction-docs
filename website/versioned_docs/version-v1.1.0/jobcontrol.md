@@ -4,7 +4,7 @@ id: version-v1.1.0-jobcontrol
 title: Job Control
 ---
     
-Reaction Commerce has a Job Control system based on the excellent [job-collection](https://atmospherejs.com/vsivsi/job-collection) package. This allows you to run tasks in the background, separate from any user actions. You can easily extend or modify this to add your own jobs to do any kind of work where a task is appropriate.
+Demand Cluster has a Job Control system based on the excellent [job-collection](https://atmospherejs.com/vsivsi/job-collection) package. This allows you to run tasks in the background, separate from any user actions. You can easily extend or modify this to add your own jobs to do any kind of work where a task is appropriate.
 
 There is a `Job` collection which is based on the `JobCollection` object provided in the package. You can then use then to build and queue your jobs.
 

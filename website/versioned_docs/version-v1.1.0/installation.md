@@ -28,7 +28,7 @@ Sample data is loaded on a new installation from `private/data`.
 
 Browse to [http://localhost:3000](https://localhost:3000) and you should see Reaction running.
 
-Developers using **Windows** should review the [Windows specific installation requirements for Meteor and Reaction](https://docs.reactioncommerce.com/reaction-docs/development/requirements).
+Developers using **Windows** should review the [Windows specific installation requirements for Meteor and Reaction](https://docs.demandcluster.com/reaction-docs/development/requirements).
 
 ## reaction
 

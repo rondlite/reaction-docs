@@ -10,7 +10,7 @@ SortableTable is built with [ReactTable](https://react-table.js.org/#/story/read
 
 ## Import
 
-SortableTable is available as via `registerComponent`. See the [Reaction Components API Docs](https://docs.reactioncommerce.com/reaction-docs/trunk/components-api) for more info.
+SortableTable is available as via `registerComponent`. See the [Reaction Components API Docs](https://docs.demandcluster.com/reaction-docs/trunk/components-api) for more info.
 
 ```javascript
 import { Components } from "@reactioncommerce/reaction-components";

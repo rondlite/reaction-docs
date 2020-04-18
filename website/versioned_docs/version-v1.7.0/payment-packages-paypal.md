@@ -4,7 +4,7 @@ title: Payments - PayPal
 original_id: payment-packages-paypal
 ---
     
-PayPal Payment Platform integration for Reaction Commerce
+PayPal Payment Platform integration for Demand Cluster
 
 Payflow Pro is supported via the PayPal-Node-SDK (<http://paypal.github.io/PayPal-node-SDK/>) while Express uses the NVP (Name/Value Pair) API via raw HTTP (<https://developer.paypal.com/docs/classic/api/#ec>)
 

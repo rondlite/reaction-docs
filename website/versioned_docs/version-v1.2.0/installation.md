@@ -4,7 +4,7 @@ title: Installation
 original_id: installation
 ---
     
-Review and install the [Reaction requirements.](https://docs.reactioncommerce.com/reaction-docs/development/requirements).
+Review and install the [Reaction requirements.](https://docs.demandcluster.com/reaction-docs/development/requirements).
 
 To install and run Reaction locally in development mode:
 

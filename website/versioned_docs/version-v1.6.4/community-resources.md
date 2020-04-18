@@ -6,14 +6,14 @@ original_id: community-resources
 
 This page is here to guide you through the Reaction ecosystem. As we've stated before, we'd not be here without our very engaged community. Lots of people are continuing to contribute to core development, but also supplying other members of the community with valuable plugins, tutorials or learning material. Here we'd like to introduce you to some of the awesome things we've seen out there.
 
-_**Note:** If you miss something that's not listed here and want to see it here, you're invited to open a [pull request](https://github.com/reactioncommerce/reaction-docs/pull/new/trunk)._
+_**Note:** If you miss something that's not listed here and want to see it here, you're invited to open a [pull request]._
 
 ## Plugins maintained by Reaction's community team
 
 ### payments-cod
 A very basic payment provider plugin that offers Cash On Delivery.
 
-[https://github.com/reactioncommerce/payments-cod](https://github.com/reactioncommerce/payments-cod)
+[https://github.com/reactioncommerce/payments-cod]
 
 It does essentially just skip the payment step during checkout workflow and allows ordering without the need for entering credit card details.
 
@@ -21,7 +21,7 @@ Requirements:
 - Basic React understanding
 
 Learning content:
-- How to create a [payment provider plugin](https://docs.reactioncommerce.com/reaction-docs/trunk/creating-a-payment-provider)
+- How to create a [payment provider plugin](https://docs.demandcluster.com/reaction-docs/trunk/creating-a-payment-provider)
 
 ## Plugins from our community in no particular order
 
@@ -43,7 +43,7 @@ Kudos for [Joshua Cox!](https://github.com/joshuacox)
 
 ### customReactionTheme
 
-Another plugin that is concerned with customizing the Shop's CSS styling, but also shows how to render own markup for different parts of the shop, like the landing page. It does so through usage of Reaction's [component API](http://api.docs.reactioncommerce.com/Components.html)
+Another plugin that is concerned with customizing the Shop's CSS styling, but also shows how to render own markup for different parts of the shop, like the landing page. It does so through usage of Reaction's [component API](http://api.docs.demandcluster.com/Components.html)
 
 [https://github.com/curranabell/customReactionTheme](https://github.com/curranabell/customReactionTheme)
 
@@ -147,7 +147,7 @@ Thank you for your support, [Daniel!](https://github.com/danielsouzapinn)
 
 **Status: non-working**
 
-The plugin is based off of our [reaction example plugin](https://github.com/reactioncommerce/reaction-example-plugin), but takes that a step further to be more like a fully-fledged solution.
+The plugin is based off of our [reaction example plugin], but takes that a step further to be more like a fully-fledged solution.
 
 [https://github.com/hydrotik/reaction-hydrotik-plugin](https://github.com/hydrotik/reaction-hydrotik-plugin)
 

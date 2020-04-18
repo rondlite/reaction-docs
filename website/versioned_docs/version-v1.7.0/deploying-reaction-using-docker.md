@@ -4,7 +4,7 @@ title: Docker
 original_id: deploying-reaction-using-docker
 ---
 
-We think [Docker](https://www.docker.com) is one of the easiest ways to deploy modern apps and it's currently the recommended approach if you're hosting your own Reaction Commerce shop. If you aren't using a customized version of Reaction, there are only a few steps to get up and running and you don't even need to know much about Docker to do it. Let's get started!
+We think [Docker](https://www.docker.com) is one of the easiest ways to deploy modern apps and it's currently the recommended approach if you're hosting your own Demand Cluster shop. If you aren't using a customized version of Reaction, there are only a few steps to get up and running and you don't even need to know much about Docker to do it. Let's get started!
 
 ## Install
 
@@ -16,7 +16,7 @@ As described by Docker:
 - **[Docker Compose](https://docs.docker.com/compose/overview/)** defines and manages multi-container applications.
 - **[Docker Machine](https://docs.docker.com/machine/overview/)** automates Docker host provisioning on your network or in the cloud.
 
-The following documentation only aims to show you how to setup a production deployment of Reaction Commerce. If you would like to learn more about the basics of Docker and how it might be useful for your development workflow, we strongly encourage reading Docker's [Getting Started docs](https://docs.docker.com/) and going through some of their [beginner tutorials](https://docs.docker.com/learn/).
+The following documentation only aims to show you how to setup a production deployment of Demand Cluster. If you would like to learn more about the basics of Docker and how it might be useful for your development workflow, we strongly encourage reading Docker's [Getting Started docs](https://docs.docker.com/) and going through some of their [beginner tutorials](https://docs.docker.com/learn/).
 
 Ok, let's do this!
 
@@ -56,7 +56,7 @@ Now when you run Docker commands, they will be executing on the remote server in
 
 ### Docker
 
-If you don't have a customized version of Reaction Commerce, you can use our official release builds that are [available on Docker Hub](https://hub.docker.com/r/reactioncommerce/reaction/) as `reactioncommerce/reaction:latest`. The official releases are built by [Circle CI](https://circleci.com/) every time code is merged into [the trunk branch on Github](https://github.com/reactioncommerce/reaction/tree/trunk).
+If you don't have a customized version of Demand Cluster, you can use our official release builds that are [available on Docker Hub].
 
 All you need to run the latest stable build of Reaction is a single Docker command (assuming you have a Mongo database hosted somewhere - e.g. [Compose.io](https://compose.io), etc.)
 
@@ -95,7 +95,7 @@ docker-machine ip reaction-host
 
 Once you have your host IP, go to your domain name provider and point your domain name at that IP.
 
-That's it. You're done!  Once your DNS records update, you should then be able to access your deployed Reaction Commerce shop.
+That's it. You're done!  Once your DNS records update, you should then be able to access your deployed Demand Cluster shop.
 
 ## Custom build
 
@@ -118,7 +118,7 @@ reaction
 
 Then add your theming and customizations using the
 [customization guide](tutorial.md).
-Now you have a customized Reaction Commerce with all your shiny new npm packages and theming.
+Now you have a customized Demand Cluster with all your shiny new npm packages and theming.
 It runs great locally and you have built a local custom image using:
 
 ```sh

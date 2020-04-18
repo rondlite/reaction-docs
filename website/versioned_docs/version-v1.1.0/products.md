@@ -10,7 +10,7 @@ What you see, the customer sees. Create, edit, and remove products inline. It’
 
 To create a product, login to your dashboard and click on the plus (+), located on the top right.
 
-![](/assets/admin-dashboard-panel-home.png "Add Product with Reaction Commerce")
+![](/assets/admin-dashboard-panel-home.png "Add Product with Demand Cluster")
 
 You’ll be taken to your product page, where you'll have the ability to change your product's photo, price, and description, all in real-time.
 
@@ -60,19 +60,19 @@ Each option allows you to customize the option name, label, price, and quantity,
 
 To add an image gallery to your product, simply drag and drop files from your computer onto the Variant Option gallery screen. You may also upload images using the "Drop file to upload” button.
 
-Currently, only image file types are supported, but support for video, Google Drive, Dropbox, and more are in the works. See [Issue #50](https://github.com/reactioncommerce/reaction/issues/50) and [Issue #69](https://github.com/reactioncommerce/reaction/issues/69).
+Currently, only image file types are supported, but support for video, Google Drive, Dropbox, and more are in the works. See [Issue #50].
 
-![](/assets/admin-product-variant-options.png "Reaction Commerce Product Variant Options")
+![](/assets/admin-product-variant-options.png "Demand Cluster Product Variant Options")
 
 Once you have images added to your gallery, simply drag and drop to change their position.
 
-![](/assets/admin-product-variant-3.png "Reaction Commerce Product Mediae")
+![](/assets/admin-product-variant-3.png "Demand Cluster Product Mediae")
 
 ## Product Grid
 
 By default, products are displayed in a grid layout. When logged in as an admin, you may drag and drop products to reorder them.
 
-![](/assets/admin-product-grid.png "Reaction Commerce Drag and Drop Merchandising")
+![](/assets/admin-product-grid.png "Demand Cluster Drag and Drop Merchandising")
 
 You may also arrange products based on how you manage your tags. Manage the display order of your products based on the order of your tags in your navigation.
 

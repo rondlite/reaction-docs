@@ -11,6 +11,6 @@ A Reaction plugin generally refers to something that provides a single area of f
 
 ## Reaction Meteor App Plugins
 
-Meteor plugins are found in `/imports/plugins` in the main Reaction repository. They are divided into `core` and `included` folders. These are technically all "core" plugins in that they are part of core Reaction Commerce releases and you should not modify any code in them. The difference is that plugins in `included` can be safely removed if you don't need them.
+Meteor plugins are found in `/imports/plugins` in the main Reaction repository. They are divided into `core` and `included` folders. These are technically all "core" plugins in that they are part of core Demand Cluster releases and you should not modify any code in them. The difference is that plugins in `included` can be safely removed if you don't need them.
 
 > There is also a `/imports/plugins/custom` folder, which is where any community plugins or plugins you create should be added.

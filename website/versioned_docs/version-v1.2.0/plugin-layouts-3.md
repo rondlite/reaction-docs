@@ -70,7 +70,7 @@ export default CoreLayoutBeesknees;
 
 In order to change our default layout, we need add a record to the **registry** for our package. We also need to add a special `defaults.js` that will add some global options.
 
-**Note**: If you just want to override the homepage and leave everything else alone, you can do that by adding special INDEX_OPTIONS parameters to this `defaults.js` file. See the ["Changing the index page layout"](https://docs.reactioncommerce.com/reaction-docs/development/layout) documentation for more info.
+**Note**: If you just want to override the homepage and leave everything else alone, you can do that by adding special INDEX_OPTIONS parameters to this `defaults.js` file. See the ["Changing the index page layout"](https://docs.demandcluster.com/reaction-docs/development/layout) documentation for more info.
 
 First let's create our `defaults.js` with our custom layout. You will place this file in the `client` folder in your plugin. The `defaults.js` just looks like this:
 
@@ -155,7 +155,7 @@ changing our layout. For example we change point our header or footer to
 a custom template by changing the values for "layoutHeader" or "layoutFooter".
 2. There is a `priority` field on layout objects (with a default value) of `999`. When RC goes to render a route/page
 (as explained above) and more than one layout match is found, this `priority` field is used to determine which one is
- used. Lower values override the default. [See example](https://github.com/reactioncommerce/reaction-example-plugin/pull/9/files).
+ used. Lower values override the default. [See example].
 
 Next: [Customizing Templates](plugin-customizing-templates-4)
 

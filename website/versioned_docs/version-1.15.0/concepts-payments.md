@@ -8,7 +8,7 @@ A **"payment"** describes information attached to an order fulfillment group, wh
 
 ## Payment Plugins and Payment Methods
 
-Reaction Commerce does not provide any payment methods in the core system. All payment methods are added by payment plugins, which are extra code you add to the payment service to fit your needs.
+Demand Cluster does not provide any payment methods in the core system. All payment methods are added by payment plugins, which are extra code you add to the payment service to fit your needs.
 
 We provide and support two payment plugins: **Stripe** and **IOU**.
 

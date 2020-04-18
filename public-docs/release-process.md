@@ -7,7 +7,7 @@ title: Release Guide
 
 The [Reaction engineering team and invited community collaborators](https://github.com/orgs/reactioncommerce/people) creates new release branches of Reaction.
 
-> A "Reaction Release" consists of coordinated releases in four repositories: [Reaction Development Platform](https://github.com/reactioncommerce/reaction-development-platform), [Reaction](https://github.com/reactioncommerce/reaction), [Reaction Hydra](https://github.com/reactioncommerce/reaction-hydra), and [Example Storefront](https://github.com/reactioncommerce/example-storefront).
+> A "Reaction Release" consists of coordinated releases in four repositories: [Reaction Development Platform].
 
 ## Preparing each project
 
@@ -32,7 +32,7 @@ The [Reaction engineering team and invited community collaborators](https://gith
 
             Reaction v{X.X.X} adds {major|minor} features and performance enhancements, fixes bugs and contains no breaking changes since v{X.X.X - 1version}.
 
-            This release is being coordinated with [Reaction Development Platform](https://github.com/reactioncommerce/reaction-development-platform) and is designed to work with `v{X.X.X}` of [Reaction Hydra](https://github.com/reactioncommerce/reaction-hydra) and [Example Storefront](https://github.com/reactioncommerce/example-storefront).
+            This release is being coordinated with [Reaction Development Platform].
 
             ## Notable changes
 
@@ -47,22 +47,22 @@ The [Reaction engineering team and invited community collaborators](https://gith
             ## Feature
 
             - {list all `feature` PR's here, in this format}
-            - feat: this is the description of the PR ([#1234](https://github.com/reactioncommerce/reaction/pull/1234))
+            - feat: this is the description of the PR 
 
             ## Fixes
 
             - {list all `fix` PR's here, in this format}
-            - fix: this is the description of the PR ([#1234](https://github.com/reactioncommerce/reaction/pull/1234))
+            - fix: this is the description of the PR 
 
             ## Refactors
 
             - {list all `refactor` PR's here, in this format}
-            - refactor: this is the description of the PR ([#1234](https://github.com/reactioncommerce/reaction/pull/1234))
+            - refactor: this is the description of the PR 
 
             ## Tests
 
             - {list all `test` PR's here, in this format}
-            - tests: this is the description of the PR ([#1234](https://github.com/reactioncommerce/reaction/pull/1234))
+            - tests: this is the description of the PR 
 
             ## Contributors
 
@@ -80,25 +80,25 @@ The [Reaction engineering team and invited community collaborators](https://gith
 
             # v{X.X.X}
 
-            This is a {major|minor|patch} version update to keep this projects versioning coordinated with [Reaction Development Platform](https://github.com/reactioncommerce/reaction-development-platform), [Reaction](https://github.com/reactioncommerce/reaction), and [Reaction Hydra](https://github.com/reactioncommerce/reaction-hydra).
+            This is a {major|minor|patch} version update to keep this projects versioning coordinated with [Reaction Development Platform].
 
         ### Reaction
 
             # v{X.X.X}
 
-            This is a {major|minor|patch} version update to keep this projects versioning coordinated with [Reaction Development Platform](https://github.com/reactioncommerce/reaction-development-platform), [Reaction Hydra](https://github.com/reactioncommerce/reaction-hydra), and [Example Storefront](https://github.com/reactioncommerce/example-storefront).
+            This is a {major|minor|patch} version update to keep this projects versioning coordinated with [Reaction Development Platform].
 
         ### Reaction Hydra
 
             # v{X.X.X}
 
-            This is a {major|minor|patch} version update to keep this projects versioning coordinated with [Reaction Development Platform](https://github.com/reactioncommerce/reaction-development-platform), [Reaction](https://github.com/reactioncommerce/reaction), and [Example Storefront](https://github.com/reactioncommerce/example-storefront).
+            This is a {major|minor|patch} version update to keep this projects versioning coordinated with [Reaction Development Platform].
 
         ### Reaction Development Platform
 
             # v{X.X.X}
 
-            This is a {major|minor|patch} version update to keep this projects versioning coordinated with [Reaction](https://github.com/reactioncommerce/reaction), [Reaction Hydra](https://github.com/reactioncommerce/reaction-hydra), and [Example Storefront](https://github.com/reactioncommerce/example-storefront).
+            This is a {major|minor|patch} version update to keep this projects versioning coordinated with [Reaction].
 
 - Create a PR from your release branch to the `trunk`  branch, using the updated `CHANGELOG` notes as the PR description
 - Ask QA for a review
@@ -140,9 +140,9 @@ The `develop` branches of `Reaction` and `Example Platform` need to pull in the 
 
 Once we have a new release, we need to update our Sample Data to go along with the release. Even if you are certain no data has changed, we still want a new version of data to match version numbers.
 
-Follow the instructions [here](https://github.com/reactioncommerce/reaction-catalog-sample-data#how-to-update-and-export-for-a-new-reaction-release) to update the data.
+Follow the instructions [here] to update the data.
 
 ## Links
 
-- Release guide in our docs: [https://docs.reactioncommerce.com/docs/release-process](https://docs.reactioncommerce.com/docs/release-process)
-- Catalog data update instructions: [https://github.com/reactioncommerce/reaction-catalog-sample-data#how-to-update-and-export-for-a-new-reaction-release](https://github.com/reactioncommerce/reaction-catalog-sample-data#how-to-update-and-export-for-a-new-reaction-release)
+- Release guide in our docs: [https://docs.demandcluster.com/docs/release-process](https://docs.demandcluster.com/docs/release-process)
+- Catalog data update instructions: [https://github.com/reactioncommerce/reaction-catalog-sample-data#how-to-update-and-export-for-a-new-reaction-release]

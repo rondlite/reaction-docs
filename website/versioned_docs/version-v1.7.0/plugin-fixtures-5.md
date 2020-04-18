@@ -27,7 +27,7 @@ Let's look at the Shops file. There is a lot of stuff there and a lot of it you 
 revolutionary opinions about how many provinces Canada has, etc.). But there are some critical pieces to change.
 
 The first thing we are going to do is remove the `<blank store>` record. This second entry is to highlight how you
-can have multiple stores within Reaction Commerce. However for the purposes of this tutorial we are just creating the
+can have multiple stores within Demand Cluster. However for the purposes of this tutorial we are just creating the
 one store so the second one just adds confusion so let's remove the whole record. (Shops is an array of Shop records,
 so you can just delete the second entry in the array).
 

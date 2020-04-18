@@ -120,7 +120,7 @@ const packages = Reaction.Collections.Packages.find({
 });
 ```
 
-Some of the [Reaction Collections](https://github.com/reactioncommerce/reaction/blob/v2.9.1/lib/collections/collections.js) are:
+Some of the [Reaction Collections] are:
 
 - Accounts
 - AnalyticsEvents
@@ -135,7 +135,7 @@ Some of the [Reaction Collections](https://github.com/reactioncommerce/reaction/
 - Tags
 - Taxes
 
-The [Reaction Commerce/hooks](https://www.npmjs.com/package/@reactioncommerce/hooks) extend [Mongo.Collection](http://docs.meteor.com/#/full/mongo_collection) with before/after hooks for `insert`, `update`, `remove`, `find`, and `findOne`.
+The [Demand Cluster/hooks](https://www.npmjs.com/package/@reactioncommerce/hooks) extend [Mongo.Collection](http://docs.meteor.com/#/full/mongo_collection) with before/after hooks for `insert`, `update`, `remove`, `find`, and `findOne`.
 
 ### Attaching a schema
 

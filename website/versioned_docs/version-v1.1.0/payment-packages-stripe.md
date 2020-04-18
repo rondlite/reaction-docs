@@ -4,7 +4,7 @@ id: version-v1.1.0-payment-packages-stripe
 title: Payments - Stripe
 ---
     
-Stripe Payment Platform integration for Reaction Commerce
+Stripe Payment Platform integration for Demand Cluster
 
 Documentation is available at [https://stripe.com/docs/api](https://stripe.com/docs/api)
 

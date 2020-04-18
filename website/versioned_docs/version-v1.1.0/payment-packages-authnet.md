@@ -4,7 +4,7 @@ id: version-v1.1.0-payment-packages-authnet
 title: Payments - Authorize.net
 ---
     
-Authorize.net Payment Platform integration for Reaction Commerce
+Authorize.net Payment Platform integration for Demand Cluster
 
 Documentation is available at [https://developer.authorize.net/api/reference/index.html](https://developer.authorize.net/api/reference/index.html)
 

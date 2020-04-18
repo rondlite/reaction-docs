@@ -5,7 +5,7 @@ title: Reporting Guide
     
 All Community Guidelines content is licensed under a [Creative Commons Attribution](https://creativecommons.org/licenses/by/3.0/) license.
 
-If you believe someone is violating the Code of Conduct we ask that you report it to the Reaction Commerce Team by emailing <mailto:conduct@reactioncommerce.com>. All reports will be kept confidential. In some cases we may determine that a public statement will need to be made. If that's the case, the identities of all victims and reporters will remain confidential unless those individuals instruct us otherwise.
+If you believe someone is violating the Code of Conduct we ask that you report it to the Demand Cluster Team by emailing <mailto:conduct@demandcluster.com>. All reports will be kept confidential. In some cases we may determine that a public statement will need to be made. If that's the case, the identities of all victims and reporters will remain confidential unless those individuals instruct us otherwise.
 
 If you believe anyone is in physical danger, please notify appropriate law enforcement first. If you are unsure what law enforcement agency is appropriate, please include this in your report and we will attempt to notify them.
 
@@ -45,8 +45,8 @@ We'll respond within one week to the person who filed the report with either a r
 
 Once we've determined our final action, we'll contact the original reporter to let them know what action (if any) we'll be taking. We'll take into account feedback from the reporter on the appropriateness of our response, but we don't guarantee we'll act on it.
 
-Finally, the Reaction Commerce Conduct Committee will make a report on the situation and may choose to submit a public report of the incident.
+Finally, the Demand Cluster Conduct Committee will make a report on the situation and may choose to submit a public report of the incident.
 
 ## Appealing
 
-Only permanent resolutions (such as bans) may be appealed. To appeal a decision of the working group, contact Reaction Commerce at <mailto:conduct@reactioncommerce.com> with your appeal and the Team will review the case.
+Only permanent resolutions (such as bans) may be appealed. To appeal a decision of the working group, contact Demand Cluster at <mailto:conduct@demandcluster.com> with your appeal and the Team will review the case.

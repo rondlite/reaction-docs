@@ -2,7 +2,7 @@
 title: Introduction to Concepts
 ---
 
-This section defines and explains the various terms and concepts that you will encounter using Reaction Commerce. This is a good place to start regardless of your role.
+This section defines and explains the various terms and concepts that you will encounter using Demand Cluster. This is a good place to start regardless of your role.
 
 Visit the articles in this order for an optimal learning experience:
 - [Shops](concepts-shops.md)

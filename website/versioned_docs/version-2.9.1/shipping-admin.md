@@ -12,7 +12,7 @@ Confused? See [Concepts: Fulfillment](concepts-fulfillment.md)
 
 ## Adding a new shipping method
 
-![](/assets/admin-shipping-catalyst-ui.png "Reaction Commerce Shipping")
+![](/assets/admin-shipping-catalyst-ui.png "Demand Cluster Shipping")
 
 1. Click the plus <i class="font-icon fa fa-plus"></i>.
 2. Fill out the following:

@@ -25,9 +25,9 @@ Start with a fresh checkout of the latest version of Reaction.
 
 You may, at this point want to also `git init` so you can start tracking your new package with source control. 
 
-The reference files for this tutorial are available [here](https://github.com/reactioncommerce/reaction-example-plugin).
+The reference files for this tutorial are available [here].
 
-### Create a [`register.js`](https://github.com/reactioncommerce/reaction-example-plugin/blob/master/register.js)
+### Create a [`register.js`]
 
 The first file we create is going to be our `register.js`. This is absolutely the bare minimum you need to create
 a plugin. The `register.js` adds your plugin to the Registry, the Packages collection in the database. 
@@ -77,4 +77,4 @@ Next: [Using Layouts](plugin-layouts-3.md)
 ## Read more
 
 - [Docs: Registry](registry.md)
-- [Blog: An Intro to Architecture: The Registry](https://blog.reactioncommerce.com/an-intro-to-architecture-the-registry/)
+- [Blog: An Intro to Architecture: The Registry](https://blog.demandcluster.com/an-intro-to-architecture-the-registry/)

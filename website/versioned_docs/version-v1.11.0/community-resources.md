@@ -6,11 +6,11 @@ original_id: community-resources
 
 This page is here to guide you through the Reaction ecosystem. As we've stated before, we wouldn't be here without our very engaged community. Here we'd like to introduce you to some of the best things we've seen out there.
 
-_**Note:** If you miss something that's not listed here and want to see it here, you're invited to open a [pull request](https://github.com/reactioncommerce/reaction-docs/pull/new/trunk)._
+_**Note:** If you miss something that's not listed here and want to see it here, you're invited to open a [pull request]._
 
 ## Plugins and tools maintained by Reaction
 
-### [payments-cod](https://github.com/reactioncommerce/payments-cod)
+### [payments-cod]
 
 A very basic payment provider plugin that offers Cash On Delivery. This package removes the payment step during checkout workflow and allows ordering without the need for entering credit card details.
 
@@ -18,9 +18,9 @@ A very basic payment provider plugin that offers Cash On Delivery. This package 
 - Basic React understanding
 
 **Learning content:**
-- How to create a [payment provider plugin](https://docs.reactioncommerce.com/reaction-docs/trunk/creating-a-payment-provider)
+- How to create a [payment provider plugin](https://docs.demandcluster.com/reaction-docs/trunk/creating-a-payment-provider)
 
-### [reaction-devtools](https://github.com/reactioncommerce/reaction-devtools)
+### [reaction-devtools]
 
 Install this plugin to get a dashboard panel that allows you to load datasets and images quickly for testing your app locally.
 
@@ -41,7 +41,7 @@ Kudos to [Joshua Cox!](https://github.com/joshuacox)
 
 ### [customReactionTheme](https://github.com/curranabell/customReactionTheme)
 
-Another plugin that is concerned with customizing the Shop's CSS styling, but also shows how to render own markup for different parts of the shop, like the landing page. It does so through usage of Reaction's [component API](http://api.docs.reactioncommerce.com/Components.html)
+Another plugin that is concerned with customizing the Shop's CSS styling, but also shows how to render own markup for different parts of the shop, like the landing page. It does so through usage of Reaction's [component API](http://api.docs.demandcluster.com/Components.html)
 
 Prerequisites: Uses additional meteor package. Open a console in project's root directory and execute this command: `meteor add ultimatejs:tracker-react` to add the required dependency.
 
@@ -139,7 +139,7 @@ Thank you for your support, [Daniel!](https://github.com/danielsouzapinn)
 
 **Status: non-working**
 
-The plugin is based off of our [reaction example plugin](https://github.com/reactioncommerce/reaction-example-plugin), but takes that a step further to be more like a fully-fledged solution.
+The plugin is based off of our [reaction example plugin], but takes that a step further to be more like a fully-fledged solution.
 
 Thanks for riding with us, [Donovan!](https://github.com/hydrotik)
 

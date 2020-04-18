@@ -4,7 +4,7 @@ title: Tutorial: Create a custom homepage
 original_id: how-to-create-a-custom-homepage
 ---
 
-> ⚠️ Note: This guide has been deprecated as the release of Reaction 2.0. The latest custom home page guide can be found [here](https://docs.reactioncommerce.com/docs/swag-shop-5).
+> ⚠️ Note: This guide has been deprecated as the release of Reaction 2.0. The latest custom home page guide can be found [here](https://docs.demandcluster.com/docs/swag-shop-5).
 
 ## Step 1: Create a new custom plugin
 
@@ -17,7 +17,7 @@ original_id: how-to-create-a-custom-homepage
 
 ## Step 2: Setting default values for INDEX_OPTIONS
 
-You can change the default layout values in [`/client/config/defaults.js`]( https://github.com/reactioncommerce/reaction/blob/f40ff536c139d70da02ca10ae12655247452d658/client/config/defaults.js#L1-L74) by overriding them in a new file called `default.js` in the `/imports/plugins/custom/custom-home/client/` folder:
+You can change the default layout values in [`/client/config/defaults.js`] by overriding them in a new file called `default.js` in the `/imports/plugins/custom/custom-home/client/` folder:
 
 ```js
 import { Session } from "meteor/session";

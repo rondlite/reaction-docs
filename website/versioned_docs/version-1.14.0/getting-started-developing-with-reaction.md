@@ -31,13 +31,13 @@ To further customize your experience, you can create or use community packages f
 
 ## Roadmap
 
-A long term roadmap and completed features list is on our [roadmap](https://reactioncommerce.com/roadmap).
+A long term roadmap and completed features list is on our [roadmap](https://demandcluster.com/roadmap).
 
-Specific features in progress for the current sprint is found on the [Reaction repository's milestones page](https://github.com/reactioncommerce/reaction/milestones).
+Specific features in progress for the current sprint is found on the [Reaction repository's milestones page].
 
 ## Issues
 
-To assign tasks or issues, please visit our project's [Issues](https://github.com/reactioncommerce/reaction/issues?state=open) page, where we track issues for all [reactioncommerce:\*](https://github.com/reactioncommerce/) packages.
+To assign tasks or issues, please visit our project's [Issues] packages.
 
 ### Other Resources
 

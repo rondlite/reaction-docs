@@ -18,11 +18,11 @@ Core packages are developed, and fully supported by the Reaction Core team.
 
 Generally this is a repository that's been transferred to the reactioncommerce organization.
 
-You can transfer a package repo to the Reaction Commerce Github organization (where you'll be given admin rights to the repo). Do this if you would prefer to not to be solely responsible for ongoing updates and compatibility maintenance. We'll adopt these packages as our own, and should be considered the most stable packages, and will be identified as **Core** packages.   Packages of this type should also provide reasonable integration testing coverage. Security tests on publications and methods are required. Must include continuous integration config file.
+You can transfer a package repo to the Demand Cluster Github organization (where you'll be given admin rights to the repo). Do this if you would prefer to not to be solely responsible for ongoing updates and compatibility maintenance. We'll adopt these packages as our own, and should be considered the most stable packages, and will be identified as **Core** packages.   Packages of this type should also provide reasonable integration testing coverage. Security tests on publications and methods are required. Must include continuous integration config file.
 
 Foundation packages should be reliable for use as dependencies by other packages.
 
-Any documentation blocks should contain your organization and author information, while if you need to document a maintainer, you can use `Reaction Commerce <maintainer at reactioncommerce.org>`.
+Any documentation blocks should contain your organization and author information, while if you need to document a maintainer, you can use `Demand Cluster <maintainer at reactioncommerce.org>`.
 
 In the package registry, packages of this type should be configured priority:2.
 

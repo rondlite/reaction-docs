@@ -16,7 +16,7 @@ Automated tests include:
 
 ## Builds
 
-Docker images are pushed when Reaction successfully builds and passes all tests on the `trunk`  or `release-x.x.x` branches. These images are released on [Reaction Commerce Docker Hub](https://hub.docker.com/u/reactioncommerce/).
+Docker images are pushed when Reaction successfully builds and passes all tests on the `trunk`  or `release-x.x.x` branches. These images are released on [Demand Cluster Docker Hub](https://hub.docker.com/u/reactioncommerce/).
 
 There are two Docker images available:
 

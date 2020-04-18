@@ -10,7 +10,7 @@ Before getting started, make sure you are logged in as an operator and click the
 
 ## Add shop members
 
-![](/assets/admin-accounts-add-member.png "Reaction Commerce Dashboard - Add a shop team member")
+![](/assets/admin-accounts-add-member.png "Demand Cluster Dashboard - Add a shop team member")
 
 Enter the user's **Name** and **Email** in the fields below, and click **Send invitation**.
 
@@ -18,6 +18,6 @@ Make sure to set up [email](email-admin.md) before inviting shop team members.
 
 ## Manage shop member permissions
 
-![](/assets/admin-accounts-manage.png "Reaction Commerce Dashboard - Manage shop team member permissions")
+![](/assets/admin-accounts-manage.png "Demand Cluster Dashboard - Manage shop team member permissions")
 
 Click **Manage** next to the member's name. Toggle each feature on and off to allow or deny member access. If a feature is turned off, it will not be visible on that member's dashboard.

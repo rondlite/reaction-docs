@@ -12,10 +12,10 @@ class Footer extends React.Component {
     return (
       <footer className="nav-footer reaction-footer" id="footer">
         <div className="reaction-footer-logo">
-          <a href="https://reactioncommerce.com" target="_blank">
+          <a href="https://demandcluster.com" target="_blank">
             <img
-              src="/img/logo@2x.png"
-              alt="Reaction Commerce"
+              src="https://backend.demandcluster.com/resources/demand-logo-circular.svg"
+              alt="Demand Cluster"
               width="39"
               height="39"
             />
@@ -26,21 +26,21 @@ class Footer extends React.Component {
             <div className="link-grid-column">
               <h5>Company</h5>
               <ul className="footer-list">
-                <li><a target="_blank" href="https://reactioncommerce.com/about">About</a></li>
-                <li><a target="_blank" href="https://blog.reactioncommerce.com/">Blog</a></li>
-                <li><a target="_blank" href="https://reactioncommerce.com/about#contact">Contact</a></li>
-                <li><a target="_blank" href="https://reactioncommerce.com/careers">Careers</a></li>
-                <li><a target="_blank" href="https://reactioncommerce.com/press">Press</a></li>
+                <li><a target="_blank" href="https://demandcluster.com/about">About</a></li>
+                <li><a target="_blank" href="https://blog.demandcluster.com/">Blog</a></li>
+                <li><a target="_blank" href="https://demandcluster.com/about#contact">Contact</a></li>
+                <li><a target="_blank" href="https://demandcluster.com/careers">Careers</a></li>
+                <li><a target="_blank" href="https://demandcluster.com/press">Press</a></li>
               </ul>
             </div>
 
             <div className="link-grid-column">
               <h5>Explore</h5>
               <ul className="footer-list">
-                <li><a target="_blank" href="https://reactioncommerce.com/features">Features</a></li>
-                <li><a target="_blank" href="https://docs.reactioncommerce.com/reaction-docs/trunk/community-showcase">Showcase</a></li>
-                <li><a target="_blank" href="https://reactioncommerce.com/roadmap">Roadmap</a></li>
-                <li><a target="_blank" href="https://docs.reactioncommerce.com/">Docs</a></li>
+                <li><a target="_blank" href="https://demandcluster.com/features">Features</a></li>
+                <li><a target="_blank" href="https://docs.demandcluster.com/reaction-docs/trunk/community-showcase">Showcase</a></li>
+                <li><a target="_blank" href="https://demandcluster.com/roadmap">Roadmap</a></li>
+                <li><a target="_blank" href="https://docs.demandcluster.com/">Docs</a></li>
                 <li><a target="_blank" href="https://github.com/reactioncommerce/reaction">GitHub</a></li>
               </ul>
             </div>
@@ -48,9 +48,9 @@ class Footer extends React.Component {
             <div className="link-grid-column">
               <h5>Engage</h5>
               <ul className="footer-list">
-                <li><a target="_blank" href="https://reactioncommerce.com/become-a-partner">Partner</a></li>
-                <li><a target="_blank" href="https://reactioncommerce.com/contributors">Contribute</a></li>
-                <li><a target="_blank" href="http://marketing.reactioncommerce.com/acton/media/37362/get-in-touch">Get in Touch</a></li>
+                <li><a target="_blank" href="https://demandcluster.com/become-a-partner">Partner</a></li>
+                <li><a target="_blank" href="https://demandcluster.com/contributors">Contribute</a></li>
+                <li><a target="_blank" href="http://marketing.demandcluster.com/acton/media/37362/get-in-touch">Get in Touch</a></li>
               </ul>
             </div>
 
@@ -64,9 +64,9 @@ class Footer extends React.Component {
             </div>
 
             <div className="row">
-              <img src="/img/footer-sun.svg" alt="" />
-              &nbsp;&nbsp;Made in the sunshine in Santa Monica, California by&nbsp;<a href="/" target="_blank">Reaction Commerce, Inc.</a>
-              ©&nbsp;2019&nbsp;|&nbsp;<a href="https://reactioncommerce.com/legal">Legal</a> | <a href="https://www.reactioncommerce.com/legal/privacy">Privacy Policy</a>
+              <img src="https://backend.demandcluster.com/resources/demand-logo-circular.svg" alt="" />
+              &nbsp;&nbsp;Made in the sunshine in Santa Monica, California by&nbsp;<a href="/" target="_blank">Demand Cluster, Inc.</a>
+              ©&nbsp;2019&nbsp;|&nbsp;<a href="https://demandcluster.com/legal">Legal</a> | <a href="https://www.demandcluster.com/legal/privacy">Privacy Policy</a>
             </div>
 
           </div>

@@ -4,9 +4,9 @@ title: Introduction into tagging concept
 original_id: tagging
 ---
     
-Categorizing products is a very common scenario. Reaction Commerce offers a very flexible way of clustering products via tagging.
+Categorizing products is a very common scenario. Demand Cluster offers a very flexible way of clustering products via tagging.
 
-Reaction Commerce does offer out-of-the-box functionality to build product hierarchies with categories and sub-categories, although it's important to understand that tags are specific on a product level, i.e. they do not apply down to individual variants of a specific product (or even options of variants).
+Demand Cluster does offer out-of-the-box functionality to build product hierarchies with categories and sub-categories, although it's important to understand that tags are specific on a product level, i.e. they do not apply down to individual variants of a specific product (or even options of variants).
 
 To start, let's build a tagging hierarchy that looks like this:
 ```

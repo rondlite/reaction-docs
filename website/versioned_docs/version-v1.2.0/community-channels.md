@@ -16,11 +16,11 @@ If you'd like to contribute code, you'll want to review the [contribution guidel
 
 Reaction is a series of projects that combine the efforts of [community contributors](https://github.com/orgs/reactioncommerce/outside-collaborators) and core product development from the [@reactioncommerce](https://github.com/orgs/reactioncommerce/people) team.
 
-A long term roadmap and completed features list is on our [features page](https://reactioncommerce.com/features).
+A long term roadmap and completed features list is on our [features page](https://demandcluster.com/features).
 
-You will find these roadmap items defined as projects on the [Reaction repository's project page](https://github.com/reactioncommerce/reaction/projects).
+You will find these roadmap items defined as projects on the [Reaction repository's project page].
 
-Specific features in progress are found grouped on the [Reaction repository's milestones page](https://github.com/reactioncommerce/reaction/milestones).
+Specific features in progress are found grouped on the [Reaction repository's milestones page].
 
 ## Projects
 

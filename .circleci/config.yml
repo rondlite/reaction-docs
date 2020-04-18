@@ -45,7 +45,7 @@ jobs:
               --build-arg "GIT_SHA1=$CIRCLE_SHA1" \
               --build-arg "LICENSE=GPL-3.0-only" \
               --build-arg "VCS_REF=$CIRCLE_SHA1" \
-              --build-arg "VENDOR=Reaction Commerce" \
+              --build-arg "VENDOR=Demand Cluster" \
               -t "$DOCKER_REPOSITORY:$CIRCLE_SHA1" .
             mkdir -p docker-cache
             docker save \

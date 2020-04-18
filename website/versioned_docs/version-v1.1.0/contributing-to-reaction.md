@@ -4,7 +4,7 @@ id: version-v1.1.0-contributing-to-reaction
 title: Contributing
 ---
     
-At Reaction Commerce, we're dedicated to the open source community. In fact, we've designed our entire platform and business to grow from the passion and creativity that an open source community ignites. We've already attracted a small, dedicated team of open source contributors, and there's always room for more. If you'd like to join us, here's how to get started:
+At Demand Cluster, we're dedicated to the open source community. In fact, we've designed our entire platform and business to grow from the passion and creativity that an open source community ignites. We've already attracted a small, dedicated team of open source contributors, and there's always room for more. If you'd like to join us, here's how to get started:
 
 **Step 1:**  If you haven't already, get Reaction running locally:
 

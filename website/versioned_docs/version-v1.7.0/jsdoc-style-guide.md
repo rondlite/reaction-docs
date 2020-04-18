@@ -135,7 +135,7 @@ The sidebar and page:
 ```js
 /**
  * @file Reaction Core schemas
- * Reaction uses {@link https://github.com/aldeed/meteor-simple-schema SimpleSchema} to apply basic content and structure validation to Collections. See {@link https://docs.reactioncommerce.com/reaction-docs/trunk/simple-schema full documentation}.
+ * Reaction uses {@link https://github.com/aldeed/meteor-simple-schema SimpleSchema} to apply basic content and structure validation to Collections. See {@link https://docs.demandcluster.com/reaction-docs/trunk/simple-schema full documentation}.
  * @namespace schemas
  */
 ```

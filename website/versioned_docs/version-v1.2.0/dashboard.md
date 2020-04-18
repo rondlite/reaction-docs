@@ -8,13 +8,13 @@ The dashboard is your online store's central mainframe. It's where you manage yo
 
 To access your dashboard, simply click on the blue Reaction logo icon, located on the very top right of the page.
 
-![](/assets/admin-dashboard-panel-home.png "Reaction Commerce Dashboard")
+![](/assets/admin-dashboard-panel-home.png "Demand Cluster Dashboard")
 
 You'll find a selection of dashboard features, broken down into two sections, Actions and Settings. In the Actions section, you’ll find important tasks that are used on a daily basis. In the Settings section, you’ll find the rest of your shop’s feature settings, which you may access, configure, and customize to your heart’s content.
 
 ## Actions
 
-- Orders - Review and process orders. For more info, visit the [Orders](https://docs.reactioncommerce.com/reaction-docs/trunk/orders) section.
+- Orders - Review and process orders. For more info, visit the [Orders](https://docs.demandcluster.com/reaction-docs/trunk/orders) section.
 - Accounts - Add, edit, and remove permissions for each of your shop members.
 
 ## Settings
@@ -32,4 +32,4 @@ You'll find a selection of dashboard features, broken down into two sections, Ac
 - Login services - Enable or disable customer login via social media.
 - Template - Customize your email's messaging and look and feel.
 
-![](/assets/admin-dashboard-page-4.png "Reaction Commerce Dashboard")
+![](/assets/admin-dashboard-page-4.png "Demand Cluster Dashboard")

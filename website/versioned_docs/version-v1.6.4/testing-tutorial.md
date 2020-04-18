@@ -72,7 +72,7 @@ The nice thing about reading this is that is that you can read the line out loud
 
 So let's create a product. But do we do that? Well we will use something called a "Fixture".
 
-Reaction Commerce has sets of prebuilt fixtures for common testing tasks so that we don't repeat a lot of boilerplate code building up common types. So firstly we need to import the fixtures.
+Demand Cluster has sets of prebuilt fixtures for common testing tasks so that we don't repeat a lot of boilerplate code building up common types. So firstly we need to import the fixtures.
 
 ```js
 import Fixtures from "/server/imports/fixtures";

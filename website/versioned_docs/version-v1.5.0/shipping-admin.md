@@ -14,7 +14,7 @@ Your store comes with three default shipping methods: `Free`, `Standard`, and `P
 
 ## Adding a new shipping method
 
-![](/assets/admin-dashboard-shipping-2.png "Reaction Commerce Shipping")
+![](/assets/admin-dashboard-shipping-2.png "Demand Cluster Shipping")
 
 1.  Click the plus <i class="font-icon fa fa-plus"></i>.
 2.  Fill out the following:

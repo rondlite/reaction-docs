@@ -55,7 +55,7 @@ extend union PaymentData = MyPaymentMethodPaymentData
 
 This is shown during checkout. It can be whatever you want, so long as it ends up providing the information you need to request an authorization from the payment provider. It could also just be a collection of information necessary to later create and send an invoice.
 
-This component is then used as the `InputComponent` property of your payment method in the `paymentMethods` array that you pass to the [PaymentsCheckoutAction](https://designsystem.reactioncommerce.com/#!/PaymentsCheckoutAction) component. You may want to start with a provided `InputComponent`, such as [ExampleIOUPaymentForm](https://designsystem.reactioncommerce.com/#!/ExampleIOUPaymentForm) and modify it to meet your needs.
+This component is then used as the `InputComponent` property of your payment method in the `paymentMethods` array that you pass to the [PaymentsCheckoutAction](https://designsystem.demandcluster.com/#!/PaymentsCheckoutAction) component. You may want to start with a provided `InputComponent`, such as [ExampleIOUPaymentForm](https://designsystem.demandcluster.com/#!/ExampleIOUPaymentForm) and modify it to meet your needs.
 
 ### Action Functions
 

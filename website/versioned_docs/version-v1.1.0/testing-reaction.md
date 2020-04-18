@@ -109,7 +109,7 @@ tests/acceptance-tests/config/user-data.yml
 ```
 
 ```yaml
-admin_email: testing@reactioncommerce.com
+admin_email: testing@demandcluster.com
 admin_pw: password123
 
 guest_pw: password123

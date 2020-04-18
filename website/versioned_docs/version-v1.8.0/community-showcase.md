@@ -81,4 +81,4 @@ original_id: community-showcase
 
 ## Building a project on Reaction?
 
-Submit your online store or marketplace, and we'll feature you in our showcase. [Submit your project](https://reactioncommerce.com/community-showcase#submit-project).
+Submit your online store or marketplace, and we'll feature you in our showcase. [Submit your project](https://demandcluster.com/community-showcase#submit-project).

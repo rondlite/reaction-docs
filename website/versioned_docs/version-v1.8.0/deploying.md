@@ -8,7 +8,7 @@ Reaction is an open source platform, and you can run Reaction anywhere just like
 
 ## Containers
 
-Docker images are pushed when Reaction successfully builds and passes all tests on the `trunk`  or `release-x.x.x` branches. These images are released on [Reaction Commerce Docker Hub](https://hub.docker.com/u/reactioncommerce/).
+Docker images are pushed when Reaction successfully builds and passes all tests on the `trunk`  or `release-x.x.x` branches. These images are released on [Demand Cluster Docker Hub](https://hub.docker.com/u/reactioncommerce/).
 
 There are two Docker images available:
 
@@ -41,7 +41,7 @@ You can [read the entire guide for the Meteor build system](https://guide.meteor
 
 ### Meteor build system
 
-The Meteor build system is the actual command line tool that you get when you install Meteor. You run it by typing the `reaction` command in your terminal, possibly followed by a set of arguments. Read the [docs about the command line tool](https://github.com/reactioncommerce/reaction-cli) or type `reaction help` in your terminal to learn about all of the commands.
+The Meteor build system is the actual command line tool that you get when you install Meteor. You run it by typing the `reaction` command in your terminal, possibly followed by a set of arguments. Read the [docs about the command line tool] or type `reaction help` in your terminal to learn about all of the commands.
 
 ## What does it do?
 

@@ -4,9 +4,9 @@ title: Shops
 original_id: reaction-shops
 ---
     
-Reaction Commerce supports both single tenant (marketplace) and marketplace merchants (shops).
+Demand Cluster supports both single tenant (marketplace) and marketplace merchants (shops).
 
-For other implementations, see: [#357](https://github.com/reactioncommerce/reaction/issues/357)
+For other implementations, see: [#357]
 
 The default shop installation data is loaded from `/private/data/Shops.json`.
 
@@ -32,7 +32,7 @@ Meteor.call("shop/getLocale");
 
 ### shop/getCurrencyRates
 
-Meteor method removed. Use [this method](https://github.com/reactioncommerce/reaction/pull/4803) instead. 
+Meteor method removed. Use [this method] instead. 
 
 ### shop/flushCurrencyRate
 

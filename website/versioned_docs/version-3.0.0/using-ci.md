@@ -15,4 +15,4 @@ Whenever a Pull Request or merge request is made to the Reaction repo, there are
 
 ## Builds
 
-Docker images are pushed when Reaction successfully builds and passes all tests on the primary branch (usually `trunk` or `master`). These images are released on [Reaction Commerce Docker Hub](https://hub.docker.com/u/reactioncommerce/).
+Docker images are pushed when Reaction successfully builds and passes all tests on the primary branch (usually `trunk` or `master`). These images are released on [Demand Cluster Docker Hub](https://hub.docker.com/u/reactioncommerce/).

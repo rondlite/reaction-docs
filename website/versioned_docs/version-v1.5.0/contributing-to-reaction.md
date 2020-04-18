@@ -4,7 +4,7 @@ title: Contributing
 original_id: contributing-to-reaction
 ---
 
-At Reaction Commerce, we're dedicated to the open source community. In fact, we've designed our entire platform and business to grow from the passion and creativity that an open source community ignites. We've already attracted a small, dedicated team of open source contributors, and there's always room for more. If you'd like to join us, here's how to get started:
+At Demand Cluster, we're dedicated to the open source community. In fact, we've designed our entire platform and business to grow from the passion and creativity that an open source community ignites. We've already attracted a small, dedicated team of open source contributors, and there's always room for more. If you'd like to join us, here's how to get started:
 
 **Step 1:**  If you haven't already, get Reaction running locally:
 
@@ -21,7 +21,7 @@ Explore the interface and the code to give you a good overview of the product an
 
 **Step 3:**
 
-Explore the [Pull Requests Encouraged](https://github.com/reactioncommerce/reaction/issues?q=is%3Aissue+is%3Aopen+label%3Apull-requests-encouraged) issues on our GitHub repo. If you find something you want to work on, let us know right there in the comments. If you are interested in a specific aspect of the project but aren't sure where to begin, feel free to ask. Start small and open up a dialogue with us. This will help to get your contributions accepted easily.
+Explore the [Pull Requests Encouraged] issues on our GitHub repo. If you find something you want to work on, let us know right there in the comments. If you are interested in a specific aspect of the project but aren't sure where to begin, feel free to ask. Start small and open up a dialogue with us. This will help to get your contributions accepted easily.
 
 **Step 4:**
 

@@ -5,9 +5,9 @@
   "homepage": "https://github.com/reactioncommerce/reaction-docs",
   "repository": "https://github.com/reactioncommerce/reaction-docs",
   "author": {
-    "name": "Reaction Commerce",
-    "email": "engineering@reactioncommerce.com",
-    "url": "https://reactioncommerce.com"
+    "name": "Demand Cluster",
+    "email": "engineering@demandcluster.com",
+    "url": "https://demandcluster.com"
   },
   "license": "GPL-3.0-only",
   "private": true,

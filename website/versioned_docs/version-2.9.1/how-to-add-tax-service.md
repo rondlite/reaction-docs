@@ -139,4 +139,4 @@ This is necessary only for any operator actions you need to support, such as get
 
 ### Settings React Component
 
-We recommend that you use the `useReactoForm` hook from the [ReactoForm](https://github.com/DairyStateDesigns/reacto-form) package along with [Catalyst](https://catalyst.reactioncommerce.com/#/Introduction) or [Material UI](https://material-ui.com/) fields and inputs. Use React hooks to do GraphQL requests with Apollo Client. Example: `/imports/plugins/core/taxes/client/containers/GeneralTaxSettings.js`
+We recommend that you use the `useReactoForm` hook from the [ReactoForm](https://github.com/DairyStateDesigns/reacto-form) package along with [Catalyst](https://catalyst.demandcluster.com/#/Introduction) or [Material UI](https://material-ui.com/) fields and inputs. Use React hooks to do GraphQL requests with Apollo Client. Example: `/imports/plugins/core/taxes/client/containers/GeneralTaxSettings.js`

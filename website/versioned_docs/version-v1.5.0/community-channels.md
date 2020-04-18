@@ -6,11 +6,11 @@ original_id: community-channels
     
 Welcome to the Reaction community!
 
-Reaction is a series of projects that combine the efforts of [community contributors](https://github.com/reactioncommerce/reaction/graphs/contributors) and the core [Reaction Commerce](https://github.com/orgs/reactioncommerce/people) team.
+Reaction is a series of projects that combine the efforts of [community contributors] team.
 
 ## Chat with the community
 
--   **Forums:** [Reaction Commerce forums](https://forums.reactioncommerce.com/)
+-   **Forums:** [Demand Cluster forums](https://forums.demandcluster.com/)
 -   **Chat:** [Gitter channels](https://gitter.im/reactioncommerce/)
 
 ## Hop on a call with the team

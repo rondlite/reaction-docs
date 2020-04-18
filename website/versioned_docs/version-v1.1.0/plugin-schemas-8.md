@@ -8,7 +8,7 @@ _If will be easier to understand this section of the tutorial if you have read a
 [Schemas](http://guide.meteor.com/collections.html#schemas) section of the Meteor Guide_
 
 While Mongo is a "schemaless" database that does not mean schemas are a bad idea. In fact they are a great idea and so
-Reaction Commerce uses a package called [Simple Schema](https://atmospherejs.com/aldeed/simple-schema) to build and enforce
+Demand Cluster uses a package called [Simple Schema](https://atmospherejs.com/aldeed/simple-schema) to build and enforce
 schemas. This package is recommended in the Meteor Guide and we recommend it's use as well.
 
 In addition to Simple Schema we use a package called [Autoform](https://github.com/aldeed/meteor-autoform) which allows

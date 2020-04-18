@@ -4,9 +4,9 @@ title: Environment Variables
 sidebar_label: Environment Variables
 ---
 
-Reaction Commerce is a system made up of various services and web servers, each of which is distributed as a Docker image, or can be customized and then built into your own Docker image. Container-based microservice deployments typically get much of their configuration from environment variables, and Reaction is no exception. Some environment variables are required because they tell a container service how to connect to another service or a database. Others are optional with sensible defaults, but allow you to customize the system to meet your needs.
+Demand Cluster is a system made up of various services and web servers, each of which is distributed as a Docker image, or can be customized and then built into your own Docker image. Container-based microservice deployments typically get much of their configuration from environment variables, and Reaction is no exception. Some environment variables are required because they tell a container service how to connect to another service or a database. Others are optional with sensible defaults, but allow you to customize the system to meet your needs.
 
-This article aims to be a full listing of the required and optional environment variables used by all components of the Reaction Commerce system. If you discover any missing variables, please submit a pull request to update this article.
+This article aims to be a full listing of the required and optional environment variables used by all components of the Demand Cluster system. If you discover any missing variables, please submit a pull request to update this article.
 
 > If you are a developer, check out [Developer Concepts: Environment Variables](./developer-environment-variables) for more information.
 

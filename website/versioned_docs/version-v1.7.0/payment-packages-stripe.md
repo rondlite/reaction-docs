@@ -4,7 +4,7 @@ title: Payments - Stripe
 original_id: payment-packages-stripe
 ---
     
-Stripe Payment Platform integration for Reaction Commerce
+Stripe Payment Platform integration for Demand Cluster
 
 Documentation is available at <https://stripe.com/docs/api>
 

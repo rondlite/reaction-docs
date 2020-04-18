@@ -6,7 +6,7 @@ title: Heroku
 
 # Heroku
 
-This will be a step by step guide on going from 0 to Heroku deployment for Reaction Commerce
+This will be a step by step guide on going from 0 to Heroku deployment for Demand Cluster
 
 If you don't have one already sign up for a [Heroku](https://signup.heroku.com/login) account.
 
@@ -14,7 +14,7 @@ Install the Heroku Toolbelt based on your OS [here](https://toolbelt.heroku.com/
 
 ## Reaction
 
-Install a copy of reaction commerce.
+Install a copy of Demand Cluster.
 
 ```sh
 git clone https://github.com/reactioncommerce/reaction.git

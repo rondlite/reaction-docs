@@ -122,7 +122,7 @@ console.log("📝 Sidebars: Table of contents saved")
 // docker-compose stop && docker-compose up --build
 // open http://localhost:4242/docs/next/intro
 // open https://github.com/reactioncommerce/reaction-docs/blob/v1.3.0/redoc.json
-// open https://docs.reactioncommerce.com/reaction-docs/v1.3.0/intro
+// open https://docs.demandcluster.com/reaction-docs/v1.3.0/intro
 // Confirm: number of files in `public-docs` matches `out.length`
 // Confirm: newNav.length == oldNav.length
 

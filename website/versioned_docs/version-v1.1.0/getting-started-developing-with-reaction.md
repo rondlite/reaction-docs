@@ -46,15 +46,15 @@ To further customize your experience, you can create or use community packages f
 
 ## Roadmap
 
-View our features roadmap by visiting our [Features page](https://reactioncommerce.com/features).
+View our features roadmap by visiting our [Features page](https://demandcluster.com/features).
 
-You may review our progress per project by visiting our [Milestones](https://github.com/reactioncommerce/reaction/milestones) page on Github.
+You may review our progress per project by visiting our [Milestones] page on Github.
 
 For a fully comprehensive view of our progress, be sure to check out our [Waffle board](https://waffle.io/reactioncommerce/reaction).
 
 ## Issues
 
-To assign tasks or issues, please visit our project's [Issues](https://github.com/reactioncommerce/reaction/issues?state=open) page, where we track issues for all [reactioncommerce:*](https://github.com/reactioncommerce/) packages.
+To assign tasks or issues, please visit our project's [Issues] packages.
 
 ### Other Resources
 

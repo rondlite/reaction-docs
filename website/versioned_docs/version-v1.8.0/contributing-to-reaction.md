@@ -4,7 +4,7 @@ title: Contributing Guide
 original_id: contributing-to-reaction
 ---
 
-At Reaction Commerce, we're dedicated to the open source community. In fact, we've designed our entire platform and business to grow from the passion and creativity that an open source community ignites. We've already attracted a small, dedicated team of open source contributors, and there's always room for more. If you'd like to join us, here's how to get started.
+At Demand Cluster, we're dedicated to the open source community. In fact, we've designed our entire platform and business to grow from the passion and creativity that an open source community ignites. We've already attracted a small, dedicated team of open source contributors, and there's always room for more. If you'd like to join us, here's how to get started.
 
 ## Step 1: Get Reaction running
 
@@ -14,11 +14,11 @@ Instructions are here for [Windows](installation-windows.md), [Mac OSX](installa
 
 ## Step 2: Find or open an issue
 
-There are three ways to go about contributing to Reaction: file a bug, work on an issue or bug that is already created and vetted by the team, or propose a new feature in our [Reaction Feature Requests](https://github.com/reactioncommerce/reaction-feature-requests) repository.
+There are three ways to go about contributing to Reaction: file a bug, work on an issue or bug that is already created and vetted by the team, or propose a new feature in our [Reaction Feature Requests] repository.
 
 ### File a bug
 
-1. Before you file a bug, please [search existing issues](https://github.com/reactioncommerce/reaction/issues) first.
+1. Before you file a bug, please [search existing issues] first.
 2. Are you looking for support instead? Please go to our [Gitter room](https://gitter.im/reactioncommerce/reaction) instead.
 3. Make sure to follow the issue template.
 
@@ -32,7 +32,7 @@ Once it's been triaged and verified, a Community Engineering team member will wo
 
 ### Find an issue and claim it
 
-1. Explore the [Help Wanted](https://github.com/reactioncommerce/reaction/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22) or [Good First Issue](https://github.com/reactioncommerce/reaction/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22) issues on our GitHub repo.
+1. Explore the [Help Wanted] issues on our GitHub repo.
 2. If you find something you want to work on, let us know right there in the comment with how you want to approach the problem.
 3. If you are a first-time contributor, also mention the `@reactioncommerce/community` team in the comment so you can  request to be made a contributor.
 
@@ -40,7 +40,7 @@ Once it's been triaged and verified, a Community Engineering team member will wo
 
 Don't see a ticket for a feature you'd like to see in Reaction? Follow these steps:
 
-1. Create an issue in the [Reaction Feature Requests](https://github.com/reactioncommerce/reaction-feature-requests) repository detailing the feature.
+1. Create an issue in the [Reaction Feature Requests] repository detailing the feature.
 2. Upon team review, the team will provide next steps for how to get started on the feature.
 
 If you are interested in a specific aspect of the project but aren't sure where to begin, feel free to ask us on Gitter.
@@ -136,7 +136,7 @@ Reviewers will note any changes that they will want to QA in the app, even if th
 
 Congrats - Once you have all the green lights with an approved PR, you are ready to merge.
 
-Does your new feature require new user documentation or developer documentation? Make an issue for that in [reaction-docs](https://github.com/reactioncommerce/reaction-docs/issues).
+Does your new feature require new user documentation or developer documentation? Make an issue for that in [reaction-docs].
 
 ## Step 5: Congrats! It's merged. What happens next?
 

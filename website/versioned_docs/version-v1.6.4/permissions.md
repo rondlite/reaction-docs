@@ -56,7 +56,7 @@ Reaction.registerPackage({
 ```
 
 At the point where Packages are published in the app, each registry item permissions are collected and put on the
-package registry [(source)](https://github.com/reactioncommerce/reaction/blob/v1.6.4/server/publications/collections/packages.js#L31-L56).
+package registry [.
 Based on these permissions, we can enable or disable functionality depending on user roles.
 
 ## Owner
@@ -189,7 +189,7 @@ get all enabled packages for payments.
 ```
 
 You can also pass in an `audience` field to filter returned apps based on assigned roles for the user.
-[(source)](https://github.com/reactioncommerce/reaction/blob/v1.6.4/client/modules/core/helpers/apps.js#L106-L127)
+[
 
 ```js
   Reaction.Apps({
@@ -226,7 +226,7 @@ So, if you had a previous reference to `shop.defaultVisitorRoles`, use the group
 
 
 #### Custom Default Groups
-If you need to have more default groups on initializing your app, you can call the `createGroups()` method passing in the shopId and a roles object containining key-value pairs representing the group slug (key) and array of roles for the group (value). See the [documentation page](http://api.docs.reactioncommerce.com/global.html#createGroups) for more details. This can be done, for example, in an afterCoreInit function e.g
+If you need to have more default groups on initializing your app, you can call the `createGroups()` method passing in the shopId and a roles object containining key-value pairs representing the group slug (key) and array of roles for the group (value). See the [documentation page](http://api.docs.demandcluster.com/global.html#createGroups) for more details. This can be done, for example, in an afterCoreInit function e.g
 ```js
 Hooks.Events.add("afterCoreInit", () => {
   Reaction.createGroups({

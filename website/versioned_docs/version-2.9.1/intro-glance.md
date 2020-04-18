@@ -6,9 +6,9 @@ original_id: intro-glance
 
 Deciding whether Reaction is right for your company? Here's everything you need to know.
 
-## What is Reaction Commerce?
+## What is Demand Cluster?
 
-Reaction Commerce is an open source commerce platform that allows anyone to customize, extend, and deploy an online store or marketplace. Our codebase is available for free via [GitHub](https://github.com/reactioncommerce/reaction).
+Demand Cluster is an open source commerce platform that allows anyone to customize, extend, and deploy an online store or marketplace. Our codebase is available for free via [GitHub].
 
 ## Pricing
 
@@ -16,7 +16,7 @@ Reaction is free. Our code, which is licensed under the GPL v3 license, will alw
 
 ## Installation
 
-Check out our [Installation docs](https://docs.reactioncommerce.com/docs/getting-started-developing-with-reaction).
+Check out our [Installation docs](https://docs.demandcluster.com/docs/getting-started-developing-with-reaction).
 
 ## Mobile Device Support
 
@@ -31,11 +31,11 @@ We have [internationalization support](i18n.md) for dozens of languages, includi
 Since 2014 [Google has indexed JavaScript when crawling websites](https://webmasters.googleblog.com/2014/05/understanding-web-pages-better.html). Reaction, however, offers page pre-rendering and product detail page metatag generation out of the box to ensure products are indexed well for web crawlers and search engines:
 
 1. [Prerender.io](https://prerender.io/): Reaction includes integration with Prerender.io out of the box. Prerender.io is a commercial service that will generate static renderings of the application for search engines. All you have to do is provide a key to your site and Prerender will handle the pre-rendering.
-2. [Meteor Chrome Headless Spiderable](https://github.com/artlimes/meteor-chrome-headless-spiderable) with the [Reaction Commerce Caching Plugin](https://github.com/artlimes/reaction-commerce-caching-plugin): This updated Meteor package uses Google's Headless Chrome to crawl pages. Combined with the Reaction-specific caching plugin, the Spiderable package will allow Reaction pages to be crawled by search engines.
-3. [dom](https://github.com/reactioncommerce/reaction/blob/v2.9.1/imports/plugins/core/dom/client/dom.js): Automatically adds `<meta>` tags are for products using the [dom](https://github.com/reactioncommerce/reaction/blob/release-1.8.0/imports/plugins/core/dom/client/dom.js) core package since 1.8, which uses the title, description and `details` fields of the product to render SEO-friendly data. You may need to use a tool like [SEO Inspector](https://chrome.google.com/webstore/detail/seo-inspector/iejckekdjogeeilmllnabmgkbbmedeal?hl=en) to see this data. Read more on [SEO and Metadata](seo-metadata.md).
+2. [Meteor Chrome Headless Spiderable](https://github.com/artlimes/meteor-chrome-headless-spiderable) with the [Demand Cluster Caching Plugin](https://github.com/artlimes/reaction-commerce-caching-plugin): This updated Meteor package uses Google's Headless Chrome to crawl pages. Combined with the Reaction-specific caching plugin, the Spiderable package will allow Reaction pages to be crawled by search engines.
+3. [dom].
 4. The storefront UI starter kit app uses NextJS framework with server side rendering enabled.
 
-Read more about [SEO and Reaction Commerce](https://blog.reactioncommerce.com/how-our-javascript-platform-handles-seo/) in our blog post, and check out our [Ecommerce SEO Migration Checklist](http://marketing.reactioncommerce.com/acton/media/37362/seo-checklist).
+Read more about [SEO and Demand Cluster](https://blog.demandcluster.com/how-our-javascript-platform-handles-seo/) in our blog post, and check out our [Ecommerce SEO Migration Checklist](http://marketing.demandcluster.com/acton/media/37362/seo-checklist).
 
 ## Performance and Scaling
 
@@ -57,7 +57,7 @@ The pluggable and schemaless nature of Reaction means that interfacing with your
 
 ## Deployment
 
-You can deploy Reaction Commerce to anywhere you could deploy a Docker container or a Node app. Because of the complexities involved, we currently can’t offer any support for deployment.
+You can deploy Demand Cluster to anywhere you could deploy a Docker container or a Node app. Because of the complexities involved, we currently can’t offer any support for deployment.
 
 The best option depends on your budget and your expected level of traffic. Below are some options for deployment:
 
@@ -68,7 +68,7 @@ The best option depends on your budget and your expected level of traffic. Below
 
 ## Who Uses Reaction?
 
-Ecommerce and marketplace sites from around the world are using Reaction in production now. Check out our [Community Showcase](https://docs.reactioncommerce.com/reaction-docs/trunk/community-showcase).
+Ecommerce and marketplace sites from around the world are using Reaction in production now. Check out our [Community Showcase](https://docs.demandcluster.com/reaction-docs/trunk/community-showcase).
 
 ## Community
 

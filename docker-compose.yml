@@ -1,14 +1,35 @@
 version: '3.4'
 
+networks:
+  proxy:
+    external: true
+  internal:
+    external: 
+      name: demandjs.localhost
+
+
+
 services:
-  web:
+  docs-web:
     build:
       context: .
       args:
         BUILD_ENV: "development"
     command: [sh, -c, "yarn start"]
-    env_file:
-      - ./.env
+    env_file:   
+    - ./.env
+    
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.demandjs-docs.rule=Host(`docs.demandcluster.com`)"
+      - "traefik.http.routers.demandjs-docs.tls=true"
+      - "traefik.http.routers.demandjs-docs.entrypoints=websecure"
+      - "traefik.http.routers.demandjs-docs.service=docs-service"
+      - "traefik.http.services.docs-service.loadbalancer.server.port=4242"
+      - "traefik.docker.network=proxy"
+    networks:
+      - proxy
+      - internal
     environment:
       REACTION_APP_NAME: "reaction-docs.web"
     ports:

@@ -33,5 +33,5 @@ Notes:
 - People who commit minor infractions will get some education, rather than hammering them with the above process.
 - The rules apply equally to everyone in the community, no matter how much you've contributed.
 - Extreme violations of a threatening, abusive, destructive or illegal nature will be addressed immediately and are not subject to above process or forgiveness.
-- If you ever witness or experience any abuse, and you want to report it directly to us, please contact [conduct@reactioncommerce.com](mailto:abuse@reactioncommerce.com) and we will investigate.
-- Contact [conduct@reactioncommerce.com](mailto:abuse@reactioncommerce.com) to report abuse or appeal violations. In the case of appeals, we know that mistakes happen, and we'll work with you to come up with a fair solution if there has been a misunderstanding.
+- If you ever witness or experience any abuse, and you want to report it directly to us, please contact [conduct@demandcluster.com](mailto:abuse@demandcluster.com) and we will investigate.
+- Contact [conduct@demandcluster.com](mailto:abuse@demandcluster.com) to report abuse or appeal violations. In the case of appeals, we know that mistakes happen, and we'll work with you to come up with a fair solution if there has been a misunderstanding.

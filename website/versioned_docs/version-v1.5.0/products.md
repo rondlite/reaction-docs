@@ -8,7 +8,7 @@ What you see, the customer sees. Create, edit, and remove products inline. It’
 
 ## Creating a product
 
-![](/assets/admin-dashboard-panel-home.png "Add Product with Reaction Commerce")
+![](/assets/admin-dashboard-panel-home.png "Add Product with Demand Cluster")
 
 To create a product, login to your dashboard and follow these steps:
 
@@ -64,11 +64,11 @@ Variant options provide a second layer of customization on top of each variant. 
 
 To add an image gallery to your product, drag and drop files from your computer the main Product page. You may also upload images using the "Drop file to upload” button under each Variant Option.
 
-Currently, only image file types are supported, but support for video, Google Drive, Dropbox, and more are in the works. See [Issue #50](https://github.com/reactioncommerce/reaction/issues/50) and [Issue #69](https://github.com/reactioncommerce/reaction/issues/69).
+Currently, only image file types are supported, but support for video, Google Drive, Dropbox, and more are in the works. See [Issue #50].
 
 Once you have images added to your gallery, drag and drop to change their position.
 
-![](/assets/admin-product-variant-3.png "Reaction Commerce Product Mediae")
+![](/assets/admin-product-variant-3.png "Demand Cluster Product Mediae")
 
 ## Adding product tags and details
 

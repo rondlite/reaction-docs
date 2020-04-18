@@ -4,7 +4,7 @@ title: Payments - Braintree
 original_id: payment-packages-braintree
 ---
     
-Braintree Payment Platform integration for Reaction Commerce
+Braintree Payment Platform integration for Demand Cluster
 
 Documentation is available at <https://developers.braintreepayments.com/>
 

@@ -6,7 +6,7 @@ original_id: graphql-create-mutation
 
 ## Step 1: Identify which plugin owns the mutation
 
-The complete Reaction Commerce GraphQL API is created by stitching together domain-specific APIs from all of the API plugins. So when adding a new mutation, the first step is to decide which plugin should own it. This is usually obvious, but not always. You should think about whether any other plugins or services will need to call your mutation. If the mutation is fundamental to the system, then it may need to go in the "core" plugin, if no better alternative exists.
+The complete Demand Cluster GraphQL API is created by stitching together domain-specific APIs from all of the API plugins. So when adding a new mutation, the first step is to decide which plugin should own it. This is usually obvious, but not always. You should think about whether any other plugins or services will need to call your mutation. If the mutation is fundamental to the system, then it may need to go in the "core" plugin, if no better alternative exists.
 
 ## Step 2: Understand the difference between a plugin mutation function and a GraphQL mutation resolver
 
