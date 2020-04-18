@@ -1,10 +1,10 @@
 ---
-id: version-3.0.0-testing-reaction
+id: version-3.0.0-testing-demand
 title: Testing
-original_id: testing-reaction
+original_id: testing-demand
 ---
 
-Testing Reaction breaks down into two broad categories:
+Testing Demand breaks down into two broad categories:
 
 - Manual or automated acceptance testing
 - Automated code tests
@@ -28,16 +28,16 @@ The different between a unit test and an integration test is not always clear cu
 
 For this reason, think of the terms "unit" and "integration" more as ends of a spectrum, where the "unit" end mocks everything and tests in complete isolation while the "integration" end mocks nothing and is essentially like running the app itself.
 
-In practice, in the Reaction codebase, the primary distinction is that integration tests are all written in the `/tests` folder and can make use of a fake, in-memory version of MongoDB, while unit tests have no mock database and are written in files throughout the code, with names similar to the name of the file they test.
+In practice, in the Demand codebase, the primary distinction is that integration tests are all written in the `/tests` folder and can make use of a fake, in-memory version of MongoDB, while unit tests have no mock database and are written in files throughout the code, with names similar to the name of the file they test.
 
 ## When To Run Tests
 
-- If you are changing code and submitting a pull request, you should run all tests on your machine prior to submitting the pull request for review. Use the `reaction test` or `npm test` command to do this.
+- If you are changing code and submitting a pull request, you should run all tests on your machine prior to submitting the pull request for review. Use the `demand test` or `npm test` command to do this.
 - For all pull requests, CircleCI automatically runs all unit and integration tests and will not allow merging until they all pass.
 
 ## Further Reading
 
-For a walkthrough on how to write test for reaction's plugin:
+For a walkthrough on how to write test for demand's plugin:
 - [How to write tests for plugins](how-to-write-tests-for-plugin.md)
 
 For Jest, see the following:
