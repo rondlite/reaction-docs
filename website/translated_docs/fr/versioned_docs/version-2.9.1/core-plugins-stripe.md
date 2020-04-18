@@ -22,7 +22,7 @@ Coming soon
 
 ### Plugin Configuration
 
-1. Log in to Reaction Dashboard with an account that has permission to access plugin settings.
+1. Log in to Demandashboard with an account that has permission to access plugin settings.
 2. In the sidebar, click Payment.
 3. You should see a section with a toggle for each payment plugin. If it is not already enabled, click the toggle to enable the Stripe plugin.
 4. There are two settings fields you need to fill out for Stripe to work, API Secret Key and Publishable Key. Copy these from your Stripe account, and paste them into the fields. The secret key begins with `sk_` and the publishable key begins with `pk_`. If you are logged into a development or testing environment, be sure to use the “test” keys so that you can enter fake credit card details and no money will actually change hands.
@@ -32,7 +32,7 @@ This is the only server configuration necessary.
 
 ### Client Components
 
-If you are using a starter client UI provided by Reaction, the necessary client components are already included and will appear where they should. If you are building your own client, you may want to use our [StripeForm React component](https://designsystem.reactioncommerce.com/#!/StripeForm), which is part of the Example Storefront Component Library. It wraps [react-stripe-elements](https://github.com/stripe/react-stripe-elements) to do some of the work for you, but you can also use `react-stripe-elements` directly, or use any Stripe client that allows you to securely create a source token.
+If you are using a starter client UI provided by Demandthe necessary client components are already included and will appear where they should. If you are building your own client, you may want to use our [StripeForm React component](https://designsystem.demandcluster.com/#!/StripeForm), which is part of the Example Storefront Component Library. It wraps [react-stripe-elements](https://github.com/stripe/react-stripe-elements) to do some of the work for you, but you can also use `react-stripe-elements` directly, or use any Stripe client that allows you to securely create a source token.
 
 > For Stripe payments to work in the NextJS starter app, you must set the `STRIPE_PUBLIC_API_KEY` environment variable, which is done in the `.env` file for local development.
 
