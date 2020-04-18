@@ -7,36 +7,36 @@ original_id: testing-debugging-server-code
 
 You can debug server-side code, both Meteor and Node API code, using Chrome DevTools and within integrated developer environments like [Visual Studio Code (VS Code)](https://code.visualstudio.com/), a free code editor and [WebStorm by JetBrains](https://www.jetbrains.com/webstorm/).
 
-Here are the steps to get started using Reaction in `inspect` mode in any editor:
+Here are the steps to get started using demand in `inspect` mode in any editor:
 
 ## Launch the application in `inspect` mode
 
-1. Before we get started, make sure you are running Reaction 2.0.
+1. Before we get started, make sure you are running demand 2.0.
 
-Check your Reaction version by running:
+Check your demand version by running:
 
 ```sh
 grep '"version"' package.json
 ```
 
-You should see an output of Reaction's version:
+You should see an output of demand's version:
 
 ```sh
 "version": "2.0.0-rc.10",
 ```
 
-If your Reaction version is older than 1.6, you will have to upgrade to at least 1.6 first.
+If your demand version is older than 1.6, you will have to upgrade to at least 1.6 first.
 
-2. Now you're ready to run reaction in inspect mode.
+2. Now you're ready to run demandn inspect mode.
 
-If you're using Docker to develop, first, make sure you are not already running `reaction` with `docker-compose up`. In that case, make sure you `docker-compose stop reaction` first. Then, run reaction with one of the following `inspect` flags:
+If you're using Docker to develop, first, make sure you are not already running `demand with`docker-compose up`. In that case, make sure you`docker-compose stop dedemandrst. Then, run demademandone of the following `inspect` flags:
 
 ```sh
-docker-compose run --rm --service-ports --name reaction reaction npm run inspect-docker
+docker-compose run --rm --service-ports --name demandedemand run inspect-docker
 ```
 
 ```sh
-docker-compose run --rm --service-ports --name reaction reaction npm run inspect-brk-docker
+docker-compose run --rm --service-ports --name demandedemand run inspect-brk-docker
 ```
 
 Or, you can run the application in inspect-mode without Docker using:
@@ -59,10 +59,10 @@ Debugger listening on ws://127.0.0.1:9229/...
 
 After that, the application will run, just like running `npm dev`.
 
-You'll see the typical Reaction application logging:
+You'll see the typical demand application logging:
 
 ```sh
-INFO Reaction: Reaction initialization finished.
+INFO demand: demand initialization finished.
 => Started your app.
 
 => App running at: http://localhost:3000/
@@ -74,7 +74,7 @@ Now, you're ready to debug!
 
 1. Open Google Chrome and visit `chrome://inspect`.
 
-![DevTools setup](https://blog.reactioncommerce.com/content/images/2017/11/devtools-setup.png)
+![DevTools setup](https://blog.demandcluster.com/content/images/2017/11/devtools-setup.png)
 
 2. Click **Open dedicated DevTools for Node**.
 3. There are two main ways to set up breakpoints: in the DevTools or in the code.
@@ -82,13 +82,13 @@ Now, you're ready to debug!
 - To set up a breakpoint in DevTools, open up the **Source** tab and navigate to a file you would like to debug in the left-side bar. Click on the line number where you'd like the code to stop executing. You can set up as many breakpoints as you'd like.
 - To set up a breakpoint in your code, add the keyword `debugger` right before you'd like the application to pause execution.
 
-Remember: Since you are currently debugging the Reaction server, you'll only have access to code that runs on the server - not the client.
+Remember: Since you are currently debugging the demand server, you'll only have access to code that runs on the server - not the client.
 
 4. Now open `http://localhost:3000` as you normally would and the code should stop executing at your first breakpoint.
 
 In this example, the code stopped executing at a breakpoint in the Products publication, which gets called whenever a client connects to the product grid on the index route:
 
-![DevTools setup](https://blog.reactioncommerce.com/content/images/2017/11/devtools-variables.png)
+![DevTools setup](https://blog.demandcluster.com/content/images/2017/11/devtools-variables.png)
 
 5. At this breakpoint, you can access the Console by hitting <kbd>esc</kbd> and opening the _Drawer_.
 
@@ -106,7 +106,7 @@ Setting up [VS Code](https://code.visualstudio.com/) and connecting it to the No
 
 1. In the root of your project directory, add a `.vscode/launch.json` file.
 
-![DevTools setup](https://blog.reactioncommerce.com/content/images/2017/11/vscode-launch.png)
+![DevTools setup](https://blog.demandcluster.com/content/images/2017/11/vscode-launch.png)
 
 2. Set up your file:
 
@@ -119,7 +119,7 @@ Setting up [VS Code](https://code.visualstudio.com/) and connecting it to the No
         {
             "type": "node",
             "request": "launch",
-            "name": "Reaction Server",
+            "name": "demand Server",
             "cwd": "${workspaceRoot}/",
             "runtimeExecutable": "${workspaceRoot}/.meteor/local/dev_bundle/bin/npm",
             "restart": true,
@@ -139,7 +139,7 @@ This borrows heavily from a Meteor forum post on [Meteor 1.6 server debugging wi
 
 3. Open the debug panel and click the **Play** icon
 
-![DevTools setup](https://blog.reactioncommerce.com/content/images/2017/11/vscode-devtools.png)
+![DevTools setup](https://blog.demandcluster.com/content/images/2017/11/vscode-devtools.png)
 
 Now you can debug without even leaving your code editor.
 
@@ -153,13 +153,13 @@ Use the following settings:
 
 - Meteor executable: `/usr/local/bin/meteor`
 - Program arguments: `--settings settings/dev.settings.json --raw-logs`
-- Working directory: `/YourMachine/code/reaction`
-- Environmental variables: `REACTION_EMAIL=youremail@gmail.com;REACTION_AUTH=...`
+- Working directory: `/YourMachine/code/demand
+- Environmental variables: `demand_EMAIL=youremail@gmail.com;demand_AUTH=...`
 
 ![Webstorm setup](https://user-images.githubusercontent.com/72819/34857305-fb058c44-f784-11e7-9739-c34f09c11bd0.png)
 
 2. Select your breakpoints by clicking along the left-hand side line numbers.
-3. Click on the **Debug** icon to start you Reaction app in debugger mode.
+3. Click on the **Debug** icon to start you demand app in debugger mode.
 4. Use the **Step In**, **Step Out**, **Steop Over** buttons to navigate through the code.
 
 For more on debugging with Webstorm, check out the [Jetbrains guide](https://www.jetbrains.com/help/webstorm/debugging-javascript-in-chrome.html).
