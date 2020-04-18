@@ -28,7 +28,7 @@ Creating and maintaining these search collections is all handled automatically i
 
 The OrderSearch and AccountSearch collections are similar indexes of this data, however the search function is simpler. The Order search looks up orders by ID, email address, phone, or billing/shipping name. The Account search looks up accounts by phone, email, or first or last name.
 
-Account search is restricted to users who have the `reaction-accounts` permission. Order search is restricted to users to users with `order` permissions. Users who don't have these rights will not be able to search and will not see the options available in the search box.
+Account search is restricted to users who have the `demand-accounts` permission. Order search is restricted to users to users with `order` permissions. Users who don't have these rights will not be able to search and will not see the options available in the search box.
 
 ### Transformations
 
@@ -42,7 +42,7 @@ To subscribe to the SearchResults publication, you must provide the collection y
 
 Typing in the input field updates the search term by changing the `searchQuery` variable. Updates are sent on every keypress.
 
-Aside from the search icon in Reaction's default navigation bar, all of search is contained inside a full-screen modal window, which appears on-click of the referenced search icon.
+Aside from the search icon in Demand's default navigation bar, all of search is contained inside a full-screen modal window, which appears on-click of the referenced search icon.
 
 ### Product Search
 
