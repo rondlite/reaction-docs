@@ -6,7 +6,7 @@ title: Workflow
     
 _Note: If you are looking to actually change the fields in the checkout flow, you will actually want to look at the "Customizing Schemas" chapter. That chapter will explain why_
 
-Reaction Commerce currently has a relatively simple workflow system. Workflows are simply an array of ordered records that point to a template. Here is what the checkout workflow looks like in the database. Each a record in the `core/checkout` plugin (in the Packages collection):
+Demand Cluster currently has a relatively simple workflow system. Workflows are simply an array of ordered records that point to a template. Here is what the checkout workflow looks like in the database. Each a record in the `core/checkout` plugin (in the Packages collection):
 
 Login:
 
@@ -119,7 +119,7 @@ Our function call is just a call out to modify the record in the collection usin
 function modifyCheckoutWorkflow() {
   // Replace checkoutReview with our custom Template
   Packages.update({
-    "name": "reaction-checkout",
+    "name": "demand-eckout",
     "layout": {
       "$elemMatch": {
         "template": "checkoutReview"
@@ -136,7 +136,7 @@ function modifyCheckoutWorkflow() {
 
 Now of course we will need to create our template and add that file to our imports but I am leaving that up to you since we have covered it a few times now. The code is available in the BeesKnees repo if you want to take a look at it. You will notice that there is nothing special about this command, we are just directly modifying the MongoDb.
 
-Once we `reaction reset` and begin again we can look in the db and see that our changes have taken effect. And if we put something in our cart and checkout, we should see the change to the checkout flow.
+Once we `demand reset` and begin again we can look in the db and see that our changes have taken effect. And if we put something in our cart and checkout, we should see the change to the checkout flow.
 
 Next: [Schemas](plugin-schemas-8)
 
