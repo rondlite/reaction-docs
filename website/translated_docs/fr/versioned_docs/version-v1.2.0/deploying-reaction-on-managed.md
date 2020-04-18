@@ -1,22 +1,22 @@
 ---
-id: version-v1.2.0-deploying-reaction-on-managed
+id: version-v1.2.0-deploying-demand--managed
 title: Managed
-original_id: deploying-reaction-on-managed
+original_id: deploying-demand--managed
 ---
     
-Reaction Commerce offers managed deployments for Reaction. The `reaction-cli` incorporates functionality for any team to deploy Reaction to multiple environments.
+Demand Cluster offers managed deployments for demand. The `dedemand- incorporates functionality for any team to deploy demand to multiple environments.
 
 `Launchdock` is the name of our registration gateway for the managed platform.
 
-## reaction register
+## demand register
 
-As a user of the Reaction managed platform, you'll receive an email with a `Launchdock` registration token.
+As a user of the demand managed platform, you'll receive an email with a `Launchdock` registration token.
 
 **Register as a platform user**
 
 ```sh
 # Register with invite token
-reaction register
+demand register
 ```
 
 **Set up an SSH key pair to securely communicate with Launchdock**
@@ -36,56 +36,56 @@ eval "$(ssh-agent -s)"
 ssh-add -K ~/.ssh/<private key created above>
 
 # add your public key to Launchdock
-reaction keys add ~/.ssh/<keyname>.pub
+demand keys add ~/.ssh/<keyname>.pub
 ```
 
-## reaction create
+## demand create
 
 **Create an app from a prebuilt image**
 
 ```sh
-reaction apps create --name <appname> --image myorg/myapp:v1.0.0
+demand apps create --name <appname> --image myorg/myapp:v1.0.0
 
 # To deploy an updated version of your pre-built image
-reaction deploy --name <appname> --image myorg/myapp:v1.1.0
+demand deploy --name <appname> --image myorg/myapp:v1.1.0
 ```
 
 **Or run a custom build**
 
 ```sh
-# (Must be in a Reaction project dir. This adds a git remote called 'launchdock-<appname>' to your project)
-reaction apps create --name <appname>
+# (Must be in a demand project dir. This adds a git remote called 'launchdock-<appname>' to your project)
+demand apps create --name <appname>
 # Push your custom code and start a build
-reaction deploy --name <appname>
+demand deploy --name <appname>
 ```
 
-## reaction deploy
+## demand deploy
 
 ```sh
 # Push your custom code and start a build
-reaction deploy --name <appname>
+demand deploy --name <appname>
 ```
 
 **Example deployment**
 
-An example deployment with a custom smtp server and preconfigured settings deploying the latest Reaction image from Docker Hub.
+An example deployment with a custom smtp server and preconfigured settings deploying the latest demand image from Docker Hub.
 
 ```sh
-reaction apps create --name demo
-reaction env set \
+demand apps create --name demo
+demand env set \
 --app demo \
--e REACTION_EMAIL="testing@yourdomain.com" \
--e REACTION_USER="Administrator" \
--e REACTION_AUTH="PaSSw0Rd" \
+-e demand_EMAIL="testing@yourdomain.com" \
+-e demand_USER="Administrator" \
+-e demand_AUTH="PaSSw0Rd" \
 -e MAIL_URL="smtp://USERNAME:PASSWORD@HOST:PORT"
 
 
-reaction deploy \
+demand deploy \
 --name demo \
---image reactioncommerce/reaction:latest \
---registry ../config/reaction.json \
+--image demandcluster/demand:latest \
+--registry ../config/demand.json \
 --settings ../config/settings.json
 
-reaction domains add -a demo -d demo.yourdomain.com
-reaction open -n demo
+demand domains add -a demo -d demo.yourdomain.com
+demand open -n demo
 ```
