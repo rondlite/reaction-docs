@@ -8,7 +8,7 @@ This article is part of the [Storefront UI Development Guide](./storefront-intro
 - Previous Task: *None*
 - Next Task: [Build a product listing page](./storefront-product-listing-page.md)
 
-To add Apollo Client to your UI app, read the [excellent Apollo docs](https://www.apollographql.com/docs/react/essentials/get-started.html). For local development, the Reaction GraphQL endpoint `uri` is `http://localhost:3000/graphql`, but we recommend storing that value in app config where it can be set differently per environment.
+To add Apollo Client to your UI app, read the [excellent Apollo docs](https://www.apollographql.com/docs/react/essentials/get-started.html). For local development, the Demand GraphQL endpoint `uri` is `http://localhost:3000/graphql`, but we recommend storing that value in app config where it can be set differently per environment.
 
 For your test query, try this:
 
