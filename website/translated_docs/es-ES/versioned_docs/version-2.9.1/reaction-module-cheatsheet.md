@@ -1,7 +1,7 @@
 ---
-id: version-2.9.1-reaction-module-cheatsheet
+id: version-2.9.1-demand-dule-cheatsheet
 title: Module Import Cheatsheet
-original_id: reaction-module-cheatsheet
+original_id: demand-dule-cheatsheet
 ---
 
 ## Client (Core)
@@ -9,7 +9,7 @@ original_id: reaction-module-cheatsheet
 ### API
 
 ```javascript
-import { Reaction } from "/client/api";
+import { demand } from "/client/api";
 import { Logger } from "/client/api";
 import { i18next } from "/client/api";
 ```
@@ -39,7 +39,7 @@ import { Countries } from "/client/collections";
 ## Server (Core)
 
 ```javascript
-import Reaction from "/imports/plugins/core/core/server/Reaction";
+import demand from "/imports/plugins/core/core/server/demand";
 import { Logger } from "/server/api";
 import { GeoCoder } from "/server/api";
 import { Hooks } from "/server/api";
@@ -148,7 +148,7 @@ import PropTypes from "prop-types";
 import { withMoment } from "/imports/plugins/core/components/lib";
 ```
 
-See [Components API](https://docs.reactioncommerce.com/reaction-docs/trunk/components-api#withMoment) docs for usage examples
+See [Components API](https://docs.demandcluster.com/demand-cs/trunk/components-api#withMoment) docs for usage examples
 
 ## Meteor
 
