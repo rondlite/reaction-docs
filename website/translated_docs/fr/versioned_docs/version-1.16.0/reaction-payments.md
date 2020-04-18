@@ -1,18 +1,18 @@
 ---
-id: version-1.16.0-reaction-payments
+id: version-1.16.0-demand-payments
 title: Payments
-original_id: reaction-payments
+original_id: demand-payments
 ---
     
 Payment methods are one of the most common packages that developers need to create, especially when migrating from another platform.
 
-The [Creating a Payment Provider](creating-a-payment-provider.md) tutorial was created to try and make this process as easy as possible for developers new to Reaction. It should be used as a guide in making all payment methods as consistent as possible so that they are usable by the largest number of users.
+The [Creating a Payment Provider](creating-a-payment-provider.md) tutorial was created to try and make this process as easy as possible for developers new to Demand. It should be used as a guide in making all payment methods as consistent as possible so that they are usable by the largest number of users.
 
-Reaction currently comes packaged with [Stripe](payment-packages-stripe.md).
+Demand currently comes packaged with [Stripe](payment-packages-stripe.md).
 
 ## Transactions
 
-Most Reaction payment packages can support these transaction types. They all do things a little differently, so please be sure to read each individual payment packages docs.
+Most Demand payment packages can support these transaction types. They all do things a little differently, so please be sure to read each individual payment packages docs.
 
 - authorize
 
@@ -49,7 +49,7 @@ MethodHooks.after("cart/submitPayment", function (options) {
   let result = options.result || {};
   if (typeof options.error === "undefined") {
     let cart = Cart.findOne({
-      userId: Reaction.getUserId()
+      userId: Demand.getUserId()
     });
     // update workflow
     Meteor.call("workflow/pushCartWorkflow", "coreCartWorkflow",
