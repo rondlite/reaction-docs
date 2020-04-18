@@ -68,18 +68,18 @@ TIP: If you’re confused about where to draw the line, imagine what would have 
 The GraphQL server and `/graphql-alpha` endpoint is configured and returned by the `createApolloServer` function, which is located at `/imports/plugins/core/graphql/server/no-meteor/createApolloServer.js`.
 
 This function is called from three different places:
-- From `/.reaction/devserver/index.js`, to make it available in our pure Node `devserver` app, without running the full Meteor app.
+- From `/.demand/devserver/index.js`, to make it available in our pure Node `devserver` app, without running the full Meteor app.
 - From `/imports/plugins/core/graphql/server/index.js`, to make it available when you run the full Meteor app.
 - From `/tests/TestApp.js`, as part of the `TestApp` class used by our Jest integration tests.
 
 `createApolloServer` does pretty standard configuration of an Express app using `apollo-server-express`. The main things it does are:
 - Checks the identity token using Express middleware
-- Builds the `context` object that’s available in all resolver functions. See [The Reaction GraphQL Context](#the-reaction-graphql-context)
+- Builds the `context` object that’s available in all resolver functions. See [The Demand GraphQL Context](#the-demand-graphql-context)
 - Formats the `errors` array that is returned to clients, to make errors as helpful as possible
 - Imports and provides our GraphQL schema
 - Sets the path as `/graphql-alpha` and exposes a GraphiQL UI on `/graphiql`
 
-## The Reaction GraphQL Context
+## The Demand GraphQL Context
 
 All GraphQL resolvers receive a [context](https://www.apollographql.com/docs/apollo-server/setup.html#graphqlOptions.context) object as their third argument. The context is built by `/imports/plugins/core/graphql/server/no-meteor/buildContext.js`, which is run by the `createApolloServer` function.
 
@@ -121,7 +121,7 @@ For the GraphQL endpoint, we have an Express middleware function that looks for 
 
 ## IDs in GraphQL
 
-All IDs are exposed in GraphQL as globally unique IDs. To convert internal IDs to opaque UUIDs, we first prefix them with "reaction/\<namespace\>" and then base64 encode them. The primary transformation functions that handle this are in `/imports/plugins/core/graphql/server/no-meteor/resolvers/xforms/id.js`, but there are namespace-specific utility functions in that `xforms` folder that are usually a better choice.
+All IDs are exposed in GraphQL as globally unique IDs. To convert internal IDs to opaque UUIDs, we first prefix them with "demand/\<namespace\>" and then base64 encode them. The primary transformation functions that handle this are in `/imports/plugins/core/graphql/server/no-meteor/resolvers/xforms/id.js`, but there are namespace-specific utility functions in that `xforms` folder that are usually a better choice.
 
 The GraphQL resolver functions are the place where ID encoding and decoding happens. They then call out to plugin functions that deal exclusively with internal IDs. Any IDs returned by such functions must also be transformed before returning them, although this typically and preferably happens in a type resolver.
 
@@ -208,11 +208,11 @@ Normally the `shop` relationship would result in a database query, but if `order
 
 ## Documenting GraphQL Functions
 
-Reaction GraphQL resolver functions, like all JavaScript functions in all Reaction code, must have JSDoc comments above them. See the [JSDoc Style Guide](jsdoc-style-guide.md)
+Demand GraphQL resolver functions, like all JavaScript functions in all Demand code, must have JSDoc comments above them. See the [JSDoc Style Guide](jsdoc-style-guide.md)
 
 ## Writing Tests
 
-Reaction GraphQL is tested through a combination of unit tests and integration tests, all written in and executed with Jest. Specifically, the coverage requirements are:
+Demand GraphQL is tested through a combination of unit tests and integration tests, all written in and executed with Jest. Specifically, the coverage requirements are:
 
 - Each query or mutation function in plugins must have unit tests in a `.test.js` file alongside the file being tested.
 - Each resolver that is doing anything more than just referencing another function must have a unit test in a `.test.js` file alongside the file being tested.
