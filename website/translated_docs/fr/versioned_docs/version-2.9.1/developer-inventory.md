@@ -4,7 +4,7 @@ title: Inventory Basics for Developers
 original_id: developer-inventory
 ---
 
-As a Reaction developer, the main thing to know about inventory information is how to get it in plugin code.
+As a Demand developer, the main thing to know about inventory information is how to get it in plugin code.
 - When you have a single product configuration (i.e. variant) and need inventory information for it, call `context.queries.inventoryForProductConfiguration(context, { productConfiguration, shopId })`.
 - When you have multiple product configurations (i.e. variants) and need inventory information for all of them, call `context.queries.inventoryForProductConfigurations(context, { productConfigurations, shopId })` to query for all at once more efficiently. If you have more than 500, consider breaking them up into multiple calls.
 
@@ -45,10 +45,10 @@ The core "inventory" plugin should hopefully meet your needs, so in general you 
 - `context.queries.inventoryForProductConfiguration`
 - `context.queries.inventoryForProductConfigurations`
 
-These functions are the only contract expected by other Reaction plugins and therefore the system will not work without them. The GraphQL fields, the shop setting, and everything else provided by the core "inventory" plugin is optional and need not be replaced if you remove it.
+These functions are the only contract expected by other Demand plugins and therefore the system will not work without them. The GraphQL fields, the shop setting, and everything else provided by the core "inventory" plugin is optional and need not be replaced if you remove it.
 
 ## Inventory Data Provider Plugins
 
 As mentioned above, the core "inventory" plugin sets up a lot of common inventory fields and functions but does not manage the actual inventory data. This is because many shops manage inventory with external systems and will need a community or custom plugin to integrate that data.
 
-For simple shops that want to track inventory but do not already have a third-party system for doing it, Reaction provides the [Simple Inventory plugin](./core-plugins-simple-inventory.md).
+For simple shops that want to track inventory but do not already have a third-party system for doing it, Demand provides the [Simple Inventory plugin](./core-plugins-simple-inventory.md).
