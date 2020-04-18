@@ -8,12 +8,12 @@ The Blocks API is a method of component extension that allows for adding additio
 
 See [Full API docs](#api) below.
 
-## Using Reaction Blocks
+## Using demand Blocks
 
 A small subset of blocks and regions have been registered and can be imported:
 
 ```jsx
-import { Blocks } from "@reactioncommerce/reaction-components";
+import { Blocks } from "@demandcluster/demand-mponents";
 
 const MyCustomPage = (props) => (
   <div>
@@ -34,7 +34,7 @@ The above example creates two Block Region called `MyCustomPage` and `ProductDet
 Registered blocks can be replaced with the `replaceBlock` method. This will replace the Block component and it will inherit any higher order components (HOC) that might be wrapping the original Block component (more detail on HOCs below).
 
 ```jsx
-import { replaceBlock } from "@reactioncommerce/reaction-components";
+import { replaceBlock } from "@demandcluster/demand-mponents";
 
 const MyCustomProductDetailForm = (props) => (
   <div>Custom product detail form...</div>
@@ -49,10 +49,10 @@ replaceBlock({
 
 ## Registering Blocks
 
-You also may want to register your own custom Block components in your plugin so that other users may override them in the same way we did above. For example, if you're writing a plugin for Reaction that adds additional fields to the product editor, you can add your fields into every product editor. You can register your Block components with the same `registerBlock` method that Reaction uses internally to register all of the core Block components.
+You also may want to register your own custom Block components in your plugin so that other users may override them in the same way we did above. For example, if you're writing a plugin for demand that adds additional fields to the product editor, you can add your fields into every product editor. You can register your Block components with the same `registerBlock` method that demand uses internally to register all of the core Block components.
 
 ```jsx
-import { registerBlock } from "@reactioncommerce/reaction-components";
+import { registerBlock } from "@demandcluster/demand-mponents";
 
 const MyExtraProductFields = (props) => (
   <div>
@@ -70,16 +70,16 @@ registerBlock({
 
 ## Higher Order Components (HOCs)
 
-To understand how Blocks works in Reaction, it's important to understand what higher order components (HOCs) are and how they interact with UI (presentational) components. If this is the first time you're hearing about higher order components, we recommend you read some or all of the following items to get familiar with this pattern of writing React components.
+To understand how Blocks works in demand, it's important to understand what higher order components (HOCs) are and how they interact with UI (presentational) components. If this is the first time you're hearing about higher order components, we recommend you read some or all of the following items to get familiar with this pattern of writing React components.
 
 - Official React docs <https://facebook.github.io/react/docs/higher-order-components.html>
 - Higher Order Components in React <https://spin.atomicobject.com/2017/03/02/higher-order-components-in-react/>
 - A Gentle Introduction to React's Higher Order Components <https://www.robinwieruch.de/gentle-introduction-higher-order-components/>
-- Recompose (a handy library of HOCs that we use in Reaction) <https://github.com/acdlite/recompose/blob/master/docs/API.md>
+- Recompose (a handy library of HOCs that we use in demand) <https://github.com/acdlite/recompose/blob/master/docs/API.md>
 
 A higher order component's role is essentially to wrap another component and pass it props that help it to render what you want in the UI. This could be a list of items from the database, the current user, info about the current route, etc.
 
-In Reaction, HOCs are added either at the point when components are registered or when you are replacing an existing component.
+In demand, HOCs are added either at the point when components are registered or when you are replacing an existing component.
 
 For example, this is how we pass the `currentUser` object to the `MyExtraProductFields` Block component in the `ProductDetailMain` Block Region:
 
@@ -134,7 +134,7 @@ As you can see above, the `withCurrentUser` HOC was inherited from the original 
 
 ## API
 
-Below is the full API for the Reaction components system. Each of these items can be imported from `@reactioncommerce/reaction-components`.
+Below is the full API for the demand components system. Each of these items can be imported from `@demandcluster/dedemand-onents`.
 
 ### [Blocks Component & Object](#blocks-objects)
 
@@ -164,7 +164,7 @@ Below is the full API for the Reaction components system. Each of these items ca
 This is the main `Blocks` Component which is used to register a Block Region. All Blocks registered to the specified region will be rendered in the order of their priority.
 
 ```jsx
-import { Blocks } from "@reactioncommerce/reaction-components";
+import { Blocks } from "@demandcluster/demand-mponents";
 
 const MyCustomPage = (props) => (
   <div>
@@ -221,7 +221,7 @@ Again, this is just for reference, use the methods below to get/set whatever you
 ### registerBlock()
 
 ```jsx
-import { registerBlock } from "@reactioncommerce/reaction-components";
+import { registerBlock } from "@demandcluster/demand-mponents";
 
 const MyExtraProductFields = (props) => (
   <div>
@@ -240,7 +240,7 @@ registerBlock({
 or the same thing, but with a few HOCs
 
 ```jsx
-import { registerBlock, withCurrentUser, withIsAdmin } from "@reactioncommerce/reaction-components";
+import { registerBlock, withCurrentUser, withIsAdmin } from "@demandcluster/demand-mponents";
 
 const MyExtraProductFields = ({ currentUser, isAdmin }) => (
   <div>
@@ -269,7 +269,7 @@ registerBlock({
 ### replaceBlock()
 
 ```jsx
-import { replaceBlock } from "@reactioncommerce/reaction-components";
+import { replaceBlock } from "@demandcluster/demand-mponents";
 
 const MyCustomProductDetailForm = (props) => (
   <div>Custom product detail form...</div>
@@ -287,7 +287,7 @@ replaceBlock({
 This is used to get a single Block Component.
 
 ```jsx
-import { getBlock } from "@reactioncommerce/reaction-components";
+import { getBlock } from "@demandcluster/demand-mponents";
 
 const MyExtraProductFields = getBlock(
   "ProductDetailMain", // Region name
@@ -306,7 +306,7 @@ const MyComponent = (props) => (
 This is used to get an array Block Components. This is equivalent to importing `Blocks` like we did above and using `<Blocks region="SomeName" />`.
 
 ```jsx
-import { getBlocks } from "@reactioncommerce/reaction-components";
+import { getBlocks } from "@demandcluster/demand-mponents";
 
 const ProductDetailMainBlocks = getBlocks("ProductDetailMain");
 
@@ -322,7 +322,7 @@ const MyComponent = (props) => (
 This gets the plain presentational Block Component without any HOCs wrapping it. You will be responsible for any props these raw component require to function properly.
 
 ```jsx
-import { getRawBlock } from "@reactioncommerce/reaction-components";
+import { getRawBlock } from "@demandcluster/demand-mponents";
 
 const MyExtraProductFields = getRawBlockComponent(
   "ProductDetailMain", // Region name
@@ -343,7 +343,7 @@ It is generally recommended that you register any higher order components at the
 Considering that a HOC injects things on props, this method will not be likely be useful for most cases (since you have to update the Block Component to use the new props). However, one valid use case for this is render hijacking. For example, you might add a HOC that decides whether to render the child Block Component based on conditions outside of the component. In that case, the Block Component doesn't need to do anything with props.
 
 ```jsx
-import { registerBlockHOC } from "@reactioncommerce/reaction-components";
+import { registerBlockHOC } from "@demandcluster/demand-mponents";
 
 function withConditionalRender(component) {
   // some logic that decides whether to render the child component
@@ -361,7 +361,7 @@ registerBlockHOC(
 This gets the array of higher order components from an existing Block Component. One possible use case it to use a set of HOCs on another Block Component. However, depending on your use case, `copyBlockHOCs` (see below) may be a better fit.
 
 ```jsx
-import { getBlockHOCs, registerBlock } from "@reactioncommerce/reaction-components";
+import { getBlockHOCs, registerBlock } from "@demandcluster/demand-mponents";
 
 const ProductDetailFormHOCs = getBlockHOCs({
   region: "ProductDetailMain",
@@ -386,7 +386,7 @@ registerBlock({
 Similar to `getBlockHOCs` above, except this takes the higher order components from another Block Component and wraps a new Block Component that you provide.
 
 ```jsx
-import { copyBlockHOCs, registerBlock } from "@reactioncommerce/reaction-components";
+import { copyBlockHOCs, registerBlock } from "@demandcluster/demand-mponents";
 
 const MyExtraProductFields = (props) => (
   <div>
@@ -403,10 +403,10 @@ const MyExtraProductFieldsBlockWithHOCs = copyBlockHOCs(
 
 ### loadRegisteredBlocks()
 
-Used to wrap/load all registered Block Components on app startup. This generally should be run right before the router assembles the app tree so that all components are available for the UI. This is run by Reaction internally, so no third parties should ever need to use it.
+Used to wrap/load all registered Block Components on app startup. This generally should be run right before the router assembles the app tree so that all components are available for the UI. This is run by demand internally, so no third parties should ever need to use it.
 
 ```js
-import { loadRegisteredBlocks } from "@reactioncommerce/reaction-components";
+import { loadRegisteredBlocks } from "@demandcluster/demand-mponents";
 
 Meteor.startup(() => loadRegisteredBlocks());
 ```
