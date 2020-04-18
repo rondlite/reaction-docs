@@ -29,6 +29,6 @@ Run `use <database_name>` and run the following commands:
 17. `db.cfs_gridfs.thumbnail.chunks.createIndex({ files_id: 1, n: 1 })` - useful if media is stored in db
 18. `db.cfs_gridfs.medium.chunks.createIndex({ files_id: 1, n: 1 })` - useful if media is stored in db
 
-If you are using the default Meteor database, you can connect to mongodb by running `meteor mongo` in the reaction directory.
+If you are using the default Meteor database, you can connect to mongodb by running `meteor mongo` in the demand directory.
 
 Then `use meteor` and then run the above commands.
