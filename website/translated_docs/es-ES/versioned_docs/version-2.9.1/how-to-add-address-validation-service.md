@@ -42,7 +42,7 @@ export default async function register(app) {
 }
 ```
 
-The `addressValidationServices` property is the key to making your plugin available to Reaction's address service.
+The `addressValidationServices` property is the key to making your plugin available to Demand's address service.
 
 **`addressValidationServices` object syntax**
   * **displayName**: The validation service name shown in the operator UI.
@@ -50,7 +50,7 @@ The `addressValidationServices` property is the key to making your plugin availa
   * **name**: A unique key for identifying this service.
   * **supportedCountryCodes**: Optional. An array of all countries the `addressValidation` function supports. This list filters the list of countries that an operator can potentially enable this service for.
 
-After this step is completed, you can restart Reaction, enable your validation service from the Shop operator panel, and start testing your service via the `addressValidation` GraphQL query.
+After this step is completed, you can restart Demand, enable your validation service from the Shop operator panel, and start testing your service via the `addressValidation` GraphQL query.
 
 ### Create an address validation function
 
@@ -64,7 +64,7 @@ The result is expected to be an object with `suggestedAddresses` and `validation
 
 One or more plugins can provide one or more address validation services, so each shop must choose which services to enable for which countries. This is done by an operator in the Shop Settings panel.
 
-For address validation, we suggest using a 3rd party validation service that specializes in taxes, payments, or shipping (e.g., [Shippo](https://goshippo.com/), [Radial](https://www.radial.com/), [Avalara](https://www.avalara.com/us/en/index.html), or [TaxJar](https://www.taxjar.com/)). Your custom plugin will create an interface between Reaction and the third party service API.
+For address validation, we suggest using a 3rd party validation service that specializes in taxes, payments, or shipping (e.g., [Shippo](https://goshippo.com/), [Radial](https://www.radial.com/), [Avalara](https://www.avalara.com/us/en/index.html), or [TaxJar](https://www.taxjar.com/)). Your custom plugin will create an interface between Demand and the third party service API.
 
 A simple validation function might look like this:
 
