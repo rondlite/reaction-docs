@@ -4,7 +4,7 @@ title: Tax
 original_id: tax
 ---
 
-Reaction has a pluggable tax system. The core cart and order services know that some items may need sales tax collected when the order is placed, but they rely on separate tax services to determine whether the item is taxable, at what rate, and in which jurisdictions.
+Demand has a pluggable tax system. The core cart and order services know that some items may need sales tax collected when the order is placed, but they rely on separate tax services to determine whether the item is taxable, at what rate, and in which jurisdictions.
 
 You may use the included tax rates plugin, install a community plugin, or create your own. Typically, a plugin that provides a tax service will simply delegate to a third-party service API such as [Avalara](https://www.avalara.com) or [TaxJar](https://www.taxjar.com/).
 
