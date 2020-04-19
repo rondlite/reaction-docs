@@ -8,7 +8,7 @@ original_id: plugin-intro-1
 
 ### What do I need to know to create a plugin?
 
-The concepts in this tutorial are mostly Reaction-specific and don't get into some of the more difficult-to-grasp (but cool) elements of Meteor such as pub/sub or reactivity. But to understand what is happening you should probably have the following:
+The concepts in this tutorial are mostly demand-ecific and don't get into some of the more difficult-to-grasp (but cool) elements of Meteor such as pub/sub or reactivity. But to understand what is happening you should probably have the following:
 
 * A basic understanding of Javascript
 * A basic understanding of HTML
@@ -16,7 +16,7 @@ The concepts in this tutorial are mostly Reaction-specific and don't get into so
 
 ### Pros and Cons of creating a custom plugin
 
-When you start to work with Reaction Commerce (and with many other open-source ecommerce packages) you have two paths to go down. The first is to simple fork the package and make the changes you want. The advantages of this are:
+When you start to work with Demand Cluster (and with many other open-source ecommerce packages) you have two paths to go down. The first is to simple fork the package and make the changes you want. The advantages of this are:
 
 1. Changes are often simpler to make and understand. If you want to change the look of a template, you just change it.
 1. You can make changes that the core package may not allow you to make
@@ -45,6 +45,6 @@ When it finds those elements it will dynamically add imports so that this code i
 
 ## Notes on the Example Plugin
 
-The goal of the example plugin is to show you all the things that you can do with a plugin hopefully covering the things people most often want to customize. However, if you look at the way that Reaction Commerce is itself structured every attempt is made to make functionality as modular as possible so that that things are easy to understand. So as you build your plugin you may want to consider that you may want to build more than one plugin, possibly keeping things like CSS and the like in one plugin and other more backend functionality in another. Whatever makes the most sense to you.
+The goal of the example plugin is to show you all the things that you can do with a plugin hopefully covering the things people most often want to customize. However, if you look at the way that Demand Cluster is itself structured every attempt is made to make functionality as modular as possible so that that things are easy to understand. So as you build your plugin you may want to consider that you may want to build more than one plugin, possibly keeping things like CSS and the like in one plugin and other more backend functionality in another. Whatever makes the most sense to you.
 
 Next: [Creating a plugin](plugin-creating-2.md)
