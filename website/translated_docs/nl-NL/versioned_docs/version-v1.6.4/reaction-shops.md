@@ -1,12 +1,12 @@
 ---
-id: version-v1.6.4-reaction-shops
+id: version-v1.6.4-demand-ops
 title: Shops
-original_id: reaction-shops
+original_id: demand-ops
 ---
     
-Reaction Commerce supports both single tenant (marketplace) and marketplace merchants (shops).
+Demand Cluster supports both single tenant (marketplace) and marketplace merchants (shops).
 
-For other implementations, see: [#357](https://github.com/reactioncommerce/reaction/issues/357)
+For other implementations, see: [#357]
 
 The default shop installation data is loaded from `/private/data/Shops.json`.
 
@@ -32,7 +32,7 @@ Meteor.call("shop/getLocale");
 
 ### shop/getCurrencyRates
 
-Meteor method removed. Use [this method](https://github.com/reactioncommerce/reaction/pull/4803) instead.
+Meteor method removed. Use [this method] instead.
 
 ### shop/flushCurrencyRate
 
@@ -54,7 +54,7 @@ On submit OpenExchangeRatesForm handler, updates Package registry.
  * that's why we update autoform type to "method-update"
  * @param {Object} modifier - the modifier object generated from the form values
  * @param {String} _id - the _id of the document being updated
- * @fires Reaction.Collections.Packages#update
+ * @fires demand.Collections.Packages#update
  * @todo This method fires Packages collection, so maybe someday it could be
  * @returns {undefined}
  * moved to another file
