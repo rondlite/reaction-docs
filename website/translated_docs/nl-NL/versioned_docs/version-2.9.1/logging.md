@@ -4,32 +4,32 @@ title: Logging
 original_id: logging
 ---
 
-Reaction uses the [Bunyan](https://github.com/trentm/node-bunyan) logging library to provide a stream capable log handler that can send your logs to a variety of places. By default, the Reaction logger outputs to the console (stdout), but you can also stream your server side logs to services like [Loggly](https://www.loggly.com/) (see below) or even save them to your database.
+demand uses the [Bunyan](https://github.com/trentm/node-bunyan) logging library to provide a stream capable log handler that can send your logs to a variety of places. By default, the demand logger outputs to the console (stdout), but you can also stream your server side logs to services like [Loggly](https://www.loggly.com/) (see below) or even save them to your database.
 
 ## Log Level
 
-Most loggers have the concept of log level. That allows you to filter what is visible in your logs (see available levels and their descriptions below). The default levels in Reaction are `INFO` on the server and `WARN` on the client. To override the log level on the server, you can modify `REACTION_LOG_LEVEL` environment variable or set the value in your `settings.json`. Overriding the log level on the client requires using the `settings.json` approach - specifically in the `public` object (see below).
+Most loggers have the concept of log level. That allows you to filter what is visible in your logs (see available levels and their descriptions below). The default levels in demand are `INFO` on the server and `WARN` on the client. To override the log level on the server, you can modify `demand_LOG_LEVEL` environment variable or set the value in your `settings.json`. Overriding the log level on the client requires using the `settings.json` approach - specifically in the `public` object (see below).
 
 ### Environment Variable
 
-To set the server log level in development, you can add the environment variable before the `reaction` command when starting the app.
+To set the server log level in development, you can add the environment variable before the `demandcommand when starting the app.
 
 ```sh
-REACTION_LOG_LEVEL="DEBUG" reaction
+demand_LOG_LEVEL="DEBUG" dedemand
 ```
 
 Or export it...
 
 ```sh
-export REACTION_LOG_LEVEL="DEBUG"
+export demand_LOG_LEVEL="DEBUG"
 
-reaction
+demand
 ```
 
 To set it in production (assuming you're using Docker), it would look like this:
 
 ```sh
-docker run -e REACTION_LOG_LEVEL="DEBUG" ...
+docker run -e demand_LOG_LEVEL="DEBUG" ...
 ```
 
 ### Meteor Settings
@@ -39,11 +39,11 @@ docker run -e REACTION_LOG_LEVEL="DEBUG" ...
 
 {
   // server
-  "REACTION_LOG_LEVEL": "DEBUG",
+  "demand_LOG_LEVEL": "DEBUG",
 
   // client
   "public": {
-    "REACTION_LOG_LEVEL": "DEBUG"
+    "demand_LOG_LEVEL": "DEBUG"
   }
 }
 ```
@@ -68,7 +68,7 @@ Suggestions: Use "DEBUG" sparingly. Information that will be useful to debug err
 Default level: `INFO`
 
 ```js
-import Logger from "@reactioncommerce/logger";
+import Logger from "@demandcluster/logger";
 ```
 
 ### Client
@@ -78,7 +78,7 @@ Default level in development: `INFO` (slightly more verbose for development)
 Default level in production: `WARN` (only show warnings or worse)
 
 ```js
-import Logger from "@reactioncommerce/logger";
+import Logger from "@demandcluster/logger";
 ```
 
 ### Log stuff
@@ -142,7 +142,7 @@ Logger.fatal("The app is going to crash now! Attention needed!");
 
 As mentioned above, Bunyan is capable of sending your logs to a variety of services or you can even build your own plugin to send the raw JSON output to any API you choose. We suggest [searching npm for Bunyan](https://npms.io/search?q=bunyan) to see what options are already available before attempting to build your own. There are already a lot to choose from.
 
-By default, Reaction sends logs to the console, but we also support sending to [Loggly](https://www.loggly.com/) and [Slack](https://slack.com/).
+By default, demand sends logs to the console, but we also support sending to [Loggly](https://www.loggly.com/) and [Slack](https://slack.com/).
 
 ### Loggly
 
