@@ -6,19 +6,19 @@ title: Enforcement
     
 All Community Guidelines content is licensed under a [Creative Commons Attribution](https://creativecommons.org/licenses/by/3.0/) license.
 
-This is the enforcement manual followed by Reaction Commerce's Code of Conduct Committee. It's used when we respond to an issue to make sure we're consistent and fair. It should be considered an internal document, but we're publishing it publicly in the interests of transparency.
+This is the enforcement manual followed by Demand Cluster's Code of Conduct Committee. It's used when we respond to an issue to make sure we're consistent and fair. It should be considered an internal document, but we're publishing it publicly in the interests of transparency.
 
 **The Code of Conduct Committee**
 
 All responses to reports of conduct violations will be managed by a [Code of Conduct Committee](code-of-conduct-committee.md) ("the committee").
 
-The Reaction Commerce Board of Directors ("the board") will establish this committee, comprised of at least three members. One member will be designated chair of the group and will be responsible for all reports back to the board. The board will review membership on a regular basis.
+The Demand Cluster Board of Directors ("the board") will establish this committee, comprised of at least three members. One member will be designated chair of the group and will be responsible for all reports back to the board. The board will review membership on a regular basis.
 
 **How the committee will respond to reports**
 
 When a report is sent to the committee they will immediately reply to the report to confirm receipt. This reply must be sent within 24 hours, and the group should strive to respond much quicker than that.
 
-See the reporting guidelines for details of what reports should contain. If a report doesn't contain enough information, the committee will obtain all relevant data before acting. The committee is empowered to act on the Reaction Commerce’s behalf in contacting any individuals involved to get a more complete account of events.
+See the reporting guidelines for details of what reports should contain. If a report doesn't contain enough information, the committee will obtain all relevant data before acting. The committee is empowered to act on the Demand Cluster’s behalf in contacting any individuals involved to get a more complete account of events.
 
 The committee will then review the incident and determine, to the best of their ability:
 
@@ -53,18 +53,18 @@ The working group must agree on a resolution by consensus. If the group cannot r
 
 - An imposed vacation (i.e. asking someone to "take a week off" from a mailing list or chat). The group chair will communicate this "vacation" to the individual(s). They'll be asked to take this vacation voluntarily, but if they don't agree then a temporary ban may be imposed to enforce this vacation.
 
-- A permanent or temporary ban from some or all Reaction Commerce spaces (mailing lists, chat, forums, etc.). The group will maintain records of all such bans so that they may be reviewed in the future, extended to new Reaction Commerce fora, or otherwise maintained.
+- A permanent or temporary ban from some or all Demand Cluster spaces (mailing lists, chat, forums, etc.). The group will maintain records of all such bans so that they may be reviewed in the future, extended to new Demand Cluster fora, or otherwise maintained.
 
 - A request for a public or private apology. The chair will deliver this request. The group may, if it chooses, attach "strings" to this request: for example, the group may ask a violator to apologize in order to retain his or her membership on a mailing list.
 
 Once a resolution is agreed upon, but before it is enacted, the working group will contact the original reporter and any other affected parties and explain the proposed resolution. The working group will ask if this resolution is acceptable, and must note feedback for the record. However, the working group is not required to act on this feedback.
 
-Finally, the working group will make a report for the Reaction Commerce board (as well as the Reaction Commerce core team in the event of an ongoing resolution, such as a ban).
+Finally, the working group will make a report for the Demand Cluster board (as well as the Demand Cluster core team in the event of an ongoing resolution, such as a ban).
 
-The working group will never publicly discuss the issue; all public statements will be made by the Reaction Commerce board.
+The working group will never publicly discuss the issue; all public statements will be made by the Demand Cluster board.
 
 **Conflicts of Interest**
 
 In the event of any conflict of interest a working group member must immediately notify the other members, and recuse themselves if necessary.
 
-_Editor's note: The Reaction community doesn't exist in one place, and most of the time we're spread out across the world and interact online. This makes trying to define and enforce community standards a different type of challenge. This document is adapted from the [Django Code of Conduct](https://www.djangoproject.com/conduct/), the [Ada Initiative template](http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Responding_to_reports) and the [PyCon 2013 Procedure for Handling Harassment Incidents](https://us.pycon.org/2013/about/code-of-conduct/harassment-incidents/), but changed to reflect the nature of our community. It is our expectation that this will be a living document and change as we grow to understand how to meet this challenge and best serve our community and ideals._
+_Editor's note: The Demandommunity doesn't exist in one place, and most of the time we're spread out across the world and interact online. This makes trying to define and enforce community standards a different type of challenge. This document is adapted from the [Django Code of Conduct](https://www.djangoproject.com/conduct/), the [Ada Initiative template](http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Responding_to_reports) and the [PyCon 2013 Procedure for Handling Harassment Incidents](https://us.pycon.org/2013/about/code-of-conduct/harassment-incidents/), but changed to reflect the nature of our community. It is our expectation that this will be a living document and change as we grow to understand how to meet this challenge and best serve our community and ideals._
