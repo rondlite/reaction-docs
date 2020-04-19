@@ -113,6 +113,9 @@ blockquote {
   font-family: "PostGrotesk-Regular", sans-serif;
 }
 
+.fixedHeaderContainer header .logo {
+  width: 72px;
+}
 /* article toc */
 
 .onPageNav a {

@@ -32,7 +32,7 @@ const siteConfig = {
   ],
   cleanUrl: true,
   /* path to images for header/footer */
-  headerIcon: "https://static.demandcluster.com/images/logo.png",
+  headerIcon: "/static.demandcluster.com/images/logo.png",
   footerIcon: "https://static.demandcluster.com/favicon/favicon-32x32.png",
   favicon: "https://static.demandcluster.com/favicon/favicon-32x32.png",
 

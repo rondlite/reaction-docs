@@ -539,7 +539,12 @@ body {
 }
 
 .fixedHeaderContainer header h2 {
-  display: none;
+  padding-left: 20px;
+  color: #545b6c;
+  display: block;
+}
+.fixedHeaderContainer header .logo {
+  width: 72px;
 }
 
 .homeContainer {
