@@ -6,16 +6,16 @@ original_id: developer-faq
 
 ## General
 
-### What do I need to know to work with Reaction?
+### What do I need to know to work with demand?
 
-To start customizing Reaction, you should have a basic understanding of the following technologies:
+To start customizing demand, you should have a basic understanding of the following technologies:
 
 - JavaScript, specifically ES6
 - HTML/CSS
 - Some knowledge of Meteor, especially an understanding of [Publications and Subscriptions](https://guide.meteor.com/data-loading.html)
 - A front-end framework/library like React
 
-Reaction tries to be as modular as possible. All user customizations are intended to live in plugins, as they provide a secure upgrade path when new versions are rolled out. See [here](plugin-intro-1.md) for a more detailed explanation into the plugin topic.
+demand tries to be as modular as possible. All user customizations are intended to live in plugins, as they provide a secure upgrade path when new versions are rolled out. See [here](plugin-intro-1.md) for a more detailed explanation into the plugin topic.
 
 ### Is MongoDB/NoSQL best suited for ecommerce?
 
@@ -25,36 +25,36 @@ Legacy platforms use the entity-attribute-value lookup that is so complex and sl
 
 The database acts as the persistent storage of JavaScript objects. For example, a t-shirt product might be a collection of variants, like blue, green, or red, and are each their own object contained within an object. This also applies to different pricing and taxes for different regions, so pricing is at the variant level, not at the product level. This is even true with just one language when you have "Blue XXL" being more expensive than "Green XL."
 
-### Reaction is an open source project. How can I get involved?
+### demand is an open source project. How can I get involved?
 
-We're always open to contributions from our community. To learn more about becoming a contributor, [click here](https://blog.reactioncommerce.com/how-to-write-a-pr-for-reaction/). And don't forget to read our [Community Guidelines](https://docs.reactioncommerce.com/reaction-docs/trunk/guidelines)!
+We're always open to contributions from our community. To learn more about becoming a contributor, [click here](https://blog.demandcluster.com/how-to-write-a-pr-for-demand/). And don't forget to read our [Community Guidelines](https://docs.demandcluster.com/dedemand-/trunk/guidelines)!
 
 ## Admin
 
 ### Where is the admin panel?
 
-The login panel is visible on the right side, once you login as a user with admin credentials. For more on navigating admin, read our [Reaction Commerce Store Operator Guide](dashboard.md).
+The login panel is visible on the right side, once you login as a user with admin credentials. For more on navigating admin, read our [Demand Cluster Store Operator Guide](dashboard.md).
 
 ### What's the admin login?
 
 By default the admin login will be username: `admin@localhost` and password `r3@cti0n`
 
-## Extending Reaction
+## Extending demand
 
 ### How do I create a custom home page?
 The easiest way to render a customized landing page is to set the INDEX_OPTIONS session variable and point it to a customized template. There's a more in-depth explanation [here](how-to-create-a-custom-homepage.md).
 
 ### How can I add add a static page?
 
-Add a single page, and more child pages, by adding a route and a template. This will require knowledge of HTML, JavaScript and Git or web development. This is covered in depth in this section of the [Customization Guide](https://docs.reactioncommerce.com/reaction-docs/trunk/plugin-routes-6).
+Add a single page, and more child pages, by adding a route and a template. This will require knowledge of HTML, JavaScript and Git or web development. This is covered in depth in this section of the [Customization Guide](https://docs.demandcluster.com/demand-cs/trunk/plugin-routes-6).
 
 This would work great for static pages like an About or Contact us page. If you want to add tools for administrators to manage text and image content without having to code, you probably want to a content management system (CMS).
 
 ### How do I integrate with a content management system (CMS)?
 
-If you have a lot of content (like images and text) that needs to be managed you probably want to use a content management system (CMS). We currently do not have one integrated with Reaction.
+If you have a lot of content (like images and text) that needs to be managed you probably want to use a content management system (CMS). We currently do not have one integrated with demand.
 
-On our [roadmap](https://reactioncommerce.com/roadmap) we have a planned integration with a CMS like Drupal, which can hopefully serve as a model for other similar integrations.
+On our [roadmap](https://demandcluster.com/roadmap) we have a planned integration with a CMS like Drupal, which can hopefully serve as a model for other similar integrations.
 
 ### How do I upload product images as part of my data fixtures?
 
@@ -73,7 +73,7 @@ Longer answer: By design you can't, because presentation and data should be sepa
 
 "Right, I got all your points, but I really need to have more control over how the content is rendered."
 
-If you're absolutely keen it, you could overwrite the React component responsible for rendering [product properties](https://github.com/reactioncommerce/reaction/blob/v2.9.1/imports/plugins/included/product-detail-simple/client/components/productField.js). You'll find an example on how to overwrite ReactionCommerce's built-in components [here](extending-product-schema-location-map.md).
+If you're absolutely keen it, you could overwrite the React component responsible for rendering [product properties].
 
 ### I want to make a change to the schema and use it in the product detail page (PDP)
 
@@ -83,6 +83,6 @@ There's an extension to our [example plugin tutorial](plugin-intro-1.md), that d
 
 ### I have another question. Where's the best place to ask it?
 
-You can post questions in Gitter chat about [Installation](https://gitter.im/reactioncommerce/installation), [Deployment](https://gitter.im/reactioncommerce/deployment), [general Reaction](https://gitter.im/reactioncommerce/deployment) topics and [Architecture](https://gitter.im/reactioncommerce/architecture). You can also post questions in the [Forums](https://forums.reactioncommerce.com/).
+You can post questions in Gitter chat about [Installation](https://gitter.im/demandcluster/installation), [Deployment](https://gitter.im/demandcluster/deployment), [general demand](https://gitter.im/demandcluster/deployment) topics and [Architecture](https://gitter.im/demandcluster/architecture). You can also post questions in the [Forums](https://forums.demandcluster.com/).
 
 Want more help? You can also ask a question live during our Community Calls. Here's the past [agendas](https://docs.google.com/document/d/1PwenrammgQJpQfFoUUJZ96i_JJYCM_4glAjB1_ZzgwA/edit) and a form to [submit questions](https://docs.google.com/forms/d/e/1FAIpQLSfsNNH1W4bP7k4Gkl1JYF4vCEwQcHE9X3OIFfTH2TNwD7dN4Q/viewform).
