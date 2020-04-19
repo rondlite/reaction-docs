@@ -6,7 +6,7 @@ title: Routes
     
 In any web framework, "routes" are one of the core elements of what happens on a website. Certainly rendering content when a user hits a particular URL is a majority of what happens in web development.
 
-Reaction Commerce uses the [FlowRouter package](https://github.com/kadirahq/flow-router) for it's routing and discussing all the specifics of how this works is beyond the scope of this document. However, to add simple routes it's not necessary to understand that much about FlowRouter. One important element to understand is that Reaction Commerce stores all it's Routes in the "Registry" in the database, which allows packages to dynamically add routes along with their functionality, and even override or remove existing routers. For more in-depth coverage of Routing you will want to consult the main Reaction Commerce docs, but one thing to understand is that a customized version of FlowRouter is available globally as `Reaction.Router`.
+Demand Cluster uses the [FlowRouter package](https://github.com/kadirahq/flow-router) for it's routing and discussing all the specifics of how this works is beyond the scope of this document. However, to add simple routes it's not necessary to understand that much about FlowRouter. One important element to understand is that Demand Cluster stores all it's Routes in the "Registry" in the database, which allows packages to dynamically add routes along with their functionality, and even override or remove existing routers. For more in-depth coverage of Routing you will want to consult the main Demand Cluster docs, but one thing to understand is that a customized version of FlowRouter is available globally as `Demandouter`.
 
 But we are going to keep it at its most simple and just add a single new route which will be available to anybody. Bee's Knees wants to add the ubiquitous "About" page to their site and wants to show essentially a static page there. (Management of static pages is coming in upcoming version of RC but this still makes an excellent simple example).
 
@@ -33,7 +33,7 @@ To allow users to our new Route we need to give them permissions. Since we are g
 function addRolesToVisitors() {
   // Add the about permission to all default roles since it's available to all
   Logger.info("::: Adding about route permissions to default roles")
-  const shop = Shops.findOne(Reaction.getShopId());
+  const shop = Shops.findOne(DemandetShopId());
   Shops.update(shop._id, {
       $addToSet: { "defaultVisitorRole": "about"}
     }
@@ -61,7 +61,7 @@ Now, as usual you will need to reset for this change to take affect. In addition
 
 It's common to want to write code to do something when a url visits a certain route for such things as site tracking/metric. You can do this with a Route "hook".
 
-We can do this using the `Hooks` API provided by Reaction. For any route you can add an arbitrary callback. (Note that routing is done on the client-side, so it needs to be added there). So are going to add a new `init.js` file in our `client` directory and add the import to it in the `index.js`. Then we can add this code:
+We can do this using the `Hooks` API provided by DemandFor any route you can add an arbitrary callback. (Note that routing is done on the client-side, so it needs to be added there). So are going to add a new `init.js` file in our `client` directory and add the import to it in the `index.js`. Then we can add this code:
 
 ```js
 import { Router, Logger } from "/client/api";
@@ -74,7 +74,7 @@ function logSomeStuff() {
 Router.Hooks.onEnter("product", logSomeStuff);
 ```
 
-Now every time the user enters the "product" route, the function `logSomeStuff` will run. If you want to see a list of routes currently loaded on the client you type `ReactionRouter._routes` in the browser console.
+Now every time the user enters the "product" route, the function `logSomeStuff` will run. If you want to see a list of routes currently loaded on the client you type `Demanduter._routes` in the browser console.
 
 Next [Workflow](plugin-workflow-7)
 
