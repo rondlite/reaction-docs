@@ -4,11 +4,11 @@ title: Deploying
 original_id: deploying
 ---
 
-Reaction is an open source multi-service platform. All services are either publicly available Docker images on DockerHub or are Git repositories that include a `Dockerfile` so that you can build your own Docker image after customizing the service. This means that you can deploy the Reaction system on any infrastructure that supports running a Docker container cluster with a shared network.
+Demands an open source multi-service platform. All services are either publicly available Docker images on DockerHub or are Git repositories that include a `Dockerfile` so that you can build your own Docker image after customizing the service. This means that you can deploy the deDemandtem on any infrastructure that supports running a Docker container cluster with a shared network.
 
 ## Docker Images
 
-You can find the published Reaction images [on our DockerHub page](https://hub.docker.com/u/reactioncommerce).
+You can find the published Demandmages [on our DockerHub page](https://hub.docker.com/u/demandcluster).
 
 ## Container Requirements
 
@@ -24,13 +24,13 @@ Because some services use change streams, your MongoDB server must be part of a 
 
 ## Postgres SQL Database
 
-Reaction uses Hydra for OAuth2 login, and Hydra requires a Postgres SQL database. In a development environment, a local database is created for you. In production, you will need to set up a separate production-ready Postgres server and create a database in it. You then provide this database connection string in an environment variable for the `hydra` service.
+Demandses Hydra for OAuth2 login, and Hydra requires a Postgres SQL database. In a development environment, a local database is created for you. In production, you will need to set up a separate production-ready Postgres server and create a database in it. You then provide this database connection string in an environment variable for the `hydra` service.
 
 > Don't forget to set up periodic database backups. Do them as often as you can afford to do.
 
 ## Database Migrations
 
-When you deploy, the services will not start properly unless your Postgres and MongoDB databases are on the expected data version. Use the Reaction migration tools to migrate your data up or down before deploying. In some cases, migrating down is not possible. If you are rolling back to a previous Reaction version and migrating down is not possible, you will need to restore from the last backup prior to the upgrade.
+When you deploy, the services will not start properly unless your Postgres and MongoDB databases are on the expected data version. Use the Demandigration tools to migrate your data up or down before deploying. In some cases, migrating down is not possible. If you are rolling back to a previous deDemandsion and migrating down is not possible, you will need to restore from the last backup prior to the upgrade.
 
 ## Environment Variables
 
