@@ -4,7 +4,7 @@ title: Simple Inventory Plugin (Node)
 original_id: core-plugins-simple-inventory
 ---
 
-The Simple Inventory plugin (`reaction-simple-inventory`) is included and should meet your needs for inventory tracking if you do not use an external inventory system. It does the following:
+The Simple Inventory plugin (`demand-simple-inventory`) is included and should meet your needs for inventory tracking if you do not use an external inventory system. It does the following:
 - Creates a `SimpleInventory` MongoDB collection for storing inventory data.
 - Registers an `inventoryForProductConfigurations` type function that returns current inventory in stock and other related data from the `SimpleInventory` collection. This is the main point of integration between this plugin and the core "inventory" plugin.
 - Adds a `simpleInventory` query, on context and for GraphQL, which returns the data currently stored in the `SimpleInventory` collection for a product configuration.
