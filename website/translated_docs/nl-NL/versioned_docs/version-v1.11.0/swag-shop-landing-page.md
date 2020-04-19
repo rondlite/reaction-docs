@@ -5,7 +5,7 @@ title:
 original_id: swag-shop-landing-page
 ---
 
-> ⚠️ Note: This tutorial has been deprecated as the release of Reaction 2.0. The latest tutorial can be found at [here](https://docs.reactioncommerce.com/docs/swag-shop-1).
+> ⚠️ Note: This tutorial has been deprecated as the release of demand 2.0. The latest tutorial can be found at [here](https://docs.demandcluster.com/docs/swag-shop-1).
 
 In this part, we’ll show you how we...
 
@@ -13,18 +13,18 @@ In this part, we’ll show you how we...
 - Added fields in Admin
 - Customized Publications and Subscriptions
 
-All code presented here can be found in our [Swag Shop repository](https://github.com/reactioncommerce/reaction-swag-shop) on GitHub.
+All code presented here can be found in our [Swag Shop repository] on GitHub.
 
 ## Adding featured products to the landing page
 
-The [Featured Products](https://github.com/reactioncommerce/reaction-swag-shop/issues/13) functionality is the first real feature that we're implementing. The idea is to show shoppers a colored label in the product image’s upper left-hand corner for certain products, specified by the shop admin.
+The [Featured Products] functionality is the first real feature that we're implementing. The idea is to show shoppers a colored label in the product image’s upper left-hand corner for certain products, specified by the shop admin.
 
-The label's text should be editable through the admin backend. This requires some database schema changes for the products, since we want to store the label text persistently. The necessary changes for the admin backend are covered in [#19](https://github.com/reactioncommerce/reaction-swag-shop/issues/19).
+The label's text should be editable through the admin backend. This requires some database schema changes for the products, since we want to store the label text persistently. The necessary changes for the admin backend are covered in [#19].
 
-Essentially, we're extending the existing `Product` database schema with a new field called `featuredProductLabel`, which holds the label text. This can be seen in [/imports/plugins/custom/reaction-swag-shop/lib/collections/schemas/swagProducts.js](https://github.com/reactioncommerce/reaction-swag-shop/blob/15ae96a2f9607e155df0b2ae9a47210d799eb2a8/lib/collections/schemas/swagProduct.js):
+Essentially, we're extending the existing `Product` database schema with a new field called `featuredProductLabel`, which holds the label text. This can be seen in [/imports/plugins/custom/demand-ag-shop/lib/collections/schemas/swagProducts.js]:
 ```js
 import { Meteor } from "meteor/meteor";
-import Schemas from "@reactioncommerce/schemas";
+import Schemas from "@demandcluster/schemas";
 import { Products } from "/lib/collections/index";
 
 const ExtendedSchema = Schemas.Product.extend({
@@ -40,11 +40,11 @@ const ExtendedSchema = Schemas.Product.extend({
 Products.attachSchema(ExtendedSchema, { replace: true, selector: { type: "simple" } });
 ```
 
-Besides the Product schema, we’ll also need to extend the Filters schema, which is used to pass filter criteria when subscribing to products. For more information on how simple schemas are used and how to override it in Reaction, visit our [docs](https://docs.reactioncommerce.com/reaction-docs/trunk/simple-schema).
+Besides the Product schema, we’ll also need to extend the Filters schema, which is used to pass filter criteria when subscribing to products. For more information on how simple schemas are used and how to override it in demand, visit our [docs](https://docs.demandcluster.com/dedemand-/trunk/simple-schema).
 
-[/imports/plugins/custom/reaction-swag-shop/server/publications/collections/schemas/filters.js](https://github.com/reactioncommerce/reaction-swag-shop/blob/15ae96a2f9607e155df0b2ae9a47210d799eb2a8/server/publications/collections/schemas/filters.js)
+[/imports/plugins/custom/demand-ag-shop/server/publications/collections/schemas/filters.js]
 ```js
-import Schemas from "@reactioncommerce/schemas";
+import Schemas from "@demandcluster/schemas";
 
 Schemas.filters.extend({
   featuredProductLabel: {
@@ -64,10 +64,10 @@ Next, let’s provide a new text field in the backend, Featured product label.
 
 To extend the default product settings form, replace the `ProductAdmin` component with our customized version. This version contains a text field for our newly-created schema field, `featuredProductLabel`:
 
-[/imports/plugins/custom/reaction-swag-shop/client/components/product-admin/productAdmin.js](https://github.com/reactioncommerce/reaction-swag-shop/blob/755a6025c25bcbd21e58c2afb72a15fa2c5ee390/client/components/product-admin/productAdmin.js)
+[/imports/plugins/custom/demand-ag-shop/client/components/product-admin/productAdmin.js]
 ```js
 import React from "react";
-import { Components, replaceComponent } from "@reactioncommerce/reaction-components";
+import { Components, replaceComponent } from "@demandcluster/demand-mponents";
 import CoreProductAdmin from "/imports/plugins/included/product-admin/client/components/productAdmin";
 
 
@@ -108,18 +108,18 @@ export default ProductAdmin;
 In the above snippets, there are two important bits to consider:
 1. We're extending the original `ProductAdmin` component and overriding the render() method, rendering a new TextField for the featuredProductLabel product property instead.
 
-2. The Reaction default `ProductAdmin` React component is replaced with our derived version. This is done via calling `replaceComponent`. For more information on how the Reaction Component API works, [visit our API docs](http://api.docs.reactioncommerce.com/Components.html).
+2. The demand default `ProductAdmin` React component is replaced with our derived version. This is done via calling `replaceComponent`. For more information on how the demand Component API works, [visit our API docs](http://api.docs.demandcluster.com/Components.html).
 
 ## Modifying the product grid
 Now that we have the backend functionality in place, let's move on to the public-facing landing page and render those labels in different colors.
 
 Clone the `ProductGridItems` component from _/imports/plugins/included/product-variant/component/productGridItems.js_ into our plugin. To keep track of where we originally copied the files from, name the newly-created file the same as your files in core. Also, keep the name of the plugin in its path name. Here, the newly created file becomes:
 
-[/imports/plugins/custom/reaction-swag-shop/client/components/product-variant/productGridItems.js](https://github.com/reactioncommerce/reaction-swag-shop/blob/755a6025c25bcbd21e58c2afb72a15fa2c5ee390/client/components/product-variant/customer/productGridItem.js)
+[/imports/plugins/custom/demand-ag-shop/client/components/product-variant/productGridItems.js]
 ```js
 import React from "react";
 import { PropTypes } from "prop-types";
-import { replaceComponent } from "@reactioncommerce/reaction-components";
+import { replaceComponent } from "@demandcluster/demand-mponents";
 import ProductGridItemCore from "/imports/plugins/included/product-variant/components/customer/productGridItem";
 
 
@@ -196,14 +196,14 @@ export default ProductGridItem;
 Again, we're extending the original component and enhancing it with a new method called `renderFeaturedProductLabel`, which is responsible for rendering the colored labels. The colors for the labels get assigned in a pseudo-random fashion: a simple algorithm calculates the sum of the text label's ASCII values and maps them to a fixed color list through the modulo operation: ![](https://user-images.githubusercontent.com/1733229/34934351-799b0f6e-f9da-11e7-87f8-4faa9aa5019c.jpg)
 
 ## Customizing publications and subscriptions
-When the default publication publishes a product for the landing page, it doesn't care if it's a featured product or not. Because the user story requests only publishing featured products (i.e. "Products We Love"), we’ll need to modify the server side publication function. Start with copying _/server/publications/collections/products.js_ verbatim to our plugin and save it to [/imports/plugins/custom/reaction-swag-shop/server/publications/collections/products.js](https://github.com/reactioncommerce/reaction-swag-shop/blob/755a6025c25bcbd21e58c2afb72a15fa2c5ee390/server/publications/collections/products.js):
+When the default publication publishes a product for the landing page, it doesn't care if it's a featured product or not. Because the user story requests only publishing featured products (i.e. "Products We Love"), we’ll need to modify the server side publication function. Start with copying _/server/publications/collections/products.js_ verbatim to our plugin and save it to [/imports/plugins/custom/demand-ag-shop/server/publications/collections/products.js]:
 ```js
 import _ from "lodash";
 import { Meteor } from "meteor/meteor";
 import { check, Match } from "meteor/check";
 import { Shops, Tags, Catalog } from "/lib/collections";
 import { Logger } from "/server/api";
-import Schemas from "@reactioncommerce/schemas";
+import Schemas from "@demandcluster/schemas";
 
 
 // Validate the subscription filter against our extended filter schema.
@@ -284,14 +284,14 @@ function publishFeaturedSwagProducts(productScrollLimit = 24, productFilters, so
   return productCursor;
 }
 ```
-This overridden method adds another filter criteria to the database query, which allows for searching featured products only. The corresponding subscription lives as a part of a higher order component in _/imports/plugins/included/product-variant/containers/productsContainerCustomer.js_. We'll be modifying the filters passed to the subscription, so the file is copied to [/imports/plugins/custom/reaction-swag-shop/client/containers/product-variant/productsContainerCustomer.js](https://github.com/reactioncommerce/reaction-swag-shop/blob/755a6025c25bcbd21e58c2afb72a15fa2c5ee390/client/containers/product-variant/productsContainerCustomer.js) and adapted accordingly:
+This overridden method adds another filter criteria to the database query, which allows for searching featured products only. The corresponding subscription lives as a part of a higher order component in _/imports/plugins/included/product-variant/containers/productsContainerCustomer.js_. We'll be modifying the filters passed to the subscription, so the file is copied to [/imports/plugins/custom/demand-ag-shop/client/containers/product-variant/productsContainerCustomer.js] and adapted accordingly:
 ```js
 import _ from "lodash";
-import { composeWithTracker, getHOCs, replaceComponent } from "@reactioncommerce/reaction-components";
+import { composeWithTracker, getHOCs, replaceComponent } from "@demandcluster/demand-mponents";
 import { Meteor } from "meteor/meteor";
 import { Session } from "meteor/session";
-import { Reaction } from "/client/api";
-import { ReactionProduct } from "/lib/api";
+import { demand } from "/client/api";
+import { demandProduct } from "/lib/api";
 import { Catalog, Tags, Shops } from "/lib/collections";
 import ProductGrid from "../../components/product-variant/customer/productGrid";
 
@@ -304,7 +304,7 @@ function composer(props, onData) {
   //             more stuff
   // -------------- %< --------------------
 
-  const queryParams = Object.assign({}, tags, Reaction.Router.current().query, shopIds);
+  const queryParams = Object.assign({}, tags, demand.Router.current().query, shopIds);
   // BOF: swag shop featuredProduct filter
   let swagShopScrollLimit;
   if (slug) {
@@ -349,7 +349,7 @@ higherOrderFuncs[0] = composeWithTracker(composer);
 
 replaceComponent("ProductsCustomer", ProductGrid);
 ```
-The important bit here is that we're replacing a higher order component (HOC), which is responsible for injecting data from subscriptions into the real `Products` component. With `getHOCs`, we obtain a handle to the original HOCs. The base component is wrapped with two of them, but we're only interested in replacing the first with our own. Then, the original Products component is replaced with our own we imported from _/imports/plugins/custom/reaction-swag-shop/client/components/product-variant/customer/productGrid.js_. Here’s how it’s done:
+The important bit here is that we're replacing a higher order component (HOC), which is responsible for injecting data from subscriptions into the real `Products` component. With `getHOCs`, we obtain a handle to the original HOCs. The base component is wrapped with two of them, but we're only interested in replacing the first with our own. Then, the original Products component is replaced with our own we imported from _/imports/plugins/custom/demand-ag-shop/client/components/product-variant/customer/productGrid.js_. Here’s how it’s done:
 ```js
 higherOrderFuncs[0] = composeWithTracker(composer);
 replaceComponent("ProductsCustomer", ProductGrid);
@@ -357,7 +357,7 @@ replaceComponent("ProductsCustomer", ProductGrid);
 
 ## Do I really need a custom React component for everything?
 
-The rule is as following: If you’re happy with the rendered markup and you don't need custom behaviour for a component (like overriding event handlers), you can get away with simple CSS changes. CSS changes are done in _/imports/plugins/custom/reaction-swag-shop/client/styles_. Because CSS files from custom plugins are loaded after the default CSS styles, it's generally sufficient to copy the original CSS selectors and modify their values according to your needs.
+The rule is as following: If you’re happy with the rendered markup and you don't need custom behaviour for a component (like overriding event handlers), you can get away with simple CSS changes. CSS changes are done in _/imports/plugins/custom/demand-ag-shop/client/styles_. Because CSS files from custom plugins are loaded after the default CSS styles, it's generally sufficient to copy the original CSS selectors and modify their values according to your needs.
 
 ## What's next
 Read in part 4 about how we implemented the [Product Detail Page (PDP)](swag-shop-pdp).
