@@ -1,7 +1,7 @@
 ---
-id: version-1.15.0-getting-started-developing-with-reaction
+id: version-1.15.0-getting-started-developing-with-demand
 title: Getting Started As a Developer
-original_id: getting-started-developing-with-reaction
+original_id: getting-started-developing-with-demand
 ---
 
 ## Local Machine Installation
@@ -12,7 +12,7 @@ View the detailed guide for your platform:
 - [Linux](installation-linux.md)
 
 ## Learn
-- [The Reaction CLI](reaction-cli.md)
+- [The Demand CLI](demand-cli.md)
 - [Recommended Tools](recommended-tools.md)
 - [Developing In Docker](installation-docker-development.md)
 - [Troubleshooting](troubleshooting-development)
