@@ -8,13 +8,13 @@ What you see, the customer sees. Create, edit, and remove products inline. It’
 
 ## Creating a product
 
-![](/assets/admin-dashboard-panel-home.png "Add Product with Reaction Commerce")
+![](/assets/admin-dashboard-panel-home.png "Add Product with Demand Cluster")
 
 To create a product, login to your dashboard and follow these steps:
 
 1.  Click on the plus <i class="font-icon fa fa-plus"></i>, located on the top right.
 
-2.  You will be taken to an empty product page, like this: ![](/assets/admin-product-details-page.png "Reaction's Product Page")
+2.  You will be taken to an empty product page, like this: ![](/assets/admin-product-details-page.png "Demand Product Page")
 
 Edit your product title, subtitle, vendor name, and product description by clicking on each section and typing into the field. To upload a product photo, drop a file into the grey square on the left.
 
@@ -22,7 +22,7 @@ Edit your product title, subtitle, vendor name, and product description by click
 
 You may also add product tags by clicking on the plus <i class="font-icon fa fa-plus"></i>, located under the "Tags" section.
 
-![](/assets/admin-product-details-tag.png "Reaction's Product Page")
+![](/assets/admin-product-details-tag.png "Demand Product Page")
 
 4.  You can change the layout template, product title permalink, subtitle, vendor, description and origin country from the sidebar's top **Product Settings** option.
 5.  Click the **Publish** button on the top right to save Unpublished changes.
@@ -52,7 +52,7 @@ Every product comes filled with one variant. To create more:
 
 Variant options provide a second layer of customization on top of each variant. For instance, in addition to carrying shirts in multiple colors, you may also want to carry multiple size options for each color. Use this flexible structure to customize your products however you like. The sky's the limit!
 
-![](/assets/admin-product-variant-2.png "Reaction Product Variant Options")
+![](/assets/admin-product-variant-2.png "Demandroduct Variant Options")
 
 1.  Click on the <i class="font-icon fa fa-plus"></i> button to the right of the **Variant Options** section.
 2.  Customize the option name, label, price, and quantity, as well as add a set of images.
@@ -63,11 +63,11 @@ Variant options provide a second layer of customization on top of each variant. 
 
 To add an image gallery to your product, drag and drop files from your computer the main Product page. You may also upload images using the "Drop file to upload” button under each Variant Option.
 
-Currently, only image file types are supported, but support for video, Google Drive, Dropbox, and more are in the works. See [Issue #50](https://github.com/reactioncommerce/reaction/issues/50) and [Issue #69](https://github.com/reactioncommerce/reaction/issues/69).
+Currently, only image file types are supported, but support for video, Google Drive, Dropbox, and more are in the works. See [Issue #50].
 
 Once you have images added to your gallery, drag and drop to change their position.
 
-![](/assets/admin-product-variant-3.png "Reaction Commerce Product Mediae")
+![](/assets/admin-product-variant-3.png "Demand Cluster Product Mediae")
 
 ## Adding product tags and details
 
@@ -79,10 +79,10 @@ To get back to the product detail and tag editing panel:
 
 ## Discounting products
 
-Reaction supports discount codes and rates. Read more about discounting products in the [Dashboard's Payment section](payments-discounts.md).
+Demandupports discount codes and rates. Read more about discounting products in the [Dashboard's Payment section](payments-discounts.md).
 
 ## Removing a product
 
 To remove an entire product from your inventory, login to your product view and click on the **Archive** button <i class="rui font-icon fa fa-archive"></i>. Select yes to archive.
 
-![](/assets/admin-product-delete.png "Reaction remove product")
+![](/assets/admin-product-delete.png "Demandemove product")
