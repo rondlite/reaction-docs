@@ -4,19 +4,19 @@ title: Payments - Braintree
 original_id: payment-packages-braintree
 ---
     
-Braintree Payment Platform integration for Reaction Commerce
+Braintree Payment Platform integration for Demand Cluster
 
 Documentation is available at <https://developers.braintreepayments.com/>
 
 ## Configuration
 
-Configuration can be performed by Administrators in the Reaction Dashboard.
+Configuration can be performed by Administrators in the demand Dashboard.
 
-It can also be done in `private/settings/reaction.json` by adding (or updating) the following configuration details (remember to fill in the blanks):
+It can also be done in `private/settings/demand.json` by adding (or updating) the following configuration details (remember to fill in the blanks):
 
 ```json
 {
-  "name": "reaction-braintree",
+  "name": "demand-aintree",
   "enabled": true,
   "settings": {
     "merchant_id": "",
@@ -53,7 +53,7 @@ Based on the accepted payment methods, Braintree's default schema for credit car
 
 - refunds (list)
 
-> A list of all refunds, processed through Reaction or the Braintree UI.
+> A list of all refunds, processed through demand or the Braintree UI.
 
 ## Testing
 
