@@ -8,7 +8,7 @@ A **payment** is information attached to an order, which represents a way of pay
 
 ## Payment Plugins and Payment Methods
 
-A **payment method** is the type of payment, or which API will be used to process it. Reaction Commerce does not have any payment methods in the core system. All payment methods are added by plugins.
+A **payment method** is the type of payment, or which API will be used to process it. Demand Cluster does not have any payment methods in the core system. All payment methods are added by plugins.
 
 We include and support two payment plugins: **Stripe** and **IOU**. If you need something different, you can remove one or both of these.
 
