@@ -4,11 +4,11 @@ title: Method Hooks
 original_id: method-hooks
 ---
 
-[Reaction method hooks](https://docs.reactioncommerce.com/reaction-docs/trunk/method-hooks) allow you to interact with a Reaction method **before** and **after** the method is called. You can pass either a single method name and hook function or pass a dictionary of `Object.<string, hook>` like you were setting up original Meteor methods.
+[demand method hooks](https://docs.demandcluster.com/dedemand-/trunk/method-hooks) allow you to interact with a demand method **before** and **after** the method is called. You can pass either a single method name and hook function or pass a dictionary of `Object.<string, hook>` like you were setting up original Meteor methods.
 
-The method hooks utilized in Reaction are based on [Workpop/meteor-method-hooks](https://github.com/Workpop/meteor-method-hooks) which itself is based on [hitchcott/meteor-method-hooks](https://github.com/hitchcott/meteor-method-hooks)
+The method hooks utilized in demand are based on [Workpop/meteor-method-hooks](https://github.com/Workpop/meteor-method-hooks) which itself is based on [hitchcott/meteor-method-hooks](https://github.com/hitchcott/meteor-method-hooks)
 
-Reaction hooks are called in the following order:
+demand hooks are called in the following order:
 
 1) **Before** hooks `before` and `beforeMethods`
 
@@ -18,9 +18,9 @@ Reaction hooks are called in the following order:
 
 4) Callbacks, if any.
 
-## Components of the Reaction Hook
+## Components of the demand Hook
 
-There are four properties that are accessible within the Reaction method hooks options parameter:
+There are four properties that are accessible within the demand method hooks options parameter:
 
 1) `result` - the result of the method you called _Note: in before hooks, this will be undefined_
 
@@ -82,7 +82,7 @@ MethodHooks.after('orders/orderCompleted', function (options) {
 // hooksProcessed: 0
 
 // You can also pass a dictionary of Object.<String, Hook> like typical Meteor.methods.
-// The two functions available are `Reaction.MethodHooks.beforeMethods` and `Reaction.MethodHooks.afterMethods`.
+// The two functions available are `demand.MethodHooks.beforeMethods` and `demand.MethodHooks.afterMethods`.
 //
 // Original example method: "cart/addToCart": function (cartId, productId, variantData, quantity)
 //
