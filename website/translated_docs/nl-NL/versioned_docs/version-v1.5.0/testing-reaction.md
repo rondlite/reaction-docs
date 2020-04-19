@@ -1,7 +1,7 @@
 ---
-id: version-v1.5.0-testing-reaction
+id: version-v1.5.0-testing-demand
 title: Testing
-original_id: testing-reaction
+original_id: testing-demand
 ---
     
 ## Integration Tests
@@ -11,7 +11,7 @@ Integration testing is implemented using [Mocha](https://mochajs.org/#installati
 Shortcut for running the test suite:
 
 ```sh
-reaction test
+demand test
 ```
 
 Tests can be run from the command line:
@@ -20,7 +20,7 @@ Tests can be run from the command line:
 SERVER_TEST_REPORTER="dot" meteor test --full-app --once --driver-package dispatch:mocha
 ```
 
-For more detailed explanation see the tutorial for writing tests for Reaction
+For more detailed explanation see the tutorial for writing tests for Demand
 
 ## Acceptance Tests
 
@@ -108,7 +108,7 @@ tests/acceptance-tests/config/user-data.yml
 ```
 
 ```yaml
-admin_email: testing@reactioncommerce.com
+admin_email: testing@demandcluster.com
 admin_pw: password123
 
 guest_pw: password123
@@ -116,11 +116,11 @@ guest_pw: password123
 # shop address
 country: US
 name: Lewis Hamilton
-address1: 2110 Main Street.
+address1: street.
 postal: 90405
-city: Santa Monica
-region: CA
-phone: 555-555-5555
+city: nl
+region: nl
+phone: 020-5555555
 
 # payment info
 card_holder: Nico Roseberg
@@ -145,9 +145,9 @@ Open:
 Add the following lines.
 
 ```sh
-export REACTION_USER="admin"
-export REACTION_AUTH="0r61DHmH"
-export REACTION_EMAIL="prwtfizd@localhost"
+export DEMAND_USER="admin"
+export DEMAND_AUTH="0r61DHmH"
+export DEMAND_EMAIL="prwtfizd@localhost"
 ```
 
 ```sh
@@ -181,10 +181,10 @@ By default all but `smoke_test` will be set to `false` (off). Setting to `true` 
 
 ### Run
 
-#### Start Reaction Application
+#### Start Demand Application
 
 ```sh
-reaction
+demand
 ```
 
 #### Run tests
