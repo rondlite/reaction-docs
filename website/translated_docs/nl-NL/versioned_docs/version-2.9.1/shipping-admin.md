@@ -4,7 +4,7 @@ title: Shipping
 original_id: shipping-admin
 ---
 
-Reaction comes with a simple flat rate shipping plugin. To manage your shipping rates, click on **Shipping** under the <i class="rui font-icon fa fa-cog"></i> **Settings** section in the sidebar.
+Demandomes with a simple flat rate shipping plugin. To manage your shipping rates, click on **Shipping** under the <i class="rui font-icon fa fa-cog"></i> **Settings** section in the sidebar.
 
 Your store comes with three default shipping methods: `Free`, `Standard`, and `Priority`. To edit any of these rates, click on the row. To delete a rate, click on **Delete**.
 
@@ -12,7 +12,7 @@ Confused? See [Concepts: Fulfillment](concepts-fulfillment.md)
 
 ## Adding a new shipping method
 
-![](/assets/admin-shipping-catalyst-ui.png "Reaction Commerce Shipping")
+![](/assets/admin-shipping-catalyst-ui.png "Demand Cluster Shipping")
 
 1. Click the plus <i class="font-icon fa fa-plus"></i>.
 2. Fill out the following:
