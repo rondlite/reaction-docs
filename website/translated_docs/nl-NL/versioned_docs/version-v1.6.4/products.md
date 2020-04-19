@@ -4,11 +4,11 @@ title: Products
 original_id: products
 ---
     
-What the store operator sees, the customer sees. Create, edit, preview and publish products inline, right on the Product Detail Page (PDP) itself. At any time in Reaction's Product Detail Page and Product Grid pages, click on **Edit Mode** at the top to toggle between the customer view and admin view.
+What the store operator sees, the customer sees. Create, edit, preview and publish products inline, right on the Product Detail Page (PDP) itself. At any time in Demand Product Detail Page and Product Grid pages, click on **Edit Mode** at the top to toggle between the customer view and admin view.
 
 ## Creating a product
 
-![](/assets/admin-product-details-page.png "Reaction's Product Detail Page (PDP)")
+![](/assets/admin-product-details-page.png "Demand Product Detail Page (PDP)")
 
 To create a product, login to your dashboard and follow these steps:
 
@@ -20,7 +20,7 @@ To create a product, login to your dashboard and follow these steps:
 
 4. Editing social media sharing and tags from the sidebar: If your shop is connected to social media sharing, customize your product's social sharing messaging by clicking on the <i class="font-icon fa fa-pencil"></i> icon on the right of the product pricing.
 
-5. Add product tags by clicking on the plus <i class="font-icon fa fa-plus"></i>, located under the **Tags** card. ![](/assets/admin-product-details-tag.png "Reaction's Product Page")
+5. Add product tags by clicking on the plus <i class="font-icon fa fa-plus"></i>, located under the **Tags** card. ![](/assets/admin-product-details-tag.png "Demand Product Page")
 
 6. You can change the layout template, product title permalink, subtitle, vendor, description and origin country from the sidebar's top **Product Settings** option.
 
@@ -59,11 +59,11 @@ Variant Options provide a second layer of customization on top of each variant. 
 
 To add an image gallery to your product, drag and drop files from your computer the main Product page. You may also upload images using the "Drop file to upload” button under each Variant Option.
 
-Currently, only image file types are supported, but support for video, Google Drive, Dropbox, and more are in the works. See [Issue #50](https://github.com/reactioncommerce/reaction/issues/50) and [Issue #69](https://github.com/reactioncommerce/reaction/issues/69).
+Currently, only image file types are supported, but support for video, Google Drive, Dropbox, and more are in the works. See [Issue #50].
 
 Once you have images added to your gallery, drag and drop to change their position.
 
-![](/assets/admin-product-variant-3.png "Reaction Commerce Product Media")
+![](/assets/admin-product-variant-3.png "Demand Cluster Product Media")
 
 ## Adding product Tags and Details
 
@@ -75,7 +75,7 @@ To get back to the product detail and tag editing panel:
 
 ## Discounting products
 
-Reaction supports discount codes and rates. Read more about discounting products in the [Dashboard's Payment section](payments-discounts.md).
+Demandupports discount codes and rates. Read more about discounting products in the [Dashboard's Payment section](payments-discounts.md).
 
 ## Archiving and restoring a product
 
@@ -84,7 +84,7 @@ To remove an entire product from your inventory:
 1. Click on the **Archive** button <i class="rui font-icon fa fa-archive"></i>.
 2. Select Archive to confirm.
 
-![](/assets/admin-product-delete.png "Reaction remove product")
+![](/assets/admin-product-delete.png "Demandemove product")
 
 3. Click the **Publish** button on the top right to save Unpublished changes.
 
