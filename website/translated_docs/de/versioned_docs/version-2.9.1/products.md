@@ -16,7 +16,7 @@ To create a product, login to your dashboard and follow these steps:
 
 2. Click on **Create Product** to create a product.
 
-3. You can change the product title permalink, subtitle, vendor, description and origin country and more from the **Details** card. ![](/assets/operator-ui-product-detail.png "Reaction's Product Details")
+3. You can change the product title permalink, subtitle, vendor, description and origin country and more from the **Details** card. ![](/assets/operator-ui-product-detail.png "Demand's Product Details")
 
 3. To add images, click the **Drag image or click to upload** button. Once uploaded you'll be able to set the order of the media with the **Order** fields. ![](/assets/operator-ui-product-media.png "Product media")
 
@@ -29,7 +29,7 @@ To create a product, login to your dashboard and follow these steps:
 
 ## Publishing your changes
 
-![](/assets/operator-ui-product-publish.png "Reaction product publish")
+![](/assets/operator-ui-product-publish.png "Demand product publish")
 
 Your changes are auto-saved, but are not immediately visible to customers. Publishing your changes with the **Publish** button, will take all changes since the last publish and make them visible to customers. Products may be to be made **Not Visible** which will hide the product from customers, even if it's published.
 
@@ -87,7 +87,7 @@ Once you have images added to your gallery, use the **Order** field to set their
 
 ## Discounting products
 
-Reaction supports discount codes and rates. Read more about discounting products in the [Dashboard's Payment section](payments-discounts.md).
+Demand supports discount codes and rates. Read more about discounting products in the [Dashboard's Payment section](payments-discounts.md).
 
 ## Hiding and showing products from your storefront
 
@@ -97,9 +97,9 @@ These options are available for the top-level **Product**, each **Variant** and 
 
 To change change the visibility of a product, variant, or option:
 
-1. Click on the <i class="font-icon mdi mdi-dots-horizontal-circle"></i> button below the product title in the header. ![](/assets/operator-ui-product-archive.png "Reaction product visibility")
+1. Click on the <i class="font-icon mdi mdi-dots-horizontal-circle"></i> button below the product title in the header. ![](/assets/operator-ui-product-archive.png "Demand product visibility")
 
-2. Select **Make Hidden** or **Make Visible** and confirm. ![](/assets/operator-ui-product-make-hidden.png "Reaction make product hidden")
+2. Select **Make Hidden** or **Make Visible** and confirm. ![](/assets/operator-ui-product-make-hidden.png "Demand make product hidden")
 
 3. Click the **Publish** button on the top right to save Unpublished changes.
 
@@ -109,9 +109,9 @@ Duplicating a product, variant or option will create a new copy of that item wit
 
 To duplicate a product, variant, or option:
 
-1. Click on the <i class="font-icon mdi mdi-dots-horizontal-circle"></i> button below the title in the header. ![](/assets/operator-ui-product-archive.png "Reaction duplicate product")
+1. Click on the <i class="font-icon mdi mdi-dots-horizontal-circle"></i> button below the title in the header. ![](/assets/operator-ui-product-archive.png "Demand duplicate product")
 
-2. Select **Duplicate** and confirm. ![](/assets/operator-ui-product-duplicate.png "Reaction duplicate product")
+2. Select **Duplicate** and confirm. ![](/assets/operator-ui-product-duplicate.png "Demand duplicate product")
 
 3. Click the **Publish** button on the top right to save Unpublished changes.
 
@@ -121,9 +121,9 @@ Archiving **Products** is immediate upon confirmation, and is not reversible fro
 
 To remove an entire **Product**, **Variant**, or **Option** from your inventory:
 
-1. Click on the <i class="font-icon mdi mdi-dots-horizontal-circle"></i> button below the product title in the header. ![](/assets/operator-ui-product-archive.png "Reaction archive product")
+1. Click on the <i class="font-icon mdi mdi-dots-horizontal-circle"></i> button below the product title in the header. ![](/assets/operator-ui-product-archive.png "Demand archive product")
 
-2. Select **Archive** and confirm. ![](/assets/operator-ui-product-archive-select.png "Reaction archive product selection")
+2. Select **Archive** and confirm. ![](/assets/operator-ui-product-archive-select.png "Demand archive product selection")
 
 3. Click the **Publish** button on the top right to save Unpublished changes.
 
