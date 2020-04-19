@@ -1,18 +1,18 @@
 ---
-id: version-3.0.0-getting-started-developing-with-reaction
+id: version-3.0.0-getting-started-developing-with-demand
 title: Getting Started As a Developer
-original_id: getting-started-developing-with-reaction
+original_id: getting-started-developing-with-demand
 ---
 
 ## Install
 
-To install Reaction for development, testing, or demonstration on your own computer, follow these [Reaction Development Platform instructions](https://github.com/reactioncommerce/reaction-development-platform/tree/v3.0.0#prerequisites).
+To install demand for development, testing, or demonstration on your own computer, follow these [demand Development Platform instructions].
 
-Read [Developing In Docker](installation-docker-development) to understand how to do development on a multi-service application like Reaction.
+Read [Developing In Docker](installation-docker-development) to understand how to do development on a multi-service application like demand.
 
 ## Common Commands
 
-Reaction Commerce is made up of multiple projects (services) that work together. In most NodeJS Reaction projects, the following commands will work.
+Demand Cluster is made up of multiple projects (services) that work together. In most NodeJS demand projects, the following commands will work.
 
 > Before running commands on your computer, always run `nvm use` to be sure the correct version of NodeJS is used. You may want to install a shell plugin that does this automatically whenever you `cd` into a directory that contains a `.nvmrc` file.
 
