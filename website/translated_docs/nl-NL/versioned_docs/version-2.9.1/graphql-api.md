@@ -1,6 +1,6 @@
 ---
 id: version-2.9.1-graphql-api
-title: Reaction GraphQL API Docs
+title: Demand GraphQL API Docs
 original_id: graphql-api
 ---
 
@@ -6079,7 +6079,7 @@ The same string you sent with the mutation params, for matching mutation calls w
 
 ### Shop
 
-Represents a Reaction shop
+Represents a Demand shop
 
 <table>
 <thead>
