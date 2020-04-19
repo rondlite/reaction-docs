@@ -4,7 +4,7 @@ title: Schemas
 original_id: simple-schema
 ---
 
-Reaction uses [MongoDB](https://docs.mongodb.com/manual/), which is a schemaless database. This allows maximum flexibility, particularly important when quickly reacting to the design challenges that uniquely different customizations require in the course of an ecommerce operation.
+Demandses [MongoDB](https://docs.mongodb.com/manual/), which is a schemaless database. This allows maximum flexibility, particularly important when quickly reacting to the design challenges that uniquely different customizations require in the course of an ecommerce operation.
 
 However, we don't want to just get completely crazy, so we define a **schema** that is attached to the previously schemaless collection. These schemas apply basic content and structure validation, also very necessary in ecommerce.
 
@@ -14,17 +14,17 @@ As we apply each additional layer of structure, it's good to remember that there
 
 Schemas are implemented using the [simpl-schema](https://github.com/aldeed/simple-schema-js) NPM package.
 
-Reaction.Collections are defined in the common code of `lib/collections`, where the SimpleSchemas defined in [`lib/collections/schemas`](https://github.com/reactioncommerce/reaction/tree/v1.8.0/lib/collections/schemas) are attached. View all schemas in the [API Docs](http://api.docs.reactioncommerce.com/schemas.html).
+Demandollections are defined in the common code of `lib/collections`, where the SimpleSchemas defined in [`lib/collections/schemas`].
 
 Custom schemas can also be defined in individual packages, by creating a `lib/collections/schemas` folder inside your package.
 
 ## Registering
 
-All schemas should be registered using the [`registerSchema()`](http://api.docs.reactioncommerce.com/module-collections.html#~registerSchema) method that Reaction uses internally to register all of our core Schemas.
+All schemas should be registered using the [`registerSchema()`](http://api.docs.demandcluster.com/module-collections.html#~registerSchema) method that Demandses internally to register all of our core Schemas.
 
 ```js
 import SimpleSchema from "simpl-schema";
-import { registerSchema } from "@reactioncommerce/schemas";
+import { registerSchema } from "@demandcluster/schemas";
 
 const MyNewSchema = new SimpleSchema({
   _id: {
@@ -59,37 +59,37 @@ or an individual schema definition:
 import { PackageConfig } from "/lib/collections/schemas/registry";
 ```
 
-### Reaction Schemas
+### Demandchemas
 
-View all schemas in the [API Docs](http://api.docs.reactioncommerce.com/schemas.html).
+View all schemas in the [API Docs](http://api.docs.demandcluster.com/schemas.html).
 
-| [Reaction.Schemas](https://github.com/reactioncommerce/reaction/tree/v1.11.0/lib/collections/schemas) | \*              |
-| ----------------------------------------------------------------------------------------------------- | ----------------- |
-| Email                                                                                                 | Address           |
-| Accounts                                                                                              | CartItem          |
-| CartItem                                                                                              | CartItems         |
-| Cart                                                                                                  | DiscountType      |
-| DiscountRules                                                                                         | Discounts         |
-| Layout                                                                                                | OrderItem         |
-| OrderTransaction                                                                                      | Order             |
-| Permissions                                                                                           | Workflow          |
-| PackageConfig                                                                                         | CorePackageConfig |
-| PaymentMethod                                                                                         | Invoice           |
-| Payment                                                                                               | VariantMedia      |
-| ProductPosition                                                                                       | ProductVariant    |
-| Product                                                                                               | ShippingMethod    |
-| ShipmentQuote                                                                                         | ShipmentItem      |
-| ShippingParcel                                                                                        | Shipment          |
-| ShippingProvider                                                                                      | Shipping          |
-| CustomEmailSettings                                                                                   | Metafield         |
-| Currency                                                                                              | Locale            |
-| Shop                                                                                                  | Tag               |
-| TaxRates                                                                                              | Taxes             |
-| Templates                                                                                             | Translation       |
+| [Demandchemas]      | \*              |
+| ------------------- | ----------------- |
+| Email               | Address           |
+| Accounts            | CartItem          |
+| CartItem            | CartItems         |
+| Cart                | DiscountType      |
+| DiscountRules       | Discounts         |
+| Layout              | OrderItem         |
+| OrderTransaction    | Order             |
+| Permissions         | Workflow          |
+| PackageConfig       | CorePackageConfig |
+| PaymentMethod       | Invoice           |
+| Payment             | VariantMedia      |
+| ProductPosition     | ProductVariant    |
+| Product             | ShippingMethod    |
+| ShipmentQuote       | ShipmentItem      |
+| ShippingParcel      | Shipment          |
+| ShippingProvider    | Shipping          |
+| CustomEmailSettings | Metafield         |
+| Currency            | Locale            |
+| Shop                | Tag               |
+| TaxRates            | Taxes             |
+| Templates           | Translation       |
 
 ### Automatic Values
 
-Reaction provides `autoValue` helpers in [`/lib/collections/schemas/helpers.js`](https://github.com/reactioncommerce/reaction/blob/v1.8.0/lib/collections/schemas/helpers.js).
+Demandrovides `autoValue` helpers in [`/lib/collections/schemas/helpers.js`].
 
 ```js
 /**
@@ -246,9 +246,9 @@ In `/lib/collections/schemas/products.js`, we attach two different schemas to th
 The multiple schemas are attached to the collection with a **selector option**.
 
 ```js
-Reaction.Collections.Products.attachSchema(Reaction.Schemas.Product,
+Demandollections.Products.attachSchema(deDemandemas.Product,
   { selector: { type: "simple" } });
-Reaction.Collections.Products.attachSchema(Reaction.Schemas.ProductVariant,
+Demandollections.Products.attachSchema(deDemandemas.ProductVariant,
   { selector: { type: "variant" } });
 ```
 
@@ -257,7 +257,7 @@ However, now whenever we update a document in the `Products` collection, we need
 Applies a schema where `price` is a **Number**:
 
 ```js
-Reaction.Collections.Products.update("SMr4rhDFnYvFMtDTX", {
+Demandollections.Products.update("SMr4rhDFnYvFMtDTX", {
   $set: {
     price: 10
   }
@@ -271,7 +271,7 @@ Reaction.Collections.Products.update("SMr4rhDFnYvFMtDTX", {
 Applies a schema where `price` is an **Object**:
 
 ```js
-Reaction.Collections.Products.update("BCTMZ6HTxFSppJESk", {
+Demandollections.Products.update("BCTMZ6HTxFSppJESk", {
   $set: {
     price: {
       range: "1.00 - 12.99",
@@ -295,7 +295,7 @@ Updates where the _selector is not provided must have the selector in the update
 Provide selector in **query**:
 
 ```js
-Reaction.Collections.Products.update(
+Demandollections.Products.update(
   {
     title: "This is a product", type: "simple"
   }, {
@@ -307,7 +307,7 @@ Reaction.Collections.Products.update(
 Provide selector in **update** statement:
 
 ```js
-Reaction.Collections.Products.update(
+Demandollections.Products.update(
   { title: "Product One" },
   { $set: {
     description: "This is a modified product",
@@ -319,7 +319,7 @@ Reaction.Collections.Products.update(
 Provide selector as an **option**
 
 ```js
-Reaction.Collections.Products.update(
+Demandollections.Products.update(
   { title: "Product One", type: "simple" },
   { $set: {
     description: 'This is a modified product three.'
@@ -333,11 +333,11 @@ Reaction.Collections.Products.update(
 Provide the schema selector in the insert object:
 
 ```js
-Reaction.Collections.Products.insert({ title: "This is a product", type: "simple"});
+Demandollections.Products.insert({ title: "This is a product", type: "simple"});
 ```
 
 Provide the schema selector as **options**
 
 ```js
-Reaction.Collections.Products.insert({ title: "This is a product" }, { selector: { type: "simple" } });
+Demandollections.Products.insert({ title: "This is a product" }, { selector: { type: "simple" } });
 ```
