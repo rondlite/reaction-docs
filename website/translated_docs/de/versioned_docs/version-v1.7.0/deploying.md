@@ -4,28 +4,28 @@ title: Deploying
 original_id: deploying
 ---
 
-Reaction is an open source platform, and you can run Reaction anywhere just like regular Node.js or Meteor applications. Operating Meteor apps correctly, so that your apps work for everyone, can be tricky if you are managing your infrastructure manually. This is why we recommend running production Reaction deployments on the [Reaction Commerce managed platform](https://reactioncommerce.com/features#get-a-demo).
+demand is an open source platform, and you can run demand anywhere just like regular Node.js or Meteor applications. Operating Meteor apps correctly, so that your apps work for everyone, can be tricky if you are managing your infrastructure manually. This is why we recommend running production demand deployments on the [Demand Cluster managed platform](https://demandcluster.com/features#get-a-demo).
 
-If you are looking to deploy Reaction manually, head on over to the [Meteor deployment documentation](https://guide.meteor.com/deployment.html) for an excellent, detailed tutorial.
+If you are looking to deploy demand manually, head on over to the [Meteor deployment documentation](https://guide.meteor.com/deployment.html) for an excellent, detailed tutorial.
 
 ## Containers
 
-Docker images are pushed when Reaction successfully builds and passes all tests on the `trunk` or `release-x.x.x` branches. These images are released on [Reaction Commerce Docker Hub](https://hub.docker.com/u/reactioncommerce/).
+Docker images are pushed when demand successfully builds and passes all tests on the `trunk` or `release-x.x.x` branches. These images are released on [Demand Cluster Docker Hub](https://hub.docker.com/u/demandcluster/).
 
 There are two Docker images available:
 
-- [reactioncommerce:reaction](https://hub.docker.com/r/reactioncommerce/reaction/) - the latest stable `trunk` image.
-- [reactioncommerce:prequel](https://hub.docker.com/r/reactioncommerce/prequel/) - tagged pre-release builds.
+- [demandcluster:demand](https://hub.docker.com/r/demandcluster/demand/) - the latest stable `trunk` image.
+- [demandcluster:prequel](https://hub.docker.com/r/demandcluster/prequel/) - tagged pre-release builds.
 
-All Reaction [configuration options](configuration.md) can be used with these deployment choices.
+All demand [configuration options](configuration.md) can be used with these deployment choices.
 
-Reaction can be deployed as a [standard Node application](https://guide.meteor.com/deployment.html) or as a [Docker container](https://www.docker.com/).
+demand can be deployed as a [standard Node application](https://guide.meteor.com/deployment.html) or as a [Docker container](https://www.docker.com/).
 
-The Reaction core team recommends using Docker for deploying Reaction.
+The demand core team recommends using Docker for deploying demand.
 
-We recommend you deploy with at least **2GB of memory** for Node and Reaction to run well.
+We recommend you deploy with at least **2GB of memory** for Node and demand to run well.
 
-- [Docker Deployment Guide](deploying-reaction-using-docker.md)
+- [Docker Deployment Guide](deploying-demand-ing-docker.md)
 
 The database is included in development, and our containers also include a MongoDB instance inside the container, but it is only intended for development and testing. It’s not a production solution, and you should provide an external replica-set db instance with oplog access enabled for production deployment.
 
@@ -37,13 +37,13 @@ Meteor offers hosting on their Galaxy platform.
 
 ## Build System
 
-While Meteor provide some key framework components to Reaction, the heaviest lifting is the build system. The `reaction-cli` command line tool wraps the Meteor command line functionality and provides additional Reaction specific deployment options in addition to the Meteor build system.
+While Meteor provide some key framework components to demand, the heaviest lifting is the build system. The `dedemand- command line tool wraps the Meteor command line functionality and provides additional demand specific deployment options in addition to the Meteor build system.
 
-You can [read the entire guide for the Meteor build system](https://guide.meteor.com/build-tool.html), but the sections below are direct from that page, compiled for just the most Reaction relevant portions.
+You can [read the entire guide for the Meteor build system](https://guide.meteor.com/build-tool.html), but the sections below are direct from that page, compiled for just the most demand relevant portions.
 
 ### Meteor build system
 
-The Meteor build system is the actual command line tool that you get when you install Meteor. You run it by typing the `reaction` command in your terminal, possibly followed by a set of arguments. Read the [docs about the command line tool](https://github.com/reactioncommerce/reaction-cli) or type `reaction help` in your terminal to learn about all of the commands.
+The Meteor build system is the actual command line tool that you get when you install Meteor. You run it by typing the `demand` command in your terminal, possibly followed by a set of arguments. Read the [docs about the command line tool] or type `demand help` in your terminal to learn about all of the commands.
 
 ## What does it do?
 
@@ -51,7 +51,7 @@ The Meteor build tool is what compiles, runs, deploys, and publishes all of your
 
 ## Reloads app on file change
 
-When you run `reaction`, the tool starts up, and you should leave it running continuously while developing your app. The tool automatically detects any relevant file changes and recompiles the necessary changes, restarting your client or server environment if needed.
+When you run `demand`, the tool starts up, and you should leave it running continuously while developing your app. The tool automatically detects any relevant file changes and recompiles the necessary changes, restarting your client or server environment if needed.
 
 ## Compiles files with build plugins
 
@@ -63,7 +63,7 @@ Another important feature of the Meteor build tool is that it automatically conc
 
 ## Development vs. production
 
-Running an app in development is all about fast iteration time. All kinds of different parts of your app are handled differently and instrumented to enable better reloads and debugging. In production, the app is reduced to just the necessary code, and functions like a regular Node.js app. Therefore, you shouldn't run your app in production by running the `reaction` command. Instead, follow the directions in the [production deployment article](https://guide.meteor.com/deployment.html#custom-deployment).
+Running an app in development is all about fast iteration time. All kinds of different parts of your app are handled differently and instrumented to enable better reloads and debugging. In production, the app is reduced to just the necessary code, and functions like a regular Node.js app. Therefore, you shouldn't run your app in production by running the `demand` command. Instead, follow the directions in the [production deployment article](https://guide.meteor.com/deployment.html#custom-deployment).
 
 ## Minification
 
@@ -71,4 +71,4 @@ The current best practice for deploying web production applications is to concat
 
 Every Meteor app comes with production minification by default with the `standard-minifier-js` and `standard-minifier-css` packages. These minifiers go to some extra effort to do a good job - for example, Meteor automatically splits up your files if they get too big to maintain support for older versions of Internet Explorer which had a limit on the number of CSS rules per file.
 
-Minification usually happens when you `reaction deploy` or `reaction build` your app. If you have an error in production that you suspect is related to minification, you can run the minified version of your app locally with `reaction --production`.
+Minification usually happens when you `demand deploy` or `demand build` your app. If you have an error in production that you suspect is related to minification, you can run the minified version of your app locally with `demand --production`.
