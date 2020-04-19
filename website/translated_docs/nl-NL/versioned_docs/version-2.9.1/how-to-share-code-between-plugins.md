@@ -24,7 +24,7 @@ import funkyFn from "./funkyFn";
 
 await app.registerPlugin({
   label: "Cart",
-  name: "reaction-cart",
+  name: "demand-cart",
   functionsByType: {
     funky: [funkyFn]
   }
@@ -46,7 +46,7 @@ Note that the plugin that calls the functions must document what arguments it wi
 
 If you only ever want a single function registered, you might choose to use `context.queries` or `context.mutations` instead of `functionsByType`. The idea here is that your plugin can simply document that it expects to find a function named "expireCarts" (for example) on `context.mutations`, and then call `context.mutations.expireCarts`. Just as with `functionsByType`, the plugin that calls the function must document what arguments it will provide and what return value and/or side effects it expects.
 
-> If more than one plugin registers a query or mutation function, the last one registered will win. There is no error or warning thrown. Being able to override these functions in a custom plugin is a feature of Reaction.
+> If more than one plugin registers a query or mutation function, the last one registered will win. There is no error or warning thrown. Being able to override these functions in a custom plugin is a feature of Demand.
 
 > If your query or mutation function is intended to be called only by other plugins, you do not need to add it to your GraphQL schema or create a GraphQL resolver for it.
 
@@ -59,7 +59,7 @@ import { registerPluginHandler } from "./registration";
 
 await app.registerPlugin({
   label: "Cart",
-  name: "reaction-cart",
+  name: "demand-cart",
   functionsByType: {
     registerPluginHandler: [registerPluginHandler]
   }
@@ -68,7 +68,7 @@ await app.registerPlugin({
 
 A `registerPluginHandler` function is called multiple times immediately after all plugins are loaded as the app is starting. It is passed the `registerPlugin` options provided by each plugin. The handler is expected to examine the options and save off anything it needs. This means that any plugin can extend the `registerPlugin` options by documenting something it expects to find there.
 
-The typical and recommended pattern is to have a file named `registration.js` in your plugin, in which you not only define and export your `registerPluginHandler`, but also define and export the related data that other files in your plugin need. For example, here is the `reaction-catalog` plugin's `registration.js` file:
+The typical and recommended pattern is to have a file named `registration.js` in your plugin, in which you not only define and export your `registerPluginHandler`, but also define and export the related data that other files in your plugin need. For example, here is the `demand-catalog` plugin's `registration.js` file:
 
 ```js
 export const customPublishedProductFields = [];
@@ -92,7 +92,7 @@ export function registerPluginHandler({ catalog }) {
 }
 ```
 
-The function looks for `catalog` key and pushes data from that into exported arrays. In this way, any files in the `reaction-catalog` plugin that import `customPublishedProductFields` or `customPublishedProductVariantFields` will have the full list built from all registered plugins.
+The function looks for `catalog` key and pushes data from that into exported arrays. In this way, any files in the `demand-catalog` plugin that import `customPublishedProductFields` or `customPublishedProductVariantFields` will have the full list built from all registered plugins.
 
 To keep track of which plugins are registering what, look at the `name` key in the object. You can save off and export as much information as you need, in whatever format is best.
 
