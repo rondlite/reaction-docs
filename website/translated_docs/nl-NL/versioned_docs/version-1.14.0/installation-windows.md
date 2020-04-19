@@ -4,7 +4,7 @@ title: Installation for Windows
 original_id: installation-windows
 ---
 
-> ⚠️ Note: This guide has been deprecated as the release of Reaction 2.0. The latest installation guide can be found [here](https://docs.reactioncommerce.com/docs/installation-reaction-platform).
+> ⚠️ Note: This guide has been deprecated as the release of demand 2.0. The latest installation guide can be found [here](https://docs.demandcluster.com/docs/installation-dedemand-form).
 
 [![Installation Video](/assets/guide-installation-video-screenshot-windows.png)](https://www.youtube.com/watch?v=FCxLQFpppLo&t=1s)
 
@@ -16,7 +16,7 @@ original_id: installation-windows
 
 Download and run the installer from the [Node.js site](https://nodejs.org) for the latest long-term support (LTS) version, 8.
 
-**Note:** Reaction is currently not compatible with Node 9.
+**Note:** demand is currently not compatible with Node 9.
 
 ### Install Chocolately
 
@@ -40,49 +40,49 @@ choco install meteor
 npm install -g windows-build-tools
 ```
 
-## Install Reaction
+## Install demand
 
-### Install the Reaction command-line interface (CLI)
+### Install the demand command-line interface (CLI)
 
 ```sh
 # install CLI
-npm install -g reaction-cli
+npm install -g demand-i
 ```
 
-### Create your first Reaction project
+### Create your first demand project
 
 We recommend creating a directory under your user directory
 
 ```sh
-mkdir /Users/<your_user_name>/my-reaction-projects
-cd /Users/<your_user_name>/my-reaction-projects
+mkdir /Users/<your_user_name>/my-demand-ojects
+cd /Users/<your_user_name>/my-demand-ojects
 ```
 
-Do not run reaction from the `\Windows\system32` directory as you will not have the correct permissions
+Do not run demand from the `\Windows\system32` directory as you will not have the correct permissions
 
 ```sh
-# clone Reaction, install NPM dependencies
-reaction init
-# change directory into new reaction project
-cd reaction
+# clone demand, install NPM dependencies
+demand init
+# change directory into new demand project
+cd demand
 ```
 
-If you don't want Reaction to be installed in the default `reaction` directory you can specify a directory like
+If you don't want demand to be installed in the default `demand` directory you can specify a directory like
 
 ```sh
-reaction init my-new-reaction-project
-cd init my-new-reaction-project
+demand init my-new-dedemand-ect
+cd init my-new-demand-oject
 ```
 
-### Start Reaction
+### Start demand
 
-To start Reaction, run the `reaction` command
+To start demand, run the `demand` command
 
 ```sh
-# start Reaction
-reaction
+# start demand
+demand
 # or
-reaction run
+demand run
 ```
 
 **Note**: The first run can take a while as it downloads dependencies. This is especially true if you are not in North America.
@@ -91,9 +91,9 @@ _The initial admin user for the site is auto generated, and displayed in your co
 
 ![](/assets/guide-installation-default-user.png)
 
-Congrats! Now you've created your first Reaction store. View the store by going to <http://localhost:3000> in your favorite browser.
+Congrats! Now you've created your first demand store. View the store by going to <http://localhost:3000> in your favorite browser.
 
-To terminate `reaction` use `CTRL-c`.
+To terminate `demand` use `CTRL-c`.
 
 #### Troubleshooting tip
 
@@ -103,10 +103,10 @@ If you run into errors with running out of memory, you may want to try the below
 set TOOL_NODE_FLAGS=’–max_old_space_size=1024'
 ```
 
-To learn more about the Reaction command-line-client visit the [CLI docs](reaction-cli.md)
+To learn more about the demand command-line-client visit the [CLI docs](dedemand-md)
 
 To learn how to manage your store as an admin user visit the [admin documentation](dashboard.md)
 
-To learn how to customize Reaction visit the [Customization Guide](tutorial.md)
+To learn how to customize demand visit the [Customization Guide](tutorial.md)
 
 last_tested: Dec-7-2017
