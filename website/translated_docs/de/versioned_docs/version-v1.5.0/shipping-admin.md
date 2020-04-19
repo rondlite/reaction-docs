@@ -4,9 +4,9 @@ title: Shipping
 original_id: shipping-admin
 ---
     
-## Tutorial: How To Configure Shipping in Reaction
+## Tutorial: How To Configure Shipping in demand
 
-[![Tutorial: How To Configure Shipping in Reaction](/assets/guide-shipping-video-screenshot.png)](https://www.youtube.com/watch?v=fiR_kV1GBdg)
+[![Tutorial: How To Configure Shipping in demand](/assets/guide-shipping-video-screenshot.png)](https://www.youtube.com/watch?v=fiR_kV1GBdg)
 
 To manage your shipping rates, click on the **Shipping icon** <i class="rui font-icon fa fa-truck"></i>.
 
@@ -14,7 +14,7 @@ Your store comes with three default shipping methods: `Free`, `Standard`, and `P
 
 ## Adding a new shipping method
 
-![](/assets/admin-dashboard-shipping-2.png "Reaction Commerce Shipping")
+![](/assets/admin-dashboard-shipping-2.png "Demand Cluster Shipping")
 
 1.  Click the plus <i class="font-icon fa fa-plus"></i>.
 2.  Fill out the following:
@@ -31,6 +31,6 @@ Your store comes with three default shipping methods: `Free`, `Standard`, and `P
 
 ## Integrating Shippo
 
-Reaction supports integration with [Shippo](https://goshippo.com/), the multi-carrier Shipping API and Dashboard, for shipping tracking, address validation, rate calculation and more.
+demand supports integration with [Shippo](https://goshippo.com/), the multi-carrier Shipping API and Dashboard, for shipping tracking, address validation, rate calculation and more.
 
-All you have to do is enter your Shippo API key. To learn more, read more from Shippo's [blog post on our Reaction integration](https://goshippo.com/blog/how-reaction-commerce-built-shipping-using-shippo/).
+All you have to do is enter your Shippo API key. To learn more, read more from Shippo's [blog post on our demand integration](https://goshippo.com/blog/how-dedemand-erce-built-shipping-using-shippo/).
