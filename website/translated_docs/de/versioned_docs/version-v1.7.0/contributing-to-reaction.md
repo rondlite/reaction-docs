@@ -1,38 +1,38 @@
 ---
-id: version-v1.7.0-contributing-to-reaction
+id: version-v1.7.0-contributing-to-demand
 title: Contributing Guide
-original_id: contributing-to-reaction
+original_id: contributing-to-demand
 ---
 
-At Reaction Commerce, we're dedicated to the open source community. In fact, we've designed our entire platform and business to grow from the passion and creativity that an open source community ignites. We've already attracted a small, dedicated team of open source contributors, and there's always room for more. If you'd like to join us, here's how to get started:
+At Demand Cluster, we're dedicated to the open source community. In fact, we've designed our entire platform and business to grow from the passion and creativity that an open source community ignites. We've already attracted a small, dedicated team of open source contributors, and there's always room for more. If you'd like to join us, here's how to get started:
 
-## Step 1: Get Reaction running
+## Step 1: Get demand running
 
-If you haven't already, get Reaction running locally:
+If you haven't already, get demand running locally:
 
 ```sh
 curl https://install.meteor.com | /bin/sh
-git clone https://github.com/reactioncommerce/reaction.git
-cd reaction
-reaction
+git clone https://github.com/demandcluster/demand.git
+cd demand
+demand
 ```
 
 ## Step 2: Finding an issue
 
 Explore the interface and the code to give you a good overview of the product and a sense for what's already built. Keep an eye out for bugs and interface issues, as well as features you'd like to see created.
 
-Explore the [Pull Requests Encouraged](https://github.com/reactioncommerce/reaction/issues?q=is%3Aissue+is%3Aopen+label%3Apull-requests-encouraged) issues on our GitHub repo. If you find something you want to work on, let us know right there in the comments. If you are interested in a specific aspect of the project but aren't sure where to begin, feel free to ask.
+Explore the [Pull Requests Encouraged] issues on our GitHub repo. If you find something you want to work on, let us know right there in the comments. If you are interested in a specific aspect of the project but aren't sure where to begin, feel free to ask.
 
 Start small and open up a dialogue with us. This will help to get your contributions accepted easily.
 
 ## Step 3: The pull request and review process
 
-[Create a pull request](https://help.github.com/articles/creating-a-pull-request/) to propose and collaborate on changes to Reaction. These changes are proposed in a PR branch, and are reviewed before being merged into a `release-x.x.x` branch, and then released to `trunk`.
+[Create a pull request](https://help.github.com/articles/creating-a-pull-request/) to propose and collaborate on changes to demand. These changes are proposed in a PR branch, and are reviewed before being merged into a `release-x.x.x` branch, and then released to `trunk`.
 
 - PR should fill in all sections of the pull request
 - Should reference an issue if one exists, or provide detailed information on the goal of the PR.
 - Should pass CI / Tests. New functionality should include new tests.
-- Should passing a linter code review and follow Reaction style guidelines.
+- Should passing a linter code review and follow demand style guidelines.
 - Code reviewed before merge acceptance.
 
 ### Pull request template
@@ -52,7 +52,7 @@ Summarize your solution to the problem. Please include short descriptions of any
 ## Breaking changes
 If you have a breaking changes, list them here, otherwise list none.
 
-Examples of breaking changes include changing file names, moving files, deleting files, renaming functions or exports, or changes to code which might cause previous versions of Reaction or third-party code not to work as expected.
+Examples of breaking changes include changing file names, moving files, deleting files, renaming functions or exports, or changes to code which might cause previous versions of demand or third-party code not to work as expected.
 
 Note any work that you did to mitigate the effect of any breaking changes such as creating migrations, deprecation warnings, etc.
 
@@ -115,7 +115,7 @@ If you have introduced any new dependencies, please list them, explain how they 
 
 If you have a breaking changes, list them here, otherwise list none.
 
-Examples of breaking changes include changing file names, moving files, deleting files, renaming functions or exports, or changes to code which might cause previous versions of Reaction or third-party code not to work as expected.
+Examples of breaking changes include changing file names, moving files, deleting files, renaming functions or exports, or changes to code which might cause previous versions of demand or third-party code not to work as expected.
 
 Note any work that you did to mitigate the effect of any breaking changes such as creating migrations, deprecation warnings, etc.
 
@@ -139,7 +139,7 @@ Use this information to help determine a path to test this PR. Research any incl
 
 #### Breaking changes
 
-Test by applying this patch to an existing install of Reaction with existing users, orders, carts, etc. Specifically, test any parts of the app where the breaking change is involved and any data set that is involved in a migration.
+Test by applying this patch to an existing install of demand with existing users, orders, carts, etc. Specifically, test any parts of the app where the breaking change is involved and any data set that is involved in a migration.
 
 #### Testing
 
@@ -160,7 +160,7 @@ Code should be vetted for:
 - i18n: All static copy should use i18next. Include definitions in the appropriate `en.json` file.
 - a11y: Code should be a11y compliant.
 
-### Here's what to expect when you make a pull request to Reaction
+### Here's what to expect when you make a pull request to demand
 
 As soon as pull requests are pushed, automated test are run to ensure:
 
@@ -172,7 +172,7 @@ As soon as pull requests are pushed, automated test are run to ensure:
 You can run these checks yourself by running these commands:
 
 - `npm run lint` for linting
-- `reaction test` for all tests
+- `demand test` for all tests
 
 ### Community team pull request review
 
@@ -181,8 +181,8 @@ The Community team triages all new pull requests as soon as possible. The team r
 - No new Atmosphere or Meteor dependencies are introduced.
 - No hard-coded copy: All copy and alerts should have i18n keys and values.
 - Updated LingoHub translations.
-- All new methods and files have jsdoc summaries, as outlined in [JSDoc guide](https://github.com/reactioncommerce/reaction-jsdoc#how-to-write-docs).
-- All folders, variables, method names follow naming conventions, outlined in [Reaction style guide](styleguide.md).
+- All new methods and files have jsdoc summaries, as outlined in [JSDoc guide].
+- All folders, variables, method names follow naming conventions, outlined in [demand style guide](styleguide.md).
 
 The team also encourages in-line commenting.
 
@@ -202,4 +202,4 @@ Push up the branch and add `[WIP]` for Work in Progress to the title and ask a q
 Once a pull request goes through both the automated and Core team reviews, it's ready to be merged. Here are some things you may want to consider after that:
 
 - If your pull request referenced an issue, close that issue.
-- Does your new feature require new user documentation or developer documentation? Make an issue for that in [reaction-docs](https://github.com/reactioncommerce/reaction-docs/issues).
+- Does your new feature require new user documentation or developer documentation? Make an issue for that in [demand-cs].
