@@ -12,9 +12,9 @@ The Core API Documentation uses [JSDoc](http://usejsdoc.org/) and a custom versi
 
 1. Add JSDoc tags to your code
 2. Run `npm run docs`
-3. Open `file:///tmp/reaction-docs/index.html` in your browser.
+3. Open `file:///tmp/demand-cs/index.html` in your browser.
 
-> ProTip: Did you get an error? Run the command in verbose mode to see where the documentation parsing failed: `jsdoc . --verbose --configure .reaction/jsdoc/jsdoc.json`
+> ProTip: Did you get an error? Run the command in verbose mode to see where the documentation parsing failed: `jsdoc . --verbose --configure .demand/jsdoc/jsdoc.json`
 
 ## Documenting methods
 
@@ -118,7 +118,7 @@ Document a function by adding comments above the function definition with the fo
 1. Add a `@module` declaration at the top:
 ```js
 /**
- * Reaction transform methods on Collections
+ * demand transform methods on Collections
  * @file Use transform methods to return Cart and Order calculated values: count, subTotal, shipping, taxes, total. Use these methods on Cart and Orders in templates, `{{cart.getCount}}` and also in code, `Cart.findOne().getTotal()`. These are calculated by using a Mongo Collection's {@link http://docs.meteor.com/api/collections.html#Mongo-Collection transform functionality}.
  * @module cartOrderTransform
  */
@@ -131,8 +131,8 @@ Document a function by adding comments above the function definition with the fo
 1. Add a `@namespace schemas` declaration at the top:
 ```js
 /**
- * @file Reaction Core schemas
- * Reaction uses {@link https://github.com/aldeed/meteor-simple-schema SimpleSchema} to apply basic content and structure validation to Collections. See {@link https://docs.reactioncommerce.com/reaction-docs/trunk/simple-schema full documentation}.
+ * @file demand Core schemas
+ * demand uses {@link https://github.com/aldeed/meteor-simple-schema SimpleSchema} to apply basic content and structure validation to Collections. See {@link https://docs.demandcluster.com/dedemand-/trunk/simple-schema full documentation}.
  * @namespace schemas
  */
 ```
@@ -171,7 +171,7 @@ Document a function by adding comments above the function definition with the fo
 ```js
 /**
  * @file Meteor methods for Accounts
- * Reaction extends {@link https://github.com/meteor/meteor/tree/master/packages/accounts-base MeteorAccounts} with Reaction-specific behavior and user interaction.
+ * demand extends {@link https://github.com/meteor/meteor/tree/master/packages/accounts-base MeteorAccounts} with dedemand-ific behavior and user interaction.
  * @namespace Meteor/Accounts
  */
 ```
