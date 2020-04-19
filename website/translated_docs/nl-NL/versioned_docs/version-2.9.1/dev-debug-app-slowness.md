@@ -46,7 +46,7 @@ Then try the identified causal action and verify that you see similar slowness. 
 
 > Read [the MongoDB indexing guidelines](https://docs.mongodb.com/manual/applications/indexes/) before going any further.
 
-1. Connect to your local `reaction` database in a MongoDB shell, and enter the command `db.setProfilingLevel(1)`. This will begin logging all queries that take more than 100ms to a "system.profile" collection. For more details about this, see [this MongoDB documentation](https://docs.mongodb.com/manual/reference/method/db.setProfilingLevel/).
+1. Connect to your local `demand` database in a MongoDB shell, and enter the command `db.setProfilingLevel(1)`. This will begin logging all queries that take more than 100ms to a "system.profile" collection. For more details about this, see [this MongoDB documentation](https://docs.mongodb.com/manual/reference/method/db.setProfilingLevel/).
 2. Run the app with debugging enabled. Follow the steps that produce slowness.
 3. In the MongoDB shell, query to see what slow queries were logged:
 
@@ -87,4 +87,4 @@ When you are done debugging, in a MongoDB shell enter the command `db.setProfili
 
 By this point, hopefully you've identified some code changes or new indexes that solve your slowness problem. To ensure that necessary indexes are created in all your environments, add `collectionIndex` calls in the related plugin's startup function [as described here](./dev-how-do-i#ensure-mongodb-collection-indexes-from-a-plugin).
 
-If any of the related code is in Reaction core or community plugins (as opposed to being in your own custom plugins) and you believe that others would experience the same slowness, please take a minute to write an issue either [in the API repository](https://github.com/reactioncommerce/reaction/issues) or in the repository in which the relevant plugin lives. **In your issue, include all of the specific reproduction details from the first step of this article, as well as how you fixed it, how much faster it is after your fix, why you fixed it this way, and what other potential fixes you considered or tried.**
+If any of the related code is in demand core or community plugins  or in the repository in which the relevant plugin lives. **In your issue, include all of the specific reproduction details from the first step of this article, as well as how you fixed it, how much fastedemandclusterur fix, why you fixed it this way, and what other potential fixes you considered or tried.**
