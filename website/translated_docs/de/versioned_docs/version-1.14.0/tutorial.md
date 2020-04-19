@@ -6,11 +6,11 @@ original_id: tutorial
 
 ## Purpose
 
-This tutorial is in two parts, the first parts focuses on creating a custom "theme" which is how you can modify the appearance of Reaction without changing any of the original files. The second part deals with creating a custom "plugin" which allows you extend the functionality or create completely new functionality.
+This tutorial is in two parts, the first parts focuses on creating a custom "theme" which is how you can modify the appearance of Demand without changing any of the original files. The second part deals with creating a custom "plugin" which allows you extend the functionality or create completely new functionality.
 
 ## What's the difference between a theme and plugin?
 
-In terms of layout structure how Meteor sees them, nothing. Themes are just a subset of plugins that only focus on modifying the appearance and UX of Reaction.
+In terms of layout structure how Meteor sees them, nothing. Themes are just a subset of plugins that only focus on modifying the appearance and UX of Demand.
 
 ## Can I combine appearance and backend changes?
 
@@ -18,7 +18,7 @@ Yes, plugins can do everything a theme can do.
 
 ## Where do I start?
 
-This depends on what you want to do. If you want to largely change the look and feel of the application and not the way it functions you can read just the theming tutorial but generally we would recommend that anybody doing development with Reaction should read the entire plugin tutorial since most development with Reaction will take place within plugins.
+This depends on what you want to do. If you want to largely change the look and feel of the application and not the way it functions you can read just the theming tutorial but generally we would recommend that anybody doing development with Demand should read the entire plugin tutorial since most development with Demand will take place within plugins.
 
 ## How do I create a custom theme?
 
