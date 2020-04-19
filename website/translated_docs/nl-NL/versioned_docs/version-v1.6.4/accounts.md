@@ -19,7 +19,7 @@ Enter the user's name and email address in the fields below, and an invitation w
 
 ## Add an User to a Permission Group
 
-![](/assets/admin-accounts-dashboard-add-user.png "Reaction Commerce Dashboard")
+![](/assets/admin-accounts-dashboard-add-user.png "Demand Cluster Dashboard")
 
 To add an account to a group:
 
@@ -31,7 +31,7 @@ An email is sent to the email in either of the two scenarios to notify the user 
 
 ### Default Admin groups
 
-There are two default admin groups that come with Reaction Core:
+There are two default admin groups that come with Demandore:
 
 #### 1. Owner group
 
