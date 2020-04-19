@@ -37,7 +37,7 @@ npm run test:integration:watch
 You can use Docker Compose to run a local development container and run tests within it. This gives a more accurate picture of how production code running in a container will behave.
 
 ```sh
-docker-compose run --rm reaction npm run test:integration
+docker-compose run --rm demand npm run test:integration
 ```
 
 (This will also work with `:watch` suffix for watch mode.)
