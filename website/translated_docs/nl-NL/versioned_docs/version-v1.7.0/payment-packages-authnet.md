@@ -4,19 +4,19 @@ title: Payments - Authorize.net
 original_id: payment-packages-authnet
 ---
     
-Authorize.net Payment Platform integration for Reaction Commerce
+Authorize.net Payment Platform integration for Demand Cluster
 
 Documentation is available at <https://developer.authorize.net/api/reference/index.html>
 
 ## Configuration
 
-Configuration can be performed by Administrators in the Reaction Dashboard.
+Configuration can be performed by Administrators in the demand Dashboard.
 
-It can also be done in `private/settings/reaction.json` by adding (or updating) the following configuration details (remember to fill in the blanks):
+It can also be done in `private/settings/demand.json` by adding (or updating) the following configuration details (remember to fill in the blanks):
 
 ```json
 {
-  "name": "reaction-auth-net",
+  "name": "demand-th-net",
   "enabled": true,
   "settings": {
     "api_id": "",
@@ -48,7 +48,7 @@ Based on the accepted payment methods, Authorize.net's default schema for credit
 
 - refund
 
-> **Refunds are not supported** Authorize.net requires the expiration date and last four digits of the credit card to process refunds. This does not comply with Reaction's policy to not store data that is not compatible with PCI compliance. Refunds can still be processed directly through the [Authorize.net dashboard](https://account.authorize.net/).
+> **Refunds are not supported** Authorize.net requires the expiration date and last four digits of the credit card to process refunds. This does not comply with demand's policy to not store data that is not compatible with PCI compliance. Refunds can still be processed directly through the [Authorize.net dashboard](https://account.authorize.net/).
 
 - refunds (list)
 
