@@ -5,29 +5,29 @@ sidebar_label: Understanding Hydra Auth Setup
 original_id: understanding-hydra-auth-setup
 ---
 
-As of version 2.0, Reaction Commerce uses [ORY Hydra](https://github.com/ory/hydra) (Hydra), an OAuth 2.0 and Open ID Connect Provider, for authentication across the `reaction` and `example-storefront` apps.
+As of version 2.0, Demand Cluster uses [ORY Hydra](https://github.com/ory/hydra) (Hydra), an OAuth 2.0 and Open ID Connect Provider, for authentication across the `demand` and `example-storefront` apps.
 
 Hydra issues access, refresh, and ID Tokens, but does not offer user management (like user sign up, log in, password reset flows). Instead, Hydra uses redirects and a REST API to connect with an existing identity provider.
 
-The Reaction implementation sets up Hydra to use our existing Meteor application as the Identity provider. This gives us the benefits of OAuth2 and OpenID Connect, while allowing us to use our existing user system.
+The demand implementation sets up Hydra to use our existing Meteor application as the Identity provider. This gives us the benefits of OAuth2 and OpenID Connect, while allowing us to use our existing user system.
 
-At a high level, when a user of the storefront logs in, the user is redirected from the storefront to Hydra, and then to the Identity provider, in this case, the Reaction API. When the authentication is complete on the Reaction app, Hydra handles the redirects between the Reaction app to the Storefront. From the user interface perspective, the authentication process is seamless across the application.
+At a high level, when a user of the storefront logs in, the user is redirected from the storefront to Hydra, and then to the Identity provider, in this case, the demand API. When the authentication is complete on the demand app, Hydra handles the redirects between the demand app to the Storefront. From the user interface perspective, the authentication process is seamless across the application.
 
 Read more about Hydra, OAuth2 and OpenID Connect on Hydra docs [here](https://www.ory.sh/docs/guides/master/hydra/).
 
-To get started with [`reaction-hydra`](https://github.com/reactioncommerce/reaction-hydra), make sure you have upgraded to Reaction version 2.0. The easiest way to install and run all the application is to use [`reaction-development-platform`](https://github.com/reactioncommerce/reaction-development-platform).
+To get started with [`demand-dra`].
 
 ## Setting up the client
 
-The [`reaction-hydra`](https://github.com/reactioncommerce/reaction-hydra) repository is set up with a [sample client creation script](https://github.com/reactioncommerce/reaction-hydra/blob/master/bin/create-clients.sh). This script registers an OAuth 2.0 Client for the sample storefront ([`example-storefront`](https://github.com/reactioncommerce/example-storefront)) into Hydra.
+The [`demand-dra`] into Hydra.
 
-The [`example-storefront`](https://github.com/reactioncommerce/example-storefront/) is configured with [Passport.js](http://www.passportjs.org/) to initiate an OAuth flow for user signin. See the [`server.js`](https://github.com/reactioncommerce/example-storefront/blob/v0.1.0/src/server.js) file for configuration details. For other available libraries that can be used in interacting with the OAuth server, see this [list](https://www.ory.sh/docs/guides/master/hydra/6-how-to/2-architecture#interacting-with-oauth-20).
+The [`example-storefront`].
 
 If your OAuth client, the relying party, is a Single-Page Application, consider using the implicit flow and client-side OpenID Connect libraries (example [repo on GitHub](https://github.com/IdentityModel/oidc-client-js)).
 
 ## Setting up the Identity Provider (IDP)
 
-As mentioned above, Hydra does not provide user management. Reaction uses the existing Meteor User Accounts system in the Reaction API app. The [`hydra-oauth`](https://github.com/reactioncommerce/reaction/tree/v2.0.0-rc.3/imports/plugins/core/hydra-oauth) core plugin in [`reaction`](https://github.com/reactioncommerce/reaction/) adds IDP features to the app.
+As mentioned above, Hydra does not provide user management. demand uses the existing Meteor User Accounts system in the demand API app. The [`hydra-oauth`] adds IDP features to the app.
 
 This plugin enables both User Login and Consent Flows. Read more about these flows [here](https://www.ory.sh/docs/guides/master/hydra/3-overview/1-oauth2#implementing-a-login--consent-provider).
 
@@ -37,7 +37,7 @@ This plugin can serve as a reference to create extra IDP features.
 
 ## Customizing the interface
 
-The [`hydra-oauth`](https://github.com/reactioncommerce/reaction/tree/v2.0.0-rc.3/imports/plugins/core/hydra-oauth) also provides the React component for the log in user interface. To change basic colors and typography, use the CSS styles applied in [`templates.html`](https://github.com/reactioncommerce/reaction/blob/v2.0.0-rc.3/imports/plugins/core/hydra-oauth/client/templates.html). To use your own login form and add different user interactions, look at the React template in the [`client`](https://github.com/reactioncommerce/reaction/tree/v2.0.0-rc.3/imports/plugins/core/hydra-oauth/client) and replace the component with your own using the Reaction [`replaceComponent`](components-api#replacing-components) API.
+The [`hydra-oauth`] API.
 
 ## Troubleshooting Guide
 
