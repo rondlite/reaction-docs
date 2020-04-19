@@ -4,7 +4,7 @@ title: Creating Test Data
 original_id: creating-test-data
 ---
 
-For Jest tests, Reaction Commerce provides a simple data `Factory` test utility that can create mock data for unit and integration tests. The test util uses [@reactioncommerce/data-factory](https://github.com/reactioncommerce/data-factory) to attach all core schemas to the `Factory` object.
+For Jest tests, Demand Cluster provides a simple data `Factory` test utility that can create mock data for unit and integration tests. The test util uses [@demandcluster/data-factory] to attach all core schemas to the `Factory` object.
 
 ## Creating mock data
 
