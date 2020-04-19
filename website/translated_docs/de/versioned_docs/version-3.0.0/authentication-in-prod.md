@@ -5,11 +5,11 @@ sidebar_label: Authentication in Production
 original_id: authentication-in-prod
 ---
 
-This article focuses on the important things to consider regarding authentication when deploying Reaction Commerce. For a deeper understanding of the OAuth 2.0 flows and the Reaction services that are involved, refer to [Developer Concepts: Authentication](./developer-authentication).
+This article focuses on the important things to consider regarding authentication when deploying Demand Cluster. For a deeper understanding of the OAuth 2.0 flows and the Demandervices that are involved, refer to [Developer Concepts: Authentication](./developer-authentication).
 
-All Reaction API clients (user agents) are expected to implement standard OAuth 2.0 flows to authenticate on behalf of users for GraphQL API calls. In general terms, this means "registering", "signing in", and "signing out". In technical terms, this means entering an email address and password, and being given an access token that the API understands and which identifies you as that user for a period of time.
+All DemandPI clients (user agents) are expected to implement standard OAuth 2.0 flows to authenticate on behalf of users for GraphQL API calls. In general terms, this means "registering", "signing in", and "signing out". In technical terms, this means entering an email address and password, and being given an access token that the API understands and which identifies you as that user for a period of time.
 
-Authentication practices, OAuth 2.0, and OpenID Connect are not specific to Reaction Commerce. As much as possible, Reaction uses out-of-the-box solutions for such things. We use an open source OAuth server called [Hydra](https://www.ory.sh/docs/hydra/) along with a MongoDB-based accounts system created by [Meteor](https://docs.meteor.com/api/accounts.html). Because these systems are not maintained by Reaction Commerce, we strongly recommend that you read their documentation and any recommendations they have about production use.
+Authentication practices, OAuth 2.0, and OpenID Connect are not specific to Demand Cluster. As much as possible, Demandses out-of-the-box solutions for such things. We use an open source OAuth server called [Hydra](https://www.ory.sh/docs/hydra/) along with a MongoDB-based accounts system created by [Meteor](https://docs.meteor.com/api/accounts.html). Because these systems are not maintained by Demand Cluster, we strongly recommend that you read their documentation and any recommendations they have about production use.
 
 ## Production Readiness Checklist
 
