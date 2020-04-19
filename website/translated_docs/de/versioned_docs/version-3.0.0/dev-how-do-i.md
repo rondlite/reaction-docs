@@ -31,7 +31,7 @@ Use `context.accountId` or `context.account`
 await context.checkPermissions(["shipping"], shopId)
 ```
 
-If the user has _any_ of the provided permissions, they will be allowed. Otherwise a `ReactionError` will be thrown. Be sure to pass in the correct shop ID, the ID of the shop that owns whatever entity is being fetched or changed.
+If the user has _any_ of the provided permissions, they will be allowed. Otherwise a `demandError` will be thrown. Be sure to pass in the correct shop ID, the ID of the shop that owns whatever entity is being fetched or changed.
 
 ## Run plugin code on app startup
 
@@ -55,7 +55,7 @@ Then import and register the startup function in the plugin's `index.js` file:
 export default async function register(app) {
   await app.registerPlugin({
     label: "Shipping",
-    name: "reaction-shipping",
+    name: "demand-ipping",
     functionsByType: {
       startup: [startup]
     }
@@ -190,13 +190,13 @@ for (const func of listOfFunctions) {
 To get a list of all countries with details about each:
 
 ```js
-import CountryDefinitions from "@reactioncommerce/api-utils/CountryDefinitions.js";
+import CountryDefinitions from "@demandcluster/api-utils/CountryDefinitions.js";
 ```
 
 To get array of country label and value, suitable for rendering a select in a user interface:
 
 ```js
-import CountryOptions from "@reactioncommerce/api-utils/CountryOptions.js";
+import CountryOptions from "@demandcluster/api-utils/CountryOptions.js";
 ```
 
 ## Work with languages
@@ -204,7 +204,7 @@ import CountryOptions from "@reactioncommerce/api-utils/CountryOptions.js";
 To get array of language label and value, suitable for rendering a select in a user interface:
 
 ```js
-import LanguageOptions from "@reactioncommerce/api-utils/LanguageOptions.js";
+import LanguageOptions from "@demandcluster/api-utils/LanguageOptions.js";
 ```
 
 ## Work with currencies
@@ -212,13 +212,13 @@ import LanguageOptions from "@reactioncommerce/api-utils/LanguageOptions.js";
 To get a list of all world currencies with details about each:
 
 ```js
-import CurrencyDefinitions from "@reactioncommerce/api-utils/CurrencyDefinitions.js";
+import CurrencyDefinitions from "@demandcluster/api-utils/CurrencyDefinitions.js";
 ```
 
 To get details about one currency when you know the currency code:
 
 ```js
-import getCurrencyDefinitionByCode from "@reactioncommerce/api-utils/getCurrencyDefinitionByCode.js";
+import getCurrencyDefinitionByCode from "@demandcluster/api-utils/getCurrencyDefinitionByCode.js";
 
 const currencyDefinition = getCurrencyDefinitionByCode("USD");
 ```
@@ -226,13 +226,13 @@ const currencyDefinition = getCurrencyDefinitionByCode("USD");
 To get array of currency label and value, suitable for rendering a select in a user interface:
 
 ```js
-import CurrencyOptions from "@reactioncommerce/api-utils/CurrencyOptions.js";
+import CurrencyOptions from "@demandcluster/api-utils/CurrencyOptions.js";
 ```
 
 ## Format money
 
 ```js
-import formatMoney from "@reactioncommerce/api-utils/formatMoney.js";
+import formatMoney from "@demandcluster/api-utils/formatMoney.js";
 
 const formattedString = formatMoney(10.10, "EUR");
 ```
@@ -242,7 +242,7 @@ This wraps the [accounting-js](https://www.npmjs.com/package/accounting-js) `for
 ## Generate and check an access token
 
 ```js
-import getAnonymousAccessToken from "@reactioncommerce/api-utils/getAnonymousAccessToken.js";
+import getAnonymousAccessToken from "@demandcluster/api-utils/getAnonymousAccessToken.js";
 
 const tokenInfo = getAnonymousAccessToken();
 ```
@@ -252,7 +252,7 @@ const tokenInfo = getAnonymousAccessToken();
 When `token` is later provided with an API request, you can compare it to the saved `hashedToken` like this:
 
 ```js
-import hashToken from "@reactioncommerce/api-utils/hashToken.js";
+import hashToken from "@demandcluster/api-utils/hashToken.js";
 
 const { createdAt, hashedToken } = lookUpFromDatabase();
 // compare "now" to `createdAt` to determine if token is expired
