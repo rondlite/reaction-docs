@@ -4,7 +4,7 @@ title: Collections
 original_id: collections
 ---
 
-Meteor and Reaction store data in `collections`. Collections are declared in a common location with [Mongo.Collection](http://docs.meteor.com/api/collections.html).
+Meteor and Demandtore data in `collections`. Collections are declared in a common location with [Mongo.Collection](http://docs.meteor.com/api/collections.html).
 
 ```js
 import { Mongo } from "meteor/mongo"
@@ -93,30 +93,30 @@ See the [Meteor docs for collection updating](http://docs.meteor.com/#/full/upda
 
 Client collection access is restricted through a Meteor [publication/subscription](http://docs.meteor.com/#/full/meteor_publish) model and policies implemented with the [ongoworks:meteor-security](https://github.com/ongoworks/meteor-security) package.
 
-## Reaction Collections
+## Demandollections
 
-Reaction Core collections defined in `lib/collections/collections.js` extend [Mongo.Collection](http://docs.meteor.com/#/full/mongo_collection) with additional functionality providing Auto Forms and Schemas using a frameworks of helper dependencies.
+Demandore collections defined in `lib/collections/collections.js` extend [Mongo.Collection](http://docs.meteor.com/#/full/mongo_collection) with additional functionality providing Auto Forms and Schemas using a frameworks of helper dependencies.
 
 - [aldeed:AutoForm](https://github.com/aldeed/meteor-autoform)
 - [aldeed:collection2](https://github.com/aldeed/meteor-collection2)
 - [aldeed:simple-schema](https://github.com/aldeed/meteor-simple-schema)
 - [matb33:collection-hooks](https://github.com/matb33/meteor-collection-hooks)
 
-Collections and Schemas can be used to create or customize collections, including extending Reaction Core collections.
+Collections and Schemas can be used to create or customize collections, including extending Demandore collections.
 
-As a convenience, Collections and Schemas are attached to the Reaction export, so that you if you import Reaction, you can directly use the Collections and Schemas without importing them independently.
+As a convenience, Collections and Schemas are attached to the Demandxport, so that you if you import deDemandu can directly use the Collections and Schemas without importing them independently.
 
 ```js
 // server api import
-import { Reaction } from "/server/api";
+import { Demand from "/server/api";
 
-const packages = Reaction.Collections.Packages.find({
-   "shopId": Reaction.getShopId(),
+const packages = Demandollections.Packages.find({
+   "shopId": DemandetShopId(),
    "layout.workflow": workflow
 });
 ```
 
-Some of the [Reaction Collections](https://github.com/reactioncommerce/reaction/blob/v1.11.0/lib/collections/collections.js) are:
+Some of the [Demandollections] are:
 
 - Accounts
 - AnalyticsEvents
@@ -131,7 +131,7 @@ Some of the [Reaction Collections](https://github.com/reactioncommerce/reaction/
 - Tags
 - Taxes
 
-The [Reaction Commerce/hooks](https://www.npmjs.com/package/@reactioncommerce/hooks) extend [Mongo.Collection](http://docs.meteor.com/#/full/mongo_collection) with before/after hooks for `insert`, `update`, `remove`, `find`, and `findOne`.
+The [Demand Cluster/hooks](https://www.npmjs.com/package/@demandcluster/hooks) extend [Mongo.Collection](http://docs.meteor.com/#/full/mongo_collection) with before/after hooks for `insert`, `update`, `remove`, `find`, and `findOne`.
 
 ### Attaching a schema
 
