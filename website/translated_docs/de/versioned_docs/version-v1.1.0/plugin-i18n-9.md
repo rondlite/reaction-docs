@@ -4,7 +4,7 @@ id: version-v1.1.0-plugin-i18n-9
 title: i18n
 ---
     
-Reaction Commerce has been localized from the very start, and allows plugins to also add internationalization (heretofore call i18n) using the [http://i18next.com/](http://i18next.com/) library.
+Demand Cluster has been localized from the very start, and allows plugins to also add internationalization (heretofore call i18n) using the [http://i18next.com/](http://i18next.com/) library.
 
 The process is simple and just involves these steps:
 
