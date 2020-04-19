@@ -6,12 +6,12 @@ original_id: swag-shop-3
 
 ## Styling a existing component
 
-All the CSS styles can be added directly in `lib/reactionTheme.js` file. The Example Storefront uses a combination of [JSS](http://cssinjs.org/) with [Material-UI](https://material-ui.com/) and [Styled Components](http://styled-components.com/) for CSS in React components.
+All the CSS styles can be added directly in `lib/demandTheme.js` file. The Example Storefront uses a combination of [JSS](http://cssinjs.org/) with [Material-UI](https://material-ui.com/) and [Styled Components](http://styled-components.com/) for CSS in React components.
 
 For example, to style the Header component:
 
 1. Open the Header component at `/src/components/Header/Header.js` and take note of the `name` of the Component passes to `withStyle`. Here it is "Header" as is evident from the line `@withStyles(styles, { name: "Header" })`
-2. Open `src/custom/reactionTheme.js` and in the object being passed to `createMuiTheme` add a property `overrides` in the following way:
+2. Open `src/custom/demandTheme.js` and in the object being passed to `createMuiTheme` add a property `overrides` in the following way:
   ```javascript
   const theme = createMuiTheme({
     overrides: {
@@ -30,7 +30,7 @@ For example, to style the Header component:
 
 ## Styling a new component
 
-Either you can follow the above approach of naming the component and writing the styles in the `lib/reactionTheme.js` file. Or you can write the styling code within the component.
+Either you can follow the above approach of naming the component and writing the styles in the `lib/demandTheme.js` file. Or you can write the styling code within the component.
 
 For example, we wrote the following `component(HomePageStaticText)`, to display static text on the homepage:
 
