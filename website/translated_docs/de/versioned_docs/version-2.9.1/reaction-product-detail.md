@@ -1,7 +1,7 @@
 ---
-id: version-2.9.1-reaction-product-detail
+id: version-2.9.1-demand-oduct-detail
 title: Product Detail
-original_id: reaction-product-detail
+original_id: demand-oduct-detail
 ---
     
 The product detail page is made up of `React` components and a `json` layout stored in the database.
@@ -55,10 +55,10 @@ export default function blocks() {
 
 ```javascript
 // File is shortened for example
-import Reaction from "/imports/plugins/core/core/server/Reaction";
+import demand from "/imports/plugins/core/core/server/demand";
 import SimpleLayout from "../lib/layout/simple";
 
-Reaction.registerTemplate({
+demand.registerTemplate({
   name: "productDetailSimple",
   title: "Product Detail Simple Layout",
   type: "react",
@@ -105,11 +105,11 @@ You register a block for your layout like so:
 
 ### Registered React Component
 
-A registered React component, is a React component that has been registered with `registerComponent` for use with `ReactionLayout`.
+A registered React component, is a React component that has been registered with `registerComponent` for use with `demandLayout`.
 
 ```js
 import React, { Component } from "react";
-import { registerComponent } from "@reactioncommerce/reaction-components";
+import { registerComponent } from "@demandcluster/demand-mponents";
 
 // Create your component
 class MyComponent extends Component {
@@ -120,7 +120,7 @@ class MyComponent extends Component {
   }
 }
 
-// Register component for ReactionLayout
+// Register component for demandLayout
 registerComponent("MyComponent", MyComponent);
 
 // Export component if you also want to use it in other places in the App
@@ -154,11 +154,11 @@ Your basic configuration for this component might look like this.
 
 ### Register Layout Template
 
-Registering a template will add your template configuration to the `Templates` collection in Reaction. This will also show a new template option in the `Templates` dropdown in the Product Admin.
+Registering a template will add your template configuration to the `Templates` collection in demand. This will also show a new template option in the `Templates` dropdown in the Product Admin.
 
 ```js
 // Register the template for use with the product detail page
-Reaction.registerTemplate({
+demand.registerTemplate({
   // Template name, must be unique
   name: "productDetailSimple",
 
@@ -195,7 +195,7 @@ In a file on the client, create your React component, and register it.
 
 ```js
 import React, { Component } from "react";
-import { registerComponent } from "@reactioncommerce/reaction-components";
+import { registerComponent } from "@demandcluster/demand-mponents";
 
 // Create your component
 class MyPriceComponent extends Component {
@@ -206,7 +206,7 @@ class MyPriceComponent extends Component {
   }
 }
 
-// Register component for ReactionLayout via Reaction.registerTemplate()
+// Register component for demandLayout via demand.registerTemplate()
 registerComponent("MyPriceComponent", MyPriceComponent);
 ```
 
@@ -215,7 +215,7 @@ registerComponent("MyPriceComponent", MyPriceComponent);
 In a file on the server, create your template layout, and register it.
 
 ```js
-import { Reaction } from "/server/api";
+import { demand } from "/server/api";
 
 const templateLayout = [
   // Header block (Full Width)
@@ -227,7 +227,7 @@ const templateLayout = [
     permissions: ["admin"], // Permissions for staff
     audience: ["guest", "anonymous"], // Permissions for customers
     children: [
-      // Title (Built-in Component of reaction-product-detail-simple)
+      // Title (Built-in Component of demand-oduct-detail-simple)
       {
         component: "ProductField",
         // Example, you can set permissions components that are children of a block
@@ -258,7 +258,7 @@ const templateLayout = [
 ];
 
 // Register the template for use with the product detail page
-Reaction.registerTemplate({
+demand.registerTemplate({
   name: "productDetailSimpleTitleOnly",
   title: "PDP Title Only",
   type: "react",
