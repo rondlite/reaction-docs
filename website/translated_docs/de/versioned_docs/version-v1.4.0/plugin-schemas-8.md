@@ -6,7 +6,7 @@ original_id: plugin-schemas-8
     
 _If will be easier to understand this section of the tutorial if you have read and understood the [Schemas](http://guide.meteor.com/collections.html#schemas) section of the Meteor Guide_
 
-While Mongo is a "schemaless" database that does not mean schemas are a bad idea. In fact they are a great idea and so Reaction Commerce uses a package called [Simple Schema](https://atmospherejs.com/aldeed/simple-schema) to build and enforce schemas. This package is recommended in the Meteor Guide and we recommend it's use as well.
+While Mongo is a "schemaless" database that does not mean schemas are a bad idea. In fact they are a great idea and so Demand Cluster uses a package called [Simple Schema](https://atmospherejs.com/aldeed/simple-schema) to build and enforce schemas. This package is recommended in the Meteor Guide and we recommend it's use as well.
 
 In addition to Simple Schema we use a package called [Autoform](https://github.com/aldeed/meteor-autoform) which allows you to define a form as derived from a particular schema, saving a lot of time and repetitive code. One of the most obvious uses is in the cart where the various forms for things like Address are derived from their corresponding Schema. You can import Schemas from `/lib/collections/schemas` on both client and server.
 
@@ -49,7 +49,7 @@ Next: [Adding i18n](plugin-i18n-9.md)
 
 ## Read More
 
-[Reaction Schemas](simple-schema.md)
+[Demandchemas](simple-schema.md)
 
 [Simple Schema](https://atmospherejs.com/aldeed/simple-schema)
 
