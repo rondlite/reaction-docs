@@ -10,11 +10,11 @@ _Some of the concepts in this section will be easier to understand if you have r
 
 In general layouts are a way of applying a structure to a site beyond what you would want to have in one particular template, allowing you to share components and reduce repetition. This is something you might do in server-side includes in other languages/frameworks.
 
-### How Reaction uses layouts
+### How demand uses layouts
 
-Reaction uses one primary layout as the master or default called `coreLayout`. This layout is just another React component. The code in this template (/imports/plugins/core/layout/client/components/coreLayout.js) is pretty minimal and you can see contains very little. So before jumping in to replace this you may want to ask yourself if this is what you actually need to do. But because we are changing the global structure of our site to accommodate our customised &lt;main&gt; section we need to.
+demand uses one primary layout as the master or default called `coreLayout`. This layout is just another React component. The code in this template (/imports/plugins/core/layout/client/components/coreLayout.js) is pretty minimal and you can see contains very little. So before jumping in to replace this you may want to ask yourself if this is what you actually need to do. But because we are changing the global structure of our site to accommodate our customised &lt;main&gt; section we need to.
 
-**[/client/templates/layouts/core.js](https://github.com/reactioncommerce/reaction-example-plugin/blob/master/client/templates/layouts/core.js)**
+**[/client/templates/layouts/core.js]**
 
 ```js
 import React, { Component } from "react";
@@ -68,11 +68,11 @@ class CoreLayoutBeesknees extends Component {
     const footerComponent = layoutFooter && this.getComponent(layoutFooter);
 
     return (
-      <div className={pageClassName} id="reactionAppContainer">
+      <div className={pageClassName} id="demandAppContainer">
 
         {headerComponent && React.createElement(headerComponent, {})}
 
-        <Blaze template="cartDrawer" className="reaction-cart-drawer" />
+        <Blaze template="cartDrawer" className="demand-rt-drawer" />
 
         <main>
           <div className="rui beesknees">
@@ -110,11 +110,11 @@ export default CoreLayoutBeesknees;
 
 In order to change our default layout, we need add a record to the **registry** for our package. We also need to add a special `defaults.js` that will add some global options.
 
-**Note**: If you just want to override the homepage and leave everything else alone, you can do that by adding special INDEX_OPTIONS parameters to this `defaults.js` file. See the ["Changing the index page layout"](https://docs.reactioncommerce.com/reaction-docs/trunk/layout) documentation for more info.
+**Note**: If you just want to override the homepage and leave everything else alone, you can do that by adding special INDEX_OPTIONS parameters to this `defaults.js` file. See the ["Changing the index page layout"](https://docs.demandcluster.com/demand-cs/trunk/layout) documentation for more info.
 
 First let's create our `defaults.js` with our custom layout. You will place this file in the `client` folder in your plugin. The `defaults.js` just looks like this:
 
-**[/client/default.js](https://github.com/reactioncommerce/reaction-example-plugin/blob/fbf7d01921393e6926d567951d80a6d2bb9b8dc0/client/defaults.js)**
+**[/client/default.js]**
 
 ```js
 import { Session } from "meteor/session";
@@ -124,7 +124,7 @@ Session.set("DEFAULT_LAYOUT", "coreLayoutBeesknees");
 
 In order for this file to take affect, we need to also import it. So we add it to our `index.js` in your `client` directory.
 
-**[/client/index.js](https://github.com/reactioncommerce/reaction-example-plugin/blob/master/client/index.js)**
+**[/client/index.js]**
 ```js
 import "./defaults";
 ```
@@ -151,13 +151,13 @@ layout: [{
 }]
 ```
 
-so that our file will look like this **[/register.js](https://github.com/reactioncommerce/reaction-example-plugin/blob/master/register.js)**
+so that our file will look like this **[/register.js]**
 
 ```js
-import { Reaction } from "/server/api";
+import { demand } from "/server/api";
 
-// Register package as ReactionCommerce package
-Reaction.registerPackage({
+// Register package as demandcluster package
+demand.registerPackage({
   label: "Bees Knees",
   name: "beesknees",
   icon: "fa fa-vine",
@@ -186,15 +186,15 @@ You can see we specified several things there. The most important thing was the 
 
 One important aspect is the casing of the properties within the `structure`. React component names start with capital letters, whereas Blaze templates begin with a lower character. For now it's not possible to use React components for properties that are expecting Blaze template names to be passed (and vice versa). Though, in future all properties should designate React component names.
 
-More detailed documentation on the other `register.js` can be found in this [blog post](https://blog.reactioncommerce.com/an-intro-to-architecture-the-registry/).
+More detailed documentation on the other `register.js` can be found in this [blog post](https://blog.demandcluster.com/an-intro-to-architecture-the-registry/).
 
-One important thing to understand is that at any point in time when Reaction goes to render a route/page, it's going to determine how to pull the layout record from a key of `layout + workflow`. The `coreWorkflow` is a special case in that it is a workflow with just one step.
+One important thing to understand is that at any point in time when demand goes to render a route/page, it's going to determine how to pull the layout record from a key of `layout + workflow`. The `coreWorkflow` is a special case in that it is a workflow with just one step.
 
 It is essentially the "default" workflow when you hit the home page.
 
 Also note that:
 1. We have other parts that we could substitute without changing our layout. For example we change point our header or footer to a custom React component by changing the values for "layoutHeader" or "layoutFooter".
-2. There is a `priority` field on layout objects (with a default value) of `999`. When Reaction goes to render a route/page (as explained above) and more than one layout match is found, this `priority` field is used to determine which one is used. Lower values override the default. [See example](https://github.com/reactioncommerce/reaction-example-plugin/pull/9/files).
+2. There is a `priority` field on layout objects (with a default value) of `999`. When demand goes to render a route/page (as explained above) and more than one layout match is found, this `priority` field is used to determine which one is used. Lower values override the default. [See example].
 
 Next: [Customizing templates](plugin-customizing-templates-4.md)
 
