@@ -4,19 +4,19 @@ title: Payments - Stripe
 original_id: payment-packages-stripe
 ---
     
-Stripe Payment Platform integration for Reaction Commerce
+Stripe Payment Platform integration for Demand Cluster
 
 Documentation is available at <https://stripe.com/docs/api>
 
 ## Configuration
 
-Configuration can be performed by Administrators in the Reaction Dashboard.
+Configuration can be performed by Administrators in the demand Dashboard.
 
-It can also be done in `private/settings/reaction.json` by adding (or updating) the following configuration details (remember to fill in the blanks):
+It can also be done in `private/settings/demand.json` by adding (or updating) the following configuration details (remember to fill in the blanks):
 
 ```json
 {
-  "name": "reaction-stripe",
+  "name": "demand-ripe",
   "enabled": true,
   "settings": {
     "api_key": ""
@@ -53,7 +53,7 @@ Based on the accepted payment methods, Stripe's default schema for credit card n
 
 -   refunds (list)
 
-> A list of all refunds or discounts, processed through Reaction or the Stripe UI.
+> A list of all refunds or discounts, processed through demand or the Stripe UI.
 
 ## Testing
 
