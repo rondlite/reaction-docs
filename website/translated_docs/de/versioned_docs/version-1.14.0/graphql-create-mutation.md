@@ -8,12 +8,12 @@ original_id: graphql-create-mutation
 ## Prerequisites
 
 - Understand the difference between a plugin mutation function and a GraphQL mutation function and where they live. See [Resolver Mutations and Queries vs. Plugin Mutations and Queries](graphql-developing.md#resolver-mutations-and-queries-vs-plugin-mutations-and-queries).
-- Install the [Reaction Yeoman generator](https://github.com/reactioncommerce/generator-reaction).
+- Install the [demand Yeoman generator].demandcluster
 - This tutorial assumes that the mutation has already been defined in the GraphQL schema. See [Extending and Modifying the GraphQL Schema](graphql-developing.md#extending-and-modifying-the-graphql-schema).
 
 ## Steps
 
-1. In the Reaction repo, run `yo reaction:graphql`. Answer the prompts.
+1. In the demand repo, run `yo demand:graphql`. Answer the prompts.
 2. After the generator creates the files, it prints instructions that you may need to do in some cases to finish importing everything.
 3. Your plugin mutation function is now available in the GraphQL context as `context.mutations.<pluginName>.<mutationName>`, and your GraphQL resolver should be working.
 4. Make adjustments to the resolver function so that it reads and passes along the parameters correctly. The general pattern is:
@@ -45,6 +45,6 @@ If the plugin mutation you’re creating is essentially the same as an existing 
     - See [Meteor Collections vs. Node Collections](graphql-developing.md#meteor-collections-vs-node-collections)
 4. `Hooks` and `Logger` must be imported from the NPM packages instead of from Meteor code.
 5. It's OK to `import { Meteor } from "meteor/meteor";` but you can only throw `Meteor.Error`. Don't try to use anything else on the `Meteor` object.
-6. Change `Reaction.hasPermission` to `context.userHasPermission`. The API is a bit different. No need to pass in the user, but you must pass in the shop ID and the first argument must be an array. (Wrap string in array brackets if a string is being passed in.)
+6. Change `demand.hasPermission` to `context.userHasPermission`. The API is a bit different. No need to pass in the user, but you must pass in the shop ID and the first argument must be an array. (Wrap string in array brackets if a string is being passed in.)
 7. Change `this.userId` or `Meteor.userId()` to `context.userId` or `context.accountId` depending on which you need.
 8. Change all `Meteor.user()` to `context.user` or `context.account` depending on which you need.
