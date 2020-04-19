@@ -27,10 +27,10 @@ Binnen het AT-proces zijn er drie belangrijke punten
 
 **Testen** Zodra het setup-proces van de test is voltooid is het tijd om te testen. Elk AT script zal gebruikers-flow stappen moeten voltooien, veel gebruikers-flow stappen zullen testvarianten hebben die misschien ook moeten worden getest. Succes van kritieke testvarianten worden weergegeven in de _Touch Points_ van het script, deze testvarianten moeten worden voltooid om als succesvol te kunnen worden beschouwd.
 
-**Issue Rapportage** Alle AT scripts zullen een _Bedoeld Resultaat_ sectie hebben, als je elke stap van het AT script hebt voltooid en je de beoogde resultaten niet ziet, dan wordt de acceptatietest als een mislukking beschouwd. Als dit het geval is, volg dan de stappen voor het melden van een probleem in de bijdrage gids
+**Issue Rapportage** Alle AT scripts zullen een _Bedoeld Resultaat_ sectie hebben, als je elke stap van het AT script hebt voltooid en je de beoogde resultaten niet ziet, dan wordt de acceptatietest als een mislukking beschouwd. If this is the case follow the steps for reporting an issue in the [Contributing Guide](https://docs.demandcluster.com/demand-cs/trunk/contributing-to-demand#step-2-find-or-open-an-issue)
 
 ## Scripts testen
-Inhoudsopgave voor alle DemandJS Commerce AT scripts.
+Table of contents for all Demand Cluster AT scripts.
 
 **BestellIing scripts**
 - [Bestelling aanmaken](order-creation.md)
@@ -44,8 +44,8 @@ Inhoudsopgave voor alle DemandJS Commerce AT scripts.
 
 ## Bronnen
 **Testen**
-- [demandJS-devtools](https://github.com/reactioncommerce/reaction-devtools)
+- [demand-vtools]
 - [Acceptatie-test scriptsjablonen](script-template)
 
 **Rapportage**
-- [Handleiding](contributing-to-reaction)
+- [Handleiding](contributing-to-demand)
