@@ -22,7 +22,7 @@ Coming soon
 
 ### Plugin Configuration
 
-1. Log in to Reaction Dashboard with an account that has permission to access plugin settings.
+1. Log in to Demandashboard with an account that has permission to access plugin settings.
 2. In the sidebar, click Payment.
 3. You should see a section with a toggle for each payment plugin. If it is not already enabled, click the toggle to enable the Stripe plugin.
 4. There are two settings fields you need to fill out for Stripe to work, API Secret Key and Publishable Key. Copy these from your Stripe account, and paste them into the fields. The secret key begins with `sk_` and the publishable key begins with `pk_`. If you are logged into a development or testing environment, be sure to use the “test” keys so that you can enter fake credit card details and no money will actually change hands.
@@ -32,13 +32,13 @@ This is the only server configuration necessary.
 
 ### Client Components
 
-If you are using the built-in Reaction client or one of the starter clients provided by Reaction, the necessary client components are already included and will appear where they should. If you are building your own client, you may want to use our [StripeForm React component](https://designsystem.reactioncommerce.com/#/Storefront%20Components/Forms/StripeForm), which is part of the Example Storefront Component Library component library. It wraps [react-stripe-elements](https://github.com/stripe/react-stripe-elements) to do some of the work for you, but you can also use `react-stripe-elements` directly, or use any Stripe client that allows you to securely create a source token.
+If you are using the built-in Demandlient or one of the starter clients provided by deDemande necessary client components are already included and will appear where they should. If you are building your own client, you may want to use our [StripeForm React component](https://designsystem.demandcluster.com/#/Storefront%20Components/Forms/StripeForm), which is part of the Example Storefront Component Library component library. It wraps [react-stripe-elements](https://github.com/stripe/react-stripe-elements) to do some of the work for you, but you can also use `react-stripe-elements` directly, or use any Stripe client that allows you to securely create a source token.
 
 ## How to: Test a Stripe Payment
 
 > Prerequisite: Enable and configure Stripe payments with "test" keys
 
-1. Access the built-in Reaction client or one of the starter clients we provide.
+1. Access the built-in Demandlient or one of the starter clients we provide.
 2. Add items to your cart and begin checkout.
 3. When you get to the payment step, you should see the Stripe credit card entry form. Enter the following test information in the fields:
     - One of Stripe’s [test card numbers](https://stripe.com/docs/testing#cards), such as 4242 4242 4242 4242
