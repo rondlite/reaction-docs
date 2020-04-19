@@ -4,7 +4,7 @@ title: Catalogs
 original_id: developer-catalog
 ---
 
-In Reaction, an operator creates and edits products and variants of those products, but none of this is visible on the storefront until the product is **published**. Publishing is a single button click for the operator, but let's look at what actually happens in the code.
+In Demand, an operator creates and edits products and variants of those products, but none of this is visible on the storefront until the product is **published**. Publishing is a single button click for the operator, but let's look at what actually happens in the code.
 
 1. The UI calls the `publishProductsToCatalog` GraphQL mutation, passing an array of product IDs.
     - Provided by the `catalog` plugin
