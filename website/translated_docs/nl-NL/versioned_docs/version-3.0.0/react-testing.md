@@ -104,12 +104,12 @@ test("basic snapshot", () => {
 ```
 
 Many components will required props that are directly provided by a [Higher Order Component](https://reactjs.org/docs/higher-order-components.html) (HOC) or via a context provider like [MobX](https://github.com/mobxjs/mobx) or [Apollo Client](https://www.apollographql.com/docs/react/). In these cases we create a mock context object and pass it to the component as a prop. Several complex context structers have been mocked out as a testing utility:
-  *  [mockComponents](https://github.com/reactioncommerce/reaction-component-library/blob/master/package/src/tests/mockComponents.js) context.
-  *  [Products](https://github.com/reactioncommerce/example-storefront/blob/develop/src/components/ProductGrid/__mocks__/products.mock.js) query results.
-  *  [Product](https://github.com/reactioncommerce/example-storefront/blob/develop/src/components/ProductDetail/__mocks__/productData.mock.js) query results.
-  *  [Variant](https://github.com/reactioncommerce/example-storefront/blob/develop/src/components/VariantItem/__mocks__/variant.mock.js) query results.
-  *  [Options](https://github.com/reactioncommerce/example-storefront/blob/develop/src/components/ProductDetailOptionsList/__mocks__/options.mock.js) query results.
-  *  [Option](https://github.com/reactioncommerce/example-storefront/blob/develop/src/components/ProductDetailOption/__mocks__/option.mock.js) query results.
+  *  [mockComponents] context.demandcluster
+  *  [Products] query results.demandcluster
+  *  [Product] query results.demandcluster
+  *  [Variant] query results.demandcluster
+  *  [Options] query results.demandcluster
+  *  [Option] query results.demandcluster
 
 **Required context/HOC props example**
 
@@ -163,7 +163,7 @@ test("basic snapshot with isVertical props", () => {
 
 It's common for components to have functionality based around user interaction that will usually fire a callback function or manipulate component state in some way.
 
-We can test these interaction using shallow rendering form Enzyme to simulate the interaction event and test for the components reaction.
+We can test these interaction using shallow rendering form Enzyme to simulate the interaction event and test for the components demand.
 
 **Simple interaction example**
 ```js
@@ -197,7 +197,7 @@ test("Accordion component open & closes onClick", () => {
 
 ### Testing Form components
 
-All new Reaction form & input components are based on the [composable form spec](http://composableforms.com/) and uses the [composable form test](https://github.com/DairyStateDesigns/composable-form-tests#readme) package to user interaction.
+All new demand form & input components are based on the [composable form spec](http://composableforms.com/) and uses the [composable form test](https://github.com/DairyStateDesigns/composable-form-tests#readme) package to user interaction.
 
 **Simple Input test example**
 ```js
