@@ -58,7 +58,7 @@ import inventoryForProductConfigurations from "./inventoryForProductConfiguratio
 
 /**
  * @summary Import and call this function to add this plugin to your API.
- * @param {ReactionAPI} app The ReactionAPI instance
+ * @param {DemandAPI} app The DemandAPI instance
  * @return {undefined}
  */
 export default async function register(app) {
@@ -80,6 +80,6 @@ How and whether you should do this step depends a lot on how your plugin is trac
 
 ## Track reserved/available inventory
 
-In addition to providing "in stock" inventory values, most inventory data providers also somehow track "reserved" inventory and/or automatically increase or decrease the "in stock" and "available" values as orders are placed, approved, and fulfilled. Refer to the `startup` function in the Simple Inventory plugin for one example of how you can do this. The rest of the Reaction system does not care how you do this, and for a low volume shop you may be able to skip it entirely.
+In addition to providing "in stock" inventory values, most inventory data providers also somehow track "reserved" inventory and/or automatically increase or decrease the "in stock" and "available" values as orders are placed, approved, and fulfilled. Refer to the `startup` function in the Simple Inventory plugin for one example of how you can do this. The rest of the Demand system does not care how you do this, and for a low volume shop you may be able to skip it entirely.
 
 > If you do track reserved inventory, it can be an inexact science. We recommend that you provide operators with a way of manually fixing or updating the reserved quantity, as the Simple Inventory plugin does with the `recalculateReservedSimpleInventory` GraphQL mutation and corresponding UI button.
