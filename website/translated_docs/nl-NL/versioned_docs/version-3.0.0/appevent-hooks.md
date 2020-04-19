@@ -6,7 +6,7 @@ sidebar_label: App Events
 original_id: appevent-hooks
 ---
 
-De `Hooks.Events` API en `MethodHooks` van vorige versies van DemandJS zijn verwijderd ten gunste van `appEvents`. Met `appEvents`, zoals hooks kun je callbacks toevoegen aan bepaalde events in de app lifecycle.
+The `Hooks.Events` API and `MethodHooks` from previous versions of Demand have been removed in favor of `appEvents`. Met `appEvents`, zoals hooks kun je callbacks toevoegen aan bepaalde events in de app lifecycle.
 
 ## Emit an app event
 
