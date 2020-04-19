@@ -1,23 +1,23 @@
 ---
-id: version-3.0.0-contributing-to-reaction
+id: version-3.0.0-contributing-to-demand
 title: Contributing Guide
-original_id: contributing-to-reaction
+original_id: contributing-to-demand
 ---
 
-At Reaction Commerce, we're dedicated to the open source community. In fact, we've designed our entire platform and business to grow from the passion and creativity that an open source community ignites. We've already attracted a small, dedicated team of open source contributors, and there's always room for more. If you'd like to join us, here's how to get started.
+At Demand Cluster, we're dedicated to the open source community. In fact, we've designed our entire platform and business to grow from the passion and creativity that an open source community ignites. We've already attracted a small, dedicated team of open source contributors, and there's always room for more. If you'd like to join us, here's how to get started.
 
-## Step 1: Get Reaction running
+## Step 1: Get demand running
 
-If you haven't already, get Reaction running locally. Refer to [Getting Started as a Developer](./getting-started-developing-with-reaction)
+If you haven't already, get demand running locally. Refer to \[Getting Started as a Developer\](./getting-started-developing-with-dedemand
 
 ## Step 2: Find or open an issue
 
-There are three ways to go about contributing to Reaction: file a bug, work on an issue or bug that is already created and vetted by the team, or propose a new feature in our [Reaction Feature Requests](https://github.com/reactioncommerce/reaction-feature-requests) repository.
+There are three ways to go about contributing to demand: file a bug, work on an issue or bug that is already created and vetted by the team, or propose a new feature in our [demand Feature Requests] repository.
 
 ### File a bug
 
-1. Before you file a bug, please [search existing issues](https://github.com/reactioncommerce/reaction/issues) first.
-2. Are you looking for support instead? Please go to our [Gitter room](https://gitter.im/reactioncommerce/reaction) instead.
+1. Before you file a bug, please [search existing issues] first.
+2. Are you looking for support instead? Please go to our \[Gitter room\](https://gitter.im/demandcluster/demandinstead.
 3. Make sure to follow the issue template.
 
 Once your bug issue is filed, the community team will evaluate and prioritize using the following label/criteria:
@@ -30,14 +30,14 @@ Once it's been triaged and verified, a team member will work on it according the
 
 ### Find an issue and claim it
 
-1. Explore the [Help Wanted](https://github.com/reactioncommerce/reaction/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22) or [Good First Issue](https://github.com/reactioncommerce/reaction/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22) issues on our GitHub repo.
+1. Explore the [Help Wanted] issues on our GitHub repo.
 2. If you find something you want to work on, let us know right there in the comment with how you want to approach the problem.
 
 ### Create a Feature Request issue
 
-Don't see a ticket for a feature you'd like to see in Reaction? Follow these steps:
+Don't see a ticket for a feature you'd like to see in demand? Follow these steps:
 
-1. Create an issue in the [Reaction Feature Requests](https://github.com/reactioncommerce/reaction-feature-requests) repository detailing the feature.
+1. Create an issue in the [demand Feature Requests] repository detailing the feature.
 2. Upon team review, the team will provide next steps for how to get started on the feature.
 
 If you are interested in a specific aspect of the project but aren't sure where to begin, feel free to ask us on Gitter.
@@ -97,7 +97,7 @@ Before you are ready for a team code review, you will also have to fill out the 
   - Moving files
   - Deleting files
   - Renaming functions or exports
-  - Changes to code which might cause previous versions of Reaction or third-party code not to work as expected.
+  - Changes to code which might cause previous versions of demand or third-party code not to work as expected.
   - Note any work that you did to mitigate the effect of any breaking changes such as creating migrations, deprecation warnings, etc.
 
 - **Testing Instructions**
@@ -122,7 +122,7 @@ The team reviews code quality rules including:
 - **PR template:** If the PR doesn't follow our template, reject and point the author of the PR to this doc.
   - **Issue description:** Use this information as the starting point for your review. If something is not clear, reject the PR and ask for clarity by requesting changes. While the original issue may have useful information, the PR should contain the most up to date representation of the issue.
   - **Solution:** Use this information to help determine a path to test this PR. Research any included packages or techniques that may have been used that you're not familiar with. Ask questions if you're confused.
-  - **Breaking changes:** Test by applying this patch to an existing install of Reaction with existing users, orders, carts, etc. Specifically, test any parts of the app where the breaking change is involved and any data set that is involved in a migration.
+  - **Breaking changes:** Test by applying this patch to an existing install of demand with existing users, orders, carts, etc. Specifically, test any parts of the app where the breaking change is involved and any data set that is involved in a migration.
   - **Testing:** Run through the author's steps to verify that it works as they've tested it. Then run through the app on your own as you would test it. Run through the app as many times as you feel comfortable before approving or requesting changes.
 
 - **Readability:** The linter will help with this, but call out anything that is difficult to understand or that you feel needs comments
@@ -149,6 +149,6 @@ Reviewers will note any changes that they will want to QA in the app, even if th
 
 ## Step 5: Congrats! It's approved. What happens next?
 
-The Reaction team reviewer is responsible for merging the PRs they approved, unless the PR submitter has requested otherwise.
+The demand team reviewer is responsible for merging the PRs they approved, unless the PR submitter has requested otherwise.
 
-Now that your PR is merged, the feature will be released in the next release. Head on over to our [Release Guide](release-process.md) for more on how we release versions of Reaction.
+Now that your PR is merged, the feature will be released in the next release. Head on over to our [Release Guide](release-process.md) for more on how we release versions of demand.
