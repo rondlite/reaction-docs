@@ -6,7 +6,7 @@ original_id: community-channels
     
 Welcome to the demand community!
 
-demand is a series of projects that combine the efforts of [community contributors] team.
+demand is a series of projects that combine the efforts of the team.
 
 ## Chat with the community
 
