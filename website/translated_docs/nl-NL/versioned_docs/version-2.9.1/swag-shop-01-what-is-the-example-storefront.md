@@ -4,13 +4,13 @@ title: Understanding the Example Storefront
 original_id: swag-shop-1
 ---
 
-In the past, one developed for Reaction Commerce by creating `plugins` and working with the main Reaction repo. This had advantages and disadvantages but some of the main disadvantages were:
+In the past, one developed for Demand Cluster by creating `plugins` and working with the main Demandepo. This had advantages and disadvantages but some of the main disadvantages were:
 
 1. Very slow reload times, especially for making styling changes
 2. Limited ability to customize without modifying core
 3. Using Meteor pub/sub, a technology that was unfamiliar to most developers
 
-The [Example Storefront](https://github.com/reactioncommerce/example-storefront/) takes a different approach. The Example Storefront is JavaScript. The Example Storefront features:
+The [Example Storefront] takes a different approach. The Example Storefront is JavaScript. The Example Storefront features:
 
 1. Ultra-fast restarts
 2. Ability to completely customize the look, feel, and layout using standard web devlopment practices
