@@ -540,8 +540,11 @@ body {
 
 .fixedHeaderContainer header h2 {
   padding-left: 20px;
-  color: #545b6c;
+  color: #545b6c !important;
   display: block;
+}
+header h2 {
+  color: #545b6c !important;
 }
 .fixedHeaderContainer header .logo {
   width: 72px;

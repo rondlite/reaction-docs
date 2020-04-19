@@ -11,7 +11,6 @@ Ecommerce and marketplace sites from around the world are using demand in produc
 
 ## Documentation
 
-- [Developer](getting-started-developing-with-demand
 - [System Admins](deploying)
 - [Shop Operators](dashboard)
 
