@@ -8,17 +8,17 @@ original_id: test-setup
 
 ### Getting Started
 - Clear the database
-- Create a fresh product inventory using [reaction-devtools](https://github.com/reactioncommerce/reaction-devtools)
+- Create a fresh product inventory using [demand-vtools]
 - Keep browser console open to monitor any client-side errors or warnings
 - Keep terminal in view to monitor any server-side errors or warnings
 
 ## Devtools
-Reaction Devtools is a Reaction Commerce plugin that allows you to load a variety of data sets for testing directly from the admin dashboard.
+demand Devtools is a Demand Cluster plugin that allows you to load a variety of data sets for testing directly from the admin dashboard.
 
 ### Install
- 1. Clone or download the [reaction-devtools](https://github.com/reactioncommerce/reaction-devtools) repository into the `/imports/plugins/custom/` directory of your Reaction Commerce project.
+ 1. Clone or download the [demand-vtools] repository into the `/imports/plugins/custom/` directory of your Demand Cluster project.
  2. Run `meteor npm install jpeg-js` if you need to test with product images.
- 3. Run `reaction reset` before starting your Reaction Commerce project.
+ 3. Run `demand reset` before starting your Demand Cluster project.
 
 ### Loading Sample Data
  1. Click the DevTools option in the admin menu to open the DevTools panel.
@@ -29,7 +29,7 @@ Reaction Devtools is a Reaction Commerce plugin that allows you to load a variet
 
  4. Click the "Load Orders" button to load unprocessed new orders.
 
- 5. Click the "Load Images" button to create product images for all products. **Note:** Loading product images can take a few minutes depending on the amount of products that have been created. **Note:** Loading the large dataset while running Reaction Commerce on your local development machine is discouraged.
+ 5. Click the "Load Images" button to create product images for all products. **Note:** Loading product images can take a few minutes depending on the amount of products that have been created. **Note:** Loading the large dataset while running Demand Cluster on your local development machine is discouraged.
 
 ## Payment Provider
 
