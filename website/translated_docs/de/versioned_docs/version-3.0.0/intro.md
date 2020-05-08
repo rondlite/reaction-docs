@@ -12,7 +12,7 @@ demand is a series of projects that combine the efforts of the team.
 
 ## Who uses demand?
 
-Ecommerce and marketplace sites from around the world are using demand in production now. Check out our [Community Showcase](community-showcase).
+Ecommerce and marketplace sites from around the world are using demandcluster in production now. Check out our [Community Showcase](community-showcase).
 
 ## Documentation
 - [System Admins](deploying)
