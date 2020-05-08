@@ -4,14 +4,14 @@ title: CI Builds
 original_id: using-ci
 ---
 
-Whenever a Pull Request or merge request is made to the Demandepo, there are automated acceptance steps that must pass before we merge into the `develop` branch.
+Whenever a Pull Request or merge request is made to the demandcluster repo, there are automated acceptance steps that must pass before we merge into the `develop` branch.
 
 ## Checks
 
 - code style and lint rules adherence
 - unit and integration tests
-- docker builds on release branches
-- DCO (commit signing)
+- Docker builds on release branches
+- [DCO (commit signing)](./git-style-guide#developer-certificate-of-origin)
 
 ## Builds
 
