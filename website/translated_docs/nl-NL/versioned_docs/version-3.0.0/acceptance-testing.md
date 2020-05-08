@@ -10,7 +10,7 @@ original_id: acceptance-testing
 
 Met een acceptatietest (AT) testen we de toepassing en de functionaliteit vanuit het oogpunt van een gebruiker. Verwante functionaliteiten worden samen gegroepeerd en getest op basis van de stappen van een AT script. AT-scripts beschrijven de functionaliteit die getest moet worden, succescriteria, teststappen en alle testvarianten.
 
-### Waarom is dit belangrijk?
+### Waarom is een acceptatie test belangrijk?
 
 Acceptatie-tests bieden ons:
 - Inzicht in pijnpunten en problemen met betrekking tot gebruikersstromen
@@ -19,7 +19,7 @@ Acceptatie-tests bieden ons:
 
 ## Aan de slag
 Binnen het AT-proces zijn er drie belangrijke punten
-- Instellingen testen
+- Test instellingen
 - Testen
 - Probleem rapportering
 
