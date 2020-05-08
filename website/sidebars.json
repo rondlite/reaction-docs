@@ -21,7 +21,6 @@
     "Developer": [
       "recommended-tools",
       "installation-docker-development",
-      "devs-node-es-modules",
       "troubleshooting-development"
     ],
     "For Developers: Concepts": [
@@ -30,19 +29,8 @@
       "devs-understanding-commonorder",
       "developer-environment-variables",
       "developer-inventory",
-      "developer-kafka-streams"
-    ],
-    "For Developers: Contributing Guide": [
-      "styleguide",
-      "git-style-guide",
-      "react-best-practices",
-      "jsdoc-style-guide",
-      "error-handling-guide",
-      "devs-breaking-changes",
-      "using-ci",
-      "release-process",
-      "reporting-vulnerabilities",
-      "community-showcase"
+      "developer-kafka-streams",
+      "devs-node-es-modules"
     ],
     "For Developers: GraphQL": [
       "graphql-what",
@@ -143,6 +131,7 @@
       "operator-address-validation"
     ],
     "Community": [
+      "community-showcase",
       "guidelines",
       "code-of-conduct",
       "diversity-statement",
