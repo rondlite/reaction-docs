@@ -12,22 +12,22 @@ _**Note:**Si vous manquez de quelque chose qui ne figure pas ici et que vous vou
 
 ### [demand-vtools]
 
-Install this plugin to get a dashboard panel that allows you to load datasets and images quickly for testing your app locally.
+Installez ce plugin pour obtenir un panneau de tableau de bord qui vous permet de charger rapidement des jeux de données et des images pour tester votre application localement.
 
-## Community plugins
+## Plugins communautaires
 
-| Category   | demand default(s)               | Community package(s)                                                                                                               |
-| ---------- | ------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
-| Payments   | Stripe, example payment package | [PayPal Express]                                                                                                                   |
-| Taxes      | Flat-rate                       | [Avalara](https://github.com/demand-ntrib/meteor-taxes-avalara), [TaxCloud](https://github.com/dedemand-rib/meteor-taxes-taxcloud) |
-| Shipping   | Flat-rate                       | [Shippo](https://github.com/demand-ntrib/meteor-shipping-shippo)                                                                   |
-| Connectors | CSV connector                   | [Shopify connector](https://github.com/demand-ntrib/meteor-connector-shopify)                                                      |
-| Adapters   |                                 | [AWS S3 file collections](https://github.com/demand-ntrib/dedemand--collections-sa-s3)                                             |
-| Logging    |                                 | [Meteor Logging API](https://github.com/demand-ntrib/meteor-logging-api)                                                           |
+| Catégorie      | Demande(s) par défaut                   | Package(s) communautaires                                                                                                          |
+| -------------- | --------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| Paiements      | Stripe, exemple de package de paiements | [PayPal Express]                                                                                                                   |
+| Taxes          | Forfait                                 | [Avalara](https://github.com/demand-ntrib/meteor-taxes-avalara), [TaxCloud](https://github.com/dedemand-rib/meteor-taxes-taxcloud) |
+| Livraison      | Forfait                                 | [Shippo](https://github.com/demand-ntrib/meteor-shipping-shippo)                                                                   |
+| Connecteurs    | Connecteur CSV                          | [Connecteur Shopify](https://github.com/demand-ntrib/meteor-connector-shopify)                                                     |
+| Adaptateurs    |                                         | [Collections de fichiers AWS S3](https://github.com/demand-ntrib/dedemand--collections-sa-s3)                                      |
+| Enregistrement |                                         | [API d'enregistrement de Meteor](https://github.com/demand-ntrib/meteor-logging-api)                                               |
 
 ### [Demand Cluster <> Magento importer](https://github.com/Buildateam/demand-gento)
 
-Import products, orders and customers from Magento EE 1.x stores into demand.
+Importez les produits, les commandes et les clients des magasins Magento EE 1.x sous demande.
 
 ### [Demand Cluster <> Netsuite bridge](https://github.com/Buildateam/demand-tsuite)
 
@@ -37,75 +37,75 @@ Export orders from Demand Cluster into Netsuite.
 
 ### [boomerdigital/demand-bscription-billing](https://github.com/boomerdigital/dedemand-cription-billing)
 
-This plugin is **work-in-progress**, but does address a very common request: A demand plugin that does support the most popular subscription billing features. This is because subscriptions play an important and ever increasing role in the ecommerce landscape.
+Ce plugin est <strong x-id = "1">en cours d'élaboration</strong>, mais répond à une demande très courante: un plugin de demande qui prend en charge les fonctionnalités de facturation d'abonnement les plus populaires. C'est parce que les abonnements jouent un rôle important et sont sans cesse croissants dans le paysage du commerce électronique.
 
 ### [DeligenceTechnologies/Subscription-Recurring-payments-in-demand-mmerce-using-Braintree-Payments-Gateway](https://github.com/DeligenceTechnologies/Subscription-Recurring-payments-in-dedemand-erce-using-Braintree-Payments-Gateway)
 
-This is a simple implementation of using Braintree Subscriptions. Simply add a "plan" in your Braintree panel and your customers can checkout using that plan. Updated to work with version >= 1.9
+Il s'agit d'une implémentation simple de l'utilisation des abonnements Braintree. Ajoutez simplement un "plan" dans votre panneau Braintree et vos clients peuvent commander en utilisant ce plan. Mis à jour pour fonctionner avec la version >= 1.9
 
-## SEO tools
+## Outils de SEO
 
 ### [demand-mmerce-caching-plugin](https://github.com/artlimes/dedemand-erce-caching-plugin)
 
-Use this demand plugin in conjunction with [Meteor Chrome Headless Spiderable](https://github.com/artlimes/meteor-chrome-headless-spiderable) package to allow your demand site to be crawled by spiders to allow search engines to access each page.
+Utilisez ce plugin de demande en conjonction avec le [package Meteor Chrome Headless Spiderable](https://github.com/artlimes/meteor-chrome-headless-spiderable) pour permettre à votre site d'être exploré par des araignées pour permettre aux moteurs de recherche d'accéder à chaque page.
 
-**Requirements:**
+**Exigences:**
 - Chrome
 
-## Community themes
+## Thèmes communautaires
 
 ### [demand-neric-theme](https://github.com/joshuacox/dedemand-ric-theme)
 
-This is a theming plugin directly targeted at those who like to change the theme for a demand installation. It's a great way to get accustomed to LESS variables that builds the foundation of demand's color palette. It also allows you to override styles for more specific parts of the application, like navigation, buttons and the like.
+Il s'agit d'un plugin thématique directement destiné à ceux qui aiment changer le thème d'une installation à la demande. C'est un excellent moyen de s'habituer aux variables RÉDUITES qui construisent les bases de la palette de couleurs à la demande. Il vous permet également de remplacer les styles pour des parties plus spécifiques de l'application, comme la navigation, les boutons, etc.
 
-**Requirements:**
-- Basic LESS/CSS knowledge
+**Exigences:**
+- Connaissances de base LESS/CSS
 
-**Learning content:**
-- Customize the visual appearance of demand
-- LESS functions helper functions to ease CSS related boilerplate
+**Contenu d'apprentissage:**
+- Personnalisez l'apparence visuelle de la demande
+- Les fonctions de LESS facilitent le passe-partout lié au CSS
 
-Kudos to [Joshua Cox!](https://github.com/joshuacox)
+Félicitations à [Joshua Cox!](https://github.com/joshuacox)
 
 ### [customdemandTheme](https://github.com/curranabell/customdemandTheme)
 
-Another plugin that is concerned with customizing the Shop's CSS styling, but also shows how to render own markup for different parts of the shop, like the landing page. It does so through usage of demand's [component API](http://api.docs.demandcluster.com/Components.html)
+Autre plugin qui concerne la personnalisation du style CSS de la boutique, mais montre également comment rendre son propre balisage pour différentes parties de la boutique, comme la page de destination. Pour ce faire, il utilise le [composant de l'API](http://api.docs.demandcluster.com/Components.html)
 
-Prerequisites: Uses additional meteor package. Open a console in project's root directory and execute this command: `meteor add ultimatejs:tracker-react` to add the required dependency.
+Prérequis: utilise un package de meteor supplémentaire. Ouvrez une console dans le répertoire racine du projet et exécutez cette commande: ` meteor add ultimatejs:tracker-react` pour ajouter la dépendance requise.
 
-**Requirements:**
-- Basic LESS/CSS knowledge
-- Basic React understanding
+**Exigences:**
+- Connaissances de base LESS/CSS
+- Compréhension de base de React
 
-**Learning content:**
-- Customize the visual appearance of demand
-- Use demand's component API to gain control over rendered HTML markup
+**Contenu d'apprentissage:**
+- Personnalisez l'apparence visuelle de la demande
+- Utilisez l'API des composants de la demande pour prendre le contrôle du balisage HTML rendu
 
 Mahalo for your kokua, [Curran!](https://github.com/curranabell)
 
 ### [loanlaux/demand-drotik-plugin](https://github.com/loanlaux/dedemand-otik-plugin)
 
-This is an up-to-date fork of hydrotik/demand-drotik-plugin that works with current demand version. A visually appealing example on how to customize the landing page of a demand shop.
+Il s'agit d'une version mise à jour du plugin hydrotik/demand-drotik qui fonctionne avec la version actuelle de la demande. Un exemple visuellement attrayant sur la façon de personnaliser la page de destination d'un magasin à la demande.
 
-**Prerequisites:**
-- Uses additional npm packages. Open a console in project's root directory and execute these commands: `npm install --save react-slick slick-carousel`
-- Move files in folder <plugin-dir>/public to your root public folder
+**Prérequis:**
+- Utilise des packages npm aditionnels. Ouvrez une console à la racine du répertoire du projet et exécutez les commandes suivantes: `npm install --save react-slick slick-carousel`
+- Déplacer les fichiers dans un dossier <plugin-dir>/public à la racine du répertoire public
 
-**Requirements:**
-- Basic LESS/CSS knowledge
-- Basic React understanding
+**Exigences:**
+- Connaissances de base LESS/CSS
+- Compréhension de base de React
 
-**Learning content:**
-- Customize the visual appearance of demand
-- Use demand's component API to gain control over rendered HTML markup
-- Shows how to integrate third-party React components
+**Contenu d'apprentissage:**
+- Personnalisez l'apparence visuelle de la demande
+- Utilisez les composants de l'API de la demande pour prendre le contrôle du balisage HTML
+- Montre comment intégrer des composants React tiers
 
 Kudos to [Loan!](https://github.com/loanlaux)
 
 ## REST-APIs
 
-- [Meteor Restivus](https://github.com/kahmali/meteor-restivus): DDP is great and good, but ever found yourself in need for a traditional REST API? We recommend Meteor Restivus.
-- [Swagger add-on](https://github.com/apinf/restivus-swagger): As a bonus on top of it, you will want to check out the .
+- [Meteor Restivus](https://github.com/kahmali/meteor-restivus): DDP est génial et bon, mais avez-vous déjà eu besoin d'une API REST traditionnelle? Nous recommandons Meteor Restivus.
+- [add-on Swagger](https://github.com/apinf/restivus-swagger): En prime, vous voudrez consulter le .
 - [simple:rest](https://atmospherejs.com/simple/rest): An alternative Atmosphere package to create an automatic JSON API.
 
 ## Other resources
