@@ -9,8 +9,8 @@ Whenever a Pull Request or merge request is made to the Demandepo, there are aut
 
 - code style and lint rules adherence
 - unit and integration tests
-- docker builds on release branches
-- DCO (commit signing)
+- Docker builds on release branches
+- [DCO (commit signing)](./git-style-guide#developer-certificate-of-origin)
 
 ## Builds
 

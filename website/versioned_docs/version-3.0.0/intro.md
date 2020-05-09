@@ -8,14 +8,12 @@ Demand Cluster is primarily a headless GraphQL API. There are also example store
 
 ## Who builds and supports demand?
 
-demand is a series of projects that combine the efforts of [community contributors].
+demand is a series of projects that combine the efforts of the team.
 
 ## Who uses demand?
 
-Ecommerce and marketplace sites from around the world are using demand in production now. Check out our [Community Showcase](community-showcase).
+Ecommerce and marketplace sites from around the world are using demandcluster in production now. Check out our [Community Showcase](community-showcase).
 
 ## Documentation
-
-- [Developer](getting-started-developing-with-demand
 - [System Admins](deploying)
 - [Shop Operators](dashboard)
