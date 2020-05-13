@@ -6,7 +6,7 @@ title: Community guidelines
     
 All Community Guidelines content is licensed under a [Creative Commons Attribution](https://creativecommons.org/licenses/by/3.0/) license.
 
-We want to keep the Reaction community awesome, growing and collaborative. We need your help to keep it that way. To help with this, we've come up with some general guidelines for the community as a whole:
+We want to keep the Demand community awesome, growing and collaborative. We need your help to keep it that way. To help with this, we've come up with some general guidelines for the community as a whole:
 
 - **Be nice:** Be courteous, respectful and polite to fellow community members: no regional, racial, gender, or other abuse will be tolerated. We like nice people way better than mean ones!
 
