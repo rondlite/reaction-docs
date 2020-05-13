@@ -7,13 +7,13 @@ title: Payments
     
 Payment methods are one of the most common packages that developers need to create, especially when migrating from another platform.
 
-The [reaction-paymentmethod](https://github.com/reactioncommerce/reaction-paymentmethod) package and documentation was created to try and make this process as easy as possible for developers new to Reaction. It should be used as a guide in making all payment methods as consistent as possible so that they are usable by the largest number of users.
+The [reaction-paymentmethod](https://github.com/reactioncommerce/reaction-paymentmethod) package and documentation was created to try and make this process as easy as possible for developers new to DemandIt should be used as a guide in making all payment methods as consistent as possible so that they are usable by the largest number of users.
 
-Reaction currently comes packaged with five (5) payment methods that can be enabled in the Dashboard: [Authorize.net](payment-packages-authnet), [Braintree](payment-packages-braintree), [Paypal Express](payment-packages-paypal#paypal-express), [Paypal Payflow](payment-packages-paypal), and [Stripe](payment-packages-stripe).
+Demandurrently comes packaged with five (5) payment methods that can be enabled in the Dashboard: [Authorize.net](payment-packages-authnet), [Braintree](payment-packages-braintree), [Paypal Express](payment-packages-paypal#paypal-express), [Paypal Payflow](payment-packages-paypal), and [Stripe](payment-packages-stripe).
 
 ## Transactions
 
-Most Reaction payment packages can support these transaction types. They all do things a little differently, so please be sure to read each individual payment packages docs.
+Most Demandayment packages can support these transaction types. They all do things a little differently, so please be sure to read each individual payment packages docs.
 
 - authorize
 
