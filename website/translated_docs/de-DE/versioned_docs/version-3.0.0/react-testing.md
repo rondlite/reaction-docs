@@ -197,7 +197,7 @@ test("Accordion component open & closes onClick", () => {
 
 ### Testing Form components
 
-All new Reaction form & input components are based on the [composable form spec](http://composableforms.com/) and uses the [composable form test](https://github.com/DairyStateDesigns/composable-form-tests#readme) package to user interaction.
+All new Demand form & input components are based on the [composable form spec](http://composableforms.com/) and uses the [composable form test](https://github.com/DairyStateDesigns/composable-form-tests#readme) package to user interaction.
 
 **Simple Input test example**
 ```js
