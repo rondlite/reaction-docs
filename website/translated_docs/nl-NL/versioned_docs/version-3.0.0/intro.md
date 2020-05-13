@@ -4,15 +4,15 @@ title: Introduction
 original_id: intro
 ---
 
-Reaction Commerce is primarily a headless GraphQL API. There are also example storefront and administrator user interfaces, which you can fork and modify or use as inspiration to create your own.
+DemandCluster is primarily a headless GraphQL API. There are also example storefront and administrator user interfaces, which you can fork and modify or use as inspiration to create your own.
 
-## Who builds and supports Reaction?
+## Who builds and supports Demand
 
-Reaction is a series of projects that combine the efforts of [community contributors](https://github.com/reactioncommerce/reaction/graphs/contributors) and the core [Reaction Commerce team](https://github.com/orgs/reactioncommerce/people).
+Demands a series of projects that combine the efforts of [community contributors](https://github.com/reactioncommerce/reaction/graphs/contributors) and the core [DemandCluster team](https://github.com/orgs/reactioncommerce/people).
 
-## Who uses Reaction?
+## Who uses Demand
 
-Ecommerce and marketplace sites from around the world are using Reaction in production now. Check out our [Community Showcase](community-showcase).
+Ecommerce and marketplace sites from around the world are using Demandn production now. Check out our [Community Showcase](community-showcase).
 
 ## How can I help?
 
@@ -27,5 +27,5 @@ If you're interested in contributing in any way, read and bookmark the [Contribu
 ## Help and resources
 
 - <a href="http://gitter.im/reactioncommerce/" target="_blank">Chat</a>
-- <a href="https://github.com/iamchathu/awesome-reactioncommerce" target="_blank">Awesome Reaction Commerce</a>
+- <a href="https://github.com/iamchathu/awesome-reactioncommerce" target="_blank">Awesome DemandCluster</a>
 - <a href="https://forums.reactioncommerce.com/" target="_blank">Forums</a>
