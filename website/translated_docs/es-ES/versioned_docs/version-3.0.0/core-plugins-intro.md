@@ -4,18 +4,18 @@ id: version-3.0.0-core-plugins-intro
 original_id: core-plugins-intro
 ---
 
-The Reaction API server has a plugin system that allows code to be broken into small packages. Plugins can register functions, configuration, and GraphQL schemas and resolvers. The sum of everything registered by every plugin is your Reaction API.
+The Demand API server has a plugin system that allows code to be broken into small packages. Plugins can register functions, configuration, and GraphQL schemas and resolvers. The sum of everything registered by every plugin is your Demand API.
 
 In some cases a plugin has plugins of its own or has other external components that you also need to install.
 
 Some API plugins are included in the API codebase, but in general you should create plugins as NPM packages. This does not necessarily mean they need to be published to NPM, but they must be something you can add to `package.json` and NPM will know how to install it. For example, a private GitHub repo will work.
 
-At a high level, an API plugin package is one where the main export is an async function that accepts a `ReactionAPI` instance and calls `api.registerPlugin` before returning. In a Reaction API project, your plugin package will be imported and used like this:
+At a high level, an API plugin package is one where the main export is an async function that accepts a `DemandAPI` instance and calls `api.registerPlugin` before returning. In a Demand API project, your plugin package will be imported and used like this:
 
 ```js
 import registerSomePlugin from "some-plugin";
 
-const api = new ReactionAPI();
+const api = new DemandAPI();
 
 async function startAPI() {
   await registerSomePlugin(api);
