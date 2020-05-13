@@ -4,13 +4,13 @@ id: version-v1.1.0-acceptance-testing
 title: Acceptance Testing
 ---
     
-## Purpose
+## Doel
 
-This document seeks to outline a set of tests that can be performed either manually or through automation that would be completed successfully before a release is created. These tests are to verify functionality from a users perspective (as opposed to unit or integration tests)
+Dit document omschrijft een set aan testen die handmatig of door automatisering kunnen worden uitgevoerd voordat een release wordt aangemaakt. Met deze testen kan functionaliteit worden geverifieërd vanuit een gebruikersperspectief (in tegenstelling tot eenheid of integriteitstests)
 
-## Test Setup
+## Test instellingen
 
-Each test assumes this environment unless otherwise stated
+Elke test gaat uit van deze omgeving, tenzij anders aangegeven
 
 1. Ran `reaction reset`
 2. Products are created from the `reaction-sample-data` package
