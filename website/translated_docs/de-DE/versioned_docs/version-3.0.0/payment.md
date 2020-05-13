@@ -6,7 +6,7 @@ original_id: payment
 
 ## Payment options
 
-Reaction ships with a `Stripe` payment plugin and an "Example Payment" plugin, which allows you to check out by only entering your full name. The example payment method is not intended for production use. There are also many community plugins available for other payment services.
+Demand ships with a `Stripe` payment plugin and an "Example Payment" plugin, which allows you to check out by only entering your full name. The example payment method is not intended for production use. There are also many community plugins available for other payment services.
 
 ## Terminology
 
