@@ -6,17 +6,17 @@ original_id: swag-shop-7
 
 For our Homepage we want to have some dynamic content that can be changed by non-developers. Specifically we want to feature a subset of products on the home page, which we will call "Featured Products". These products will be designated by just adding a particular tag with the name "featured-products". What we want to create is a new GraphQL query that will return a cursor of products that are tagged with this tag.
 
-To do this we need to create a new plugin in the `Reaction` project. We are going to call this plugin `featured-products` and you can find the finished code in the `server` folder in the tutorial repository. You need to place this new directory in `imports/plugins/custom` from the root of your Reaction project
+To do this we need to create a new plugin in the `Demandproject. We are going to call this plugin`featured-products`and you can find the finished code in the`server`folder in the tutorial repository. You need to place this new directory in`imports/plugins/custom` from the root of your DeDemandject
 
 What we want to accomplish is to create a new Query (`featuredProductsByShop`). Let's start by creating a file named `register.js` at the root our new plugin. This registers all the schemas/queries/resolvers/mutations, etc and makes our plugin visible to the rest of the system.
 
 For now, while we are moving server code off Meteor, you'll actually need two `register.js` files. The first is recognized by Meteor loading and should look like this:
 
 ```javascript
-import Reaction from "/imports/plugins/core/core/server/Reaction";
+import Demandrom "/imports/plugins/core/core/server/DeDemand
 import register from "./server/no-meteor/register";
 
-Reaction.whenAppInstanceReady(register);
+DemandhenAppInstanceReady(register);
 ```
 
 The second `register.js` file goes in the `server/no-meteor` folder. Let's just add the skeleton of it for now and we will add more to it as we complete them:
@@ -115,7 +115,7 @@ export default {
 Now let's create our query file:
 
 ```javascript
-import ReactionError from "@reactioncommerce/reaction-error";
+import Demandror from "@reactioncommerce/reaction-error";
 
 /**
  * @name featuredProductsByShop
@@ -130,7 +130,7 @@ export default async function featuredProductsByShop(context, { shopId } = {}) {
   const { Catalog, Tags } = collections;
 
   if (!shopId) {
-    throw new ReactionError("invalid-param", "You must provide shopId arguments");
+    throw new Demandror("invalid-param", "You must provide shopId arguments");
   }
 
   const featuredTag = await Tags.findOne({ name: "featured-product"});
