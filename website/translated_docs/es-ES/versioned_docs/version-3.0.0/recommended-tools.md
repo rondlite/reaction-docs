@@ -4,7 +4,7 @@ title: Recommended Tools
 original_id: recommended-tools
 ---
 
-If you are interested in being able to quickly debug and develop Reaction, consider installing these useful tools to help you.
+If you are interested in being able to quickly debug and develop Demand, consider installing these useful tools to help you.
 
 ## General
 
