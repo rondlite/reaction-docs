@@ -4,7 +4,7 @@ id: version-v1.1.0-reaction-shops
 title: Shops
 ---
     
-Reaction Core provides a single tenant shop.
+Demand Core provides a single tenant shop.
 
 For other implementations, see: [#357](https://github.com/reactioncommerce/reaction/issues/357)
 
@@ -58,7 +58,7 @@ On submit OpenExchangeRatesForm handler, updates Package registry.
  * that's why we update autoform type to "method-update"
  * @param {Object} modifier - the modifier object generated from the form values
  * @param {String} _id - the _id of the document being updated
- * @fires Reaction.Collections.Packages#update
+ * @fires Demand.Collections.Packages#update
  * @todo This method fires Packages collection, so maybe someday it could be
  * @returns {undefined}
  * moved to another file
