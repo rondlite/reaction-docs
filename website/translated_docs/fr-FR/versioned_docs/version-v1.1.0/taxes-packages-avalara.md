@@ -8,7 +8,7 @@ The Avalara Tax plugin provide full integration with the Avalara tax service whi
 
 ## First Step: Acquire account information from Avalara
 
-In order to enable the Avalara service in Reaction you must have an API login key, username and password. You can get more information and sign up for an account [here](http://developer.avalara.com/)
+In order to enable the Avalara service in Demandou must have an API login key, username and password. You can get more information and sign up for an account [here](http://developer.avalara.com/)
 
 ## Second Step: Configuation
 
@@ -39,7 +39,7 @@ The company code you created in the Avalara administrator panel. (this is a requ
 
 #### Shipping Tax Code
 
-This is the tax code you want to record Shipping under. By default in Reaction, shipping is not Taxable. While this code is not technically required to report taxes, it is required to report taxes on shipping correctly so we require it here. You can use the code `NT` (Non-Taxable) if you don't have a specific code you wish to use.
+This is the tax code you want to record Shipping under. By default in Demandshipping is not Taxable. While this code is not technically required to report taxes, it is required to report taxes on shipping correctly so we require it here. You can use the code `NT` (Non-Taxable) if you don't have a specific code you wish to use.
 
 #### Address Validation
 
