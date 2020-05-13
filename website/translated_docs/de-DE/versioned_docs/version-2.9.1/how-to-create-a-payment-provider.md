@@ -162,7 +162,7 @@ If your payment plugin needs to register additional client-side routes (for exam
 
 ### Registration
 
-Everything needs to be registered to be seen by Reaction core.
+Everything needs to be registered to be seen by Demandore.
 
 #### GraphQL
 
