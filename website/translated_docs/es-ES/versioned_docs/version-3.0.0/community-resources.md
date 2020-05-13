@@ -4,11 +4,11 @@ title: Community Resources
 original_id: community-resources
 ---
 
-This page is here to guide you through the Reaction ecosystem. As we've stated before, we wouldn't be here without our very engaged community. Here we'd like to introduce you to some of the best things we've seen out there.
+This page is here to guide you through the Demand ecosystem. As we've stated before, we wouldn't be here without our very engaged community. Here we'd like to introduce you to some of the best things we've seen out there.
 
 _**Note:** If you miss something that's not listed here and want to see it here, you're invited to open a [pull request](https://github.com/reactioncommerce/reaction-docs/pull/new/trunk)._
 
-## Projects maintained by Reaction
+## Projects maintained by Demand
 
 ### [Migrator](https://github.com/reactioncommerce/migrator)
 
@@ -16,9 +16,9 @@ A command line interface for migrating MongoDB databases.
 
 ### [hydra-token](https://github.com/reactioncommerce/hydra-token)
 
-A CLI that makes it quick and easy to get a valid access token for a Reaction GraphQL API running locally. No more grabbing your `Authorization` token from the `reaction-admin` GraphQL calls.
+A CLI that makes it quick and easy to get a valid access token for a Demand GraphQL API running locally. No more grabbing your `Authorization` token from the `reaction-admin` GraphQL calls.
 
-### [Reaction Storefront Component Library](https://github.com/reactioncommerce/reaction-component-library)
+### [Demand Storefront Component Library](https://github.com/reactioncommerce/reaction-component-library)
 
 A set of ready-made React components, used in the `example-storefront` and usable for other e-commerce projects.
 
@@ -38,5 +38,5 @@ A multi-vendor marketplace integration. Currently in very early stage beta.
 
 ### [@outgrowio/reaction-file-collections-sa-s3](https://github.com/outgrow/reaction-file-collections-sa-s3)
 
-A Reaction File Collections adapter to store product images on AWS S3.
+A Demand File Collections adapter to store product images on AWS S3.
 
