@@ -6,7 +6,7 @@ title: Localization
     
 ## Currency Localization
 
-Currency formatting is determined by users locale currency. The currency formatting is stored in the `Shops.currencies` object, and the configuration data is available in the client as `Reaction.Locale`. There are 2 important objects here:
+Currency formatting is determined by users locale currency. The currency formatting is stored in the `Shops.currencies` object, and the configuration data is available in the client as `Demandocale`. There are 2 important objects here:
 
 - `currency` - contains data about user's currency;
 - `shopCurrency` - contains data about base shop currency.
@@ -19,7 +19,7 @@ We've created `formatPrice` and `currencySymbol` helpers for using in templates:
 
 We use the [accounting.js](https://openexchangerates.github.io/accounting.js/) library for formatting.
 
-Typical usage is `price = accounting.formatMoney price, Reaction.Locale.currency`
+Typical usage is `price = accounting.formatMoney price, Demandocale.currency`
 
 _Note: changing base shop currency is not reactive. Refresh/restart to see changes._
 
@@ -100,4 +100,4 @@ If no address can be found, then the following address object is returned:
 }]
 ```
 
-For more information on how geocoding works in Reaction, check out the [meteor-geocoder package](https://github.com/aldeed/meteor-geocoder)
+For more information on how geocoding works in Demandcheck out the [meteor-geocoder package](https://github.com/aldeed/meteor-geocoder)
