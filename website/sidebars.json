@@ -1,0 +1,170 @@
+{
+  "docs": {
+    "Introduction": [
+      "intro",
+      "upgrading",
+      "devs-update-custom-plugin"
+    ],
+    "Concepts": [
+      "concepts-intro",
+      "concepts-accounts",
+      "concepts-carts",
+      "concepts-catalogs",
+      "concepts-fulfillment",
+      "concepts-inventory",
+      "concepts-orders",
+      "concepts-payments",
+      "concepts-pricing",
+      "concepts-products",
+      "concepts-shops",
+      "concepts-slugs",
+      "concepts-tags"
+    ],
+    "Contributing": [
+      "contributing-to-reaction",
+      "reporting-vulnerabilities",
+      "getting-started-developing-with-reaction",
+      "styleguide",
+      "git-style-guide",
+      "devs-breaking-changes",
+      "react-best-practices",
+      "jsdoc-style-guide",
+      "error-handling-guide",
+      "using-ci",
+      "release-process",
+      "recommended-tools",
+      "installation-docker-development",
+      "troubleshooting-development"
+    ],
+    "For Developers: Concepts": [
+      "appevent-hooks",
+      "developer-authentication",
+      "devs-understanding-commonorder",
+      "developer-environment-variables",
+      "developer-inventory",
+      "developer-kafka-streams",
+      "devs-node-es-modules"
+    ],
+    "For Developers: GraphQL": [
+      "graphql-what",
+      "graphql-using",
+      "graphql-developing",
+      "graphql-intro",
+      "graphql-resolvers-file-structure"
+    ],
+    "Developer How-To: Reaction API Server": [
+      "dev-how-do-i",
+      "graphql-create-query",
+      "graphql-create-mutation",
+      "how-to-share-code-between-plugins",
+      "how-to-create-a-fulfillment-methods-plugin",
+      "how-to-create-inventory-plugin",
+      "how-to-create-a-payment-provider",
+      "how-to-add-address-validation-service",
+      "how-to-add-tax-service",
+      "how-to-extend-graphql-to-add-field",
+      "how-to-extend-graphql-with-remote-schema",
+      "how-to-store-custom-order-fields",
+      "how-to-extend-product",
+      "how-to-manage-app-settings",
+      "register-operator-route",
+      "dev-debug-app-slowness",
+      "testing-debugging-server-code"
+    ],
+    "Core API Server Plugins": [
+      "core-plugins-intro",
+      "core-plugins-stripe",
+      "core-plugins-simple-inventory",
+      "core-plugins-sitemap-generator"
+    ],
+    "Developer How-To: GraphQL Clients": [
+      "how-to-get-shop-id-for-client"
+    ],
+    "Storefront UI Development Guide": [
+      "storefront-intro",
+      "storefront-apollo-client",
+      "storefront-product-listing-page",
+      "storefront-product-detail-page",
+      "storefront-nav-menus",
+      "storefront-add-to-cart",
+      "storefront-cart-page",
+      "storefront-cart-modification",
+      "storefront-checkout-page",
+      "storefront-order-view-page",
+      "storefront-login",
+      "storefront-account-management",
+      "storefront-inventory-status-badges"
+    ],
+    "For Developers: Architecture": [
+      "developer-catalog",
+      "image-handling",
+      "internationalization",
+      "jobcontrol",
+      "logging",
+      "permissions",
+      "product-variants",
+      "simple-schema"
+    ],
+    "For Developers: Catalyst Components": [
+      "blocks-api",
+      "components-primary-app-bar"
+    ],
+    "Testing": [
+      "testing-reaction",
+      "running-jest-unit-tests",
+      "running-jest-integration-tests",
+      "writing-jest-unit-tests",
+      "writing-jest-integration-tests",
+      "react-testing",
+      "creating-test-data",
+      "jest-tips"
+    ],
+    "Acceptance Testing": [
+      "acceptance-testing",
+      "testing-matrix",
+      "test-setup"
+    ],
+    "System Administrator Guide": [
+      "deploying",
+      "database-optimizations",
+      "environment-variables",
+      "authentication-in-prod"
+    ],
+    "Store Operator Guide": [
+      "dashboard",
+      "products",
+      "products-bulk-edit",
+      "orders-admin",
+      "accounts",
+      "shop-admin",
+      "email-admin",
+      "localization-and-i18n",
+      "payment",
+      "tax",
+      "template",
+      "shipping-admin",
+      "operator-address-validation"
+    ],
+    "Community": [
+      "community-showcase",
+      "guidelines",
+      "code-of-conduct",
+      "diversity-statement",
+      "reporting-guide",
+      "enforcement",
+      "code-of-conduct-committee",
+      "guideline-faqs",
+      "changes"
+    ],
+    "Swag Shop Tutorial": [
+      "swag-shop-1",
+      "swag-shop-2",
+      "swag-shop-3",
+      "swag-shop-4",
+      "swag-shop-5",
+      "swag-shop-6",
+      "swag-shop-7",
+      "swag-shop-8"
+    ]
+  }
+}
