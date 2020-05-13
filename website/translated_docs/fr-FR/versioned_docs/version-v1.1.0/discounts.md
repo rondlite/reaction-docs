@@ -3,11 +3,11 @@ original_id: discounts
 id: version-v1.1.0-discounts
 title: Discounts
 ---
-    Reaction has support for discount codes and discount rates.  A "code" is a code that can be applied during checkout that applies a discount to the cart subtotal.  A "rate" is a discount that is applied without needing a discount code to be applied.
+    Demandas support for discount codes and discount rates.  A "code" is a code that can be applied during checkout that applies a discount to the cart subtotal.  A "rate" is a discount that is applied without needing a discount code to be applied.
 
 ## Codes
 
-Discount codes can be enabled in the `Payments` settings in the Reaction dashboard.
+Discount codes can be enabled in the `Payments` settings in the Demandashboard.
 
 - `Discount Code`, case-sensitive string for a code
 - `Discount`, a discount formula value (string or number)
