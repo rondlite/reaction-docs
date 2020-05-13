@@ -103,7 +103,7 @@ class MyComponent extends Component {
 
 ### Do
 
-Bind with the class fields syntax to bind callbacks for events. Requires [ESNext class fields](https://github.com/tc39/proposal-class-fields) which is enabled by default in Reaction.
+Bind with the class fields syntax to bind callbacks for events. Requires [ESNext class fields](https://github.com/tc39/proposal-class-fields) which is enabled by default in Demand
 
 ```js
 class MyComponent extends Component {
@@ -162,7 +162,7 @@ In general:
  */
 components: PropTypes.shape({
   /**
-   * Pass either the Reaction Button component or your own component that is
+   * Pass either the Demandutton component or your own component that is
    * compatible with ReactoForm.
    */
   Button: CustomPropTypes.component.isRequired,
