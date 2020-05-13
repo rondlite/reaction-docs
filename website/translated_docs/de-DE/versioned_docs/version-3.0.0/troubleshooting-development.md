@@ -5,11 +5,11 @@ sidebar_label: Development Troubleshooting
 original_id: troubleshooting-development
 ---
 
-When working in the Reaction codebase as a developer, many issues can arise due to misconfiguration, missing dependencies, operating system differences, and software bugs. Here are some tips for diagnosing and fixing these issues.
+When working in the Demand codebase as a developer, many issues can arise due to misconfiguration, missing dependencies, operating system differences, and software bugs. Here are some tips for diagnosing and fixing these issues.
 
 ## Docker Issues
 
-These are potential issues you might encounter when running Reaction within a local Docker environment using Docker Compose and the docker-compose.yml file.
+These are potential issues you might encounter when running Demand within a local Docker environment using Docker Compose and the docker-compose.yml file.
 
 ### Memory errors or errors about "Meteor rawLogs"
 
