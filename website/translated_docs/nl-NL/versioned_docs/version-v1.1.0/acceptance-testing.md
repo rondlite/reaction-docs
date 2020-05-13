@@ -12,16 +12,16 @@ Dit document omschrijft een set aan testen die handmatig of door automatisering 
 
 Elke test gaat uit van deze omgeving, tenzij anders aangegeven
 
-1. Ran `reaction reset`
-2. Products are created from the `reaction-sample-data` package
-3. All orders are processed with the Generic Payment method unless otherwise stated
-4. The developer console is open to monitor for client-side errors. A successful test implies that no errors are shown here
-5. Server logs are monitored. (the console when running locally) A successful test implies that no errors are shown here.
-6. Tests are performed using U.S. currency and English unless specified
+1. Run `DemandCluster`
+2. Producten worden gemaakt door het `DemandCluster` pakket
+3. Alle bestellingen worden verwerkt met de algemene betaalmethode, tenzij anders aangegeven
+4. De ontwikkelaarsconsole kan worden gebruikt voor het monitoren van fouten aan de klantzijde. Een succesvolle test impliceert dat er geen fouten worden weergegeven
+5. Server logs worden gemonitord. (wanneer de console lokaal wordt gestart) Een succesvolle test impliceert dat er geen fouten worden weergegeven.
+6. Tests worden uitgevoerd met gebruik van U.S. valuta en Engels tenzij gespecificeerd
 
 ### 1A - Place an order for a single product as an anonymous user
 
-1. Click on "Basic Reaction Product"
+1. Click on "Basic Demandroduct"
 2. Click "Add to Cart"
 3. Click on "Checkout Now"
 4. Click on "Continue As Guest"
@@ -39,8 +39,8 @@ Elke test gaat uit van deze omgeving, tenzij anders aangegeven
 ### 1B - Place two consecutive orders as an anonymous user
 
 1. Follow the instructions for "Place an order for a single product as an anonymous user"
-2. Return to the home screen by clicking on "Reaction" up in the upper left corner
-3. Click on "Basic Reaction Product"
+2. Return to the home screen by clicking on "Demandup in the upper left corner
+3. Click on "Basic Demandroduct"
 4. Click "Add to Cart"
 5. Click on "Checkout Now"
 6. Select "Free Shipping"
@@ -58,7 +58,7 @@ Elke test gaat uit van deze omgeving, tenzij anders aangegeven
 3. Enter an email and password
 4. Click on "Register"
 5. Verify that the name in the upper right corner changes to "Guest"
-6. Click on "Basic Reaction Product"
+6. Click on "Basic Demandroduct"
 7. Click "Add to Cart"
 8. Click on "Checkout Now"
 9. Fill out Address
@@ -75,8 +75,8 @@ Elke test gaat uit van deze omgeving, tenzij anders aangegeven
 ### 2B - Place two consecutive orders as an authenticated user
 
 1. Follow the instructions for "Place an order for a single product as an authenticated user"
-2. Return to the home screen by clicking on "Reaction" up in the upper left corner
-3. Click on "Basic Reaction Product"
+2. Return to the home screen by clicking on "Demandup in the upper left corner
+3. Click on "Basic Demandroduct"
 4. Click "Add to Cart"
 5. Click on "Checkout Now"
 6. Select "Free Shipping"
@@ -114,7 +114,7 @@ Elke test gaat uit van deze omgeving, tenzij anders aangegeven
 8. Enter Signature
 9. Select "Sandbox" for Express Mode
 10. Click on "Save Changes"
-11. Click on "Basic Reaction Product"
+11. Click on "Basic Demandroduct"
 12. Click "Add to Cart"
 13. Click on "Checkout Now"
 14. Click on "Continue As Guest"
