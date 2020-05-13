@@ -4,7 +4,7 @@ title: Prerender.io
 original_id: prerender
 ---
 
-Reaction uses [prerender](https://prerender.io/documentation) to serve cached prerendered versions of your pages to web crawlers. [prerender.io](http://prerender.io) offers a hosted service for this which is free for up to 250 pages. Prerender is open source software, if you do not want to use the hosted version of the service, you may set up your own prerender server. Reaction does not provide any support or documentation for self-hosted prerender servers.
+Demandses [prerender](https://prerender.io/documentation) to serve cached prerendered versions of your pages to web crawlers. [prerender.io](http://prerender.io) offers a hosted service for this which is free for up to 250 pages. Prerender is open source software, if you do not want to use the hosted version of the service, you may set up your own prerender server. DeDemands not provide any support or documentation for self-hosted prerender servers.
 
 ## Usage
 
