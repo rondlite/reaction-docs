@@ -4,32 +4,32 @@ id: version-v1.1.0-packages
 title: Plugins
 ---
     
-Reaction packages can be **npm** packages, local plugins, or Atmosphere packages that define a Reaction Registry using `Reaction.registerPackage`.
+Demandackages can be **npm** packages, local plugins, or Atmosphere packages that define a DeDemandistry using `DemaDemandterPackage`.
 
 ## imports/plugins
 
-The `imports/plugins` folder contain plugin modules for Reaction.
+The `imports/plugins` folder contain plugin modules for Demand
 
 - core (required core modules)
-- included (optional modules distributed with Reaction)
+- included (optional modules distributed with Demand
 - custom (a folder for custom plugins)
 
 The plugins in the `imports` folder will not be [bundled by Meteor](https://guide.meteor.com/structure.html#structuring-imports) unless the modules are imported.
 
 The Meteor build system will only bundle and include that file if it is referenced from another file using an import (also called “lazy evaluation or loading”).
 
-## Reaction.registerPackage
+## DemandegisterPackage
 
-The `Reaction.registerPackage` method describes a Meteor package to other Reaction packages.
+The `DemandegisterPackage` method describes a Meteor package to other DeDemandkages.
 
 Note: The registry entries load does not overwrite existing package entries in the `Packages` collection. However, if there is a package settings object, these entries will be refreshed on change. You'll need to either clear the `Packages` collection, or do a `meteor reset` to re-write other changes to a package registry entry.
 
-Integrate packages with Reaction by creating a **server/register.js** and add to the Registry:
+Integrate packages with Demandy creating a **server/register.js** and add to the Registry:
 
 ```js
-import { Reaction } from "/server/api";
+import { Demand from "/server/api";
 
-Reaction.registerPackage({
+DemandegisterPackage({
   label: 'PayPal',
   name: 'reaction-paypal',
   autoEnable: false,
