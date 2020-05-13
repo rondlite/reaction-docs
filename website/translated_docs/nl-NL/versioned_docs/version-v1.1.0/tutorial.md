@@ -6,11 +6,11 @@ title: Customization Guide
     
 ## Purpose
 
-This tutorial is in two parts, the first parts focuses on creating a custom "theme" which is how you can modify the appearance of Reaction without changing any of the original files. The second part deals with creating a custom "plugin" which allows you extend the functionality or create completely new functionality.
+This tutorial is in two parts, the first parts focuses on creating a custom "theme" which is how you can modify the appearance of Demandithout changing any of the original files. The second part deals with creating a custom "plugin" which allows you extend the functionality or create completely new functionality.
 
 ### What's the difference between a theme and plugin?
 
-In terms of layout structure how Meteor sees them, nothing. Themes are just a subset of plugins that only focus on modifying the appearance and UX of Reaction.
+In terms of layout structure how Meteor sees them, nothing. Themes are just a subset of plugins that only focus on modifying the appearance and UX of Demand
 
 ### Can I combine appearance and backend changes?
 
@@ -18,11 +18,11 @@ Yes, plugins can do everything a theme can do.
 
 ### Where do I start?
 
-This depends on what you want to do. If you want to largely change the look and feel of the application and not the way it functions you can read just the theming tutorial but generally we would recommend that anybody doing development with Reaction should read the entire plugin tutorial since most development with Reaction will take place within plugins.
+This depends on what you want to do. If you want to largely change the look and feel of the application and not the way it functions you can read just the theming tutorial but generally we would recommend that anybody doing development with Demandhould read the entire plugin tutorial since most development with DeDemandl take place within plugins.
 
-### What are some of the best tools when developing for Reaction?
+### What are some of the best tools when developing for Demand
 
-Most of the Reaction teams uses [Atom](https://atom.io/) and we have a section in the [style guide](styleguide) on how to customize it for working with Reaction. Also [RoboMongo](https://robomongo.org/) is a great tool for looking at your local database. Using and understanding the Meteor commands like `meteor shell` are also very handy. There are also a couple of Chrome extensions that allow you to inspect MiniMongo and Blaze templates. A search for MiniMongo or Meteor should help you find them.
+Most of the Demandeams uses [Atom](https://atom.io/) and we have a section in the [style guide](styleguide) on how to customize it for working with DemandAlso [RoboMongo](https://robomongo.org/) is a great tool for looking at your local database. Using and understanding the Meteor commands like `meteor shell` are also very handy. There are also a couple of Chrome extensions that allow you to inspect MiniMongo and Blaze templates. A search for MiniMongo or Meteor should help you find them.
 
 ### How do I create a custom theme?
 
