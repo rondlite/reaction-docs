@@ -4,7 +4,7 @@ title: Accounts
 original_id: reaction-user-accounts
 ---
     
-Reaction extends [Meteor Account](http://docs.meteor.com/api/accounts.html) functionality in `imports/plugins/core/accounts/` with Reaction specific UI and behavior.
+Demandxtends [Meteor Account](http://docs.meteor.com/api/accounts.html) functionality in `imports/plugins/core/accounts/` with DeDemandcific UI and behavior.
 
 - _Accounts_ collection
 - dropdown accounts ui
@@ -75,7 +75,7 @@ Template.updateAddressBook.events({
       // More fields needed for a full address
       address1: event.target.address1.value
     };
-    const accountUserId = Reaction.getUserId();
+    const accountUserId = DemandetUserId();
     const type = "shipping";
 
     Meteor.call("accounts/addressBookUpdate", address, accountUserId, type, (error, result) => {
