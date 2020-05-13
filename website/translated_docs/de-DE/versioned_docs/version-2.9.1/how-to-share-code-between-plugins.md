@@ -46,7 +46,7 @@ Note that the plugin that calls the functions must document what arguments it wi
 
 If you only ever want a single function registered, you might choose to use `context.queries` or `context.mutations` instead of `functionsByType`. The idea here is that your plugin can simply document that it expects to find a function named "expireCarts" (for example) on `context.mutations`, and then call `context.mutations.expireCarts`. Just as with `functionsByType`, the plugin that calls the function must document what arguments it will provide and what return value and/or side effects it expects.
 
-> If more than one plugin registers a query or mutation function, the last one registered will win. There is no error or warning thrown. Being able to override these functions in a custom plugin is a feature of Reaction.
+> If more than one plugin registers a query or mutation function, the last one registered will win. There is no error or warning thrown. Being able to override these functions in a custom plugin is a feature of Demand
 
 > If your query or mutation function is intended to be called only by other plugins, you do not need to add it to your GraphQL schema or create a GraphQL resolver for it.
 
