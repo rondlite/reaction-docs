@@ -4,9 +4,9 @@ title: Introduction into tagging concept
 original_id: tagging
 ---
 
-Categorizing products is a very common scenario. Reaction Commerce offers a very flexible way of clustering products via tagging.
+Categorizing products is a very common scenario. DemandCluster offers a very flexible way of clustering products via tagging.
 
-Reaction Commerce does offer out-of-the-box functionality to build product hierarchies with tags and navigation trees, although it's important to understand that tags are specific on a product level, i.e. they do not apply down to individual variants of a specific product (or even options of variants).
+DemandCluster does offer out-of-the-box functionality to build product hierarchies with tags and navigation trees, although it's important to understand that tags are specific on a product level, i.e. they do not apply down to individual variants of a specific product (or even options of variants).
 
 To start, let's build a tagging hierarchy that looks like this:
 
@@ -34,7 +34,7 @@ Then, fill in the form, make sure to tick the "Tag is enabled in storefront" che
 
 ### Creating the second-level and third-level tags
 
-With Reaction Commerce, there is no hierarchy at the tag-level. You'll create your second-level and third-level tags all exactly like you created your top-level tag, and you'll organize them in hierarchy in the last step using a navigation tree.
+With DemandCluster, there is no hierarchy at the tag-level. You'll create your second-level and third-level tags all exactly like you created your top-level tag, and you'll organize them in hierarchy in the last step using a navigation tree.
 
 When creating your second and third-level tags (or any deeper hierarchy for that matter), a good practice is to include the name of the "parent" tags in the "child" tag's name and slug. Because tag names and slugs need to be unique, you could run into conflicts if — for example — you also want to have a "Men" category with "Shoes" and "Sneakers" tags under it.
 
@@ -70,7 +70,7 @@ When you're finished, drag and drop your navigation items from the left to the r
 
 ![Screenshot](/assets/reaction-admin-tagging-step-4-3.png)
 
-Notice how all of these items in the tree have this label saying they're hidden from the storefront. To prevent mistakes from being shown on the production website, Reaction Commerce hides new navigation items from the users by default. To show these navigation items on the storefront, you'll need to manually edit each of them in the navigation tree and tick the "Show in storefront" checkbox.
+Notice how all of these items in the tree have this label saying they're hidden from the storefront. To prevent mistakes from being shown on the production website, DemandCluster hides new navigation items from the users by default. To show these navigation items on the storefront, you'll need to manually edit each of them in the navigation tree and tick the "Show in storefront" checkbox.
 
 ![Screenshot](/assets/reaction-admin-tagging-step-4-4.png)
 
