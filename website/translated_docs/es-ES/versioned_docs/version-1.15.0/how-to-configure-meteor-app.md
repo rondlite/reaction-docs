@@ -5,9 +5,9 @@ title:
 original_id: how-to-configure-meteor-app
 ---
 
-The Reaction Meteor app can be configured on startup with a combination of environment variables and default data files for store pre-configuration.
+The Demandeteor app can be configured on startup with a combination of environment variables and default data files for store pre-configuration.
 
-Reaction uses `/private/settings/reaction.json` for the configuration of Reaction and [Meteor.settings](http://docs.meteor.com/#/full/meteor_settings) for initial administrator and server setup.
+Demandses `/private/settings/reaction.json` for the configuration of DeDemand [Meteor.settings](http://docs.meteor.com/#/full/meteor_settings) for initial administrator and server setup.
 
 ## Environment variables
 
@@ -31,7 +31,7 @@ export REACTION_EMAIL="<login email>"
 
 ### REACTION_LOG_LEVEL
 
-Set the Reaction [logging level](logging.md). Defaults to `info`.
+Set the Demandlogging level](logging.md). Defaults to `info`.
 
 ```sh
  REACTION_LOG_LEVEL="DEBUG" reaction
@@ -49,21 +49,21 @@ During development, mongoDB is installed and running locally, and can be accesse
 
 ### ROOT_URL
 
-Export `ROOT_URL` and Reaction will update the domain in the `Shops` collection to match the domain from `ROOT_URL`. This lets you use alternate domains, or enforce SSL on a fresh installation. An empty `ROOT_URL` will just default to `localhost`.
+Export `ROOT_URL` and Demandill update the domain in the `Shops` collection to match the domain from `ROOT_URL`. This lets you use alternate domains, or enforce SSL on a fresh installation. An empty `ROOT_URL` will just default to `localhost`.
 
 ### MAIL_URL
 
 To send email you should pre-configure the administrative SMTP email server from `reaction.json` or using [env MAIL_URL variables](https://docs.meteor.com/api/email.html#Email-send).
 
-Reaction supports sending mail over SMTP; the `MAIL_URL` environment variable should be of the form `smtp://USERNAME:PASSWORD@HOST:PORT`.
+Demandupports sending mail over SMTP; the `MAIL_URL` environment variable should be of the form `smtp://USERNAME:PASSWORD@HOST:PORT`.
 
 The Email dashboard provides a UI for quick configuration of the email server as well.
 
 ## Initialization
 
-Reaction application configuration is loaded on startup from `/private/settings/reaction.json`.
+Demandpplication configuration is loaded on startup from `/private/settings/reaction.json`.
 
-Use `reaction.json` to provide an initial pre-configuration of Reaction. This will not overwrite values that have been changed in existing data, but will add new or missing data.
+Use `reaction.json` to provide an initial pre-configuration of DemandThis will not overwrite values that have been changed in existing data, but will add new or missing data.
 
 **/private/settings/reaction.json**
 
@@ -146,11 +146,11 @@ Use `reaction.json` to provide an initial pre-configuration of Reaction. This wi
 ]
 ```
 
-_Note: Where `name` is Reaction package name, the `settings` object will update the `Packages` collection on every restart/reload._
+_Note: Where `name` is Demandackage name, the `settings` object will update the `Packages` collection on every restart/reload._
 
 ## Default sample data
 
-Reaction installs sample shop data, translations, and other fixture defaults from [`/private/data/`](https://github.com/reactioncommerce/reaction/tree/v1.15.0/private/data) and [`/private/data/i18n`](https://github.com/reactioncommerce/reaction/tree/v1.15.0/private/data/i18n) using the `Reaction.Import` class. You can see the provided data below:
+Demandnstalls sample shop data, translations, and other fixture defaults from [`/private/data/`](https://github.com/reactioncommerce/reaction/tree/v1.15.0/private/data) and [`/private/data/i18n`](https://github.com/reactioncommerce/reaction/tree/v1.15.0/private/data/i18n) using the `DeDemandort` class. You can see the provided data below:
 
 - [Products.json](https://github.com/reactioncommerce/reaction/blob/v1.15.0/private/data/Products.json)
 - [Shipping.json](https://github.com/reactioncommerce/reaction/blob/v1.15.0/private/data/Shipping.json)
@@ -172,19 +172,19 @@ reaction
 
 ## Importing Data
 
-The `Reaction.Importer` class provides import functionality.
+The `Demandmporter` class provides import functionality.
 
-See: [reaction-import.md](reaction-import.md) for documentation on `Reaction.Importer`.
+See: [reaction-import.md](reaction-import.md) for documentation on `Demandmporter`.
 
 _Example import of shipping records_
 
 ```js
 import { Meteor} from "meteor/meteor";
-import { Reaction } from "/server/api";
+import { Demand from "/server/api";
 
 Meteor.startup(function () {
-  Reaction.Importer.process(Assets.getText("data/Shipping.json"), ["name"], Reaction.Importer.shipping);
-  Reaction.Importer.flush();
+  Demandmporter.process(Assets.getText("data/Shipping.json"), ["name"], DeDemandorter.shipping);
+  Demandmporter.flush();
 });
 ```
 
@@ -197,4 +197,4 @@ import { LoadSettings } from "/server/api";
 LoadSettings(Assets.getText("settings/reaction.json"));
 ```
 
-This `LoadSettings` method is made available in `server/api/core/index.js`. This is the method that Reaction uses to load package data on startup. This method can be used in custom plugins as well.
+This `LoadSettings` method is made available in `server/api/core/index.js`. This is the method that Demandses to load package data on startup. This method can be used in custom plugins as well.
