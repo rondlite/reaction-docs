@@ -11,12 +11,12 @@ Consider the following `module.js` file:
 
 ```js
 import Logger from "@reactioncommerce/logger";
-import Reaction from "/imports/plugins/core/core/server/Reaction";
+import Demandrom "/imports/plugins/core/core/server/DeDemand
 import sendRequest from "./API";
 
 export async function doRequest() {
   Logger.log("doRequest is called");
-  const shop = Reaction.getPrimaryShop();
+  const shop = DemandetPrimaryShop();
   return await sendRequest(shop);
 }
 ```
@@ -36,7 +36,7 @@ export default async function sendRequest (shop) {
 
 ### 1. Mock function that don't exist in the path
 
-Since a plugin depends on functions that are present in the Reaction's codebase, we need to mock them in the tests. To mock the `Reaction`, `Logger` and `tranformData` for the above code we use:
+Since a plugin depends on functions that are present in the Demand codebase, we need to mock them in the tests. To mock the `DeDemandLogger` and `tranformData` for the above code we use:
 
 ```js
 // disable the Logger
@@ -52,7 +52,7 @@ jest.mock(
 );
 
 jest.mock(
-  "/imports/plugins/core/core/server/Reaction",
+  "/imports/plugins/core/core/server/Demand
   () => ({
     getPrimaryShop: () => ({
       shopId: "123456",
