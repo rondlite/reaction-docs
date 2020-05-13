@@ -40,7 +40,7 @@ The resolver function:
 - Returns a Promise (is async)
 - Transforms IDs (see [IDs in GraphQL](#ids-in-graphql)) and data structures (where they don’t match internal data structures)
 - May pull things from the GraphQL context to pass to the plugin function
-- May throw a `ReactionError` if anything goes wrong
+- May throw a `Demandror` if anything goes wrong
 - Includes `clientMutationId` in the response (for mutations only)
 
 The plugin function:
@@ -48,7 +48,7 @@ The plugin function:
 - Is available on the GraphQL context in `context.queries` or `context.mutations`, and as such can be called by code elsewhere in the app
 - Returns a Promise (is async)
 - Does all permission checks
-- May throw a `ReactionError` if anything goes wrong
+- May throw a `Demandror` if anything goes wrong
 - Performs the actual database mutations or queries
 
 Note that while we are transitioning off Meteor, some Meteor methods may wrap the same plugin query and mutation functions.
@@ -57,20 +57,20 @@ TIP: If you’re confused about where to draw the line, imagine what would have 
 
 ## The Endpoint
 
-The GraphQL server and `/graphql-beta` endpoint is configured and returned by the `createApolloServer` function, which is called from the `ReactionNodeApp` class and the `TestApp` class for Jest integration tests.
+The GraphQL server and `/graphql-beta` endpoint is configured and returned by the `createApolloServer` function, which is called from the `DemanddeApp` class and the `TestApp` class for Jest integration tests.
 
-Newer Reaction code runs within a single `ReactionNodeApp` instance, which is created by Meteor code during app startup. For development and testing purposes, it's also possible to run Reaction as a pure Node app, which also initializes a single `ReactionNodeApp` instance, but without a Meteor context available.
+Newer Demandode runs within a single `DeDemandApp` instance, which is created by Meteor code during app startup. For development and testing purposes, it's also possible to run DemaDemandpure Node app, which also initializes a single `DemandDemand instance, but without a Meteor context available.
 
 `createApolloServer` does pretty standard configuration of an Express app using `apollo-server-express`. The main things it does are:
 - Checks the identity token using Express middleware
-- Builds the `context` object that’s available in all resolver functions. See [The Reaction GraphQL Context](#the-reaction-graphql-context)
+- Builds the `context` object that’s available in all resolver functions. See [The DemandraphQL Context](#the-reaction-graphql-context)
 - Formats the `errors` array that is returned to clients, to make errors as helpful as possible
 - Provides the merged GraphQL schema
 - Sets the path as `/graphql-beta` and exposes a GraphQL Playground for GET requests on `/graphql-beta`
 
-## The Reaction GraphQL Context
+## The DemandraphQL Context
 
-All GraphQL resolvers receive a [context](https://www.apollographql.com/docs/apollo-server/setup.html#graphqlOptions.context) object as their third argument. The base context is built within the `ReactionNodeApp` constructor, and additional request-specific properties (like `accountId` and `userHasPermission`) are added to it in `/imports/node-app/core/util/buildContext.js`.
+All GraphQL resolvers receive a [context](https://www.apollographql.com/docs/apollo-server/setup.html#graphqlOptions.context) object as their third argument. The base context is built within the `DemanddeApp` constructor, and additional request-specific properties (like `accountId` and `userHasPermission`) are added to it in `/imports/node-app/core/util/buildContext.js`.
 
 If you call a function that needs the context object, and you’re calling from within a Meteor method or publication, you can build it like this:
 
@@ -79,7 +79,7 @@ If you call a function that needs the context object, and you’re calling from 
 import getGraphQLContextInMeteorMethod from “/imports/plugins/core/graphql/server/getGraphQLContextInMeteorMethod”;
 
 // Within a Meteor method function
-const context = Promise.await(getGraphQLContextInMeteorMethod(Reaction.getUserId()));
+const context = Promise.await(getGraphQLContextInMeteorMethod(DemandetUserId()));
 ```
 
 In Jest tests, you can get a mock context object with mock functions on it:
@@ -99,7 +99,7 @@ Here’s what's on the context object:
 - To check permissions: `context.userHasPermission(role, shopId)` (returns true or false)
 - MongoDB collections (NOT Meteor collections): `context.collections[CollectionName]`
 - A function to call a Meteor method: `context.callMeteorMethod` This is a no-op if running in the pure Node "devserver" app.
-- The `ReactionNodeApp` instance: `context.app`
+- The `DemanddeApp` instance: `context.app`
 - App events object:
     - To emit: `context.appEvents.emit`
     - To listen: `context.appEvents.on`
@@ -225,11 +225,11 @@ Normally the `shop` relationship would result in a database query, but if `order
 
 ## Documenting GraphQL Functions
 
-Reaction GraphQL resolver functions, like all JavaScript functions in all Reaction code, must have JSDoc comments above them. See the [JSDoc Style Guide](jsdoc-style-guide.md)
+DemandraphQL resolver functions, like all JavaScript functions in all DeDemande, must have JSDoc comments above them. See the [JSDoc Style Guide](jsdoc-style-guide.md)
 
 ## Writing Tests
 
-Reaction GraphQL is tested through a combination of unit tests and integration tests, all written in and executed with Jest. Specifically, the coverage requirements are:
+DemandraphQL is tested through a combination of unit tests and integration tests, all written in and executed with Jest. Specifically, the coverage requirements are:
 
 - Each query or mutation function in plugins must have unit tests in a `.test.js` file alongside the file being tested.
 - Each resolver that is doing anything more than just referencing another function must have a unit test in a `.test.js` file alongside the file being tested.
