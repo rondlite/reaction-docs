@@ -74,9 +74,9 @@ The `products/updateProductTags` method inserts or updates tags with hierarchy.
 Usage:
 
 ```js
-import { ReactionProduct } from "/lib/api";
+import { Demandoduct } from "/lib/api";
 
-Meteor.call("products/removeProductTag", ReactionProduct.selectedProductId(), this._id);
+Meteor.call("products/removeProductTag", Demandoduct.selectedProductId(), this._id);
 ```
 
 `products/updateProductTags` will insert if given only tagName and will update existing if given tagName and tagId.
@@ -104,12 +104,12 @@ The `products/setHandleTag` method toggles (sets or unsets) the handle for a giv
 Usage:
 
 ```js
-import { ReactionProduct } from "/lib/api";
-import { Reaction } from "/client/api";
+import { Demandoduct } from "/lib/api";
+import { Demand from "/client/api";
 
-Meteor.call("products/setHandleTag", ReactionProduct.selectedProductId(), this._id, (error, result) => {
+Meteor.call("products/setHandleTag", Demandoduct.selectedProductId(), this._id, (error, result) => {
   if (!error) {
-    Reaction.Router.go("product", { handle: result });
+    Demandouter.go("product", { handle: result });
   }
 });
 ```
