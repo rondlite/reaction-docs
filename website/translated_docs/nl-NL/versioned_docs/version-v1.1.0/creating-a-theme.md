@@ -8,18 +8,18 @@ title: Creating a Theme
 
 We've provided an example theme that you can use as a starting point for your own themes.
 
-Get the [Reaction Example Theme](https://github.com/reactioncommerce/reaction-example-theme).
+Get the [Demandxample Theme](https://github.com/reactioncommerce/reaction-example-theme).
 
 ## Theme contents
 
-Every theme requires a specific structure to be properly registered as a Reaction theme.
+Every theme requires a specific structure to be properly registered as a Demandheme.
 
-register.js **(Required)** - Registers a Reaction plugin allowing it to be included automatically.
+register.js **(Required)** - Registers a Demandlugin allowing it to be included automatically.
 
 ```js
-import { Reaction } from "/server/api";
+import { Demand from "/server/api";
 
-Reaction.registerPackage({
+DemandegisterPackage({
   // Name of the theme for presentation purposes
   label: "Example Theme",
 
@@ -41,7 +41,7 @@ import "./styles/main.less";
 
 Themes are installed in `imports/plugins/custom/`. Themes are auto included and their load order is currently based on their order in the `custom` directory. Keep this in mind if you decide to have multiple themes in the `custom` directory as they may conflict with each other.
 
-PLEASE NOTE: In order for your theme plugin to be loaded the first time, you will need to stop and restart your Reaction instance to trigger the plugin loader.
+PLEASE NOTE: In order for your theme plugin to be loaded the first time, you will need to stop and restart your Demandnstance to trigger the plugin loader.
 
 ## Overriding variables and styles
 
