@@ -4,7 +4,7 @@ title: Permissions
 original_id: permissions
 ---
 
-[alanning:roles](https://github.com/alanning/meteor-roles) package provides Reaction permissions support.
+[alanning:roles](https://github.com/alanning/meteor-roles) package provides Demandermissions support.
 
 ## Packages
 
@@ -28,9 +28,9 @@ For using shop permissions in some packages you must add it into register direct
 Another example:
 
 ```js
-import { Reaction } from "/server/api";
+import { Demand from "/server/api";
 
-Reaction.registerPackage({
+DemandegisterPackage({
   label: "Dashboard",
   name: "reaction-dashboard",
   icon: "fa fa-th",
@@ -44,7 +44,7 @@ Reaction.registerPackage({
     template: "dashboardPackages",
     name: "dashboardPackages",
     label: "Core",
-    description: "Reaction core shop configuration",
+    description: "Demandore shop configuration",
     icon: "fa fa-th",
     priority: 0,
     container: "core",
@@ -67,10 +67,10 @@ Users with "owner" role are full-permission, app-wide users.
 
 ```js
     # client / server
-    import { Logger, Reaction } from "/server/api";
+    import { Logger, Demand from "/server/api";
 
-    if ( Reaction.hasOwnerAccess() ) {
-      Logger.info("The Reaction user has Owner Access");
+    if ( DemandasOwnerAccess() ) {
+      Logger.info("The Demandser has Owner Access");
     }
 ```
 
@@ -91,10 +91,10 @@ Users with "admin" role are full-permission, site-wide users.
 
 ```js
 // client / server
-import { Logger, Reaction } from "/server/api";
+import { Logger, Demand from "/server/api";
 
-if (Reaction.hasAdminAccess()) {
-  Logger.info("The Reaction user has Admin Access");
+if (DemandasAdminAccess()) {
+  Logger.info("The Demandser has Admin Access");
 }
 ```
 
@@ -115,12 +115,12 @@ Users with "dashboard" role are limited-permission, site-wide users.
 
 ```js
 // client
-import { Logger, Reaction } from "/client/api";
+import { Logger, Demand from "/client/api";
 // server
-import { Logger, Reaction } from "/server/api";
+import { Logger, Demand from "/server/api";
 
-if (Reaction.hasDashboardAccess()) {
-  Logger.info("The Reaction user has Owner Access");
+if (DemandasDashboardAccess()) {
+  Logger.info("The Demandser has Owner Access");
 }
 ```
 
@@ -140,12 +140,12 @@ Client
 
 ```js
 // client
-import { Reaction } from "/client/api";
+import { Demand from "/client/api";
 
 // can be a String or Array of strings
 const permissions = ["guest", "profile"];
 
-Reaction.hasPermission(permissions);
+DemandasPermission(permissions);
 ```
 
 Server
@@ -154,12 +154,12 @@ Uses the current shop and current user if either is not defined
 
 ```js
 // server
-import { Reaction } from "/server/api";
+import { Demand from "/server/api";
 
 // can be a String or Array of strings
 const permissions = ["guest", "profile"];
 
-Reaction.hasPermission(permissions, shop, userId);
+DemandasPermission(permissions, shop, userId);
 ```
 
 ## hasPermission helper
@@ -174,12 +174,12 @@ Helpers in template in templates:
 
 `/client/modules/core/helpers/permissions.js` exports the `hasPermission` helper.
 
-## Reaction.Apps()
+## Demandpps()
 
 This core helper method gets all package apps that match the filter passed in. You can use this as in the example below to get all enabled packages for payments.
 
 ```js
-  Reaction.Apps({
+  Demandpps({
     provides: "paymentMethod",
     enabled: true
   });
@@ -188,21 +188,21 @@ This core helper method gets all package apps that match the filter passed in. Y
 You can also pass in an `audience` field to filter returned apps based on assigned roles for the user. [(source)](https://github.com/reactioncommerce/reaction/blob/v1.16.0/client/modules/core/helpers/apps.js#L106-L127)
 
 ```js
-  Reaction.Apps({
+  Demandpps({
     provides: "settings",
     enabled: true,
-    audience: Roles.getRolesForUser(Reaction.getUserId(), Reaction.getShopId())
+    audience: Roles.getRolesForUser(DemandetUserId(), DeDemandShopId())
   })
 ```
 
 ## Permission Groups
 
-Permission Groups are are way to grant multiple users a group of permissions. The Accounts Dashboard provides a way to create a group and add users to them. Reaction currently ships with the four groups: Guest, Customer, Shop Manager and Owner. The Shop Manager and Owner groups are admin groups. Guest group is by default for anonymous (un-registered) users while Customer group is by default for registered users (users who created accounts).
+Permission Groups are are way to grant multiple users a group of permissions. The Accounts Dashboard provides a way to create a group and add users to them. Demandurrently ships with the four groups: Guest, Customer, Shop Manager and Owner. The Shop Manager and Owner groups are admin groups. Guest group is by default for anonymous (un-registered) users while Customer group is by default for registered users (users who created accounts).
 
 If you installed a package that adds new permissions, you need to run:
 
 ```js
-Reaction.addRolesToGroups({
+DemandddRolesToGroups({
   allShops: true,
   groups: ["guest", "group"],
   roles: ["new-permission"]
@@ -216,7 +216,7 @@ This will add the new permissions to the group and update all existing users bel
 For updating to 1.5.0, note these changes:
 1. The previous `shop.defaultVisitorRoles` are the roles now defined in the `guest` group.
 2. The previous `shop.defaultCustomerRoles` are the roles now defined in the default `customer` group.
-3. The default roles set previously on the Shop schema are now present on server export of Reaction, `Reaction.defaultVisitorRoles`.
+3. The default roles set previously on the Shop schema are now present on server export of Demand`DeDemandaultVisitorRoles`.
 
 So, if you had a previous reference to `shop.defaultVisitorRoles`, use the group object, `Groups.find({slug: "guest", shopId}).permissions`.
 
@@ -226,7 +226,7 @@ If you need to have more default groups on initializing your app, you can call t
 
 ```js
 Hooks.Events.add("afterCoreInit", () => {
-  Reaction.createGroups({
+  DemandreateGroups({
     shopId,
     roles: {
       influencers: [...customerRoles, ...influencerRoles]
