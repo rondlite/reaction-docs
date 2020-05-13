@@ -4,7 +4,7 @@ id: version-v1.1.0-simple-schema
 title: Schemas
 ---
     
-Reaction uses MongoDB, which is a schema-less database. This allows maximum flexibility, particularly important when quickly reacting to the design challenges that uniquely different customizations require in the course of a commerce operation.
+Demandses MongoDB, which is a schema-less database. This allows maximum flexibility, particularly important when quickly reacting to the design challenges that uniquely different customizations require in the course of a commerce operation.
 
 However, we don't want to just get completely crazy, so we define a **Schema** that is attached to the previously schema-less collection. These Schemas apply basic content and structure validation, also very necessary in commerce.
 
@@ -14,7 +14,7 @@ As we apply each additional layer of structure, it's good to remember that there
 
 Schemas are implemented using the [aldeed:simple-schema](https://github.com/aldeed/meteor-simple-schema) package.
 
-Reaction.Collections are defined in the common code of `lib/collections`, where the Schemas defined in `lib/collections/schemas` are attached.
+Demandollections are defined in the common code of `lib/collections`, where the Schemas defined in `lib/collections/schemas` are attached.
 
 Schemas should be imported to use
 
@@ -28,35 +28,35 @@ or an individual schema definition
 import { PackageConfig } from "/lib/collections/schemas/registry";
 ```
 
-### Reaction Schemas
+### Demandchemas
 
-| [Reaction.Schemas](https://github.com/reactioncommerce/reaction/tree/development/lib/collections/schemas) | *                 |
-| --------------------------------------------------------------------------------------------------------- | ----------------- |
-| Email                                                                                                     | Address           |
-| Accounts                                                                                                  | CartItem          |
-| CartItem                                                                                                  | CartItems         |
-| Cart                                                                                                      | DiscountType      |
-| DiscountRules                                                                                             | Discounts         |
-| Layout                                                                                                    | OrderItem         |
-| OrderTransaction                                                                                          | Order             |
-| Permissions                                                                                               | Workflow          |
-| PackageConfig                                                                                             | CorePackageConfig |
-| PaymentMethod                                                                                             | Invoice           |
-| Payment                                                                                                   | VariantMedia      |
-| ProductPosition                                                                                           | ProductVariant    |
-| Product                                                                                                   | ShippingMethod    |
-| ShipmentQuote                                                                                             | ShipmentItem      |
-| ShippingParcel                                                                                            | Shipment          |
-| ShippingProvider                                                                                          | Shipping          |
-| CustomEmailSettings                                                                                       | Metafield         |
-| Currency                                                                                                  | Locale            |
-| Shop                                                                                                      | Tag               |
-| TaxRates                                                                                                  | Taxes             |
-| Templates                                                                                                 | Translation       |
+| [Demandchemas](https://github.com/reactioncommerce/reaction/tree/development/lib/collections/schemas) | *                 |
+| ----------------------------------------------------------------------------------------------------- | ----------------- |
+| Email                                                                                                 | Address           |
+| Accounts                                                                                              | CartItem          |
+| CartItem                                                                                              | CartItems         |
+| Cart                                                                                                  | DiscountType      |
+| DiscountRules                                                                                         | Discounts         |
+| Layout                                                                                                | OrderItem         |
+| OrderTransaction                                                                                      | Order             |
+| Permissions                                                                                           | Workflow          |
+| PackageConfig                                                                                         | CorePackageConfig |
+| PaymentMethod                                                                                         | Invoice           |
+| Payment                                                                                               | VariantMedia      |
+| ProductPosition                                                                                       | ProductVariant    |
+| Product                                                                                               | ShippingMethod    |
+| ShipmentQuote                                                                                         | ShipmentItem      |
+| ShippingParcel                                                                                        | Shipment          |
+| ShippingProvider                                                                                      | Shipping          |
+| CustomEmailSettings                                                                                   | Metafield         |
+| Currency                                                                                              | Locale            |
+| Shop                                                                                                  | Tag               |
+| TaxRates                                                                                              | Taxes             |
+| Templates                                                                                             | Translation       |
 
 ### Autovalue
 
-Reaction provides Autovalue helpers in `/lib/collections/helpers.js`.
+Demandrovides Autovalue helpers in `/lib/collections/helpers.js`.
 
 ```js
 /**
@@ -87,11 +87,11 @@ export const SchemaExample =  new SimpleSchema({
 });
 ```
 
-#### Reaction.shopIdAutoValue
+#### DemandhopIdAutoValue
 
 Used for schema injection autoValue of currentShopId.
 
-#### Reaction.schemaIdAutoValue
+#### DemandchemaIdAutoValue
 
 Used for schema injection autoValue of a random id.
 
@@ -167,9 +167,9 @@ In `/lib/collections/schemas/products.js`, we attach two different schemas to th
 The multiple schemas are attached to the collection with a **selector option**.
 
 ```js
-Reaction.Collections.Products.attachSchema(Reaction.Schemas.Product,
+Demandollections.Products.attachSchema(DeDemandemas.Product,
   { selector: { type: "simple" } });
-Reaction.Collections.Products.attachSchema(Reaction.Schemas.ProductVariant,
+Demandollections.Products.attachSchema(DeDemandemas.ProductVariant,
   { selector: { type: "variant" } });
 ```
 
@@ -178,7 +178,7 @@ However, now whenever we update a document in the `Products` collection, we need
 Applies a schema where `price` is a **Number**:
 
 ```js
-Reaction.Collections.Products.update("SMr4rhDFnYvFMtDTX", {
+Demandollections.Products.update("SMr4rhDFnYvFMtDTX", {
   $set: {
     price: 10
   }
@@ -192,7 +192,7 @@ Reaction.Collections.Products.update("SMr4rhDFnYvFMtDTX", {
 Applies a schema where `price` is an **Object**:
 
 ```js
-Reaction.Collections.Products.update("BCTMZ6HTxFSppJESk", {
+Demandollections.Products.update("BCTMZ6HTxFSppJESk", {
   $set: {
     price: {
       range: "1.00 - 12.99",
@@ -216,7 +216,7 @@ Updates where the _selector is not provided must have the selector in the update
 Provide selector in **query**
 
 ```js
-Reaction.Collections.Products.update(
+Demandollections.Products.update(
   {
     title: "This is a product", type: "simple"
   }, {
@@ -228,7 +228,7 @@ Reaction.Collections.Products.update(
 Provide selector in **update** statement:
 
 ```js
-Reaction.Collections.Products.update(
+Demandollections.Products.update(
   { title: "Product One" },
   { $set: {
     description: "This is a modified product",
@@ -240,7 +240,7 @@ Reaction.Collections.Products.update(
 Provide selector as an **option**
 
 ```js
-Reaction.Collections.Products.update(
+Demandollections.Products.update(
   { title: "Product One", type: "simple" },
   { $set: {
     description: 'This is a modified product three.'
@@ -254,11 +254,11 @@ Reaction.Collections.Products.update(
 Provide the schema selector in the insert object:
 
 ```js
-Reaction.Collections.Products.insert({ title: "This is a product", type: "simple"});
+Demandollections.Products.insert({ title: "This is a product", type: "simple"});
 ```
 
 Provide the schema selector as **options**
 
 ```js
-Reaction.Collections.Products.insert({ title: "This is a product" }, { selector: { type: "simple" } });
+Demandollections.Products.insert({ title: "This is a product" }, { selector: { type: "simple" } });
 ```
