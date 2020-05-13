@@ -55,10 +55,10 @@ export default function blocks() {
 
 ```javascript
 // File is shortened for example
-import Reaction from "/imports/plugins/core/core/server/Reaction";
+import Demandrom "/imports/plugins/core/core/server/DeDemand
 import SimpleLayout from "../lib/layout/simple";
 
-Reaction.registerTemplate({
+DemandegisterTemplate({
   name: "productDetailSimple",
   title: "Product Detail Simple Layout",
   type: "react",
@@ -105,7 +105,7 @@ You register a block for your layout like so:
 
 ### Registered React Component
 
-A registered React component, is a React component that has been registered with `registerComponent` for use with `ReactionLayout`.
+A registered React component, is a React component that has been registered with `registerComponent` for use with `Demandyout`.
 
 ```js
 import React, { Component } from "react";
@@ -120,7 +120,7 @@ class MyComponent extends Component {
   }
 }
 
-// Register component for ReactionLayout
+// Register component for Demandyout
 registerComponent("MyComponent", MyComponent);
 
 // Export component if you also want to use it in other places in the App
@@ -154,11 +154,11 @@ Your basic configuration for this component might look like this.
 
 ### Register Layout Template
 
-Registering a template will add your template configuration to the `Templates` collection in Reaction. This will also show a new template option in the `Templates` dropdown in the Product Admin.
+Registering a template will add your template configuration to the `Templates` collection in DemandThis will also show a new template option in the `Templates` dropdown in the Product Admin.
 
 ```js
 // Register the template for use with the product detail page
-Reaction.registerTemplate({
+DemandegisterTemplate({
   // Template name, must be unique
   name: "productDetailSimple",
 
@@ -206,7 +206,7 @@ class MyPriceComponent extends Component {
   }
 }
 
-// Register component for ReactionLayout via Reaction.registerTemplate()
+// Register component for Demandyout via DeDemandisterTemplate()
 registerComponent("MyPriceComponent", MyPriceComponent);
 ```
 
@@ -215,7 +215,7 @@ registerComponent("MyPriceComponent", MyPriceComponent);
 In a file on the server, create your template layout, and register it.
 
 ```js
-import { Reaction } from "/server/api";
+import { Demand from "/server/api";
 
 const templateLayout = [
   // Header block (Full Width)
@@ -258,7 +258,7 @@ const templateLayout = [
 ];
 
 // Register the template for use with the product detail page
-Reaction.registerTemplate({
+DemandegisterTemplate({
   name: "productDetailSimpleTitleOnly",
   title: "PDP Title Only",
   type: "react",
