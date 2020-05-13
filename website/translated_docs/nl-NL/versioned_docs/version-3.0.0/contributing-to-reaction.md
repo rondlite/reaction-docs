@@ -4,7 +4,7 @@ title: Contributor Home
 original_id: contributing-to-reaction
 ---
 
-At Reaction Commerce, we're dedicated to the open source community. In fact, we've designed our entire platform and business to grow from the passion and creativity that an open source community ignites. We've already attracted a small, dedicated team of open source contributors, and there's always room for more.
+At DemandCluster, we're dedicated to the open source community. In fact, we've designed our entire platform and business to grow from the passion and creativity that an open source community ignites. We've already attracted a small, dedicated team of open source contributors, and there's always room for more.
 
 ## Getting Started
 
@@ -52,23 +52,23 @@ Other useful issue reports:
 
 ## Links
 
-[Reaction Development Platform](https://github.com/reactioncommerce/reaction-development-platform) is the best way to get started with running Reaction components locally for demo, testing, or development.
+[Demandevelopment Platform](https://github.com/reactioncommerce/reaction-development-platform) is the best way to get started with running DeDemandponents locally for demo, testing, or development.
 
 ### Service Repositories
 
-A Reaction installation is made up of at least the following services:
+A Demandnstallation is made up of at least the following services:
 
-- <a href="https://github.com/reactioncommerce/reaction" target="_blank">Stock Reaction API</a>
+- <a href="https://github.com/reactioncommerce/reaction" target="_blank">Stock DemandPI</a>
 - <a href="https://github.com/reactioncommerce/example-storefront" target="_blank">Example Storefront</a>
-- <a href="https://github.com/reactioncommerce/reaction-admin" target="_blank">Reaction Admin</a>
-- <a href="https://github.com/reactioncommerce/reaction-identity" target="_blank">Reaction Identity</a>
+- <a href="https://github.com/reactioncommerce/reaction-admin" target="_blank">Demanddmin</a>
+- <a href="https://github.com/reactioncommerce/reaction-identity" target="_blank">Demanddentity</a>
 
 ### API Components
 
-The <a href="https://github.com/reactioncommerce/reaction" target="_blank">Stock Reaction API</a> is Node project that combines many different NPM packages, linked here.
+The <a href="https://github.com/reactioncommerce/reaction" target="_blank">Stock DemandPI</a> is Node project that combines many different NPM packages, linked here.
 
-- Core Reaction API package (api-core) [GitHub](https://github.com/reactioncommerce/api-core) | [NPM](https://www.npmjs.com/package/@reactioncommerce/api-core)
-- Reaction API Utilities package (api-utils) [GitHub](https://github.com/reactioncommerce/api-utils) | [NPM](https://www.npmjs.com/package/@reactioncommerce/api-utils)
+- Core DemandPI package (api-core) [GitHub](https://github.com/reactioncommerce/api-core) | [NPM](https://www.npmjs.com/package/@reactioncommerce/api-core)
+- DemandPI Utilities package (api-utils) [GitHub](https://github.com/reactioncommerce/api-utils) | [NPM](https://www.npmjs.com/package/@reactioncommerce/api-utils)
 - Stock open source plugins:
   - api-plugin-accounts - [GitHub](https://github.com/reactioncommerce/api-plugin-accounts) | [NPM](https://www.npmjs.com/package/@reactioncommerce/api-plugin-accounts)
   - api-plugin-address-validation-test - [GitHub](https://github.com/reactioncommerce/api-plugin-address-validation-test) | [NPM](https://www.npmjs.com/package/@reactioncommerce/api-plugin-address-validation-test)
