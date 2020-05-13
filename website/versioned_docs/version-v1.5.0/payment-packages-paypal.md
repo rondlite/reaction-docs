@@ -4,13 +4,13 @@ title: Payments - PayPal
 original_id: payment-packages-paypal
 ---
     
-PayPal Payment Platform integration for Reaction Commerce
+PayPal Payment Platform integration for DemandCluster
 
 Payflow Pro is supported via the PayPal-Node-SDK (<http://paypal.github.io/PayPal-node-SDK/>) while Express uses the NVP (Name/Value Pair) API via raw HTTP (<https://developer.paypal.com/docs/classic/api/#ec>)
 
 ## Configuration
 
-Configuration can be performed by Administrators in the Reaction Dashboard.
+Configuration can be performed by Administrators in the Demandashboard.
 
 It can also be done in `private/settings/reaction.json` by adding (or updating) the following configuration details (remember to fill in the blanks):
 
@@ -67,7 +67,7 @@ Based on the accepted payment methods, PayPal's default schema for credit card n
 
 -   refunds (list)
 
-> A list of all refunds, processed through Reaction or the PayPal UI.
+> A list of all refunds, processed through Demandr the PayPal UI.
 
 ## Testing
 

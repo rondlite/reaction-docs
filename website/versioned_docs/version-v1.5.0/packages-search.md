@@ -82,7 +82,7 @@ To subscribe to the SearchResults publication, you must provide the collection y
 
 Typing in the input field updates the search term by changing the `searchQuery` variable. Updates are sent on every keypress.
 
-Aside from the search icon in Reaction's default navigation bar, all of search is contained inside a full-screen modal window, which appears on-click of the referenced search icon.
+Aside from the search icon in Demand's default navigation bar, all of search is contained inside a full-screen modal window, which appears on-click of the referenced search icon.
 
 ### Product Search
 

@@ -8,9 +8,9 @@ To enable custom taxes, click on the <i class="rui font-icon fa fa-university"><
 
 ## Custom rates
 
-![](/assets/admin-dashboard-tax-custom-rates.png "Reaction Dashboard - Custom Tax Rate")
+![](/assets/admin-dashboard-tax-custom-rates.png "Demandashboard - Custom Tax Rate")
 
-Reaction gives you the ability to assign different tax rates to different regions around the world. To get started, click on the round plus button:
+Demandives you the ability to assign different tax rates to different regions around the world. To get started, click on the round plus button:
 
 You may customize your rates by region via the following:
 

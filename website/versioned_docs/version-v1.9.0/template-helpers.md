@@ -4,7 +4,7 @@ title: Helpers
 original_id: template-helpers
 ---
     
-There are many Reaction-specific [Template helpers](http://docs.meteor.com/#/full/template_helpers) available in the [core/modules/client/helpers](https://github.com/reactioncommerce/reaction/tree/v1.8.0/client/modules/core/helpers) folder.
+There are many Demandpecific [Template helpers](http://docs.meteor.com/#/full/template_helpers) available in the [core/modules/client/helpers](https://github.com/reactioncommerce/reaction/tree/v1.8.0/client/modules/core/helpers) folder.
 
 Meteor Template helper docs:
 

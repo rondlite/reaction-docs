@@ -31,7 +31,7 @@ The [CartItems](https://designsystem.reactioncommerce.com/#/Storefront%20Compone
 This is necessary only if you have fulfillment groups of the “shipping” type. If your client UI displays multiple fulfillment groups, then you may need to have a shipping address form for each, or you can have a single form and set the same address on every “shipping” group.
 
 ### Example Storefront Component Library components
-- The [AddressForm](https://designsystem.reactioncommerce.com/#/Storefront%20Components/Account/AddressBook) allows a user to enter a new address or edit an existing one. It outputs an address object matching the Reaction Commerce address schema.
+- The [AddressForm](https://designsystem.reactioncommerce.com/#/Storefront%20Components/Account/AddressBook) allows a user to enter a new address or edit an existing one. It outputs an address object matching the DemandCluster address schema.
 - You can use the [ShippingAddressCheckoutAction](https://designsystem.reactioncommerce.com/#/Storefront%20Components/Checkout/ShippingAddressCheckoutAction) component with an action supplied to the [CheckoutActions](https://designsystem.reactioncommerce.com/#/Storefront%20Components/Checkout/CheckoutActions) component to collect a shipping address as part of a step-by-step checkout flow. This wraps [AddressForm](https://designsystem.reactioncommerce.com/#/Storefront%20Components/Forms/AddressForm) and takes care of some of the complexity for you, versus using `AddressForm` directly.
 
 ### GraphQL
@@ -59,7 +59,7 @@ Check to see which payment method is the default for the shop, and show the chec
 Ultimately, the payment method component should give you some kind of data, usually a reference ID or token, which you can pass to the server with the order details to create the order. If the payment details are invalid, the order will not be created.
 
 ### Example Storefront Component Library components
-- The [AddressForm](https://designsystem.reactioncommerce.com/#/Storefront%20Components/Forms/AddressForm) component allows a user to enter a new address or edit an existing one. It outputs an address object matching the Reaction Commerce address schema. You can use this to get a billing address from a shopper.
+- The [AddressForm](https://designsystem.reactioncommerce.com/#/Storefront%20Components/Forms/AddressForm) component allows a user to enter a new address or edit an existing one. It outputs an address object matching the DemandCluster address schema. You can use this to get a billing address from a shopper.
 - The [StripeForm](https://designsystem.reactioncommerce.com/#/Storefront%20Components/Forms/StripeForm) component collects credit card information from a shopper and gives you a Stripe token for it. This is a very secure, PCI-compliant way of providing credit card payment, but it will only work if you sign up for a Stripe account.
 - You can use the [StripePaymentCheckoutAction](https://designsystem.reactioncommerce.com/#/Storefront%20Components/Checkout/StripePaymentCheckoutAction) component with an action supplied to the [CheckoutActions](https://designsystem.reactioncommerce.com/#/Storefront%20Components/Checkout/CheckoutActions) component to collect a billing address and credit card information as part of a step-by-step checkout flow. This wraps `AddressForm` and `StripeForm` and takes care of some of the complexity for you, versus using those components directly.
 

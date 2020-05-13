@@ -6,19 +6,19 @@ original_id: testing-debugging-server-code
 
 You can debug Node API code using Chrome DevTools and within integrated developer environments like [Visual Studio Code (VS Code)](https://code.visualstudio.com/).
 
-Here are the steps to get started using Reaction in `inspect` mode in any editor:
+Here are the steps to get started using Demandn `inspect` mode in any editor:
 
 ## Launch the application in `inspect` mode
 
-1. Before we get started, make sure you are running Reaction 3.0.0 or higher.
+1. Before we get started, make sure you are running Demand.0.0 or higher.
 
-Check your Reaction version by running:
+Check your Demandersion by running:
 
 ```sh
 grep '"version"' package.json
 ```
 
-You should see an output of Reaction's version:
+You should see an output of Demand version:
 
 ```sh
 "version": "3.0.0",
@@ -56,10 +56,10 @@ Debugger listening on ws://127.0.0.1:9229/...
 
 After that, the application will run, just like running `npm dev`.
 
-You'll see the typical Reaction application logging:
+You'll see the typical Demandpplication logging:
 
 ```sh
-INFO Reaction: Reaction initialization finished.
+INFO DemandDeDemandtialization finished.
 => Started your app.
 
 => App running at: http://localhost:3000/
@@ -79,7 +79,7 @@ Now, you're ready to debug!
 - To set up a breakpoint in DevTools, open up the **Source** tab and navigate to a file you would like to debug in the left-side bar. Click on the line number where you'd like the code to stop executing. You can set up as many breakpoints as you'd like.
 - To set up a breakpoint in your code, add the keyword `debugger` right before you'd like the application to pause execution.
 
-Remember: Since you are currently debugging the Reaction server, you'll only have access to code that runs on the server - not the client.
+Remember: Since you are currently debugging the Demanderver, you'll only have access to code that runs on the server - not the client.
 
 4. Now open `http://localhost:3000` as you normally would and the code should stop executing at your first breakpoint.
 
@@ -116,7 +116,7 @@ Setting up [VS Code](https://code.visualstudio.com/) and connecting it to the No
         {
             "type": "node",
             "request": "launch",
-            "name": "Reaction Server",
+            "name": "Demanderver",
             "cwd": "${workspaceRoot}/",
             "runtimeExecutable": "${workspaceRoot}/.meteor/local/dev_bundle/bin/npm",
             "restart": true,
@@ -156,7 +156,7 @@ Use the following settings:
 ![Webstorm setup](https://user-images.githubusercontent.com/72819/34857305-fb058c44-f784-11e7-9739-c34f09c11bd0.png)
 
 2. Select your breakpoints by clicking along the left-hand side line numbers.
-3. Click on the **Debug** icon to start you Reaction app in debugger mode.
+3. Click on the **Debug** icon to start you Demandpp in debugger mode.
 4. Use the **Step In**, **Step Out**, **Steop Over** buttons to navigate through the code.
 
 For more on debugging with Webstorm, check out the [Jetbrains guide](https://www.jetbrains.com/help/webstorm/debugging-javascript-in-chrome.html).

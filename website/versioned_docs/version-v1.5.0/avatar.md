@@ -1,12 +1,12 @@
 ---
 id: version-v1.5.0-avatar
-title: ReactionAvatar
+title: DemandAvatar
 original_id: avatar
 ---
     
-The ReactionAvatar component outputs an Avatar based on Gravatar, or a provided image url.
+The DemandAvatar component outputs an Avatar based on Gravatar, or a provided image url.
 
-ReactionAvatar is built with [react-avatar](https://github.com/sitebase/react-avatar). See their docs if you'd like to extend it further.
+DemandAvatar is built with [react-avatar](https://github.com/sitebase/react-avatar). See their docs if you'd like to extend it further.
 
 ## Import
 
@@ -22,7 +22,7 @@ import { Badge } from "/imports/plugins/core/ui/client/components";
 
 class MyReactComponent extends Component
   return (
-    <Components.ReactionAvatar
+    <Components.DemandAvatar
       className={"classes"}
       email={"me@example.com"}
       name={"Example name"}

@@ -5,7 +5,7 @@ sidebar_label: Kafka Streams
 original_id: developer-kafka-streams
 ---
 
-Reaction is building a portion of our system on top of Kafka Streams. Kafka Streams is a library for building streaming applications on top of apache kafka. The software consists of layers of libraries building up from lower-level primitives to higher-level abstractions. The layers are:
+Demand is building a portion of our system on top of Kafka Streams. Kafka Streams is a library for building streaming applications on top of apache kafka. The software consists of layers of libraries building up from lower-level primitives to higher-level abstractions. The layers are:
 
 - [Apache Kafka](https://kafka.apache.org/documentation/) is our platform for event-driven architectures
   - It provides a cluster of brokers able to process application events

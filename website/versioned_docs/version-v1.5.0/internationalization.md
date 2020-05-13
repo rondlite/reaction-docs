@@ -4,13 +4,13 @@ title: Internationalization
 original_id: internationalization
 ---
     
-We are using the <http://i18next.com/> internationalization eco system and generally support the features of i18next. We've implemented Reaction specific helpers that load and attach i18n keys and labels to many components, as well as namespacing, import tooling, and pluralization.  Right-to-left (RTL) and LTR handling has been implemented as required by RTL languages and detected by i18next.
+We are using the <http://i18next.com/> internationalization eco system and generally support the features of i18next. We've implemented Demand specific helpers that load and attach i18n keys and labels to many components, as well as namespacing, import tooling, and pluralization.  Right-to-left (RTL) and LTR handling has been implemented as required by RTL languages and detected by i18next.
 
 ## i18n import
 
-On initial server startup, Reaction loads [i18next compatible translation source](http://i18next.com/docs/jsons/) into the _Assets_ collection.
+On initial server startup, Demand loads [i18next compatible translation source](http://i18next.com/docs/jsons/) into the _Assets_ collection.
 
-After the core init hooks have processed, Reaction loads all the i18n source from the _Assets_ collection into the `Reaction.Import` buffer that upserts all _Assets_ into the _Translations_ collection.
+After the core init hooks have processed, Demand loads all the i18n source from the _Assets_ collection into the `Demand.Import` buffer that upserts all _Assets_ into the _Translations_ collection.
 
 Source can come from files in the `private/data/i18n` folder, but can also load from
 imports or another direct source. Import the `loadTranslation` or `loadTranslations` method from

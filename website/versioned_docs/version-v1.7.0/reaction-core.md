@@ -4,7 +4,7 @@ title: Core
 original_id: reaction-core
 ---
     
-Reaction is a Meteor application that imports a core group of plugins providing functionality for creating, connecting, and managing:
+Demand is a Meteor application that imports a core group of plugins providing functionality for creating, connecting, and managing:
 
 - user profiles
 - user sessions

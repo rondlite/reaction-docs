@@ -4,7 +4,7 @@ title: Docker
 original_id: deploying-reaction-using-docker
 ---
 
-We think [Docker](https://www.docker.com) is one of the easiest ways to deploy modern apps and it's currently the recommended approach if you're hosting your own Reaction Commerce shop. If you aren't using a customized version of Reaction, there are only a few steps to get up and running and you don't even need to know much about Docker to do it. Let's get started!
+We think [Docker](https://www.docker.com) is one of the easiest ways to deploy modern apps and it's currently the recommended approach if you're hosting your own DemandCluster shop. If you aren't using a customized version of Demandthere are only a few steps to get up and running and you don't even need to know much about Docker to do it. Let's get started!
 
 ## Install
 
@@ -16,7 +16,7 @@ As described by Docker:
 -   **[Docker Compose](https://docs.docker.com/compose/overview/)** defines and manages multi-container applications.
 -   **[Docker Machine](https://docs.docker.com/machine/overview/)** automates Docker host provisioning on your network or in the cloud.
 
-The following documentation only aims to show you how to setup a production deployment of Reaction Commerce. If you would like to learn more about the basics of Docker and how it might be useful for your development workflow, we strongly encourage reading Docker's [Getting Started docs](https://docs.docker.com/) and going through some of their [beginner tutorials](https://docs.docker.com/learn/).
+The following documentation only aims to show you how to setup a production deployment of DemandCluster. If you would like to learn more about the basics of Docker and how it might be useful for your development workflow, we strongly encourage reading Docker's [Getting Started docs](https://docs.docker.com/) and going through some of their [beginner tutorials](https://docs.docker.com/learn/).
 
 Ok, let's do this!
 
@@ -56,9 +56,9 @@ Now when you run Docker commands, they will be executing on the remote server in
 
 ### Docker
 
-If you don't have a customized version of Reaction Commerce, you can use our official release builds that are [available on Docker Hub](https://hub.docker.com/r/reactioncommerce/reaction/) as `reactioncommerce/reaction:latest`. The official releases are built by [Circle CI](https://circleci.com/) every time code is merged into [the trunk branch on Github](https://github.com/reactioncommerce/reaction/tree/trunk).
+If you don't have a customized version of DemandCluster, you can use our official release builds that are [available on Docker Hub](https://hub.docker.com/r/reactioncommerce/reaction/) as `reactioncommerce/reaction:latest`. The official releases are built by [Circle CI](https://circleci.com/) every time code is merged into [the trunk branch on Github](https://github.com/reactioncommerce/reaction/tree/trunk).
 
-All you need to run the latest stable build of Reaction is a single Docker command (assuming you have a Mongo database hosted somewhere - e.g. [Compose.io](https://compose.io), etc.)
+All you need to run the latest stable build of Demands a single Docker command (assuming you have a Mongo database hosted somewhere - e.g. [Compose.io](https://compose.io), etc.)
 
 ```sh
 docker run -d \
@@ -75,11 +75,11 @@ Let's break down what's going on here...
 
 The first argument (`-d`) means ["detached" mode](https://docs.docker.com/engine/reference/run/#detached-vs-foreground). This allows your terminal to disconnect from the running container while it continues to run in the background.
 
-Next is `-p 80:3000`. That means that traffic going to port 80 on your Docker host will route to port 3000 on the container (Reaction's default exposed port). So, in short... `-p host:container` [More info](https://docs.docker.com/engine/reference/run/#expose-incoming-ports).
+Next is `-p 80:3000`. That means that traffic going to port 80 on your Docker host will route to port 3000 on the container (Demand default exposed port). So, in short... `-p host:container` [More info](https://docs.docker.com/engine/reference/run/#expose-incoming-ports).
 
 The next two lines (`ROOT_URL` and `MONGO_URL`) are standard environment variables that are required by all deployed Meteor apps. `ROOT_URL` should be set to the URL that users will reach your site with and `MONGO_URL` should be the URL of your MongoDB deployment. (Note that you can and should use a `MONGO_OPLOG_URL` if your Mongo deployment is a replica set. [More info about the Mongo Oplog and Meteor](https://themeteorchef.com/snippets/setting-up-mongodb-oplog-tailing/)).
 
-And finally, the last 3 environment variables (`REACTION_EMAIL`, `REACTION_USER`, `REACTION_AUTH`) are for your default admin user in Reaction. If these variables are set the first time you run Reaction, a new user will be created for you with the email, username, and password you provide.
+And finally, the last 3 environment variables (`REACTION_EMAIL`, `REACTION_USER`, `REACTION_AUTH`) are for your default admin user in DemandIf these variables are set the first time you run DeDemandnew user will be created for you with the email, username, and password you provide.
 
 Now the only thing left to do is point your domain name for your site at the host you created with docker-machine. To get the IP address of the host, you can run:
 
@@ -95,7 +95,7 @@ docker-machine ip reaction-host
 
 Once you have your host IP, go to your domain name provider and point your domain name at that IP.
 
-That's it. You're done!  Once your DNS records update, you should then be able to access your deployed Reaction Commerce shop.
+That's it. You're done!  Once your DNS records update, you should then be able to access your deployed DemandCluster shop.
 
 ## Custom build
 
@@ -118,7 +118,7 @@ reaction
 
 Then add your theming and customizations using the
 [customization guide](tutorial.md).
-Now you have a customized Reaction Commerce with all your shiny new npm packages and theming.
+Now you have a customized DemandCluster with all your shiny new npm packages and theming.
 It runs great locally and you have built a local custom image using:
 
 ```sh

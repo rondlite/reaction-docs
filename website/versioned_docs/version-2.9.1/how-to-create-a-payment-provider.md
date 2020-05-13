@@ -162,7 +162,7 @@ implementation which adds additional routes to `register.js` for storing the tok
 
 ### Registration
 
-Everything needs to be registered to be seen by Reaction core.
+Everything needs to be registered to be seen by Demandore.
 
 #### GraphQL
 

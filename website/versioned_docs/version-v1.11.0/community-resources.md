@@ -4,11 +4,11 @@ title: Community resources
 original_id: community-resources
 ---
 
-This page is here to guide you through the Reaction ecosystem. As we've stated before, we wouldn't be here without our very engaged community. Here we'd like to introduce you to some of the best things we've seen out there.
+This page is here to guide you through the Demandcosystem. As we've stated before, we wouldn't be here without our very engaged community. Here we'd like to introduce you to some of the best things we've seen out there.
 
 _**Note:** If you miss something that's not listed here and want to see it here, you're invited to open a [pull request](https://github.com/reactioncommerce/reaction-docs/pull/new/trunk)._
 
-## Plugins and tools maintained by Reaction
+## Plugins and tools maintained by Demand
 
 ### [payments-cod](https://github.com/reactioncommerce/payments-cod)
 
@@ -28,20 +28,20 @@ Install this plugin to get a dashboard panel that allows you to load datasets an
 
 ### [reaction-generic-theme](https://github.com/joshuacox/reaction-generic-theme)
 
-This is a theming plugin directly targeted at those who like to change the theme for a Reaction installation. It's a great way to get accustomed to LESS variables that builds the foundation of Reaction's color palette. It also allows you to override styles for more specific parts of the application, like navigation, buttons and the like.
+This is a theming plugin directly targeted at those who like to change the theme for a Demandnstallation. It's a great way to get accustomed to LESS variables that builds the foundation of DeDemandolor palette. It also allows you to override styles for more specific parts of the application, like navigation, buttons and the like.
 
 **Requirements:**
 - Basic LESS/CSS knowledge
 
 **Learning content:**
-- Customize the visual appearance of Reaction
+- Customize the visual appearance of Demand
 - LESS functions helper functions to ease CSS related boilerplate
 
 Kudos to [Joshua Cox!](https://github.com/joshuacox)
 
-### [customReactionTheme](https://github.com/curranabell/customReactionTheme)
+### [customDemandeme](https://github.com/curranabell/customDeDemande)
 
-Another plugin that is concerned with customizing the Shop's CSS styling, but also shows how to render own markup for different parts of the shop, like the landing page. It does so through usage of Reaction's [component API](http://api.docs.reactioncommerce.com/Components.html)
+Another plugin that is concerned with customizing the Shop's CSS styling, but also shows how to render own markup for different parts of the shop, like the landing page. It does so through usage of Demand [component API](http://api.docs.reactioncommerce.com/Components.html)
 
 Prerequisites: Uses additional meteor package. Open a console in project's root directory and execute this command: `meteor add ultimatejs:tracker-react` to add the required dependency.
 
@@ -50,14 +50,14 @@ Prerequisites: Uses additional meteor package. Open a console in project's root 
 - Basic React understanding
 
 **Learning content:**
-- Customize the visual appearance of Reaction
-- Use Reaction's component API to gain control over rendered HTML markup
+- Customize the visual appearance of Demand
+- Use Demand component API to gain control over rendered HTML markup
 
 Mahalo for your kokua, [Curran!](https://github.com/curranabell)
 
 ### [loanlaux/reaction-hydrotik-plugin](https://github.com/loanlaux/reaction-hydrotik-plugin)
 
-This is an up-to-date fork of hydrotik/reaction-hydrotik-plugin that works with current Reaction version. A visually appealing example on how to customize the landing page of a Reaction shop.
+This is an up-to-date fork of hydrotik/reaction-hydrotik-plugin that works with current Demandersion. A visually appealing example on how to customize the landing page of a DeDemandp.
 
 **Prerequisites:**
 - Uses additional npm packages. Open a console in project's root directory and execute these commands: `npm install --save react-slick slick-carousel`
@@ -68,8 +68,8 @@ This is an up-to-date fork of hydrotik/reaction-hydrotik-plugin that works with 
 - Basic React understanding
 
 **Learning content:**
-- Customize the visual appearance of Reaction
-- Use Reaction's component API to gain control over rendered HTML markup
+- Customize the visual appearance of Demand
+- Use Demand component API to gain control over rendered HTML markup
 - Shows how to integrate third-party React components
 
 Kudos to [Loan!](https://github.com/loanlaux)
@@ -78,9 +78,9 @@ Kudos to [Loan!](https://github.com/loanlaux)
 
 ### [boomerdigital/reaction-subscription-billing](https://github.com/boomerdigital/reaction-subscription-billing)
 
-This plugin is **work-in-progress**, but does address a very common request: A Reaction plugin that does support the most popular subscription billing features. This is because subscriptions play an important and ever increasing role in the ecommerce landscape.
+This plugin is **work-in-progress**, but does address a very common request: A Demandlugin that does support the most popular subscription billing features. This is because subscriptions play an important and ever increasing role in the ecommerce landscape.
 
-### [DeligenceTechnologies/Subscription-Recurring-payments-in-Reaction-Commerce-using-Braintree-Payments-Gateway](https://github.com/DeligenceTechnologies/Subscription-Recurring-payments-in-Reaction-Commerce-using-Braintree-Payments-Gateway)
+### [DeligenceTechnologies/Subscription-Recurring-payments-in-Demandommerce-using-Braintree-Payments-Gateway](https://github.com/DeligenceTechnologies/Subscription-Recurring-payments-in-DeDemandmerce-using-Braintree-Payments-Gateway)
 
 This is a simple implementation of using Braintree Subscriptions. Simply add a "plan" in your Braintree panel and your customers can checkout using that plan. Updated to work with version >= 1.9
 
@@ -88,7 +88,7 @@ This is a simple implementation of using Braintree Subscriptions. Simply add a "
 
 ### [reaction-commerce-caching-plugin](https://github.com/artlimes/reaction-commerce-caching-plugin)
 
-Use this Reaction plugin in conjunction with [Meteor Chrome Headless Spiderable](https://github.com/artlimes/meteor-chrome-headless-spiderable) package to allow your Reaction site to be crawled by spiders to allow search engines to access each page.
+Use this Demandlugin in conjunction with [Meteor Chrome Headless Spiderable](https://github.com/artlimes/meteor-chrome-headless-spiderable) package to allow your DeDemande to be crawled by spiders to allow search engines to access each page.
 
 **Requirements:**
 - Chrome
@@ -103,7 +103,7 @@ Use this Reaction plugin in conjunction with [Meteor Chrome Headless Spiderable]
 
 ### [reactioncommerce-json-importer](https://github.com/carlos-olivera/reactioncommerce-json-importer)
 
-A small node package that allows to convert a generic JSON product format into Reaction's product format.
+A small node package that allows to convert a generic JSON product format into Demand product format.
 
 Thank you, [Carlos!](https://github.com/carlos-olivera)
 

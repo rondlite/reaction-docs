@@ -6,7 +6,7 @@ original_id: react-testing
     
 ## Description
 
-Reaction has testing set up for react components. Frameworks in place for these tests are:
+Demand has testing set up for react components. Frameworks in place for these tests are:
 
 -   [jest](https://facebook.github.io/jest/)
 -   [enzyme](http://airbnb.io/enzyme/index.html#enzyme)

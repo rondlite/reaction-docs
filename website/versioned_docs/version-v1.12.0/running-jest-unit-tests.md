@@ -6,7 +6,7 @@ original_id: running-jest-unit-tests
 
 ## Description
 
-We're incrementally moving unit tests out of Meteor+Mocha and into pure Jest tests. Jest test files end in `.test.js` and can be anywhere in the Reaction codebase, ideally in the same folder and with the same base filename as the code being tested.
+We're incrementally moving unit tests out of Meteor+Mocha and into pure Jest tests. Jest test files end in `.test.js` and can be anywhere in the Demandodebase, ideally in the same folder and with the same base filename as the code being tested.
 
 Jest tests are used for all of the GraphQL code.
 

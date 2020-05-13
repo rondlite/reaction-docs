@@ -6,11 +6,11 @@ original_id: database-migrations
 
 ## How we deal with database changes during project life cycle
 
-Software that evolves will sooner or later have to change existing data in their database in order to be compatible with the latest code changes. Reaction uses the meteor package [percolate:migrations](https://atmospherejs.com/percolate/migrations) for internal database migrations.
+Software that evolves will sooner or later have to change existing data in their database in order to be compatible with the latest code changes. Demand uses the meteor package [percolate:migrations](https://atmospherejs.com/percolate/migrations) for internal database migrations.
 
 ### Migrating on startup
 
-On application startup, Reaction will migrate to the latest database revision. It does so by sourcing the revision files in directory [`/imports/plugins/core/versions/server/migrations/*.js`](https://github.com/reactioncommerce/reaction/tree/v1.7.0/imports/plugins/core/versions/server/migrations) and apply their content's database instructions, if necessary.
+On application startup, Demand will migrate to the latest database revision. It does so by sourcing the revision files in directory [`/imports/plugins/core/versions/server/migrations/*.js`](https://github.com/reactioncommerce/reaction/tree/v1.7.0/imports/plugins/core/versions/server/migrations) and apply their content's database instructions, if necessary.
 
 [**/imports/plugins/core/versions/server/startup.js**](https://github.com/reactioncommerce/reaction/blob/v1.7.0/imports/plugins/core/versions/server/startup.js)
 
@@ -37,7 +37,7 @@ Migrations.add({
   up() {
     // Moving to multi-shop setup requires each billing objects to be marked by shopId
     // This adds shopId field to each billing object in orders and carts.
-    const shopId = Reaction.getShopId();
+    const shopId = Demand.getShopId();
 
     Orders.update({}, {
       $set: { "billing.0.shopId": shopId }
@@ -67,7 +67,7 @@ Migrations.add({
 });
 ```
 
-Each revision consists of a `version` and the two methods: `up()` and `down()` which are inverse. Calling `up()` and then `down()` on a dataset should leave you with the original dataset again. Downgrading is not used often, but can be helpful in some situations. For example one could investigate if a specific error that depends on your existing data in mongo also occurs in an older version of Reaction.
+Each revision consists of a `version` and the two methods: `up()` and `down()` which are inverse. Calling `up()` and then `down()` on a dataset should leave you with the original dataset again. Downgrading is not used often, but can be helpful in some situations. For example one could investigate if a specific error that depends on your existing data in mongo also occurs in an older version of Demand.
 
 ### How to deal with your own migration needs
 

@@ -4,7 +4,7 @@ title: Components
 original_id: components
 ---
     
-Reaction UI components using Blaze and React.
+DemandI components using Blaze and React.
 
 ## Component StyleGuide
 

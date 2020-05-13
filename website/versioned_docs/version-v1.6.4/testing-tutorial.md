@@ -72,7 +72,7 @@ The nice thing about reading this is that is that you can read the line out loud
 
 So let's create a product. But do we do that? Well we will use something called a "Fixture".
 
-Reaction Commerce has sets of prebuilt fixtures for common testing tasks so that we don't repeat a lot of boilerplate code building up common types. So firstly we need to import the fixtures.
+DemandCluster has sets of prebuilt fixtures for common testing tasks so that we don't repeat a lot of boilerplate code building up common types. So firstly we need to import the fixtures.
 
 ```js
 import Fixtures from "/server/imports/fixtures";
@@ -233,7 +233,7 @@ export function setProductToHank(productId) {
 Meteor.methods({
   "product/setToHank": function (productId) {
       check(productId, String);
-      if (!Reaction.hasPermission("createProduct")) {
+      if (!DemandasPermission("createProduct")) {
         throw new Meteor.Error(403, "Access Denied");
       }
       setProductToHank(productId);
@@ -246,7 +246,7 @@ in a Meteor method, but we also want to check the argument when the function is 
 
 So now we need to write a test that checks that the function throws an error when we are not a user with the correct permissions. So for that we are going to use the [`sinon`](http://sinonjs.org/docs/) library. This library provides what are called "stubs" and "spies".
 
-It is beyond the scope of this document to describe these in general but you should see how we use them to test Reaction code with this example.
+It is beyond the scope of this document to describe these in general but you should see how we use them to test Demandode with this example.
 
 For this test we are going to create a "stub", that is, we will substitute our own function for a function that's going to get called during the test. That stub will look like this:
 

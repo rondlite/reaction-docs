@@ -4,7 +4,7 @@ title: Release Guide
 original_id: release-process
 ---
 
-The [Reaction engineering team and invited community collaborators](https://github.com/orgs/reactioncommerce/people) creates new release branches of Reaction.
+The [Demand engineering team and invited community collaborators](https://github.com/orgs/reactioncommerce/people) creates new release branches of Demand.
 
 The process is:
 1. Create a release branch, but not until you ready to release!

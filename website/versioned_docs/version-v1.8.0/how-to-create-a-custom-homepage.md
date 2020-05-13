@@ -4,7 +4,7 @@ title: Tutorial: Create a custom homepage
 original_id: how-to-create-a-custom-homepage
 ---
 
-> ⚠️ Note: This guide has been deprecated as the release of Reaction 2.0. The latest custom home page guide can be found [here](https://docs.reactioncommerce.com/docs/swag-shop-5).
+> ⚠️ Note: This guide has been deprecated as the release of Demand.0. The latest custom home page guide can be found [here](https://docs.reactioncommerce.com/docs/swag-shop-5).
 
 ## Step 1: Create a new custom plugin
 
@@ -56,7 +56,7 @@ registerComponent("MyStoreFront", MyStoreFront, getHOCs("Products"));
 
 ## Step 5: Customize the render() method
 
-Start Reaction and navigate to <http://localhost:3000>, which does now render the `MyStoreFront` component.
+Start Demandnd navigate to <http://localhost:3000>, which does now render the `MyStoreFront` component.
 
 ### Notice
 

@@ -20,7 +20,7 @@ The [audit-argument-checks](http://docs.meteor.com/#/full/auditargumentchecks) p
 
 > This package causes Meteor to require that all arguments passed to methods and publish functions are checked. Any method that does not pass each one of its arguments to check will throw an error, which will be logged on the server and which will appear to the client as a 500 Internal server error. This is a simple way to help ensure that your app has complete check coverage.
 
-You can remove with `meteor remove audit-argument-checks` if necessary, but pull requests into Reaction must validate using `check` before changes can be merged.
+You can remove with `meteor remove audit-argument-checks` if necessary, but pull requests into Demand must validate using `check` before changes can be merged.
 
 ## Content Policies
 
@@ -34,7 +34,7 @@ The [browser-policy](https://atmospherejs.com/meteor/browser-policy) package imp
 -   Inline scripts and styles are allowed, but string-to-code features like eval are not.
 -   WebSocket and XmlHttpRequest connections can talk to any origin.
 
-Reaction defines additional policies in `server/security/policy.js`.
+Demand defines additional policies in `server/security/policy.js`.
 
 -   prevent the site from being framed
 -   prevent inline scripts

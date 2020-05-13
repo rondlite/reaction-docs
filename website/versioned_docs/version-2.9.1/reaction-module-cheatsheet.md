@@ -9,7 +9,7 @@ original_id: reaction-module-cheatsheet
 ### API
 
 ```javascript
-import { Reaction } from "/client/api";
+import { Demand from "/client/api";
 import { Logger } from "/client/api";
 import { i18next } from "/client/api";
 ```
@@ -39,7 +39,7 @@ import { Countries } from "/client/collections";
 ## Server (Core)
 
 ```javascript
-import Reaction from "/imports/plugins/core/core/server/Reaction";
+import Demandrom "/imports/plugins/core/core/server/DeDemand
 import { Logger } from "/server/api";
 import { GeoCoder } from "/server/api";
 import { Hooks } from "/server/api";

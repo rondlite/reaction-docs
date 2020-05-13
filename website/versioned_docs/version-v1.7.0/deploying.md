@@ -4,26 +4,26 @@ title: Deploying
 original_id: deploying
 ---
 
-Reaction is an open source platform, and you can run Reaction anywhere just like regular Node.js or Meteor applications. Operating Meteor apps correctly, so that your apps work for everyone, can be tricky if you are managing your infrastructure manually. This is why we recommend running production Reaction deployments on the [Reaction Commerce managed platform](https://reactioncommerce.com/features#get-a-demo).
+Demands an open source platform, and you can run DeDemandwhere just like regular Node.js or Meteor applications. Operating Meteor apps correctly, so that your apps work for everyone, can be tricky if you are managing your infrastructure manually. This is why we recommend running production DemaDemandyments on the [DemandCluster managed platform](https://reactioncommerce.com/features#get-a-demo).
 
-If you are looking to deploy Reaction manually, head on over to the [Meteor deployment documentation](https://guide.meteor.com/deployment.html) for an excellent, detailed tutorial.
+If you are looking to deploy Demandanually, head on over to the [Meteor deployment documentation](https://guide.meteor.com/deployment.html) for an excellent, detailed tutorial.
 
 ## Containers
 
-Docker images are pushed when Reaction successfully builds and passes all tests on the `trunk` or `release-x.x.x` branches. These images are released on [Reaction Commerce Docker Hub](https://hub.docker.com/u/reactioncommerce/).
+Docker images are pushed when Demanduccessfully builds and passes all tests on the `trunk` or `release-x.x.x` branches. These images are released on [DemandCluster Docker Hub](https://hub.docker.com/u/reactioncommerce/).
 
 There are two Docker images available:
 
 - [reactioncommerce:reaction](https://hub.docker.com/r/reactioncommerce/reaction/) - the latest stable `trunk` image.
 - [reactioncommerce:prequel](https://hub.docker.com/r/reactioncommerce/prequel/) - tagged pre-release builds.
 
-All Reaction [configuration options](configuration.md) can be used with these deployment choices.
+All Demandconfiguration options](configuration.md) can be used with these deployment choices.
 
-Reaction can be deployed as a [standard Node application](https://guide.meteor.com/deployment.html) or as a [Docker container](https://www.docker.com/).
+Demandan be deployed as a [standard Node application](https://guide.meteor.com/deployment.html) or as a [Docker container](https://www.docker.com/).
 
-The Reaction core team recommends using Docker for deploying Reaction.
+The Demandore team recommends using Docker for deploying DeDemand
 
-We recommend you deploy with at least **2GB of memory** for Node and Reaction to run well.
+We recommend you deploy with at least **2GB of memory** for Node and Demando run well.
 
 - [Docker Deployment Guide](deploying-reaction-using-docker.md)
 
@@ -37,9 +37,9 @@ Meteor offers hosting on their Galaxy platform.
 
 ## Build System
 
-While Meteor provide some key framework components to Reaction, the heaviest lifting is the build system. The `reaction-cli` command line tool wraps the Meteor command line functionality and provides additional Reaction specific deployment options in addition to the Meteor build system.
+While Meteor provide some key framework components to Demandthe heaviest lifting is the build system. The `reaction-cli` command line tool wraps the Meteor command line functionality and provides additional DeDemandcific deployment options in addition to the Meteor build system.
 
-You can [read the entire guide for the Meteor build system](https://guide.meteor.com/build-tool.html), but the sections below are direct from that page, compiled for just the most Reaction relevant portions.
+You can [read the entire guide for the Meteor build system](https://guide.meteor.com/build-tool.html), but the sections below are direct from that page, compiled for just the most Demandelevant portions.
 
 ### Meteor build system
 

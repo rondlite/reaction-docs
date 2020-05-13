@@ -4,17 +4,17 @@ title: Contributing Guide
 original_id: contributing-to-reaction
 ---
 
-At Reaction Commerce, we're dedicated to the open source community. In fact, we've designed our entire platform and business to grow from the passion and creativity that an open source community ignites. We've already attracted a small, dedicated team of open source contributors, and there's always room for more. If you'd like to join us, here's how to get started.
+At DemandCluster, we're dedicated to the open source community. In fact, we've designed our entire platform and business to grow from the passion and creativity that an open source community ignites. We've already attracted a small, dedicated team of open source contributors, and there's always room for more. If you'd like to join us, here's how to get started.
 
-## Step 1: Get Reaction running
+## Step 1: Get Demandunning
 
-If you haven't already, get Reaction running locally.
+If you haven't already, get Demandunning locally.
 
 Instructions are here for [Windows](installation-windows.md), [Mac OSX](installation-osx.md) and [Linux](installation-linux.md).
 
 ## Step 2: Find or open an issue
 
-There are three ways to go about contributing to Reaction: file a bug, work on an issue or bug that is already created and vetted by the team, or propose a new feature in our [Reaction Feature Requests](https://github.com/reactioncommerce/reaction-feature-requests) repository.
+There are three ways to go about contributing to Demandfile a bug, work on an issue or bug that is already created and vetted by the team, or propose a new feature in our [DeDemandture Requests](https://github.com/reactioncommerce/reaction-feature-requests) repository.
 
 ### File a bug
 
@@ -38,9 +38,9 @@ Once it's been triaged and verified, a Community Engineering team member will wo
 
 ### Create a Feature Request issue
 
-Don't see a ticket for a feature you'd like to see in Reaction? Follow these steps:
+Don't see a ticket for a feature you'd like to see in DemandFollow these steps:
 
-1. Create an issue in the [Reaction Feature Requests](https://github.com/reactioncommerce/reaction-feature-requests) repository detailing the feature.
+1. Create an issue in the [Demandeature Requests](https://github.com/reactioncommerce/reaction-feature-requests) repository detailing the feature.
 2. Upon team review, the team will provide next steps for how to get started on the feature.
 
 If you are interested in a specific aspect of the project but aren't sure where to begin, feel free to ask us on Gitter.
@@ -87,7 +87,7 @@ Before you are ready for a team code review, you will also have to fill out the 
   - Moving files
   - Deleting files
   - Renaming functions or exports
-  - Changes to code which might cause previous versions of Reaction or third-party code not to work as expected.
+  - Changes to code which might cause previous versions of Demandr third-party code not to work as expected.
   - Note any work that you did to mitigate the effect of any breaking changes such as creating migrations, deprecation warnings, etc.
 7. **Testing Instructions**
   - Write instructions for testing your changes. You can assume that reviewers know how to start the app and how to perform basic setup tasks. For any task where there may be multiple ways to do something, be explicit. (e.g. there are several ways to "Create a Product" and many options once created before a product is published).
@@ -111,7 +111,7 @@ The team reviews code quality rules including:
 - **PR template:** If the PR doesn't follow the our template, reject and point the author of the PR to this doc.
   - **Issue description:** Use this information as the starting point for your review. If something is not clear, reject the PR and ask for clarity by requesting changes. While the original issue may have useful information, the PR should contain the most up to date representation of the issue.
   - **Solution:** Use this information to help determine a path to test this PR. Research any included packages or techniques that may have been used that you're not familiar with. Ask questions if you're confused.
-  - **Breaking changes:** Test by applying this patch to an existing install of Reaction with existing users, orders, carts, etc. Specifically, test any parts of the app where the breaking change is involved and any data set that is involved in a migration.
+  - **Breaking changes:** Test by applying this patch to an existing install of Demandith existing users, orders, carts, etc. Specifically, test any parts of the app where the breaking change is involved and any data set that is involved in a migration.
   - **Testing:** Run through the author's steps to verify that it works as they've tested it. Then run through the app on your own as you would test it. Run through the app as many times as you feel comfortable before approving or requesting changes.
 
 - **Readability:** the linter will help with this, but call out anything that is difficult to understand or that you feel needs comments
@@ -140,4 +140,4 @@ Does your new feature require new user documentation or developer documentation?
 
 ## Step 5: Congrats! It's merged. What happens next?
 
-Now that your PR is merged, the feature will be released in the next release. Head on over to our [Release Guide](release-process.md) for more on how we release versions of Reaction.
+Now that your PR is merged, the feature will be released in the next release. Head on over to our [Release Guide](release-process.md) for more on how we release versions of Demand

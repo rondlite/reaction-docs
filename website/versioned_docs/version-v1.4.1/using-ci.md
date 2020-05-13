@@ -4,7 +4,7 @@ title: CI Builds
 original_id: using-ci
 ---
     
-When a Pull Request is made to the Reaction repo, there are four acceptance steps that should pass before we merge into the `development` branch.
+When a Pull Request is made to the Demandepo, there are four acceptance steps that should pass before we merge into the `development` branch.
 
 When successful, Docker images are also pushed to [Docker Hub](https://hub.docker.com/u/reactioncommerce/).
 
@@ -16,7 +16,7 @@ When successful, Docker images are also pushed to [Docker Hub](https://hub.docke
 
 Automated duplication, security, style review using Code Climate.
 
-Follows project `eslint` and [Reaction style guide](styleguide.md).
+Follows project `eslint` and [Demandtyle guide](styleguide.md).
 
 ## Code Review
 

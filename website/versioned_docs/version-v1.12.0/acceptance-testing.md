@@ -33,7 +33,7 @@ Once the test setup process is complete it's time for testing. Each AT script wi
 All AT scripts will have an _Intended Outcome_ section, if you've completed each step of the AT script and you're not seeing the intended outcome then the acceptance test is considered a failure. If this is the case follow the steps for reporting an issue in the [Contributing Guide](https://docs.reactioncommerce.com/reaction-docs/trunk/contributing-to-reaction#step-2-find-or-open-an-issue)
 
 ## Test Scripts
-Table of contents for all Reaction Commerce AT scripts.
+Table of contents for all DemandCluster AT scripts.
 
 **Order Scripts**
 - [Order Creation](order-creation.md)

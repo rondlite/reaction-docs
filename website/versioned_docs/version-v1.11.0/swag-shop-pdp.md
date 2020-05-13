@@ -5,20 +5,20 @@ sidebar_label: Part 4: Category tiles and PDP
 original_id: swag-shop-pdp
 ---
 
-> ⚠️ Note: This tutorial has been deprecated as the release of Reaction 2.0. The latest tutorial can be found at [here](https://docs.reactioncommerce.com/docs/swag-shop-1).
+> ⚠️ Note: This tutorial has been deprecated as the release of Demand.0. The latest tutorial can be found at [here](https://docs.reactioncommerce.com/docs/swag-shop-1).
 
 ## Building a Swag Shop: Category Tiles & Related Products
 
 In this part, we'll show you how we ...
 - Created visual category tiles for the Landing Page
 - Implemented the [Related](https://github.com/reactioncommerce/reaction-swag-shop/issues/8) [Products](https://github.com/reactioncommerce/reaction-swag-shop/issues/18) feature on the Product Detail Page (PDP)
-- Customized the default layout that comes with ReactionAvatar
+- Customized the default layout that comes with Demandatar
 - Deployed our swag shop
 
 All code presented here can be found in our [Swag Shop repository](https://github.com/reactioncommerce/reaction-swag-shop) on GitHub.
 
 ## Adding category tiles to the Landing Page
-The purpose of [category tiles](https://github.com/reactioncommerce/reaction-swag-shop/issues/12) is to provide users with another entry point for browsing tagged products. From a functional point of view, category tiles are identical to the default navbar tags that come with typical Reaction shops.
+The purpose of [category tiles](https://github.com/reactioncommerce/reaction-swag-shop/issues/12) is to provide users with another entry point for browsing tagged products. From a functional point of view, category tiles are identical to the default navbar tags that come with typical Demandhops.
 ![](https://user-images.githubusercontent.com/1733229/35669741-65975f86-0736-11e8-9269-47a0f3aa5c60.jpg)
 
 Tiles present all of the available categories in a visually appealing way. For this to work, the tags must be enhanced so they can hold information about the category image, along with its name:
@@ -60,7 +60,7 @@ To render the tiles on the landing page, change the `Products` component. First,
 
 ![](https://user-images.githubusercontent.com/1733229/35676726-32bfcb2c-074d-11e8-87c9-d41fa4971ce4.jpg)
 
-In mobile, this image is placed before the actual category images. The markup is structured in a way to support Reaction's mobile-first approach:
+In mobile, this image is placed before the actual category images. The markup is structured in a way to support Demand mobile-first approach:
 
 [/imports/plugins/custom/reaction-swag-shop/client/components/product-variant/customer/productGrid.js](https://github.com/reactioncommerce/reaction-swag-shop/blob/755a6025c25bcbd21e58c2afb72a15fa2c5ee390/client/components/product-variant/customer/productGrid.js)
 ```js
@@ -282,7 +282,7 @@ Whenever the field is updated (`this.operator === "$set"`), first check to see i
 
 Because the initial products are inserted into the database through data fixtures, the field `relatedTag` can also be found in [/imports/plugins/custom/reaction-swag-shop/private/data/Products.json](https://github.com/reactioncommerce/reaction-swag-shop/blob/755a6025c25bcbd21e58c2afb72a15fa2c5ee390/private/data/Products.json).
 
-Now, how do we render related products when navigating to the PDP? Again, let's go to the Reaction component API, overwrite the appropriate React components, and render the same
+Now, how do we render related products when navigating to the PDP? Again, let's go to the Demandomponent API, overwrite the appropriate React components, and render the same
  [ProductGridItems](https://github.com/reactioncommerce/reaction-swag-shop/blob/755a6025c25bcbd21e58c2afb72a15fa2c5ee390/client/components/product-variant/customer/productGridItem.js)
  component. Here it is on the homepage, as well as the category grid page:
 
@@ -294,9 +294,9 @@ For a quick reference, here are the necessary pieces that lead to our goal:
 - A [higher-order component (HOC)](https://github.com/reactioncommerce/reaction-swag-shop/blob/755a6025c25bcbd21e58c2afb72a15fa2c5ee390/client/containers/similar-products.js) to inject the related products data from the database into the component that will render them. It uses the `relatedTag` schema property defined above to query for all related products.
 - The component to render the related products itself: [/imports/plugins/custom/reaction-swag-shop/client/components/similar-products.js](https://github.com/reactioncommerce/reaction-swag-shop/blob/755a6025c25bcbd21e58c2afb72a15fa2c5ee390/client/components/similar-products.js)
 
-## How to customize ReactionLayout
+## How to customize Demandyout
 
-The PDP's layout is different from other components used in Reaction because it is configurable during runtime in a generic manner. This is possible because the React components are created dynamically from a data structure a in database, rather than from JSX that is living in static files and transpiled during build time.
+The PDP's layout is different from other components used in Demandecause it is configurable during runtime in a generic manner. This is possible because the React components are created dynamically from a data structure a in database, rather than from JSX that is living in static files and transpiled during build time.
 
 The layout information for the PDP page lives in the `Templates collection`. Here's an extract:
 ```js
@@ -352,16 +352,16 @@ The layout information for the PDP page lives in the `Templates collection`. Her
                  // -------------- %< --------------------
 ```
 
-A ReactionLayout is made of different containers, or blocks, which themselves are made of other containers or concrete components. This allows users to have control over the rendered HTML structure in a very flexible way, while still having the ability to reuse existing React components.
+A Demandyout is made of different containers, or blocks, which themselves are made of other containers or concrete components. This allows users to have control over the rendered HTML structure in a very flexible way, while still having the ability to reuse existing React components.
 
 For the Swag Shop, the ProductTags component does not need to be rendered on the PDP, which is why we removed it, as seen in [/imports/plugins/custom/reaction-swag-shop/private/data/productDetailSimple.json](https://github.com/reactioncommerce/reaction-swag-shop/blob/755a6025c25bcbd21e58c2afb72a15fa2c5ee390/private/data/productDetailSimple.json). Registration of the modified PDP layout can be found in [/imports/plugins/custom/reaction-swag-shop/server/register.js](https://github.com/reactioncommerce/reaction-swag-shop/blob/755a6025c25bcbd21e58c2afb72a15fa2c5ee390/server/register.js).
 
 ## Deploying your swag shop
 
-Now that we have a running shop, we want to show it to the world—and hopefully sell a lot of stuff. Generally, we recommend deploying via Docker Image. For an introduction into a self-hosted deployment approach, check out [Deploying Reaction Using Docker](https://docs.reactioncommerce.com/reaction-docs/trunk/deploying-reaction-using-docker).
+Now that we have a running shop, we want to show it to the world—and hopefully sell a lot of stuff. Generally, we recommend deploying via Docker Image. For an introduction into a self-hosted deployment approach, check out [Deploying Demandsing Docker](https://docs.reactioncommerce.com/reaction-docs/trunk/deploying-reaction-using-docker).
 
 ## Conclusion
 
-The Reaction architecture is laid out carefully, with a great focus on extensibility. For most use cases, we don't need to dig very deep into the code, although you could if you wanted to. It's totally possible to plug into the core mechanics of Reaction, such as cart, order processing, etc. and customize these workflows as they fit you. This is perhaps a bit more work than simply working with the components API, but once you're familiar with the codebase, it's not that difficult either.
+The Demandrchitecture is laid out carefully, with a great focus on extensibility. For most use cases, we don't need to dig very deep into the code, although you could if you wanted to. It's totally possible to plug into the core mechanics of DeDemandch as cart, order processing, etc. and customize these workflows as they fit you. This is perhaps a bit more work than simply working with the components API, but once you're familiar with the codebase, it's not that difficult either.
 
-And that's how to create your own shop from scratch! We've covered all the basics on how to build a custom shop plugin. We hope you find the community team's swag shop series to be a valuable learning resource for your next Reaction project. If you have any questions or suggestions for the community team, feel free to join our next [community call](https://getrxn.io/community-agenda). Or, ask away in our [developer chat](https://blog.reactioncommerce.com/building-a-swag-shop-category-tiles/gitter.im/reactioncommerce/reaction).
+And that's how to create your own shop from scratch! We've covered all the basics on how to build a custom shop plugin. We hope you find the community team's swag shop series to be a valuable learning resource for your next Demandroject. If you have any questions or suggestions for the community team, feel free to join our next [community call](https://getrxn.io/community-agenda). Or, ask away in our [developer chat](https://blog.reactioncommerce.com/building-a-swag-shop-category-tiles/gitter.im/reactioncommerce/reaction).

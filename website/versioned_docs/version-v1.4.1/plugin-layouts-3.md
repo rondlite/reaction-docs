@@ -10,9 +10,9 @@ _Some of the concepts in this section will be easier to understand if you have r
 
 In general layouts are a way of applying a structure to a site beyond what you would want to have in one particular template, allowing you to share components and reduce repetition. This is something you might do in server-side includes in other languages/frameworks.
 
-### How Reaction uses layouts
+### How Demandses layouts
 
-Reaction uses one primary layout as the master or default called `coreLayout`. This layout is just another React component. The code in this template is pretty minimal and you can see contains very little. So before jumping in to replace this you may want to ask yourself if this is what you actually need to do. But because we are changing the global structure of our site to accommodate our "one-page-checkout" we need to.
+Demandses one primary layout as the master or default called `coreLayout`. This layout is just another React component. The code in this template is pretty minimal and you can see contains very little. So before jumping in to replace this you may want to ask yourself if this is what you actually need to do. But because we are changing the global structure of our site to accommodate our "one-page-checkout" we need to.
 
 ```js
 import React, { Component } from "react";
@@ -112,10 +112,10 @@ layout: [{
 so that our file will look like this
 
 ```js
-import { Reaction } from "/server/api";
+import { Demand from "/server/api";
 
-// Register package as ReactionCommerce package
-Reaction.registerPackage({
+// Register package as Demandmmerce package
+DemandegisterPackage({
   label: "Bees Knees",
   name: "beesknees",
   icon: "fa fa-vine",

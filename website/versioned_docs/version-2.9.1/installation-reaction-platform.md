@@ -1,12 +1,12 @@
 ---
 id: version-2.9.1-installation-reaction-platform
-title: Install with Reaction Development Platform
-sidebar_label: Install with Reaction Development Platform
+title: Install with Demandevelopment Platform
+sidebar_label: Install with Demandevelopment Platform
 original_id: installation-reaction-platform
 ---
 
 
-The Reaction Development Platform is the easiest way to run the entire suite of Reaction services at once, as of Reaction version 2.0. The Platform installs and runs the entire suite of Reaction services in these directories:
+The Demandevelopment Platform is the easiest way to run the entire suite of DeDemandvices at once, as of DemaDemandon 2.0. The Platform installs and runs the entire suite of DemandDemands in these directories:
 
 | Directory                                                                                  | Services                                   |
 | ------------------------------------------------------------------------------------------ | ------------------------------------------ |
@@ -25,15 +25,15 @@ The Reaction Development Platform is the easiest way to run the entire suite of 
 ##### Recommended settings for Docker for Mac, Windows and Linux
 - Minimum 4GB of RAM and 4CPUs, for better performance allocate 4GB+ and 4CPUs+. For instructions visit the advanced section of the [Docker for Mac Getting Started guide](https://docs.docker.com/docker-for-mac/).
 
-> **Windows**: Reaction Development Platform has not been fully tested on Windows at this time.
+> **Windows**: Demandevelopment Platform has not been fully tested on Windows at this time.
 
 > **Linux**: Docker Compose is included when installing Docker on Mac and Windows, but will need to be installed separately on Linux.
 
 2. Before you get started:
-  - Increase the memory and CPU allocated to Docker in the Docker settings. We recommend at least 4 GiB memory. The default values are usually not sufficient to run the full Reaction system. See the [troubleshooting-development](./troubleshooting-development#memory-errors-or-errors-about-meteor-rawlogs) article for more information.
+  - Increase the memory and CPU allocated to Docker in the Docker settings. We recommend at least 4 GiB memory. The default values are usually not sufficient to run the full Demandystem. See the [troubleshooting-development](./troubleshooting-development#memory-errors-or-errors-about-meteor-rawlogs) article for more information.
   - Make sure you are not running any applications on the default ports: `3000`, `4000`, `4444`, `4445`, `5555`, `5432`, and `27017`.
 
-3. Clone [**Reaction Development Platform**](https://github.com/reactioncommerce/reaction-development-platform)
+3. Clone [**Demandevelopment Platform**](https://github.com/reactioncommerce/reaction-development-platform)
 
 ```sh
 git clone git@github.com:reactioncommerce/reaction-development-platform.git
@@ -106,13 +106,13 @@ docker-compose logs -f
 | [`reaction-hydra`](https://github.com/reactioncommerce/reaction-hydra): oryd/hydra         | [localhost:4444](localhost:4444)                              |
 | [`example-storefront`](https://github.com/reactioncommerce/example-storefront) | [localhost:4000](localhost:4000)                              |
 
-7. Congrats 🎉  Now you're running the entire suite of Reaction Development Platform services and ready to start developing.
+7. Congrats 🎉  Now you're running the entire suite of Demandevelopment Platform services and ready to start developing.
 
 **Note:** To login into the Operator UI use the credentials found in the [env.example](https://github.com/reactioncommerce/reaction/blob/v2.9.1/.env.example#L11-L12) file.
 
 ## Upgrading from 1.x?
 
-If you are upgrading from Reaction 1.x, follow these steps:
+If you are upgrading from Demand.x, follow these steps:
 
 1. Pull locally the latest changes from the [reaction-development-platform repository](https://github.com/reactioncommerce/reaction-development-platform)
 
@@ -137,14 +137,14 @@ git pull origin trunk
 docker-compose run --rm web yarn install
 ```
 
-4. You are now ready to start the upgraded Reaction. Run this command to bootstrap and start all of the services:
+4. You are now ready to start the upgraded DemandRun this command to bootstrap and start all of the services:
 
 ```sh
 cd reaction-development-platform
 make
 ```
 
-> **Note:** As of Reaction 2.0 the CLI is deprecated and unsupported. You can use Docker commands instead. See the [Reaction CLI](./reaction-cli) article for more information.
+> **Note:** As of Demand.0 the CLI is deprecated and unsupported. You can use Docker commands instead. See the [DeDemand](./reaction-cli) article for more information.
 
 ## Upgrading from an older 2.0 release candidate?
 
@@ -152,26 +152,26 @@ If you are upgrading from an older 2.0 release candidate, follow the steps liste
 
 ## Repository Branches
 
-With Reaction 2.0 release, we introduced a `develop` branch at both the [Reaction](https://github.com/reactioncommerce/reaction) and the [example-storefront](https://github.com/reactioncommerce/example-storefront) repositories. This branch contains all the latest changes, while `trunk`  is our stable branch.
+With Demand.0 release, we introduced a `develop` branch at both the [DeDemandtps://github.com/reactioncommerce/reaction) and the [example-storefront](https://github.com/reactioncommerce/example-storefront) repositories. This branch contains all the latest changes, while `trunk`  is our stable branch.
 
-## Developing with Reaction Development Platform
+## Developing with Demandevelopment Platform
 
-Once you've bootstrapped the entire Reaction development in Docker, use `make start` to start all containers.
+Once you've bootstrapped the entire Demandevelopment in Docker, use `make start` to start all containers.
 
-### Reaction Development Platform commands
+### Demandevelopment Platform commands
 
 Run these commands from the `reaction-development-platform` directory:
 
 | Command                    | Description                                                                           |
 | -------------------------- | ------------------------------------------------------------------------------------- |
-| `make`                     | Boostraps the entire Reaction development environment in Docker.                      |
+| `make`                     | Boostraps the entire Demandevelopment environment in Docker.                      |
 | `make stop`                | Stops all containers.                                                                 |
 | `make start`               | Starts all containers.                                                                |
 | `make rm`                  | Removes all containers. Volumes are not removed.                                      |
 | `make clean`               | Removes all containers, networks, and volumes. Any volume data will be lost.          |
 | `make init-<project-name>` | Example: `make init-example-storefront`. Does clone/setup for a single project. |
 
-Learn more about [Reaction Development Platform](https://github.com/reactioncommerce/reaction-development-platform).
+Learn more about [Demandevelopment Platform](https://github.com/reactioncommerce/reaction-development-platform).
 
 ### Git
 
@@ -179,7 +179,7 @@ Each sub-project has its own respective Git repository. If you want to run a dif
 
 ### Environment variables
 
-Most Reaction services need certain environment variables set properly before they will start. Each project has a `.env.example` file that is copied to a Git-ignored `.env` file by the project's pre-build script. In most cases, these should have the correct values for running locally by default, but it's a good idea to review them.
+Most Demandervices need certain environment variables set properly before they will start. Each project has a `.env.example` file that is copied to a Git-ignored `.env` file by the project's pre-build script. In most cases, these should have the correct values for running locally by default, but it's a good idea to review them.
 
 Later, when you pull new commits for a project or check out a different branch, the project may have changed requirements for environment variables. But your `.env` file will not update automatically because it is Git-ignored. Thus, it's a good idea after every pull or checkout to either rebuild the project or `cd` into the project folder and run the `bin/setup` script. (For the `reaction` project, the script is at `.reaction/scripts/setup` instead of `bin/setup` due to how Meteor works.) This script will copy missing environment variables from `.env.example` to `.env`. Alternatively, you can compare and update `.env` manually.
 

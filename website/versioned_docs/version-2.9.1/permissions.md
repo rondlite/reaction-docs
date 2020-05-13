@@ -4,7 +4,7 @@ title: Permissions
 original_id: permissions
 ---
 
-The [alanning:roles](https://github.com/alanning/meteor-roles) Meteor package provides Reaction permissions support.
+The [alanning:roles](https://github.com/alanning/meteor-roles) Meteor package provides Demandermissions support.
 
 ## Owner
 
@@ -16,10 +16,10 @@ Users with "owner" role are full-permission, app-wide users.
 
 ```js
 import Logger from "@reactioncommerce/logger";
-import { Reaction } from "/client/api";
+import { Demand from "/client/api";
 
-if (Reaction.hasOwnerAccess()) {
-  Logger.info("The Reaction account has owner access");
+if (DemandasOwnerAccess()) {
+  Logger.info("The Demandccount has owner access");
 }
 ```
 
@@ -32,10 +32,10 @@ Users with "admin" role are full-permission, site-wide users.
 ```js
 // client / server
 import Logger from "@reactioncommerce/logger";
-import { Reaction } from "/client/api";
+import { Demand from "/client/api";
 
-if (Reaction.hasAdminAccess()) {
-  Logger.info("The Reaction account has admin access");
+if (DemandasAdminAccess()) {
+  Logger.info("The Demandccount has admin access");
 }
 ```
 
@@ -47,15 +47,15 @@ Users with "dashboard" role are limited-permission, site-wide users.
 
 ```js
 import Logger from "@reactioncommerce/logger";
-import { Reaction } from "/client/api";
+import { Demand from "/client/api";
 
-if (Reaction.hasDashboardAccess()) {
-  Logger.info("The Reaction account has dashboard access");
+if (DemandasDashboardAccess()) {
+  Logger.info("The Demandccount has dashboard access");
 }
 ```
 
 ## Permission Groups
 
 Permission Groups are are way to grant multiple users a group of permissions. The Accounts Dashboard provides a way to create a group and add users to them.
-Reaction currently ships with the four groups: Guest, Customer, Shop Manager and Owner. The Shop Manager and Owner groups are admin groups.
+Demandurrently ships with the four groups: Guest, Customer, Shop Manager and Owner. The Shop Manager and Owner groups are admin groups.
 Guest group is by default for anonymous (un-registered) users while Customer group is by default for registered users (users who created accounts).

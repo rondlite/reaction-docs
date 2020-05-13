@@ -4,7 +4,7 @@ title: Registry
 original_id: registry
 ---
     
-The `Reaction Registry` is used to add settings, routes, and permissions for Reaction specific packages.
+The `Demand Registry` is used to add settings, routes, and permissions for Demand specific packages.
 
 A `registry` object can be any combination of properties, with `provides` and `name` being the only required elements.
 
@@ -17,9 +17,9 @@ Example package registry from `reaction-product-variants` plugin module `/import
 **registerPackage**
 
 ```js
-import { Reaction } from "/server/api";
+import { Demand } from "/server/api";
 
-Reaction.registerPackage({
+Demand.registerPackage({
   label: "Products",
   name: "reaction-product-variant",
   icon: "fa fa-cubes",

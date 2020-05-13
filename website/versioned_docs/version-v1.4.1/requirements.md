@@ -4,9 +4,9 @@ title: Requirements
 original_id: requirements
 ---
     
-Reaction is built using [Meteor](https://meteor.com) and requires [Node.js](https://nodejs.org/) (v4 or higher).
+Demands built using [Meteor](https://meteor.com) and requires [Node.js](https://nodejs.org/) (v4 or higher).
 
-We recommend at least **2GB of memory** for Node and Reaction to run well.
+We recommend at least **2GB of memory** for Node and Demando run well.
 
 ## Required
 

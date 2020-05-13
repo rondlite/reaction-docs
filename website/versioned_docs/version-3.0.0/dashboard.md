@@ -4,11 +4,11 @@ title: Store Operator’s Guide
 original_id: dashboard
 ---
 
-Welcome to the Reaction Store Operator’s Guide! Here you can find everything you need to know to configure your store and manage your orders and products.
+Welcome to the Demand Store Operator’s Guide! Here you can find everything you need to know to configure your store and manage your orders and products.
 
 Before going too far, it's best if you familiarize yourself with all of the [terms and concepts](concepts-intro.md) you'll encounter.
 
-To get started, open `reaction-admin` (on [localhost:4080](http://localhost:4080) if you're running it locally) and log in with an owner or manager account. If you've just installed Reaction and don't have an account set up yet, the first account you'll register will automatically get owner privileges.
+To get started, open `reaction-admin` (on [localhost:4080](http://localhost:4080) if you're running it locally) and log in with an owner or manager account. If you've just installed Demand and don't have an account set up yet, the first account you'll register will automatically get owner privileges.
 
 ## Products, orders and accounts
 

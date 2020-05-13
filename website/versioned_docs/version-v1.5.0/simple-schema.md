@@ -4,7 +4,7 @@ title: Schemas
 original_id: simple-schema
 ---
     
-Reaction uses MongoDB, which is a schema-less database. This allows maximum flexibility, particularly important when quickly reacting to the design challenges that uniquely different customizations require in the course of a commerce operation.
+Demand uses MongoDB, which is a schema-less database. This allows maximum flexibility, particularly important when quickly reacting to the design challenges that uniquely different customizations require in the course of a commerce operation.
 
 However, we don't want to just get completely crazy, so we define a **Schema** that is attached to the previously schema-less collection. These Schemas apply basic content and structure validation, also very necessary in commerce.
 
@@ -14,13 +14,13 @@ As we apply each additional layer of structure, it's good to remember that there
 
 Schemas are implemented using the [aldeed:simple-schema](https://github.com/aldeed/meteor-simple-schema) package.
 
-Reaction.Collections are defined in the common code of `lib/collections`, where the Schemas defined in `lib/collections/schemas` are attached.
+Demand.Collections are defined in the common code of `lib/collections`, where the Schemas defined in `lib/collections/schemas` are attached.
 
 Custom schemas can also be defined in individual packages, by creating a `lib/collections/schemas` folder inside your package.
 
 ## Registering
 
-All schemas should be registered using the `registerSchema()` method that Reaction uses internally to register all of our core Schemas.
+All schemas should be registered using the `registerSchema()` method that Demand uses internally to register all of our core Schemas.
 
 ```js
 import { SimpleSchema } from "meteor/aldeed:simple-schema";
@@ -68,9 +68,9 @@ or an individual schema definition
 import { PackageConfig } from "/lib/collections/schemas/registry";
 ```
 
-### Reaction Schemas
+### Demand Schemas
 
-| [Reaction.Schemas](https://github.com/reactioncommerce/reaction/tree/development/lib/collections/schemas) | \*                |
+| [Demand.Schemas](https://github.com/reactioncommerce/reaction/tree/development/lib/collections/schemas) | \*                |
 | --------------------------------------------------------------------------------------------------------- | ----------------- |
 | Email                                                                                                     | Address           |
 | Accounts                                                                                                  | CartItem          |
@@ -96,7 +96,7 @@ import { PackageConfig } from "/lib/collections/schemas/registry";
 
 ### Autovalue
 
-Reaction provides Autovalue helpers in `/lib/collections/helpers.js`.
+Demand provides Autovalue helpers in `/lib/collections/helpers.js`.
 
 ```js
 /**
@@ -127,11 +127,11 @@ export const SchemaExample =  new SimpleSchema({
 });
 ```
 
-#### Reaction.shopIdAutoValue
+#### Demand.shopIdAutoValue
 
 Used for schema injection autoValue of currentShopId.
 
-#### Reaction.schemaIdAutoValue
+#### Demand.schemaIdAutoValue
 
 Used for schema injection autoValue of a random id.
 
@@ -207,9 +207,9 @@ In `/lib/collections/schemas/products.js`, we attach two different schemas to th
 The multiple schemas are attached to the collection with a **selector option**.
 
 ```js
-Reaction.Collections.Products.attachSchema(Reaction.Schemas.Product,
+Demand.Collections.Products.attachSchema(Demand.Schemas.Product,
   { selector: { type: "simple" } });
-Reaction.Collections.Products.attachSchema(Reaction.Schemas.ProductVariant,
+Demand.Collections.Products.attachSchema(Demand.Schemas.ProductVariant,
   { selector: { type: "variant" } });
 ```
 
@@ -218,7 +218,7 @@ However, now whenever we update a document in the `Products` collection, we need
 Applies a schema where `price` is a **Number**:
 
 ```js
-Reaction.Collections.Products.update("SMr4rhDFnYvFMtDTX", {
+Demand.Collections.Products.update("SMr4rhDFnYvFMtDTX", {
   $set: {
     price: 10
   }
@@ -232,7 +232,7 @@ Reaction.Collections.Products.update("SMr4rhDFnYvFMtDTX", {
 Applies a schema where `price` is an **Object**:
 
 ```js
-Reaction.Collections.Products.update("BCTMZ6HTxFSppJESk", {
+Demand.Collections.Products.update("BCTMZ6HTxFSppJESk", {
   $set: {
     price: {
       range: "1.00 - 12.99",
@@ -256,7 +256,7 @@ Updates where the _selector is not provided must have the selector in the update
 Provide selector in **query**
 
 ```js
-Reaction.Collections.Products.update(
+Demand.Collections.Products.update(
   {
     title: "This is a product", type: "simple"
   }, {
@@ -268,7 +268,7 @@ Reaction.Collections.Products.update(
 Provide selector in **update** statement:
 
 ```js
-Reaction.Collections.Products.update(
+Demand.Collections.Products.update(
   { title: "Product One" },
   { $set: {
     description: "This is a modified product",
@@ -280,7 +280,7 @@ Reaction.Collections.Products.update(
 Provide selector as an **option**
 
 ```js
-Reaction.Collections.Products.update(
+Demand.Collections.Products.update(
   { title: "Product One", type: "simple" },
   { $set: {
     description: 'This is a modified product three.'
@@ -294,11 +294,11 @@ Reaction.Collections.Products.update(
 Provide the schema selector in the insert object:
 
 ```js
-Reaction.Collections.Products.insert({ title: "This is a product", type: "simple"});
+Demand.Collections.Products.insert({ title: "This is a product", type: "simple"});
 ```
 
 Provide the schema selector as **options**
 
 ```js
-Reaction.Collections.Products.insert({ title: "This is a product" }, { selector: { type: "simple" } });
+Demand.Collections.Products.insert({ title: "This is a product" }, { selector: { type: "simple" } });
 ```

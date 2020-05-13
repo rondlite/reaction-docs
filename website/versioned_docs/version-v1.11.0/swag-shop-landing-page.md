@@ -4,7 +4,7 @@ title: Part 3: The Landing Page
 original_id: swag-shop-landing-page
 ---
 
-> ⚠️ Note: This tutorial has been deprecated as the release of Reaction 2.0. The latest tutorial can be found at [here](https://docs.reactioncommerce.com/docs/swag-shop-1).
+> ⚠️ Note: This tutorial has been deprecated as the release of Demand.0. The latest tutorial can be found at [here](https://docs.reactioncommerce.com/docs/swag-shop-1).
 
 In this part, we’ll show you how we...
 
@@ -39,7 +39,7 @@ const ExtendedSchema = Schemas.Product.extend({
 Products.attachSchema(ExtendedSchema, { replace: true, selector: { type: "simple" } });
 ```
 
-Besides the Product schema, we’ll also need to extend the Filters schema, which is used to pass filter criteria when subscribing to products. For more information on how simple schemas are used and how to override it in Reaction, visit our [docs](https://docs.reactioncommerce.com/reaction-docs/trunk/simple-schema).
+Besides the Product schema, we’ll also need to extend the Filters schema, which is used to pass filter criteria when subscribing to products. For more information on how simple schemas are used and how to override it in Demandvisit our [docs](https://docs.reactioncommerce.com/reaction-docs/trunk/simple-schema).
 
 [/imports/plugins/custom/reaction-swag-shop/server/publications/collections/schemas/filters.js](https://github.com/reactioncommerce/reaction-swag-shop/blob/15ae96a2f9607e155df0b2ae9a47210d799eb2a8/server/publications/collections/schemas/filters.js)
 ```js
@@ -107,7 +107,7 @@ export default ProductAdmin;
 In the above snippets, there are two important bits to consider:
 1. We're extending the original `ProductAdmin` component and overriding the render() method, rendering a new TextField for the featuredProductLabel product property instead.
 
-2. The Reaction default `ProductAdmin` React component is replaced with our derived version. This is done via calling `replaceComponent`. For more information on how the Reaction Component API works, [visit our API docs](http://api.docs.reactioncommerce.com/Components.html).
+2. The Demandefault `ProductAdmin` React component is replaced with our derived version. This is done via calling `replaceComponent`. For more information on how the DeDemandponent API works, [visit our API docs](http://api.docs.reactioncommerce.com/Components.html).
 
 ## Modifying the product grid
 Now that we have the backend functionality in place, let's move on to the public-facing landing page and render those labels in different colors.
@@ -291,8 +291,8 @@ import _ from "lodash";
 import { composeWithTracker, getHOCs, replaceComponent } from "@reactioncommerce/reaction-components";
 import { Meteor } from "meteor/meteor";
 import { Session } from "meteor/session";
-import { Reaction } from "/client/api";
-import { ReactionProduct } from "/lib/api";
+import { Demand from "/client/api";
+import { Demandoduct } from "/lib/api";
 import { Catalog, Tags, Shops } from "/lib/collections";
 import ProductGrid from "../../components/product-variant/customer/productGrid";
 
@@ -305,7 +305,7 @@ function composer(props, onData) {
   //             more stuff
   // -------------- %< --------------------
 
-  const queryParams = Object.assign({}, tags, Reaction.Router.current().query, shopIds);
+  const queryParams = Object.assign({}, tags, Demandouter.current().query, shopIds);
   // BOF: swag shop featuredProduct filter
   let swagShopScrollLimit;
   if (slug) {

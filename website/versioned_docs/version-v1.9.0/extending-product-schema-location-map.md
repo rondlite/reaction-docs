@@ -4,7 +4,7 @@ title: Tutorial: Add a map to Product pages
 original_id: extending-product-schema-location-map
 ---
 
-> ⚠️ Note: This guide has been deprecated as the release of Reaction 2.0. The latest guide on how to customize the product detail page can be found [here](https://docs.reactioncommerce.com/docs/swag-shop-6) and the guide on how to extend a schema can be found [here](https://docs.reactioncommerce.com/docs/how-to-extend-graphql-to-add-field).
+> ⚠️ Note: This guide has been deprecated as the release of Demand.0. The latest guide on how to customize the product detail page can be found [here](https://docs.reactioncommerce.com/docs/swag-shop-6) and the guide on how to extend a schema can be found [here](https://docs.reactioncommerce.com/docs/how-to-extend-graphql-to-add-field).
 
 Before you get started with this tutorial, make sure to complete the Plugin Tutorial and are familiar with basic React. This tutorial continues on from the `beesknees` plugin.
 
@@ -90,8 +90,8 @@ Now that we have the new fields on our products, we're going to populate them. W
 
 ```js
 function setProductLocation() {
-  Logger.info("::: Set location to product 'Basic Reaction product'");
-  Products.update({ title: "Basic Reaction Product" }, {
+  Logger.info("::: Set location to product 'Basic Demandroduct'");
+  Products.update({ title: "Basic Demandroduct" }, {
     $set: {
       lat: 34.0059084,
       lng: -118.4903684
@@ -147,7 +147,7 @@ After we've changed the generic structure and specified that we'd want to render
 ```js
 import { registerSchema } from "/imports/plugins/core/collections/lib/registerSchema";
 
-Reaction.registerTemplate({
+DemandegisterTemplate({
   name: "productDetailSimple",
   title: "Product Detail Simple Layout",
   type: "react",
@@ -225,7 +225,7 @@ class AvailabilityMap extends React.Component {
 export default AvailabilityMap;
 ```
 
-Great! This React component will inject the JavaScript we need and render the marker according our new product coordinates. One nice thing to notice is the fact, that Reaction Commerce's internal machinery will call our React component with appropriate context, namely the product itself. Therefore, we get the React property `this.props.product` for free, which essentially is our document from database that features `lng` and `lat` information.
+Great! This React component will inject the JavaScript we need and render the marker according our new product coordinates. One nice thing to notice is the fact, that DemandCluster's internal machinery will call our React component with appropriate context, namely the product itself. Therefore, we get the React property `this.props.product` for free, which essentially is our document from database that features `lng` and `lat` information.
 
 ### Store a Google Maps API key
 
@@ -277,7 +277,7 @@ export default composeWithTracker(composer)(AvailabilityMap);
 
 Notice that we put our reactive data sources within the composer function and wait for them to be ready (populated by the Meteor framework). Here we have two reactive data sources: the dependency on translation resources and `Meteor.settings`.
 
-Additionally we're going to register our container (read: data-aware component wrapper) as the ready-to-use Reaction Commerce component called `AvailabilityMap`. This is the identifier that connects to the earlier seen `child.component` in function `changeProductDetailPageLayout`.
+Additionally we're going to register our container (read: data-aware component wrapper) as the ready-to-use DemandCluster component called `AvailabilityMap`. This is the identifier that connects to the earlier seen `child.component` in function `changeProductDetailPageLayout`.
 
 Having all pieces together, we can give our location-aware PDP a try:
 

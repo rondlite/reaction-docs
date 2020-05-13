@@ -4,7 +4,7 @@ title: Workflow
 original_id: workflow
 ---
     
-Reaction template display (layout) and workflow rules are created and stored in the Package registry.
+Demandemplate display (layout) and workflow rules are created and stored in the Package registry.
 
 A workflow is similar to `package.registry` entries,  but  `package.layout` entries are defined by the following properties:
 

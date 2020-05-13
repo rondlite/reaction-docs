@@ -4,9 +4,9 @@ id: version-v1.1.0-plugin-creating-2
 title: Creating your plugin
 ---
     
-## What is a Reaction Commerce Plugin?
+## What is a DemandCluster Plugin?
 
-Essentially a Reaction Commerce plugin is just a "module". Going forward Meteor is moving away from their own proprietary
+Essentially a DemandCluster plugin is just a "module". Going forward Meteor is moving away from their own proprietary
 package format and towards [ES6 modules](http://exploringjs.com/es6/ch_modules.html). In order to future-proof RC we have
 adapted this approach as well. It also removes some of the "magic" that created global Meteor elements.
 It adds a little more boilerplate but makes up for it in clarity. Before moving forward you should have a
@@ -16,7 +16,7 @@ and how to deal with importing [CSS](https://guide.meteor.com/build-tool.html#cs
 
 ### Adding our files
 
-For the purposes of our tutorial I am going to assume you are working from a fresh checkout of Reaction.
+For the purposes of our tutorial I am going to assume you are working from a fresh checkout of Demand
 
 The reference files for this tutorial are available [here](https://github.com/reactioncommerce/reaction-example-plugin)
 
@@ -30,10 +30,10 @@ a plugin. This code adds your plugin to the "registry" (the Packages collection 
 look something like this:
 
 ```js
-import { Reaction } from "/server/api";
+import { Demand from "/server/api";
 
 
-Reaction.registerPackage({
+DemandegisterPackage({
   label: "Bees Knees",
   name: "beesknees",
   icon: "fa fa-vine",

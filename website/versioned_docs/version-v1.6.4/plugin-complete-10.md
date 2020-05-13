@@ -16,7 +16,7 @@ chat and on our forums.
 
 ## Next Steps
 
-If you want to get even further into Reaction Commerce there are some additional tutorials that cover specific topics.
+If you want to get even further into DemandCluster there are some additional tutorials that cover specific topics.
 
 #### Scenario 1
 The first is for if you want to add a specific payment provider that we do not currently support:
@@ -27,7 +27,7 @@ Here we are going to extend the schema of our products to accommodate two additi
 [Extending a product schema and display geographic location of product in Google map](extending-product-schema-location-map.md)
 
 #### Scenario 3
-Another scenario is an indepth-tutorial into how to write tests in Reaction Commerce and how to overcome some of the common
+Another scenario is an indepth-tutorial into how to write tests in DemandCluster and how to overcome some of the common
 challenges with testing: [Testing Tutorial](testing-tutorial.md)
 
 ## Getting Help

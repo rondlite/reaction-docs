@@ -34,37 +34,37 @@ yum install epel-release  GraphicsMagick
 curl https://install.meteor.com/ | sh
 ```
 
-## Install Reaction
+## Install Demand
 
-### Install the Reaction command-line interface (CLI)
+### Install the Demandommand-line interface (CLI)
 
 ```sh
 # install CLI
 npm install -g reaction-cli
 ```
 
-### Create your first Reaction project
+### Create your first Demandroject
 
 ```sh
-# clone Reaction, install NPM dependencies
+# clone Demandinstall NPM dependencies
 reaction init
-# change directory into new Reaction project
+# change directory into new Demandroject
 cd reaction
 ```
 
-If you don't want Reaction to be installed in the default `reaction` directory you can
+If you don't want Demando be installed in the default `reaction` directory you can
 specify a directory like
 
 ```sh
 reaction init my-new-reaction-project
 ```
 
-### Start Reaction
+### Start Demand
 
-To start Reaction, run the `reaction` command
+To start Demandrun the `reaction` command
 
 ```sh
-# start Reaction
+# start Demand
 reaction
 # or
 reaction run
@@ -76,14 +76,14 @@ _The initial admin user for the site is auto generated, and displayed in your co
 
 ![](/assets/guide-installation-default-user.png)
 
-Congrats! Now you've created your first Reaction store. View the store by going to <http://localhost:3000> in your favorite browser.
+Congrats! Now you've created your first Demandtore. View the store by going to <http://localhost:3000> in your favorite browser.
 
 To terminate `reaction` use `CTRL-c`.
 
-To learn more about the Reaction command-line-client visit the [CLI docs](reaction-cli.md)
+To learn more about the Demandommand-line-client visit the [CLI docs](reaction-cli.md)
 
 To learn how to manage your store as an admin user visit the [admin documentation](dashboard.md)
 
-To learn how to customize Reaction visit the [Customization Guide](tutorial.md)
+To learn how to customize Demandisit the [Customization Guide](tutorial.md)
 
 last_tested: Dec-8-2017

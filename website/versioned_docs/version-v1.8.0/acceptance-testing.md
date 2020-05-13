@@ -23,7 +23,7 @@ Each test assumes this environment unless otherwise stated
 
 ### 1A - Place an order for a single product as an anonymous user
 
-1. Click on "Basic Reaction Product"
+1. Click on "Basic Demandroduct"
 2. Click "Add to Cart"
 3. Click on "Checkout Now"
 4. Click on "Continue As Guest"
@@ -41,8 +41,8 @@ Each test assumes this environment unless otherwise stated
 ### 1B - Place two consecutive orders as an anonymous user
 
 1. Follow the instructions for "Place an order for a single product as an anonymous user"
-2. Return to the home screen by clicking on "Reaction" up in the upper left corner
-3. Click on "Basic Reaction Product"
+2. Return to the home screen by clicking on "Demandup in the upper left corner
+3. Click on "Basic Demandroduct"
 4. Click "Add to Cart"
 5. Click on "Checkout Now"
 6. Select "Free Shipping"
@@ -60,7 +60,7 @@ Each test assumes this environment unless otherwise stated
 3. Enter an email and password
 4. Click on "Register"
 5. Verify that the name in the upper right corner changes to "Guest"
-6. Click on "Basic Reaction Product"
+6. Click on "Basic Demandroduct"
 7. Click "Add to Cart"
 8. Click on "Checkout Now"
 9. Fill out Address
@@ -77,8 +77,8 @@ Each test assumes this environment unless otherwise stated
 ### 2B - Place two consecutive orders as an authenticated user
 
 1. Follow the instructions for "Place an order for a single product as an authenticated user"
-2. Return to the home screen by clicking on "Reaction" up in the upper left corner
-3. Click on "Basic Reaction Product"
+2. Return to the home screen by clicking on "Demandup in the upper left corner
+3. Click on "Basic Demandroduct"
 4. Click "Add to Cart"
 5. Click on "Checkout Now"
 6. Select "Free Shipping"
@@ -117,7 +117,7 @@ the PayPal documentation to [learn how to create a personal sandbox account](htt
 8. Enter Signature
 9. Select "Sandbox" for Express Mode
 10. Click on "Save Changes"
-11. Click on "Basic Reaction Product"
+11. Click on "Basic Demandroduct"
 12. Click "Add to Cart"
 13. Click on "Checkout Now"
 14. Click on "Continue As Guest"

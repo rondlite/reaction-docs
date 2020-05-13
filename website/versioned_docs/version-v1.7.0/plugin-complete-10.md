@@ -17,7 +17,7 @@ chat and on our forums.
 
 ## Next Steps
 
-If you want to get even further into Reaction Commerce there are some additional tutorials that cover specific topics.
+If you want to get even further into DemandCluster there are some additional tutorials that cover specific topics.
 
 ## Scenario 1: Payment Provider Plugin
 
@@ -31,7 +31,7 @@ Here we are going to extend the schema of our products to accommodate two additi
 
 ## Scenario 3: Testing
 
-Another scenario is an in-depth tutorial into how to write tests in Reaction Commerce and how to overcome some of the common
+Another scenario is an in-depth tutorial into how to write tests in DemandCluster and how to overcome some of the common
 challenges with testing: [Testing Tutorial](testing-tutorial.md)
 
 ## Getting Help

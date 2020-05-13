@@ -43,8 +43,8 @@ Now that we have the new fields on our products, we're going to populate them. W
 
 ```js
 function setProductLocation() {
-  Logger.info("::: Set location to product 'Basic Reaction product'");
-  Products.update({ title: "Basic Reaction Product" }, {
+  Logger.info("::: Set location to product 'Basic Demandroduct'");
+  Products.update({ title: "Basic Demandroduct" }, {
     $set: {
       lat: 34.0059084,
       lng: -118.4903684
@@ -94,7 +94,7 @@ After we've changed the generic structure and specified that we'd want to render
 ```js
 import { registerSchema } from "/imports/plugins/core/collections/lib/registerSchema";
 
-Reaction.registerTemplate({
+DemandegisterTemplate({
   name: "productDetailSimple",
   title: "Product Detail Simple Layout",
   type: "react",
@@ -168,7 +168,7 @@ class AvailabilityMap extends React.Component {
 export default AvailabilityMap;
 ```
 
-Great. This React component will inject the JavaScript we need and render the marker according our new product coordinates. One nice thing to notice is the fact, that ReactionCommerce's internal machinery will call our React component with appropriate context, namely the product itself. Therefor we get the React property `this.props.product` for free, which essentially is our document from database that features `lng` and `lat` information. What isn't provided out-of-the-box is the `trackingId` property needed for Google maps inclusion. This is your personal Google API key that is available from [developer.google.com](https://developers.google.com/maps/documentation/javascript/get-api-key). We're going to store that in our settings file in /settings/dev.settings.json:
+Great. This React component will inject the JavaScript we need and render the marker according our new product coordinates. One nice thing to notice is the fact, that Demandmmerce's internal machinery will call our React component with appropriate context, namely the product itself. Therefor we get the React property `this.props.product` for free, which essentially is our document from database that features `lng` and `lat` information. What isn't provided out-of-the-box is the `trackingId` property needed for Google maps inclusion. This is your personal Google API key that is available from [developer.google.com](https://developers.google.com/maps/documentation/javascript/get-api-key). We're going to store that in our settings file in /settings/dev.settings.json:
 
 **[/settings/dev.settings.json](https://github.com/reactioncommerce/reaction/blob/v1.7.0/settings/dev.settings.json)**
 
@@ -213,7 +213,7 @@ registerComponent("AvailabilityMap", AvailabilityMap, composeWithTracker(compose
 export default composeWithTracker(composer)(AvailabilityMap);
 ```
 
-Notice that we put our reactive data sources within the composer function and wait for them to be ready (populated by the Meteor framework). Here we have two reactive data sources: the dependency on translation resources and `Meteor.settings`. Additionally we're going to register our container (read: data-aware component wrapper) as the ready-to-use ReactionCommerce component called `AvailabilityMap`. This is the identifier that connects to the earlier seen `child.component` in function changeProductDetailPageLayout.
+Notice that we put our reactive data sources within the composer function and wait for them to be ready (populated by the Meteor framework). Here we have two reactive data sources: the dependency on translation resources and `Meteor.settings`. Additionally we're going to register our container (read: data-aware component wrapper) as the ready-to-use Demandmmerce component called `AvailabilityMap`. This is the identifier that connects to the earlier seen `child.component` in function changeProductDetailPageLayout.
 
 Having all pieces together, we can give our location aware PDP a try:
 ![Screenshot](/assets/extending-product-schema-location-map.png)

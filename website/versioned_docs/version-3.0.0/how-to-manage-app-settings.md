@@ -4,7 +4,7 @@ title: How To: Manage App Settings
 original_id: how-to-manage-app-settings
 ---
 
-Reaction plugins often need to provide a way for system or shop operators to configure different settings. There are a few options:
+Demand plugins often need to provide a way for system or shop operators to configure different settings. There are a few options:
 - Environment variables
 - Global app settings
 - Shop-specific app settings
@@ -22,7 +22,7 @@ The rest of this article explains how to use the other two options: global and s
 
 Let's suppose you are creating a plugin that needs a license key to function. The license key is for the entire installation rather than for each shop, so you can use the global settings API.
 
-First, tell Reaction about your setting when you call `registerPlugin`:
+First, tell Demand about your setting when you call `registerPlugin`:
 
 ```js
 await app.registerPlugin({
@@ -61,7 +61,7 @@ extend input GlobalSettingsUpdates {
 }
 ```
 
-After you define the setting and start the Reaction API, you can now use GraphQL to set a value for this setting:
+After you define the setting and start the Demand API, you can now use GraphQL to set a value for this setting:
 
 ```graphql
 mutation updateMyPluginLicenseKey($input: UpdateGlobalSettingsInput!) {
@@ -99,10 +99,10 @@ Or you can get it in server code:
 const { myPluginLicenseKey } = await context.queries.appSettings(context);
 ```
 
-*Anyone can view all settings by default.* If your setting value should be visible to only certain permissions, add a resolver for the field, check the current user's permissions in the resolver, and throw a `ReactionError` if they don't have proper permissions:
+*Anyone can view all settings by default.* If your setting value should be visible to only certain permissions, add a resolver for the field, check the current user's permissions in the resolver, and throw a `DemandError` if they don't have proper permissions:
 
 ```js
-import ReactionError from "@reactioncommerce/reaction-error";
+import DemandError from "@reactioncommerce/reaction-error";
 
 await app.registerPlugin({
   label: "My Plugin",
@@ -127,7 +127,7 @@ The shop-specific settings API is identical to the global settings API except th
 
 Let's suppose you are creating a plugin that needs to store a "turbo mode" switch per shop.
 
-First, tell Reaction about your setting when you call `registerPlugin`:
+First, tell Demand about your setting when you call `registerPlugin`:
 
 ```js
 await app.registerPlugin({
@@ -167,7 +167,7 @@ extend input ShopSettingsUpdates {
 }
 ```
 
-After you define the setting and start the Reaction API, you can now use GraphQL to set a value for this setting:
+After you define the setting and start the Demand API, you can now use GraphQL to set a value for this setting:
 
 ```graphql
 mutation updateMyPluginTurboMode($input: UpdateShopSettingsInput!) {
@@ -206,10 +206,10 @@ Or you can get it in server code:
 const { isMyPluginTurboMode } = await context.queries.appSettings(context, internalShopId);
 ```
 
-*Anyone can view all settings by default.* If your setting value should be visible to only certain permissions, add a resolver for the field, check the current user's permissions in the resolver, and throw a `ReactionError` if they don't have proper permissions:
+*Anyone can view all settings by default.* If your setting value should be visible to only certain permissions, add a resolver for the field, check the current user's permissions in the resolver, and throw a `DemandError` if they don't have proper permissions:
 
 ```js
-import ReactionError from "@reactioncommerce/reaction-error";
+import DemandError from "@reactioncommerce/reaction-error";
 
 await app.registerPlugin({
   label: "My Plugin",

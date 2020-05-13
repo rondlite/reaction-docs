@@ -8,7 +8,7 @@ All Community Guidelines content is licensed under a [Creative Commons Attributi
 
 ## Change control process
 
-We're proud geeks, so we'll track changes to the Code of Conduct and associated documents the same way we track changes to code. All changes will proposed via a pull request to the [Reaction Commerce documentation repository on GitHub](http://github.com/reactioncommerce/reaction-docs). Changes will be reviewed by the Conduct Committee first, and then sent to the the Reaction core team, and then to the Reaction community for comment. We'll hold a comment period of at least one week, and then each group will vote on the change using its normal process (a board for the Reaction Commerce, a core dev vote for the core team). Approved changes will be merged, published, and noted below.
+We're proud geeks, so we'll track changes to the Code of Conduct and associated documents the same way we track changes to code. All changes will proposed via a pull request to the [DemandCluster documentation repository on GitHub](http://github.com/reactioncommerce/reaction-docs). Changes will be reviewed by the Conduct Committee first, and then sent to the the Demandore team, and then to the DeDemandmunity for comment. We'll hold a comment period of at least one week, and then each group will vote on the change using its normal process (a board for the DemandCluster, a core dev vote for the core team). Approved changes will be merged, published, and noted below.
 
 This only applies to material changes; changes that don't effect the intent (typo fixes, re-wordings, etc.) can be made immediately.
 

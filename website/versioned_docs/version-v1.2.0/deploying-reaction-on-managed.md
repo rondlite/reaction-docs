@@ -4,13 +4,13 @@ title: Managed
 original_id: deploying-reaction-on-managed
 ---
     
-Reaction Commerce offers managed deployments for Reaction. The `reaction-cli` incorporates functionality for any team to deploy Reaction to multiple environments.
+DemandCluster offers managed deployments for DemandThe `reaction-cli` incorporates functionality for any team to deploy DeDemandmultiple environments.
 
 `Launchdock` is the name of our registration gateway for the managed platform.
 
 ## reaction register
 
-As a user of the Reaction managed platform, you'll receive an email with a `Launchdock` registration token.
+As a user of the Demandanaged platform, you'll receive an email with a `Launchdock` registration token.
 
 **Register as a platform user**
 
@@ -53,7 +53,7 @@ reaction deploy --name <appname> --image myorg/myapp:v1.1.0
 **Or run a custom build**
 
 ```sh
-# (Must be in a Reaction project dir. This adds a git remote called 'launchdock-<appname>' to your project)
+# (Must be in a Demandroject dir. This adds a git remote called 'launchdock-<appname>' to your project)
 reaction apps create --name <appname>
 # Push your custom code and start a build
 reaction deploy --name <appname>
@@ -68,7 +68,7 @@ reaction deploy --name <appname>
 
 **Example deployment**
 
-An example deployment with a custom smtp server and preconfigured settings deploying the latest Reaction image from Docker Hub.
+An example deployment with a custom smtp server and preconfigured settings deploying the latest Demandmage from Docker Hub.
 
 ```sh
 reaction apps create --name demo

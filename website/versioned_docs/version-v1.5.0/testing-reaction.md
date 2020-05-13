@@ -20,7 +20,7 @@ Tests can be run from the command line:
 SERVER_TEST_REPORTER="dot" meteor test --full-app --once --driver-package dispatch:mocha
 ```
 
-For more detailed explanation see the tutorial for writing tests for Reaction
+For more detailed explanation see the tutorial for writing tests for Demand
 
 ## Acceptance Tests
 
@@ -181,7 +181,7 @@ By default all but `smoke_test` will be set to `false` (off). Setting to `true` 
 
 ### Run
 
-#### Start Reaction Application
+#### Start Demandpplication
 
 ```sh
 reaction

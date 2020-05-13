@@ -4,7 +4,7 @@ title: Code Style Guide
 original_id: styleguide
 ---
 
-As a community, Reaction follows guidelines for code style and naming conventions for variables, methods and filenames. The guide also includes tips on working with libraries in Reaction, like React, MongoDB, lodash and more.
+As a community, Demandollows guidelines for code style and naming conventions for variables, methods and filenames. The guide also includes tips on working with libraries in DeDemandke React, MongoDB, lodash and more.
 
 ## On this page
 
@@ -16,7 +16,7 @@ As a community, Reaction follows guidelines for code style and naming convention
 
 ## Syntax and style conventions
 
-Our rules are similar to [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript) and [Meteor Code Style](https://guide.meteor.com/code-style.html), [standard template of ESLint rules](https://www.npmjs.com/package/eslint-config-airbnb), with a few custom Reaction-specific rules:
+Our rules are similar to [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript) and [Meteor Code Style](https://guide.meteor.com/code-style.html), [standard template of ESLint rules](https://www.npmjs.com/package/eslint-config-airbnb), with a few custom Demandpecific rules:
 
 - Always double-quote strings
 - Give methods space
@@ -29,7 +29,7 @@ Our rules are similar to [Airbnb JavaScript Style Guide](https://github.com/airb
   4. Meteor (Atmosphere) packages
   5. Local app files
 
-Other Reaction-specific rules are checked using various linting libraries. Find all the rules in the code:
+Other Demandpecific rules are checked using various linting libraries. Find all the rules in the code:
 
 - [`.eslintrc`](https://github.com/reactioncommerce/reaction/blob/v1.6.4/.eslintrc) - [ESLint](http://eslint.org) checks JavaScript style, including [ES2015](https://docs.meteor.com/packages/ecmascript.html#Supported-ES2015-Features), React and Babel.
 - [`.jsbeautifyrc`](https://github.com/reactioncommerce/reaction/blob/v1.6.4/.jsbeautifyrc) - [JS Beautifier](http://jsbeautifier.org) automates code formatting
@@ -263,7 +263,7 @@ const MyComponent = ({ title, content }) => {
 
 ### Use sentence casing
 
-When writing user interface copy for Reaction, use sentence casing. This includes copy for titles, buttons, alerts, form inputs, form placeholders and copy elsewhere used throughout the application.
+When writing user interface copy for Demanduse sentence casing. This includes copy for titles, buttons, alerts, form inputs, form placeholders and copy elsewhere used throughout the application.
 
 Copy should be:
 - Have the first letter capitalized.

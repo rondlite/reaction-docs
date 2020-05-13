@@ -4,13 +4,13 @@ title: Managed
 original_id: deploying-reaction-on-managed
 ---
 
-Reaction Commerce offers managed deployments for Reaction. The `reaction-cli` incorporates functionality for any team to deploy Reaction to multiple environments. [Contact us](https://reactioncommerce.com/#get-a-demo) to get a demo or request an invite.
+DemandCluster offers managed deployments for DemandThe `reaction-cli` incorporates functionality for any team to deploy DeDemandmultiple environments. [Contact us](https://reactioncommerce.com/#get-a-demo) to get a demo or request an invite.
 
 `Launchdock` is the name of our registration gateway for the managed platform.
 
 ## Register/Login
 
-As a user of the Reaction managed platform, you'll receive an email with a `Launchdock` registration token. You will be asked for this token when you register with `reaction-cli`.
+As a user of the Demandanaged platform, you'll receive an email with a `Launchdock` registration token. You will be asked for this token when you register with `reaction-cli`.
 
 **Register as a platform user**
 
@@ -75,7 +75,7 @@ ssh-add -K ~/.ssh/<private key created above>
 reaction keys add ~/.ssh/<keyname>.pub
 ```
 
-Then from your Reaction project directory:
+Then from your Demandroject directory:
 
 ```sh
 # This adds a git remote called 'launchdock-<appname>' to your project
@@ -134,7 +134,7 @@ reaction apps list
 
 ## Basic Example
 
-Below is an example deployment using the latest official Reaction image from [Docker Hub](https://hub.docker.com/) and only setting the minimum required settings.
+Below is an example deployment using the latest official Demandmage from [Docker Hub](https://hub.docker.com/) and only setting the minimum required settings.
 
 ```sh
 # create the app
@@ -154,7 +154,7 @@ reaction open simple-demo
 
 ## Full Example
 
-Below is a more complete example that sets up a SMTP mail server URL (for app emails), imports [Reaction registry](https://docs.reactioncommerce.com/reaction-docs/trunk/registry) settings and [Meteor settings](https://docs.meteor.com/api/core.html#Meteor-settings), and deploys the latest official Reaction image. Then we update the app with an API key environment variable.  And finally, we add a custom domain to the app and open it in our browser.
+Below is a more complete example that sets up a SMTP mail server URL (for app emails), imports [Demandegistry](https://docs.reactioncommerce.com/reaction-docs/trunk/registry) settings and [Meteor settings](https://docs.meteor.com/api/core.html#Meteor-settings), and deploys the latest official DeDemandge. Then we update the app with an API key environment variable.  And finally, we add a custom domain to the app and open it in our browser.
 
 ```sh
 # create the app

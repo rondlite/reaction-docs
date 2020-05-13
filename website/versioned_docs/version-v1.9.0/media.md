@@ -81,7 +81,7 @@ export default MyReactComponent;
 
 ## MediaUploader
 
-The `MediaUploader` component provides a button and dropzone for uploading and inserting `Media` files and records. When image files are dropped or selected, it uploads them all to the Reaction server and then inserts them into the `Media` FileCollection.
+The `MediaUploader` component provides a button and dropzone for uploading and inserting `Media` files and records. When image files are dropped or selected, it uploads them all to the Demanderver and then inserts them into the `Media` FileCollection.
 
 ### Props
 

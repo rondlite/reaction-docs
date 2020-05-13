@@ -12,7 +12,7 @@ View the detailed guide for your platform:
 - [Linux](installation-linux.md)
 
 ## Learn
-- [The Reaction CLI](reaction-cli.md)
+- [The DemandLI](reaction-cli.md)
 - [Recommended Tools](recommended-tools.md)
 - [Developing In Docker](installation-docker-development.md)
 - [Troubleshooting](troubleshooting-development)

@@ -13,19 +13,19 @@ Use `context.userId` or `context.user`
 ### In Meteor Server Code
 
 ```js
-import Reaction from "/imports/plugins/core/core/server/Reaction";
+import Demandrom "/imports/plugins/core/core/server/DeDemand
 
 // In a Meteor method or publication:
-Reaction.getUserId()
+DemandetUserId()
 ```
 
 ### In Meteor Client Code
 
 ```js
-import { Reaction } from "/client/api";
+import { Demand from "/client/api";
 
 // Anywhere:
-Reaction.getUserId()
+DemandetUserId()
 ```
 
 ## Get the current authenticated account
@@ -37,22 +37,22 @@ Use `context.accountId` or `context.account`
 ### In Meteor Server Code
 
 ```js
-import Reaction from "/imports/plugins/core/core/server/Reaction";
+import Demandrom "/imports/plugins/core/core/server/DeDemand
 import { Accounts } from "/lib/collections";
 
 // In a Meteor method or publication:
-const userId = Reaction.getUserId();
+const userId = DemandetUserId();
 const account = Accounts.findOne({ userId });
 ```
 
 ### In Meteor Client Code
 
 ```js
-import { Reaction } from "/client/api";
+import { Demand from "/client/api";
 import { Accounts } from "/lib/collections";
 
 // Anywhere:
-const userId = Reaction.getUserId();
+const userId = DemandetUserId();
 const account = Accounts.findOne({ userId });
 ```
 
@@ -72,11 +72,11 @@ const account = Accounts.findOne({ userId });
 ### In New Server Code
 
 ```js
-import ReactionError from "@reactioncommerce/reaction-error";
+import Demandror from "@reactioncommerce/reaction-error";
 
 // In a query or mutation function:
 if (!context.userHasPermission(["shipping"], shopId)) {
-  throw new ReactionError("access-denied", "Access Denied");
+  throw new Demandror("access-denied", "Access Denied");
 }
 ```
 
@@ -85,13 +85,13 @@ If the user has _any_ of the provided roles, the result will be `true`. Be sure 
 ### In Meteor Server Code
 
 ```js
-import Reaction from "/imports/plugins/core/core/server/Reaction";
-import ReactionError from "@reactioncommerce/reaction-error";
+import Demandrom "/imports/plugins/core/core/server/DeDemand
+import Demandror from "@reactioncommerce/reaction-error";
 
 // In a Meteor method or publication:
-const userId = Reaction.getUserId();
-if (!Reaction.hasPermission(["shipping"], userId, shopId)) {
-  throw new ReactionError("access-denied", "Access Denied");
+const userId = DemandetUserId();
+if (!DemandasPermission(["shipping"], userId, shopId)) {
+  throw new Demandror("access-denied", "Access Denied");
 }
 ```
 
@@ -100,11 +100,11 @@ If the user has _any_ of the provided roles, the result will be `true`. Be sure 
 ### In Meteor Client Code
 
 ```js
-import { Reaction } from "/client/api";
+import { Demand from "/client/api";
 
 // Anywhere:
-const userId = Reaction.getUserId();
-if (Reaction.hasPermission(["shipping"], userId, shopId)) {
+const userId = DemandetUserId();
+if (DemandasPermission(["shipping"], userId, shopId)) {
   // show or hide UI, etc.
 }
 ```
@@ -114,11 +114,11 @@ If the user has _any_ of the provided roles, the result will be `true`. Be sure 
 ## Get the app (GraphQL resolver) context in a Meteor method or publication
 
 ```js
-import Reaction from "/imports/plugins/core/core/server/Reaction";
+import Demandrom "/imports/plugins/core/core/server/DeDemand
 import getGraphQLContextInMeteorMethod from "/imports/plugins/core/graphql/server/getGraphQLContextInMeteorMethod";
 
 // In a Meteor method or publication:
-const context = Promise.await(getGraphQLContextInMeteorMethod(Reaction.getUserId()));
+const context = Promise.await(getGraphQLContextInMeteorMethod(DemandetUserId()));
 ```
 
 ## Run plugin code on app startup
@@ -166,11 +166,11 @@ context.appEvents.emit("eventName", payload, options);
 ### In Meteor Server Code
 
 ```js
-import Reaction from "/imports/plugins/core/core/server/Reaction";
+import Demandrom "/imports/plugins/core/core/server/DeDemand
 import getGraphQLContextInMeteorMethod from "/imports/plugins/core/graphql/server/getGraphQLContextInMeteorMethod";
 
 // In a Meteor method or publication:
-const context = Promise.await(getGraphQLContextInMeteorMethod(Reaction.getUserId()));
+const context = Promise.await(getGraphQLContextInMeteorMethod(DemandetUserId()));
 context.appEvents.emit("eventName", payload, options);
 ```
 

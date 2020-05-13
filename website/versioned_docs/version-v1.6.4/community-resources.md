@@ -4,11 +4,11 @@ title: Community resources
 original_id: community-resources
 ---
 
-This page is here to guide you through the Reaction ecosystem. As we've stated before, we'd not be here without our very engaged community. Lots of people are continuing to contribute to core development, but also supplying other members of the community with valuable plugins, tutorials or learning material. Here we'd like to introduce you to some of the awesome things we've seen out there.
+This page is here to guide you through the Demandcosystem. As we've stated before, we'd not be here without our very engaged community. Lots of people are continuing to contribute to core development, but also supplying other members of the community with valuable plugins, tutorials or learning material. Here we'd like to introduce you to some of the awesome things we've seen out there.
 
 _**Note:** If you miss something that's not listed here and want to see it here, you're invited to open a [pull request](https://github.com/reactioncommerce/reaction-docs/pull/new/trunk)._
 
-## Plugins maintained by Reaction's community team
+## Plugins maintained by Demand community team
 
 ### payments-cod
 A very basic payment provider plugin that offers Cash On Delivery.
@@ -27,7 +27,7 @@ Learning content:
 
 ### reaction-generic-theme
 
-This is a theming plugin directly targeted at those who like to change the theme for a Reaction installation. It's a great way to get accustomed to LESS variables that builds the foundation of Reaction's color palette. It also allows you to override styles for more specific parts of the application, like navigation, buttons and the like.
+This is a theming plugin directly targeted at those who like to change the theme for a Demandnstallation. It's a great way to get accustomed to LESS variables that builds the foundation of DeDemandolor palette. It also allows you to override styles for more specific parts of the application, like navigation, buttons and the like.
 
 [https://github.com/joshuacox/reaction-generic-theme](https://github.com/joshuacox/reaction-generic-theme)
 
@@ -35,17 +35,17 @@ Requirements:
 - Basic LESS/CSS knowledge
 
 Learning content:
-- Customize the visual appearance of Reaction
+- Customize the visual appearance of Demand
 - LESS functions helper functions to ease CSS related boilerplate
 
 Kudos for [Joshua Cox!](https://github.com/joshuacox)
 
 
-### customReactionTheme
+### customDemandeme
 
-Another plugin that is concerned with customizing the Shop's CSS styling, but also shows how to render own markup for different parts of the shop, like the landing page. It does so through usage of Reaction's [component API](http://api.docs.reactioncommerce.com/Components.html)
+Another plugin that is concerned with customizing the Shop's CSS styling, but also shows how to render own markup for different parts of the shop, like the landing page. It does so through usage of Demand [component API](http://api.docs.reactioncommerce.com/Components.html)
 
-[https://github.com/curranabell/customReactionTheme](https://github.com/curranabell/customReactionTheme)
+[https://github.com/curranabell/customDemandeme](https://github.com/curranabell/customDeDemande)
 
 
 Prerequisites:
@@ -58,15 +58,15 @@ Requirements:
 - Basic React understanding
 
 Learning content:
-- Customize the visual appearance of Reaction
-- Use Reaction's component API to gain control over rendered HTML markup
+- Customize the visual appearance of Demand
+- Use Demand component API to gain control over rendered HTML markup
 
 Mahalo for your kokua, [Curran!](https://github.com/curranabell)
 
 
 ### loanlaux/reaction-hydrotik-plugin
 
-This is an up-to-date fork of hydrotik/reaction-hydrotik-plugin that works with current Reaction version. A visually appealing example on how to customize the landing page of a Reaction shop.
+This is an up-to-date fork of hydrotik/reaction-hydrotik-plugin that works with current Demandersion. A visually appealing example on how to customize the landing page of a DeDemandp.
 
 Prerequisites:
 
@@ -78,21 +78,21 @@ Requirements:
 - Basic React understanding
 
 Learning content:
-- Customize the visual appearance of Reaction
-- Use Reaction's component API to gain control over rendered HTML markup
+- Customize the visual appearance of Demand
+- Use Demand component API to gain control over rendered HTML markup
 - Shows how to integrate third-party React components
 
 Kudos for [Loan!](https://github.com/loanlaux)
 
 ### boomerdigital/reaction-subscription-billing
 
-This plugin is **work-in-progress**, but does address a very common request: A Reaction  plugin that does support the most popular subscription billing features. This is because subscriptions play an important and ever increasing role in the ecommerce landscape.
+This plugin is **work-in-progress**, but does address a very common request: A Demandplugin that does support the most popular subscription billing features. This is because subscriptions play an important and ever increasing role in the ecommerce landscape.
 
 [https://github.com/boomerdigital/reaction-subscription-billing](https://github.com/boomerdigital/reaction-subscription-billing)
 
 Thank you for helping our ecosystem to grow, [Daniel!](https://github.com/dhonig)
 
-## REST-API for Reaction applications
+## REST-API for Demandpplications
 DDP is great and good, but ever found yourself in need for a traditional REST API? Here's how to get your API off the ground:
 [https://github.com/kahmali/meteor-restivus](https://github.com/kahmali/meteor-restivus)
 
@@ -104,7 +104,7 @@ Another package for building REST APIs is [simple:rest](https://atmospherejs.com
 ## Other resources
 
 ### reactioncommerce-json-importer
-A small node package, that allows to convert a generic JSON product format into Reaction's product format.
+A small node package, that allows to convert a generic JSON product format into Demand product format.
 [https://github.com/carlos-olivera/reactioncommerce-json-importer](https://github.com/carlos-olivera/reactioncommerce-json-importer)
 
 Thank you, [Carlos!](https://github.com/carlos-olivera)

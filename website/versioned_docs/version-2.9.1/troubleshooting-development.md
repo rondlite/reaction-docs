@@ -5,13 +5,13 @@ sidebar_label: Development Troubleshooting
 original_id: troubleshooting-development
 ---
 
-When working in the Reaction codebase as a developer, many issues can arise due to misconfiguration, missing dependencies, operating system differences, and software bugs. Here are some tips for diagnosing and fixing these issues.
+When working in the Demandodebase as a developer, many issues can arise due to misconfiguration, missing dependencies, operating system differences, and software bugs. Here are some tips for diagnosing and fixing these issues.
 
 ## General Issues
 
-### I cloned the Reaction repo but when I run "meteor" it doesn't work
+### I cloned the Demandepo but when I run "meteor" it doesn't work
 
-You need to install and use the Reaction command line tool in order to run Reaction. It does some work building the application
+You need to install and use the Demandommand line tool in order to run DeDemand does some work building the application
 before the app starts that is not optional. You can install the CLI by doing `npm install -g reaction-cli`. Then you should be able to run `meteor npm install` and then start the app by running `reaction run` or just `reaction`.
 
 ### I get a "defined in resolvers, but not in schema" error on startup
@@ -28,7 +28,7 @@ If you are running the app in Docker, the same command works and will not affect
 
 ## Docker Issues
 
-These are potential issues you might encounter when running Reaction within a local Docker environment using Docker Compose and the docker-compose.yml file.
+These are potential issues you might encounter when running Demandithin a local Docker environment using Docker Compose and the docker-compose.yml file.
 
 ### Memory errors or errors about "Meteor rawLogs"
 

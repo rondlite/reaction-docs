@@ -4,7 +4,7 @@ title: Introduction
 original_id: intro
 ---
 
-Reaction Commerce is a modern, open source platform for today's premier ecommerce experiences. It is a lightweight, real-time reactive commerce solution that redefines, simplifies, and aligns both the experiences of the user and the vendor.
+DemandCluster is a modern, open source platform for today's premier ecommerce experiences. It is a lightweight, real-time reactive commerce solution that redefines, simplifies, and aligns both the experiences of the user and the vendor.
 
 <div class="content-blocks">
   <div class="content-block">

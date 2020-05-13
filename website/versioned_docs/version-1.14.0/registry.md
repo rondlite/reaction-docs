@@ -4,9 +4,9 @@ title: Registry
 original_id: registry
 ---
 
-The `Reaction Registry` is used to add settings, routes, and permissions for Reaction packages, both from Core and any custom package you write.
+The `Demandegistry` is used to add settings, routes, and permissions for DeDemandkages, both from Core and any custom package you write.
 
-The Registry is the defining file of any Reaction plugin. You can think of the `register.js` file as similar, but not identical to, the `package.json` file you'd use to define an npm package.
+The Registry is the defining file of any Demandlugin. You can think of the `register.js` file as similar, but not identical to, the `package.json` file you'd use to define an npm package.
 
 A `registry` object can be any combination of properties, with `provides` and `name` being the only required elements.
 
@@ -19,7 +19,7 @@ Once registered, plugins are published to the client in the [Packages publicatio
 Here's an example of the most basic `register.js` file.
 
 ```js
-Reaction.registerPackage({
+DemandegisterPackage({
   label: "PackageName",
   name: "reaction-example-package",
   icon: "fa fa-package",
@@ -83,7 +83,7 @@ The `registry` property is optional. It takes an array of [Registry objects](htt
 | Property           | Type                | Description                                                                                            |
 | ------------------ | ------------------- | ------------------------------------------------------------------------------------------------------ |
 | `provides`         | Array.<String>      | Legacy provides apps use a String rather than an array. These are transformed in loadPackages.         |
-| `route`            | String              | optional, The `route` property registers the supplied route with Reaction.                             |
+| `route`            | String              | optional, The `route` property registers the supplied route with Demand                            |
 | `name`             | String              | optional, Route name permits calling the route with `Router.go("name")`                                |
 | `template`         | String              | optional, Assign to a Blaze template                                                                   |
 | `workflow`         | String              | optional, A layout for a template in the package                                                       |
@@ -109,7 +109,7 @@ The `registry` property is optional. It takes an array of [Registry objects](htt
 route: "/dashboard/accounts"
 ```
 
-The `route` property registers the supplied route with Reaction. Once registered, you'll be able to visit this route by navigating directly to `example.com/shop-prefix/your-route`.
+The `route` property registers the supplied route with DemandOnce registered, you'll be able to visit this route by navigating directly to `example.com/shop-prefix/your-route`.
 
 If you have more than one shop, you'll need to use the shop prefix when visiting a route directly. See also: [Routing Docs](https://docs.reactioncommerce.com/reaction-docs/trunk/routing),  [getShopPrefix](https://github.com/reactioncommerce/reaction/blob/v1.8.0/server/api/core/core.js#L447), and [Router.initPackageRoutes](https://github.com/reactioncommerce/reaction/blob/v1.8.0/imports/plugins/core/router/lib/router.js#L546).
 

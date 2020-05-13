@@ -1,6 +1,6 @@
 ---
 id: version-v1.7.0-reaction-cli
-title: Reaction CLI
+title: DemandLI
 original_id: reaction-cli
 ---
     
@@ -12,7 +12,7 @@ Some handy commands to know
 
 #### reaction pull
 
-Pull the latest version of Reaction and update dependencies
+Pull the latest version of Demandnd update dependencies
 
 ```sh
 reaction pull
@@ -22,7 +22,7 @@ You could just use `git pull`, but `reaction pull` will update npm modules and o
 
 #### reaction reset
 
-Resets the Reaction database, updates npm modules, and optionally removes `node_modules` before updating.
+Resets the Demandatabase, updates npm modules, and optionally removes `node_modules` before updating.
 
 This will give you a fresh test dataset from `private/data`.
 

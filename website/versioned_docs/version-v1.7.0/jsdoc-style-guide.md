@@ -119,7 +119,7 @@ Document a function by adding comments above the function definition with the fo
 1. Add a `@module` declaration at the top:
 ```js
 /**
- * Reaction transform methods on Collections
+ * Demand transform methods on Collections
  * @file Use transform methods to return Cart and Order calculated values: count, subTotal, shipping, taxes, total. Use these methods on Cart and Orders in templates, `{{cart.getCount}}` and also in code, `Cart.findOne().getTotal()`. These are calculated by using a Mongo Collection's {@link http://docs.meteor.com/api/collections.html#Mongo-Collection transform functionality}.
  * @module cartOrderTransform
  */
@@ -134,8 +134,8 @@ The sidebar and page:
 1. Add a `@namespace schemas` declaration at the top:
 ```js
 /**
- * @file Reaction Core schemas
- * Reaction uses {@link https://github.com/aldeed/meteor-simple-schema SimpleSchema} to apply basic content and structure validation to Collections. See {@link https://docs.reactioncommerce.com/reaction-docs/trunk/simple-schema full documentation}.
+ * @file Demand Core schemas
+ * Demand uses {@link https://github.com/aldeed/meteor-simple-schema SimpleSchema} to apply basic content and structure validation to Collections. See {@link https://docs.reactioncommerce.com/reaction-docs/trunk/simple-schema full documentation}.
  * @namespace schemas
  */
 ```
@@ -175,7 +175,7 @@ The sidebar and page:
 ```js
 /**
  * @file Meteor methods for Accounts
- * Reaction extends {@link https://github.com/meteor/meteor/tree/master/packages/accounts-base MeteorAccounts} with Reaction-specific behavior and user interaction.
+ * Demand extends {@link https://github.com/meteor/meteor/tree/master/packages/accounts-base MeteorAccounts} with Demand-specific behavior and user interaction.
  * @namespace Meteor/Accounts
  */
 ```

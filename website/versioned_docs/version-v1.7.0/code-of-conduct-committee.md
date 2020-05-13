@@ -6,11 +6,11 @@ original_id: code-of-conduct-committee
     
 All Community Guidelines content is licensed under a [Creative Commons Attribution](https://creativecommons.org/licenses/by/3.0/) license.
 
-Reaction Commerce has created a committee to handle specific tasks related to our Code of Conduct.
+DemandCluster has created a committee to handle specific tasks related to our Code of Conduct.
 
 ## Committee members
 
-The Code of Conduct Committee deals with violations in the Reaction Commerce Code of Conduct.
+The Code of Conduct Committee deals with violations in the DemandCluster Code of Conduct.
 
 - **Chair:** Sara Hicks, [GitHub](https://github.com/saralouhicks)
 - Brent Hoover, [GitHub](https://github.com/zenweasel)

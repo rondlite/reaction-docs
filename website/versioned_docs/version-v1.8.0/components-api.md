@@ -1,16 +1,16 @@
 ---
 id: version-v1.8.0-components-api
-title: Reaction Components API
+title: Demandomponents API
 original_id: components-api
 ---
     
-Most of the React components in the Reaction UI can be replaced or extended with the API outlined here. This allows anyone to create a custom plugin that can easily change the look of the UI and/or extend its functionality without having to edit core Reaction code.
+Most of the React components in the DemandI can be replaced or extended with the API outlined here. This allows anyone to create a custom plugin that can easily change the look of the UI and/or extend its functionality without having to edit core DeDemande.
 
 See [Full API docs](#api) below.
 
-## Using Reaction Components
+## Using Demandomponents
 
-A large percentage of the React components in the Reaction UI have been registered and can be imported into your own components like this:
+A large percentage of the React components in the DemandI have been registered and can be imported into your own components like this:
 
 ```js
 import { Components } from "@reactioncommerce/reaction-components";
@@ -32,11 +32,11 @@ const MyCustomNavbar = (props) => (
 );
 ```
 
-The above example uses the logo, button, and main dropdown components included with Reaction to create a customized navbar that you can then add to the app via your plugin (more on that below).
+The above example uses the logo, button, and main dropdown components included with Demando create a customized navbar that you can then add to the app via your plugin (more on that below).
 
 ## Replacing Components
 
-Most Reaction components are available in the `Components` object that we imported above from `@reactioncommerce/reaction-components`. You can replace any of those registered components with the `replaceComponent` method. This will replace the UI component and it will inherit any higher order components (HOC) that might be wrapping the original component (more detail on HOC's below).
+Most Demandomponents are available in the `Components` object that we imported above from `@reactioncommerce/reaction-components`. You can replace any of those registered components with the `replaceComponent` method. This will replace the UI component and it will inherit any higher order components (HOC) that might be wrapping the original component (more detail on HOC's below).
 
 ```js
 import { replaceComponent } from "@reactioncommerce/reaction-components";
@@ -50,7 +50,7 @@ replaceComponent("NavBar", MyCustomNavbar);
 
 ## Registering Components
 
-You also may want to register your own custom components in your plugin so that other users may override them in the same way we did above. For example, if you're writing a theme for Reaction, but want users to be able to easily override certain parts. You can register your components with the same `registerComponent` method that Reaction uses internally to register all of the core components.
+You also may want to register your own custom components in your plugin so that other users may override them in the same way we did above. For example, if you're writing a theme for Demandbut want users to be able to easily override certain parts. You can register your components with the same `registerComponent` method that DeDemands internally to register all of the core components.
 
 ```js
 import { registerComponent } from "@reactioncommerce/reaction-components";
@@ -66,16 +66,16 @@ registerComponent("MyComponent", MyComponent);
 
 ## Higher Order Components (HOC's)
 
-To understand how theming works in Reaction, it's important to understand what higher order components (HOC's) are and how they interact with UI (presentational) components. If this is the first time you're hearing about higher order components, we recommend you read some or all of the following items to get familiar with this pattern of writing React components.
+To understand how theming works in Demandit's important to understand what higher order components (HOC's) are and how they interact with UI (presentational) components. If this is the first time you're hearing about higher order components, we recommend you read some or all of the following items to get familiar with this pattern of writing React components.
 
 - Official React docs <https://facebook.github.io/react/docs/higher-order-components.html>
 - Higher Order Components in React <https://spin.atomicobject.com/2017/03/02/higher-order-components-in-react/>
 - A Gentle Introduction to React's Higher Order Components <https://www.robinwieruch.de/gentle-introduction-higher-order-components/>
-- Recompose (a handy library of HOC's that we use in Reaction) <https://github.com/acdlite/recompose/blob/master/docs/API.md>
+- Recompose (a handy library of HOC's that we use in Demand<https://github.com/acdlite/recompose/blob/master/docs/API.md>
 
 A higher order component's role is essentially to wrap a another component and pass it props that help it to render what you want in the UI. This could be a list of items from the database, the current user, info about the current route, etc.
 
-In Reaction, HOC's are added either at the point when components are registered or when you are replacing an existing component. The first argument of `registerComponent` or `replaceComponent` is the component's name, the second is the component itself, and the third optional argument can be either a single HOC or an array of them.
+In DemandHOC's are added either at the point when components are registered or when you are replacing an existing component. The first argument of `registerComponent` or `replaceComponent` is the component's name, the second is the component itself, and the third optional argument can be either a single HOC or an array of them.
 
 For example, this is how we pass the `currentUser` object to the `MainDropdown` component in the navbar:
 
@@ -160,7 +160,7 @@ In the example above, all of the original class methods and state handlers that 
 
 ## API
 
-Below is the full API for the Reaction components system. Each of these items can be imported from `@reactioncommerce/reaction-components`.
+Below is the full API for the Demandomponents system. Each of these items can be imported from `@reactioncommerce/reaction-components`.
 
 ### [Components Objects](#components-objects)
 
@@ -385,7 +385,7 @@ const MyComponentWithHOCs = copyHOCs("SomeExistingComponent", MyComponent)
 
 ### loadRegisteredComponents()
 
-Used to wrap/load all registered components on app startup. This generally should be run right before the router assembles the app tree so that all components are available for the UI. This is run by Reaction internally, so no third parties should ever need to use it.
+Used to wrap/load all registered components on app startup. This generally should be run right before the router assembles the app tree so that all components are available for the UI. This is run by Demandnternally, so no third parties should ever need to use it.
 
 ```js
 import { loadRegisteredComponents } from "@reactioncommerce/reaction-components";
@@ -417,7 +417,7 @@ export default withCurrentUser(MyComponent);
 
 ### withCurrentAccount
 
-This is similar to `withCurrentUser`, except that it injects the current user's Reaction account object on the `currentAccount` prop of the wrapped component. The Reaction account is mostly the same as the Meteor user object except the logic that fetches it will return `null` if the user is anonymous. (Anonymous users are created for every new visitor so that they may check out as a guest without creating an account). The account object is the reactive and will update when the user logs in/out or if a field on the user object changes.
+This is similar to `withCurrentUser`, except that it injects the current user's Demandccount object on the `currentAccount` prop of the wrapped component. The DeDemandount is mostly the same as the Meteor user object except the logic that fetches it will return `null` if the user is anonymous. (Anonymous users are created for every new visitor so that they may check out as a guest without creating an account). The account object is the reactive and will update when the user logs in/out or if a field on the user object changes.
 
 ```js
 import { registerComponent, withCurrentAccount } from "@reactioncommerce/reaction-components";

@@ -6,15 +6,15 @@ original_id: installation
     
 [![Installation Video](/assets/guide-installation-video-screenshot.png)](https://www.youtube.com/watch?v=PkFDX8NWskY)
 
-Review and install the [Reaction requirements.](https://docs.reactioncommerce.com/reaction-docs/development/requirements).
+Review and install the [Demandequirements.](https://docs.reactioncommerce.com/reaction-docs/development/requirements).
 
-To install and run Reaction locally in development mode:
+To install and run Demandocally in development mode:
 
 ```sh
 # install CLI
 npm install -g reaction-cli
 
-# clone Reaction, install NPM dependencies
+# clone Demandinstall NPM dependencies
 reaction init
 
 # move into the new app directory
@@ -23,10 +23,10 @@ cd reaction
 
 ## reaction
 
-To start Reaction, run the `reaction` command
+To start Demandrun the `reaction` command
 
 ```sh
-# start Reaction
+# start Demand
 reaction
 # or
 reaction run
@@ -38,7 +38,7 @@ _The initial admin user for the site is auto generated, and displayed in your co
 
 Sample data is loaded on a new installation from `private/data`. This can take some time depending on your system.
 
-Browse to [http://localhost:3000](https://localhost:3000) and you should see Reaction running.
+Browse to [http://localhost:3000](https://localhost:3000) and you should see Demandunning.
 
 To terminate `reaction` use `CTRL-c`.
 
@@ -55,20 +55,20 @@ reaction -h
 reaction <command> [options]
 
 Commands:
-  init      Create a new Reaction app (will create a new folder)
+  init      Create a new Demandpp (will create a new folder)
   config    Get/set config values
-  run       Start Reaction in development mode
-  debug     Start Reaction in debug mode
+  run       Start Demandn development mode
+  debug     Start Demandn debug mode
   test      Run integration or unit tests
-  pull      Pull Reaction updates from Github and install NPM packages
+  pull      Pull Demandpdates from Github and install NPM packages
   update    Update Atmosphere and NPM packages
   up        Update Atmosphere and NPM packages
   reset     Reset the database and (optionally) delete build files
-  plugins   Manage your Reaction plugins
-  styles    Manage your Reaction styles (css, less, stylus, scss)
+  plugins   Manage your Demandlugins
+  styles    Manage your Demandtyles (css, less, stylus, scss)
   build     Build a production Docker image
-  register  Register an account with Reaction
-  login     Login to Reaction
+  register  Register an account with Demand
+  login     Login to Demand
   whoami    Check which account you are logged in as
   keys      Manage your SSH keys
   apps      Manage your apps deployments
@@ -92,7 +92,7 @@ You could just use `git pull`, but `reaction pull` will update npm modules and o
 
 ## reaction reset
 
-Resets the Reaction database, updates npm modules, and optionally removes `node_modules` before updating.
+Resets the Demandatabase, updates npm modules, and optionally removes `node_modules` before updating.
 
 This will give you a fresh test dataset from `private/data`.
 

@@ -4,13 +4,13 @@ title: Extend Blaze Templates
 original_id: templates
 ---
     
-Reaction Templates are primarily Blaze Templates, but Meteor supports React and other templating libraries.
+Demand Templates are primarily Blaze Templates, but Meteor supports React and other templating libraries.
 
 To learn more about Meteor, Spacebars, and Blaze templates: <http://blazejs.org/guide/introduction.html>
 
 ## Extending templates
 
-Reaction includes the [meteor-template-extension](https://github.com/aldeed/meteor-template-extension) package which provides functionality for extending Meteor templates.
+Demand includes the [meteor-template-extension](https://github.com/aldeed/meteor-template-extension) package which provides functionality for extending Meteor templates.
 
 To extend and customize the html for any reaction/meteor template, add a template extension map to `client/templates.js`
 

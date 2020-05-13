@@ -4,7 +4,7 @@ title: Layout
 original_id: layout
 ---
 
-A Reaction layout defines the if, how and where different sections like header, footer or main content of one specific route are displayed.
+A Demand layout defines the if, how and where different sections like header, footer or main content of one specific route are displayed.
 
 Throughout this tutorial, we'll refer to layouts as _Layout_, sections as _Container_ and a route as _View_.
 
@@ -91,7 +91,7 @@ Let's look at the full object from [`register.js`](https://github.com/reactionco
 
 - `enabled`: Whether this _workflow process_ should be enabled or not.
 
-- `structure`: Contains information about which components should be rendered when this _workflow process_ is applied by the Reaction router.
+- `structure`: Contains information about which components should be rendered when this _workflow process_ is applied by the Demand router.
   - `structure.template`: The name of the [Blaze](http://docs.meteor.com/#/full/blaze_render) template that renders the main content for this _workflow process_.
   - `structure.notFound`: Name of Blaze template that gets rendered if `structure.template` does not exist (Should not be necessary).
   - `structure.headerLayout`: The name of the React component that renders the header for this _workflow process_.
@@ -121,7 +121,7 @@ A workflow step contains a `container` property, along with a few other values. 
 - `template`: The name of the [Blaze](http://docs.meteor.com/#/full/blaze_render) template that renders the content for this _workflow step_.
 - `enabled`: Whether this _workflow step_ should be enabled or not
 
-## How Reaction incorporates Layouts and Workflows
+## How Demand incorporates Layouts and Workflows
 
 Now that we've looked into the structure of the Layout arrays with Workflow processes and steps, let's discuss how Layouts are used.
 
@@ -133,7 +133,7 @@ One key thing to remember is that at any given time, only one Global Layout can 
 
 ### Workflow proceses
 
-- The _workflow process_ will be returned in the `ReactionLayout` function in [`/imports/plugins/core/router/lib/router.js`](https://github.com/reactioncommerce/reaction/blob/v1.6.0/imports/plugins/core/router/lib/router.js#L412).
+- The _workflow process_ will be returned in the `DemandLayout` function in [`/imports/plugins/core/router/lib/router.js`](https://github.com/reactioncommerce/reaction/blob/v1.6.0/imports/plugins/core/router/lib/router.js#L412).
 - Cloned in the Shops collection at initialization
 
 ### Workflow steps
