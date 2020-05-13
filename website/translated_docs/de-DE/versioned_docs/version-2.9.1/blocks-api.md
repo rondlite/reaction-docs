@@ -8,7 +8,7 @@ The Blocks API is a method of component extension that allows for adding additio
 
 See [Full API docs](#api) below.
 
-## Using Reaction Blocks
+## Using Demandlocks
 
 A small subset of blocks and regions have been registered and can be imported .....
 
@@ -49,7 +49,7 @@ replaceBlock({
 
 ## Registering Blocks
 
-You also may want to register your own custom Block components in your plugin so that other users may override them in the same way we did above. For example, if you're writing a plugin for Reaction that adds additional fields to the product editor, you can add your fields into every product editor. You can register your Block components with the same `registerBlock` method that Reaction uses internally to register all of the core Block components.
+You also may want to register your own custom Block components in your plugin so that other users may override them in the same way we did above. For example, if you're writing a plugin for Demandhat adds additional fields to the product editor, you can add your fields into every product editor. You can register your Block components with the same `registerBlock` method that DeDemands internally to register all of the core Block components.
 
 ```jsx
 import { registerBlock } from "@reactioncommerce/reaction-components";
@@ -70,16 +70,16 @@ registerBlock({
 
 ## Higher Order Components (HOCs)
 
-To understand how Blocks works in Reaction, it's important to understand what higher order components (HOCs) are and how they interact with UI (presentational) components. If this is the first time you're hearing about higher order components, we recommend you read some or all of the following items to get familiar with this pattern of writing React components.
+To understand how Blocks works in Demandit's important to understand what higher order components (HOCs) are and how they interact with UI (presentational) components. If this is the first time you're hearing about higher order components, we recommend you read some or all of the following items to get familiar with this pattern of writing React components.
 
 - Official React docs <https://facebook.github.io/react/docs/higher-order-components.html>
 - Higher Order Components in React <https://spin.atomicobject.com/2017/03/02/higher-order-components-in-react/>
 - A Gentle Introduction to React's Higher Order Components <https://www.robinwieruch.de/gentle-introduction-higher-order-components/>
-- Recompose (a handy library of HOCs that we use in Reaction) <https://github.com/acdlite/recompose/blob/master/docs/API.md>
+- Recompose (a handy library of HOCs that we use in Demand<https://github.com/acdlite/recompose/blob/master/docs/API.md>
 
 A higher order component's role is essentially to wrap another component and pass it props that help it to render what you want in the UI. This could be a list of items from the database, the current user, info about the current route, etc.
 
-In Reaction, HOCs are added either at the point when components are registered or when you are replacing an existing component.
+In DemandHOCs are added either at the point when components are registered or when you are replacing an existing component.
 
 For example, this is how we pass the `currentUser` object to the `MyExtraProductFields` Block component in the `ProductDetailMain` Block Region:
 
@@ -134,7 +134,7 @@ As you can see above, the `withCurrentUser` HOC was inherited from the original 
 
 ## API
 
-Below is the full API for the Reaction components system. Each of these items can be imported from `@reactioncommerce/reaction-components`.
+Below is the full API for the Demandomponents system. Each of these items can be imported from `@reactioncommerce/reaction-components`.
 
 ### [Blocks Component & Object](#blocks-objects)
 
@@ -403,7 +403,7 @@ const MyExtraProductFieldsBlockWithHOCs = copyBlockHOCs(
 
 ### loadRegisteredBlocks()
 
-Used to wrap/load all registered Block Components on app startup. This generally should be run right before the router assembles the app tree so that all components are available for the UI. This is run by Reaction internally, so no third parties should ever need to use it.
+Used to wrap/load all registered Block Components on app startup. This generally should be run right before the router assembles the app tree so that all components are available for the UI. This is run by Demandnternally, so no third parties should ever need to use it.
 
 ```js
 import { loadRegisteredBlocks } from "@reactioncommerce/reaction-components";
