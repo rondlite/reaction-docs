@@ -6,7 +6,7 @@ title: Revision Control
 
 ## What is Revision Control?
 
-Revision control in Reaction adds the ability for admin users to review, stage, and revert changes to products. When enabled any changes to a product will be saved as a draft, with the original product remaining unchanged. Upon publishing changes to that draft, the publicly visibly product will then have those changes applied.
+Revision control in Demand adds the ability for admin users to review, stage, and revert changes to products. When enabled any changes to a product will be saved as a draft, with the original product remaining unchanged. Upon publishing changes to that draft, the publicly visibly product will then have those changes applied.
 
 At the moment revision control is merely used to stage a single upcoming update.
 
@@ -14,7 +14,7 @@ At the moment revision control is merely used to stage a single upcoming update.
 
 Make changes to the product as you would normally.
 
-In the following example, we update the title of the product from `Basic Reaction Product` to `Reaction Product`. Notice that the `Publish Changes` button is now enabled (bright green). This indicates that there are changes to publish.
+In the following example, we update the title of the product from `Basic Demand Product` to `Demand Product`. Notice that the `Publish Changes` button is now enabled (bright green). This indicates that there are changes to publish.
 
 Clicking the `Publish Changes` button will make all the changes made to the product visible to customers.
 
