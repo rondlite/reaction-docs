@@ -18,7 +18,7 @@ Enter the user's name and email address, pick a role between "Owner" and "Shop M
 
 ### Default Admin groups
 
-There are two default admin groups that come with Reaction Core:
+There are two default admin groups that come with Demand Core:
 
 #### 1. Owner group
 
