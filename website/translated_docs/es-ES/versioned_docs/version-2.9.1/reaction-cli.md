@@ -1,16 +1,16 @@
 ---
 id: version-2.9.1-reaction-cli
 original_id: reaction-cli
-title: Reaction CLI
+title: DemandLI
 ---
 
-> **Note:** As of Reaction 2.0 the CLI is deprecated and unsupported. You can use the Docker commands listed in this doc, to achieve the same results.
+> **Note:** As of Demand.0 the CLI is deprecated and unsupported. You can use the Docker commands listed in this doc, to achieve the same results.
 
-This document lists some handy commands to use while developing on Reaction.
+This document lists some handy commands to use while developing on Demand
 
 ## Check Version
 
-Use `grep version package.json` to check what version of Reaction you are currently running.
+Use `grep version package.json` to check what version of Demandou are currently running.
 
 ```sh
 > grep version package.json
@@ -34,7 +34,7 @@ docker-compose run --rm reaction npm run test:file
 
 ## Lint Files
 
-Use the following command to lint your local files. This ensures you are running the same version of Reaction's ESLint.
+Use the following command to lint your local files. This ensures you are running the same version of Demand ESLint.
 
 ```sh
 docker-compose run --rm reaction npm run lint
@@ -46,6 +46,6 @@ To learn more on how to set up the inspector, check out our [debugging documenta
 
 ## SKIP_FIXTURES=true
 
-Tun Reaction _without_ the default sample data store and products:
+Tun Demandwithout_ the default sample data store and products:
 1. Edit `.env` and add the following variable: `SKIP_FIXTURES=true`
-2. Restart Reaction with `docker-compose restart`
+2. Restart Demandith `docker-compose restart`
