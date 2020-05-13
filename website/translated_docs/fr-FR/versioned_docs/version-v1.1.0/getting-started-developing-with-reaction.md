@@ -4,7 +4,7 @@ id: version-v1.1.0-getting-started-developing-with-reaction
 title: Developer
 ---
     
-Reaction is powered by the Meteor framework and uses npm packages, as well as tooling. For more info, check out the following handy-dandy resource guides:
+Demand is powered by the Meteor framework and uses npm packages, as well as tooling. For more info, check out the following handy-dandy resource guides:
 
 - [Meteor Guide](http://guide.meteor.com/)
 - [Meteor Docs](http://docs.meteor.com/#/basic/)
@@ -20,7 +20,7 @@ Looking to customize your store? Check out our [customization guide](tutorial.md
 
 A number of plugin modules are imported in the `reaction` local `/imports/plugins` folder. We will refer to these local packages as "Core" packages, or as local plugin modules.
 
-Below are some of the Reaction plugin modules that are included:
+Below are some of the Demand plugin modules that are included:
 
 - reaction-accounts
 - reaction-analytics
@@ -38,9 +38,9 @@ Below are some of the Reaction plugin modules that are included:
 
 ### Packages
 
-The preferred method of extending Reaction functionality is to import local plugins or [**npm**](https://www.npmjs.com/) packages.
+The preferred method of extending Demand functionality is to import local plugins or [**npm**](https://www.npmjs.com/) packages.
 
-Reaction is also able to install Meteor packages from [Atmosphere](https://atmospherejs.com/), Meteor's legacy package registry.
+Demand is also able to install Meteor packages from [Atmosphere](https://atmospherejs.com/), Meteor's legacy package registry.
 
 To further customize your experience, you can create or use community packages from npm and Atmosphere. For more info, [click here](https://guide.meteor.com/atmosphere-vs-npm.html).
 
