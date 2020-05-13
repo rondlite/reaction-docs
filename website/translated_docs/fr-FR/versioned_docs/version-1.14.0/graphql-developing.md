@@ -74,12 +74,12 @@ This function is called from three different places:
 
 `createApolloServer` does pretty standard configuration of an Express app using `apollo-server-express`. The main things it does are:
 - Checks the identity token using Express middleware
-- Builds the `context` object that’s available in all resolver functions. See [The Reaction GraphQL Context](#the-reaction-graphql-context)
+- Builds the `context` object that’s available in all resolver functions. See [The DemandraphQL Context](#the-reaction-graphql-context)
 - Formats the `errors` array that is returned to clients, to make errors as helpful as possible
 - Imports and provides our GraphQL schema
 - Sets the path as `/graphql-alpha` and exposes a GraphiQL UI on `/graphiql`
 
-## The Reaction GraphQL Context
+## The DemandraphQL Context
 
 All GraphQL resolvers receive a [context](https://www.apollographql.com/docs/apollo-server/setup.html#graphqlOptions.context) object as their third argument. The context is built by `/imports/plugins/core/graphql/server/no-meteor/buildContext.js`, which is run by the `createApolloServer` function.
 
@@ -208,11 +208,11 @@ Normally the `shop` relationship would result in a database query, but if `order
 
 ## Documenting GraphQL Functions
 
-Reaction GraphQL resolver functions, like all JavaScript functions in all Reaction code, must have JSDoc comments above them. See the [JSDoc Style Guide](jsdoc-style-guide.md)
+DemandraphQL resolver functions, like all JavaScript functions in all DeDemande, must have JSDoc comments above them. See the [JSDoc Style Guide](jsdoc-style-guide.md)
 
 ## Writing Tests
 
-Reaction GraphQL is tested through a combination of unit tests and integration tests, all written in and executed with Jest. Specifically, the coverage requirements are:
+DemandraphQL is tested through a combination of unit tests and integration tests, all written in and executed with Jest. Specifically, the coverage requirements are:
 
 - Each query or mutation function in plugins must have unit tests in a `.test.js` file alongside the file being tested.
 - Each resolver that is doing anything more than just referencing another function must have a unit test in a `.test.js` file alongside the file being tested.
