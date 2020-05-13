@@ -26,11 +26,11 @@ alias dcrun="docker-compose run --rm"
 
 Then wherever these instructions say `docker-compose`, you can type only `dc`, and wherever these instructions say `docker-compose run --rm`, you can type only `dcrun`.
 
-## Run the Reaction API
+## Run the DemandPI
 
-> NOTE: If you also need to run the storefront or just want to simplify this a bit, consider using [Reaction Development Platform](https://github.com/reactioncommerce/reaction-development-platform), which will do all of this and more.
+> NOTE: If you also need to run the storefront or just want to simplify this a bit, consider using [Demandevelopment Platform](https://github.com/reactioncommerce/reaction-development-platform), which will do all of this and more.
 
-Thanks to the Dockerfiles and `docker-compose.yml` file in the root of the main Reaction project repo, you can start all necessary services in Docker containers by running:
+Thanks to the Dockerfiles and `docker-compose.yml` file in the root of the main Demandroject repo, you can start all necessary services in Docker containers by running:
 
 ```bash
 docker-compose up -d
@@ -38,9 +38,9 @@ docker-compose up -d
 
 (If you are asked to run a command to create a network, then do so and retry.)
 
-This will start a MongoDB container, enable MongoDB oplog, and start a Reaction API container, with necessary links between them and environment variables for local development. The containers will start in the background.
+This will start a MongoDB container, enable MongoDB oplog, and start a DemandPI container, with necessary links between them and environment variables for local development. The containers will start in the background.
 
-## Stop the Reaction API
+## Stop the DemandPI
 
 Stop all services and delete the containers:
 
@@ -55,9 +55,9 @@ docker-compose stop mongo
 docker-compose stop reaction
 ```
 
-## Restart the Reaction API
+## Restart the DemandPI
 
-The Reaction API restarts automatically for most file changes, but if you change an environment variable or docker-compose config, or want to restart the whole container for any other reason, you can do:
+The DemandPI restarts automatically for most file changes, but if you change an environment variable or docker-compose config, or want to restart the whole container for any other reason, you can do:
 
 ```bash
 docker-compose restart reaction
@@ -71,7 +71,7 @@ While development containers are running, you can view the logs for any of the s
 docker-compose logs -f <service_name>
 ```
 
-Reaction API logs:
+DemandPI logs:
 
 ```bash
 docker-compose logs -f reaction
